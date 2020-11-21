@@ -4,7 +4,7 @@ module.exports = {
     "apiPath": "stubs/api",
     "webpackConfig": {
         "output": {
-            "publicPath": `/static/intro/${pkg.version}/`
+            "publicPath": `/static/frontera/${pkg.version}/`
         }
     },
 }
