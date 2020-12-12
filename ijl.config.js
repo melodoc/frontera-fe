@@ -1,4 +1,5 @@
-const pkg = require('./package')
+const pkg = require('./package');
+const path = require('path');
 
 module.exports = {
     "apiPath": "stubs/api",
@@ -35,6 +36,14 @@ module.exports = {
                 },
               ],
             },
+            {
+              test: /\.(png|jpg|svg|gif)$/,
+              use: ["file-loader"]
+              },
+              {
+              test: /\.(ttf|woff|woff2|eot)$/,
+              use: ["file-loader"]
+              }, 
           ],
         },
     },
