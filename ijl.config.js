@@ -1,6 +1,8 @@
 const pkg = require('./package');
 const path = require('path');
 
+const CopyPlugin = require('copy-webpack-plugin');
+
 module.exports = {
     "apiPath": "stubs/api",
     webpackConfig: {
@@ -46,5 +48,13 @@ module.exports = {
               }, 
           ],
         },
+        plugins: [
+          new CopyPlugin({
+            patterns: [
+              {from: path.resolve(__dirname, 'src/assets/icons'), to: path.resolve(__dirname, 'dist/assets')},
+              {from: path.resolve(__dirname, 'src/assets/images'), to: path.resolve(__dirname, 'dist/img')},
+            ],
+          }),
+        ],
     },
 }
