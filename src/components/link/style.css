@@ -1,0 +1,12 @@
+  .form__restore {
+    color: #bcaee2;
+  
+    text-decoration: underline;
+  }
+  
+  .form__restore:hover,
+  .form__restore:focus {
+    color: #ffffff;
+  
+    text-decoration: none;
+  }
