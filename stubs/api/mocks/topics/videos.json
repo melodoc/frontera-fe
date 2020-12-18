@@ -1,0 +1,12 @@
+{
+  "videos": [
+    {
+      "name": "Тема 1.1.1.Вводное занятие презентация курса. 1.2.Настройка окружения:  nodejs, git, webpack",
+      "src": "https://video.innopolis.university/STC/STC-33JS/STC-33JS_vebinar_1_09.11.2020.mp4"
+    },
+    {
+      "name": "Тема 2.1.3.Typescript",
+      "src": "https://video.innopolis.university/STC/STC-33JS/STC-33JS_vebinar_2_11.11.2020.mp4"
+    }
+  ]
+}
