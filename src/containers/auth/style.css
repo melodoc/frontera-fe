@@ -1,8 +1,3 @@
-html,
-body {
-  height: 100%;
-}
-
 body {
   color: #ffffff;
 
@@ -19,6 +14,16 @@ body {
   width: 554px;
   margin: 0 auto;
   padding: 0 10px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
 }
 
 .form__wrapper {
@@ -38,7 +43,7 @@ body {
   border-radius: 0px 0px 10px 10px;
 }
 
-.form__item--single input{
+.form__itemSingle input{
   border-radius: 10px 10px 10px 10px;
 }
 
@@ -51,7 +56,6 @@ body {
 
   padding: 0 90px;
 }
-
 
 .login__buttons {
   position: relative;
