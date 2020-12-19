@@ -55,8 +55,8 @@ const titleAttributes = [
 ];
 
 interface TitleWithSubtitleProps {
-  readonly type: string;
   readonly color: string;
+  readonly type: string;
 }
 
 type TitleWithSubtitleType = React.FunctionComponent<TitleWithSubtitleProps>;
