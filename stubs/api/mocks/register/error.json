@@ -1,4 +1,11 @@
 {
-  "code": 2,
-  "error": "Такой email уже используется"
+  "status": {
+    "code": 2,
+    "errors": [
+      {
+        "field": "email",
+        "text": "Такой email уже используется"
+      }
+    ]
+  }
 }
