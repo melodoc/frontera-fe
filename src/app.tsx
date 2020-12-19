@@ -10,11 +10,12 @@ import Themes from './containers/init/themes';
 import Personalizing from './containers/init/personalizing';
 
 import Suggestions from './containers/pages/suggestions';
+import Coursepage from './containers/pages/coursepage';
 
 import './app.css';
 
 const App = () => (
-    <Suggestions />
+    <Coursepage />
 );
 
 export default App;
