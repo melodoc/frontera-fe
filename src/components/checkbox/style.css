@@ -1,6 +1,38 @@
-.form__remember {
+.filterItemPurple,
+.filterItemWhite {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+
+  color: #541594;
+}
+
+.filterItemWhite {
+  color: #8d6fdd;
+}
+
+.checkboxItem {
+  list-style: none;
+    margin: 0;
+   padding: 0;
+}
+
+.filterItemPurple .checkboxItem {
+  list-style: none;
+
+  padding: 6px;
+  margin-bottom: 6px;
+  padding-left: 0;
+}
+
+.filterItemPurple .checkboxItem:hover,
+.filterItemPurple .checkboxItem:focus {
+  width: max-content;
+  
+  border-radius: 4px;
+  background-color: #eae7f3;
+
+  transition: all .2s ease-in-out;
 }
 
 .form__checkbox {
@@ -14,12 +46,13 @@
 }
 
 .form__checkboxLabel {
-  color: #bcaee2;
+  color: inherit;
 
   cursor: pointer;
 }
 
 .form__checkboxLabel:hover,
 .form__checkboxLabel:focus {
-  color: #ffffff;
+  color: #bcaee2;
 }
+

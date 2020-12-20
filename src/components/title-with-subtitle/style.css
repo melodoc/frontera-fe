@@ -18,7 +18,8 @@ input[type='radio'].visuallyHidden {
   padding: 0 30px;
 }
 
-.anthem__item {
+.anthem__item,
+.anthem__itemPurple {
   margin: 0;
   padding: 0;
 
@@ -29,7 +30,17 @@ input[type='radio'].visuallyHidden {
   color: #ffffff;
 }
 
-.login__heading {
+.anthem__itemPurple {
+  font-weight: 500;
+
+  font-size: 28px;
+  line-height: 42px;
+
+  color: #541594;
+}
+
+.login__heading,
+.login__headingPurple {
   margin: 0 0 40px;
   padding: 0 30px;
 
@@ -37,5 +48,13 @@ input[type='radio'].visuallyHidden {
   font-size: 18px;
   line-height: 27px;
 
-  color: #bcaee2;
+  color: #8d6fdd;
+}
+
+.login__headingPurple {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: #999999;
 }

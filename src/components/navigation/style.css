@@ -1,0 +1,26 @@
+.nav__account {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+  margin-right: 30px;
+  
+  list-style: none;
+}
+
+.nav__accountItem:not(:last-child) {
+  padding-right: 20px;
+}
+
+.nav__accountLink {
+  padding: 10px;
+}
+
+.nav__accountLink:hover,
+.nav__accountLink:focus {
+  text-decoration: underline;
+  background-color: #efe9ff;
+
+  transition: all .2s ease-in-out;
+}

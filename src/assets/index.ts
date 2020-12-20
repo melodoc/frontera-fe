@@ -1,3 +1,7 @@
-import svgLogo from './icons/logo.svg';
+import whiteLogo from './icons/logo.svg';
+import purpleLogo from './icons/purple-logo.svg';
 
-export default svgLogo;
+export {
+    whiteLogo,
+    purpleLogo,
+}

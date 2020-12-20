@@ -4,24 +4,33 @@ body {
 }
 
 body {
-  color: #ffffff;
+  color: #3c2d86;
 
-  background: linear-gradient(180deg, #503e9d 0%, #3c2d86 100%);
-  background-color: #3c2d86;
-  background-repeat: no-repeat;
+  background-color: #ffffff;
 }
 
 .header {
-  margin-bottom: 146px;
+  border-bottom: 1px solid #C0C0C0;
 }
 
 .container {
-  width: 554px;
+  width: max-content;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 135px 10px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
 }
 
 .form__wrapper {
+  padding: 0 30px;
   margin-bottom: 40px;
 }
 
@@ -45,13 +54,10 @@ body {
 .form__buttons {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 
-  margin: 0 0 40px;
-
-  padding: 0 90px;
+  padding: 0 10px;
 }
-
 
 .login__buttons {
   position: relative;
