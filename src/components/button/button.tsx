@@ -40,6 +40,12 @@ const buttonAttributes = [
       name: 'Continue',
     },
   },
+  {
+    key: 'info',
+    value: {
+      name: 'Info',
+    },
+  },
 ];
 
 interface ButtonProps {

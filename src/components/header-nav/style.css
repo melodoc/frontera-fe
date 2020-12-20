@@ -1,0 +1,15 @@
+@import './../../app.css';
+
+.header_nav_item{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #541594;
+}
+
+.header_nav_item:not(:last-child){
+    margin-right: 25px;
+}

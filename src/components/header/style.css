@@ -1,0 +1,21 @@
+@import './../../app.css';
+
+.header{
+    position: relative;
+    display: flex;
+    padding: 20px 30px;
+}
+
+.header_logo{
+    align-items: center;
+    margin-right: 65px;
+}
+
+.header_nav{
+    display: flex;
+}
+
+.header_icons{
+    position: absolute;
+    right: 30px;
+}

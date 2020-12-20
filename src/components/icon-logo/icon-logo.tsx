@@ -1,7 +1,9 @@
 import React from 'react';
 
-import {purpleLogo, whiteLogo} from '../../assets';
-
+import {whiteLogo, 
+  //purpleLogo
+} from '../../assets';
+//import purpleLogo from  '../../assets/icons/purple-logo.svg';
 import style from './style.css';
 
 interface IconLogoProps {
@@ -11,13 +13,14 @@ interface IconLogoProps {
 type IconLogoType = React.FunctionComponent<IconLogoProps>;
 
 const IconLogo: IconLogoType = ({color}: IconLogoProps) => {
-  if (color === 'purple') {
-    return (
-      <a className={style.nav__logo}>
-        <img src={purpleLogo} width="235" height="43" alt="Purple Frontera logo" />
-      </a>
-    );
-  }
+  // if (color === 'purple') {
+  //   console.log(purpleLogo);
+  //   return (
+  //     <a className={style.nav__logo}>
+  //       <img src={purpleLogo} width="235" height="43" alt="Purple Frontera logo" />
+  //     </a>
+  //   );
+  // }
   return (
     <a className={style.nav__logo}>
       <img src={whiteLogo} width="235" height="43" alt="White Frontera logo" />

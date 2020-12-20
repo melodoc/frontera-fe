@@ -32,6 +32,7 @@ module.exports = {
                             // Options
                           },
                         ],
+                        
                       ],
                     },
                   },
@@ -39,22 +40,27 @@ module.exports = {
               ],
             },
             {
-              test: /\.(png|jpg|svg|gif)$/,
-              use: ['file-loader']
+                test: /\.(jpe?g|gif|svg|png|woff|woff2|ttf|eot|wav|mp3)$/,
+                loader: "file-loader",
+                options: {
+                  // Итоговое имя файла, расположенного рядом с бандлом
+                  name: 'img/[name]--[hash:base64:5].[ext]'
+              }
               },
-              {
-              test: /\.(ttf|woff|woff2|eot)$/,
-              use: ['file-loader']
-              }, 
+              // {
+              //   test: /\.svg$/,
+              //   // import icon from './icon.svg' // icon === '<svg><path /></svg>'
+              //   loader: 'svg-inline-loader',
+              //   options: {
+              //       // Удалять пустые теги
+              //       removeTags: true,
+              //       // Всегда удалять эти теги
+              //       removingTags: ['title', 'desc'],
+              //       // Удалять атрибуты с тэга svg
+              //       removeSVGTagAttrs: false
+              // }
+            //} 
           ],
         },
-        plugins: [
-          new CopyPlugin({
-            patterns: [
-              {from: path.resolve(__dirname, 'src/assets/icons'), to: path.resolve(__dirname, 'dist/assets')},
-              {from: path.resolve(__dirname, 'src/assets/images'), to: path.resolve(__dirname, 'dist/img')},
-            ],
-          }),
-        ],
     },
 }

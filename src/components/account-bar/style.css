@@ -1,0 +1,94 @@
+.accountBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+  margin-right: 30px;
+  
+  list-style: none;
+}
+.profileWrapper {
+margin: 0;
+padding: 0;
+
+width: 35px;
+height: 35px;
+}
+
+.profile {
+  width: 35px;
+  height: 35px;
+
+  border: none;
+  //background-color: yellow;
+  
+  background-image: url('../../assets/icons/user-account.svg');
+}
+
+.profile:hover,
+.profile:focus {
+  transition: all .2s ease-in-out;
+}
+
+
+.searchForm {
+  position: relative;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.searchInput .searchForm {
+  height: 33px;
+}
+
+.searchInput input {
+  position: absolute;
+  top: 2px;
+  right: 15px;
+  z-index: 2;
+
+  height: 100%;
+  width: 0;
+
+  padding: 0 42px 0 15px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  outline: none;
+  
+  background: transparent;
+  transition: .4s cubic-bezier(0, 0.8, 0, 1);
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.searchInput input:focus {
+  width: 100%;
+  z-index: 1;
+  border: 1px solid #B3B6B6;
+  border-radius: 4px;
+  color: #541594;
+}
+
+.searchInput button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  
+  width: 23px;
+  height: 100%;
+
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.searchInput button:before {
+  
+  content: url('../../assets/icons/search.svg');
+}
+
