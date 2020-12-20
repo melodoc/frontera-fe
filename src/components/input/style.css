@@ -1,0 +1,40 @@
+
+.form__label input[placeholder] {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+
+  color: #3c2d86;
+}
+
+.form__text {
+  box-sizing: border-box;
+  height: 73px;
+  width: 100%;
+  padding: 30px 0 0 30px;
+
+  font: inherit;
+  background-color: #bcaee2;
+
+  border: 0px solid #3c2d86;
+}
+
+.form__text:focus {
+  background-color: #ffffff;
+}
+
+.form__label {
+  position: relative;
+}
+
+.form__label span {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+
+  color: rgba(0, 0, 0, 0.5);
+
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+}

@@ -1,0 +1,41 @@
+.visuallyHidden:not(:focus):not(:active),
+input[type='checkbox'].visuallyHidden,
+input[type='radio'].visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.anthem {
+  margin: 0 0 40px;
+  padding: 0 30px;
+}
+
+.anthem__item {
+  margin: 0;
+  padding: 0;
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 60px;
+
+  color: #ffffff;
+}
+
+.login__heading {
+  margin: 0 0 40px;
+  padding: 0 30px;
+
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+
+  color: #bcaee2;
+}

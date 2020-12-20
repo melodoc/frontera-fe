@@ -1,0 +1,22 @@
+.form__button {
+    width: 129px;
+    height: 54px;
+    vertical-align: middle;
+  
+    font: inherit;
+    text-align: center;
+    color: #3c2d86;
+  
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .form__button:hover,
+  .form__button:focus,
+  .form__button:active {
+    color: #ffffff;
+  
+    background-color: #553bd8;
+    box-shadow: 0px 4px 3px #3e1678;
+  }

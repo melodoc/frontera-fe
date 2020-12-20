@@ -1,0 +1,8 @@
+.form__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin: 0 0 40px;
+  padding: 0 30px;
+}
