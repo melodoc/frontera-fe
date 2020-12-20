@@ -2,7 +2,6 @@ const router = require("express").Router();
 
 router.post('/login', (req, res) => {
     res.send(require('./mocks/login/success'));
-    // res.status(500).send({"code":2,"error":"Неверный логин или пароль"});
     // res.status(400).send({ message: 'Bad Request' });
 });
 
