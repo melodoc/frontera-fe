@@ -3,7 +3,7 @@
   "errors": [
     {
       "field": "password",
-      "text": "Пароль не соответствует требованиям"
+      "text": "Password does't meet requirements"
     }
   ]
 }

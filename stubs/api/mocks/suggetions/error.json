@@ -4,7 +4,7 @@
     "errors": [
       {
         "field": "suggetions",
-        "text": "Не удалось установить значения"
+        "text": "Failed to set values"
       }
     ]
   }
