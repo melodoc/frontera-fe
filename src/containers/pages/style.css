@@ -1,0 +1,31 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  color: #3c2d86;
+
+  background-color: #ffffff;
+}
+
+.header {
+  border-bottom: 1px solid #C0C0C0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 30px 10px;
+}
+
+.userNav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  font-size: 14px;
+  line-height: 21px;
+  color: #541594;
+}
+

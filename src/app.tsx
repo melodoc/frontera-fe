@@ -10,10 +10,13 @@ import Language from './containers/init/language';
 import Themes from './containers/init/themes';
 import Personalizing from './containers/init/personalizing';
 
-import './app.css'; 
+import Suggestions from './containers/pages/suggestions';
+import Coursepage from './containers/pages/coursepage';
+
+import './app.css';
 
 const App = () => (
-    <HomePage/>
+    <Coursepage />
 );
 
 export default App;
