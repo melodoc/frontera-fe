@@ -1,0 +1,21 @@
+.form__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin: 0 0 40px;
+  padding: 0 30px;
+}
+
+.form__restore {
+  color: #8d6fdd;
+
+  text-decoration: underline;
+}
+
+.form__restore:hover,
+.form__restore:focus {
+  color: #bcaee2;
+
+  text-decoration: none;
+}
