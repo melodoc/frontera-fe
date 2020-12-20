@@ -4,7 +4,7 @@
     "errors": [
       {
         "field": "email",
-        "text": "Пользователь с таким email не существует"
+        "text": "User with this email doesn't exist"
       }
     ]
   }

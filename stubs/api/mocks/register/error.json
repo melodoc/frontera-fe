@@ -4,7 +4,7 @@
     "errors": [
       {
         "field": "email",
-        "text": "Такой email уже используется"
+        "text": "This email is already in use"
       }
     ]
   }
