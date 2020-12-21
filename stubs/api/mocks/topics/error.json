@@ -1,0 +1,10 @@
+{
+  "status": {
+    "code": 1,
+    "warnings": [
+      {
+        "text": "Data loaded partially"
+      }
+    ]
+  }
+}

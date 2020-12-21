@@ -1,4 +1,5 @@
 const pkg = require('./package');
+
 const path = require('path');
 
 const CopyPlugin = require('copy-webpack-plugin');
@@ -63,4 +64,7 @@ module.exports = {
           ],
         },
     },
+    config: {
+        'frontera.login': '/api/login'
+    }
 }
