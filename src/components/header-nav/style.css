@@ -13,3 +13,19 @@
 .header_nav_item:not(:last-child){
     margin-right: 25px;
 }
+
+.nav__account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    margin-right: 30px;
+    
+    list-style: none;
+  }
+  
+  .nav__accountItem:not(:last-child) {
+    padding-right: 20px;
+  }
+  

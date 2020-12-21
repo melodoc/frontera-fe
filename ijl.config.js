@@ -63,4 +63,8 @@ module.exports = {
           ],
         },
     },
+    navigations: {
+      'frontera':'/frontera',
+      'link.frontera.login':'/login',
+    }
 }

@@ -1,15 +1,36 @@
 import React from 'react';
 import style from './style.css';
+import { Link as ConnectedLink } from "react-router-dom";
+import {Link} from './../link/link';
+import {URLs} from './../../__data__/urls';
 
-interface HeaderNavProps {
-    linkName: string;
-    linkAdress: string;
-}
-
-export const HeaderNav = ({linkName, linkAdress}: HeaderNavProps) => (
+export const HeaderNav = () => (
     <React.Fragment>
-        <a href={linkAdress} className={style.header_nav_item}>
-            {linkName}
-        </a>
+        <ul className={style.nav__account}>
+            <li className={style.nav__accountItem}>
+                <Link 
+                    type='link'
+                    to={URLs.login.url}
+                    as={ConnectedLink}>
+                    Home
+                </Link>
+            </li>
+            <li className={style.nav__accountItem}>
+                <Link 
+                    type='link'
+                    to={URLs.login.url}
+                    as={ConnectedLink}>
+                    Trending
+                </Link>
+            </li>
+            <li className={style.nav__accountItem}>
+                <Link 
+                    type='link'
+                    to={URLs.login.url}
+                    as={ConnectedLink}>
+                    Suggestions
+                </Link>
+            </li>
+        </ul>
     </React.Fragment>
 )

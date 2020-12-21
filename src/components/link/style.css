@@ -1,0 +1,15 @@
+.nav__accountLink {
+    padding: 10px;
+  }
+  
+  .nav__accountLink:hover,
+  .nav__accountLink:focus {
+    text-decoration: underline;
+    background-color: #efe9ff;
+  
+    transition: all .2s ease-in-out;
+  }
+  
+  .nav__accountLink:visited {
+    color: #000000;
+  }

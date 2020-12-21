@@ -3,7 +3,7 @@ import style from './style.css';
 import IconLogo from './../icon-logo/icon-logo';
 import HeaderNav from './../header-nav';
 import AccountBar from './../account-bar/account-bar';
-import Navigation from './../navigation/navigation'
+import Navigation from './../navigation/navigation';
 
 export const Header = () => (
     <header className={style.header}>
@@ -11,7 +11,7 @@ export const Header = () => (
             <IconLogo color="purple"/>
         </div>
         <div className={style.header_nav}>
-            <Navigation links={['Home', 'Trending', 'Suggestions']}/>
+            <HeaderNav/>
         </div>
         <div className={style.header_icons}>
             <AccountBar/>
