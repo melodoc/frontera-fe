@@ -1,0 +1,9 @@
+{
+  "code": 2,
+  "errors": [
+    {
+      "field": "password",
+      "text": "Password does't meet requirements"
+    }
+  ]
+}
