@@ -5,7 +5,7 @@ import style from "./style.css";
 interface PageHeaderProps {
   readonly color: string;
   readonly label: string;
-  readonly size: string;
+  readonly size?: string;
 }
 
 type PageHeaderType = React.FunctionComponent<PageHeaderProps>;
