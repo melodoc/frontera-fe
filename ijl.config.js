@@ -63,6 +63,9 @@ module.exports = {
           ],
         },
     },
+    config: {
+      'frontera.login': '/api/login'
+    },
     navigations: {
       'frontera':'/frontera',
       'link.frontera.login':'/login',
