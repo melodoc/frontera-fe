@@ -10,7 +10,7 @@ export const HeaderNav = () => (
             <li className={style.nav__accountItem}>
                 <Link 
                     type='link'
-                    to={URLs.login.url}
+                    to={URLs.home.url}
                     as={ConnectedLink}>
                     Home
                 </Link>
@@ -26,7 +26,7 @@ export const HeaderNav = () => (
             <li className={style.nav__accountItem}>
                 <Link 
                     type='link'
-                    to={URLs.login.url}
+                    to={URLs.suggestions.url}
                     as={ConnectedLink}>
                     Suggestions
                 </Link>

@@ -6,6 +6,7 @@ import ResetPassword from './containers/auth/reset-password';
 import Restore from './containers/auth/restore';
 import HomePage from './containers/homepage';
 import {BrowserRouter} from 'react-router-dom';
+import Dashboard from './containers/dashboard'
 
 import Language from './containers/init/language';
 import Themes from './containers/init/themes';
@@ -18,7 +19,7 @@ import './app.css';
 
 const App = () => (
     <BrowserRouter basename='/frontera'>
-        <HomePage/>
+        <Dashboard/>
     </BrowserRouter>
 );
 

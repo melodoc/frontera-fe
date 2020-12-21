@@ -8,7 +8,7 @@ import AccountBar from '../../../components/account-bar/account-bar';
 
 import style from '../style.css';
 
-const Suggestions = () => (
+const Coursepage = () => (
   <div className={style.body}>
     <header className={style.header}>
       <nav className={style.userNav}>
@@ -30,4 +30,4 @@ const Suggestions = () => (
   </div>
 );
 
-export default Suggestions;
+export default Coursepage;
