@@ -16,7 +16,7 @@ import Coursepage from './containers/pages/coursepage';
 import './app.css';
 
 const App = () => (
-    <Coursepage />
+    <Restore />
 );
 
 export default App;

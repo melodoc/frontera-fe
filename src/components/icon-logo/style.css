@@ -1,5 +1,11 @@
 .nav__logo {
+    display: flex;
+    align-items: center;
+
     width: 235px;
     height: 43px;
-    padding: 20px 0 0 30px;
+
+    padding: 0;
+
+    margin-right: 30px;
 }
