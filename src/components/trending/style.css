@@ -1,8 +1,8 @@
-.trending{
-    padding: 20px 50px;
+.trending {
+    padding: 0 50px;
 }
 
-.trending_title{
+.trending_title {
     font-weight: 500;
     font-size: 28px;
     line-height: 42px;
