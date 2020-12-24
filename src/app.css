@@ -9,11 +9,14 @@
   body {
     margin: 0;
     padding: 0;
-  
+
+    background-color: #ffffff;
+    
     font-family: 'Poppins', 'Century Gothic', 'Arial', sans-serif; 
     font-size: 18px;
     line-height: 27px;
     font-weight: 500;
+    color: #3c2d86;
   }
   
   a {

@@ -1,8 +1,8 @@
 .preview{
     position: relative;
     min-height: 630px;
-    background-color: black;
-    //background: url(./../../assets/images/notebook.png);
+    //background-color: black;
+    background: url(./../../assets/images/notebook.png);
 }
 
 .preview_info{
