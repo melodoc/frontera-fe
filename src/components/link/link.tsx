@@ -32,3 +32,8 @@ Link.defaultProps = {
     type: 'link',
     as: 'a'
 }
+
+
+//Link.Button = <div>111</div>
+
+//<Link.Button/>
