@@ -17,4 +17,7 @@ export const URLs = {
     home: {
         url: navigations['link.frontera.home']
     },
+    registration: {
+        url: navigations['link.frontera.registration']
+    },
 }

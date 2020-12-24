@@ -1,5 +1,9 @@
 import React from 'react';
 
+import {LinkButton} from './../../../components/link';
+import {URLs} from './../../../__data__/urls';
+import { Link as ConnectedLink } from 'react-router-dom';
+
 import HeaderForm from '../../../components/header-form';
 import TitleWithSubtitle from '../../../components/title-with-subtitle/title-with-subtitle';
 import Input from '../../../components/input/input';
@@ -26,11 +30,21 @@ const Login = () => (
           </div>
           <LoginActions />
           <div className={style.form__buttons}>
-            <Button color={COLOR} name={'login'} />
+            <LinkButton
+              type='link'
+              to={URLs.home.url}
+              as={ConnectedLink}>
+              Login
+            </LinkButton>
           </div>
         </form>
         <div className={style.login__buttons}>
-          <Button color={COLOR} name={'signUp'} />
+          <LinkButton
+            type='link'
+            to={URLs.registration.url}
+            as={ConnectedLink}>
+            Sign up
+          </LinkButton>
         </div>
       </section>
     </main>

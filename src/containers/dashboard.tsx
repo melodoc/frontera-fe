@@ -8,6 +8,7 @@ import {
 import {URLs} from './../__data__/urls'
 
 import Login from './auth/login';
+import Registration from './auth/registration';
 import HomePage from './homepage';
 import ChooseLanguage from './init/language';
 import Personalizing from './init/personalizing';
@@ -32,6 +33,9 @@ const Dashboard = () => (
         </Route>
         <Route path={URLs.home.url}>
             <HomePage/>
+        </Route>
+        <Route path={URLs.registration.url}>
+            <Registration/>
         </Route>
         <Route path="*">
             <h1>Not found</h1>

@@ -51,6 +51,7 @@ module.exports = {
       'link.frontera.init':'/init',
       'link.frontera.suggestions':'/suggestions',
       'link.frontera.home':'/home',
+      'link.frontera.registration':'/registration',
     },
     config: {
       'frontera.login': '/api/login'

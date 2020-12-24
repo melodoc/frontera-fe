@@ -20,7 +20,24 @@ export const Link: LinkType = ({
 }) => {
     return (
         <LinkComponent
-            className={style.nav__accountLink}
+            className={style.Link}
+            to={to}
+        >
+            {children}
+        </LinkComponent>
+    )
+}
+
+export const LinkButton: LinkType = ({
+    type,
+    to,
+    children,
+    className,
+    as: LinkComponent
+}) => {
+    return (
+        <LinkComponent
+            className={style.button}
             to={to}
         >
             {children}
@@ -34,7 +51,7 @@ Link.defaultProps = {
 }
 
 
-//Link.Button = 
+//LinkButton = 
     //<div>111</div>
 
 //<Link.Button/>

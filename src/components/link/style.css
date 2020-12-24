@@ -1,4 +1,4 @@
-  .nav__accountLink {
+  .Link {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -8,14 +8,37 @@
     padding: 10px 20px;
   }
 
-  .nav__accountLink:hover,
-  .nav__accountLink:focus {
+  .Link:hover,
+  .Link:focus {
     text-decoration: underline;
     background-color: #efe9ff;
   
     transition: all .2s ease-in-out;
   }
   
-  .nav__accountLink:visited {
+  .Link:visited {
     color: #999999;
   }
+
+.button {
+  width: 129px;
+  height: 54px;
+  vertical-align: middle;
+
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  line-height: 54px;
+
+  background-color: #3c2d86;
+  border: none;
+  border-radius: 10px;
+  }
+.button:hover{
+    color: #3c2d86;
+  
+    background-color: #f9f7ff;
+    box-shadow: 0px 4px 4px rgba(13, 14, 56, 0.25);
+
+    transition: all .2s ease-in-out;
+}
