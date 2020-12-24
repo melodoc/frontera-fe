@@ -1,7 +1,13 @@
-.nav__accountLink {
-    padding: 10px;
+  .nav__accountLink {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #541594;
+
+    padding: 10px 20px;
   }
-  
+
   .nav__accountLink:hover,
   .nav__accountLink:focus {
     text-decoration: underline;
@@ -11,5 +17,5 @@
   }
   
   .nav__accountLink:visited {
-    color: #000000;
+    color: #999999;
   }

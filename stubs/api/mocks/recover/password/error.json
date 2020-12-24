@@ -1,0 +1,11 @@
+{
+  "status": {
+    "code": 2,
+    "errors": [
+      {
+        "field": "email",
+        "text": "User with this email doesn't exist"
+      }
+    ]
+  }
+}
