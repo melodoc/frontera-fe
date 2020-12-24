@@ -8,7 +8,7 @@ export const Header = () => (
     <header className={style.header}>
         <nav className={style.header_nav}>
             <IconLogo color="purple"/>
-            <HeaderNav labels={['Home', 'Trending', 'Suggestions']}/>
+            <HeaderNav/>
         </nav>
             <AccountBar/>
     </header>
