@@ -1,9 +1,11 @@
-  .Link {
+@import './../../app.css';
+
+.Link {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
 
-    color: #541594;
+    color: var(--purple-9);
 
     padding: 10px 20px;
   }
@@ -11,13 +13,13 @@
   .Link:hover,
   .Link:focus {
     text-decoration: underline;
-    background-color: #efe9ff;
+    background-color: var(--white);
   
     transition: all .2s ease-in-out;
   }
   
   .Link:visited {
-    color: #999999;
+    color: var(--gray-9);
   }
 
 .button {
@@ -27,31 +29,31 @@
 
   font: inherit;
   text-align: center;
-  color: #ffffff;
+  color: var(--white);
   line-height: 54px;
 
-  background-color: #3c2d86;
+  background-color: var(--purple-8);
   border: none;
   border-radius: 10px;
   }
 .button:hover{
-    color: #3c2d86;
+    color: var(--purple-8);
   
-    background-color: #f9f7ff;
-    box-shadow: 0px 4px 4px rgba(13, 14, 56, 0.25);
+    background-color: var(--white);
+    box-shadow: 0px 4px 4px var(--blue-9);
 
     transition: all .2s ease-in-out;
 }
 
 .LinkReset {
-  color: #8d6fdd;
+  color: var(--purple-7);
 
   text-decoration: underline;
 }
 
 .LinkReset:hover,
 .LinkReset:focus {
-  color: #bcaee2;
+  color: var(--purple-6);
 
   text-decoration: none;
 }

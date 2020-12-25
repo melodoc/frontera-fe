@@ -1,3 +1,5 @@
+@import './../../app.css';
+
 .preview{
     position: relative;
     min-height: 630px;
@@ -20,7 +22,7 @@
     line-height: 72px;
     display: flex;
     align-items: center;
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 .preview_info_button{

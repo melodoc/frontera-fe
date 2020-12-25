@@ -1,3 +1,5 @@
+@import './../../app.css';
+
 .accountBar {
   display: flex;
   justify-content: center;
@@ -68,9 +70,9 @@ height: 35px;
 .searchInput input:focus {
   width: 100%;
   z-index: 1;
-  border: 1px solid #B3B6B6;
+  border: 1px solid var(--gray-8);
   border-radius: 4px;
-  color: #541594;
+  color: var(--purple-9);
 }
 
 .searchInput button {

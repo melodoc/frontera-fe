@@ -1,3 +1,5 @@
+@import './../../app.css';
+
 .visuallyHidden:not(:focus):not(:active),
 input[type='checkbox'].visuallyHidden,
 input[type='radio'].visuallyHidden {
@@ -32,7 +34,7 @@ input[type='radio'].visuallyHidden {
   font-size: 36px;
   line-height: 60px;
 
-  color: #ffffff;
+  color: var(--white);
 }
 
 .anthem__itemPurple {
@@ -41,7 +43,7 @@ input[type='radio'].visuallyHidden {
   font-size: 28px;
   line-height: 42px;
 
-  color: #541594;
+  color: var(--purple-9);
 }
 
 .login__heading,
@@ -53,7 +55,7 @@ input[type='radio'].visuallyHidden {
   font-size: 18px;
   line-height: 27px;
 
-  color: #8d6fdd;
+  color: var(--purple-7);
 }
 
 .login__headingPurple {
@@ -61,7 +63,7 @@ input[type='radio'].visuallyHidden {
   font-size: 14px;
   line-height: 21px;
 
-  color: #999999;
+  color: var(--gray-9);
 }
 
 .loader {
@@ -71,12 +73,12 @@ input[type='radio'].visuallyHidden {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #541594;
-  background: -moz-linear-gradient(left, #541594 10%, rgba(71,32,213, 0) 42%);
-  background: -webkit-linear-gradient(left, #541594 10%, rgba(71,32,213, 0) 42%);
-  background: -o-linear-gradient(left, #541594 10%, rgba(71,32,213, 0) 42%);
-  background: -ms-linear-gradient(left, #541594 10%, rgba(71,32,213, 0) 42%);
-  background: linear-gradient(to right, #541594 10%, rgba(71,32,213, 0) 42%);
+  background: var(--purple-9);
+  background: -moz-linear-gradient(left, var(--purple-9) 10%, var(--blue-1) 42%);
+  background: -webkit-linear-gradient(left, var(--purple-9) 10%, var(--blue-1) 42%);
+  background: -o-linear-gradient(left, var(--purple-9) 10%, var(--blue-1) 42%);
+  background: -ms-linear-gradient(left, var(--purple-9) 10%, var(--blue-1) 42%);
+  background: linear-gradient(to right, var(--purple-9) 10%, var(--blue-1) 42%);
   position: relative;
   animation: load3 1.4s infinite linear;
   transform: translateZ(0);
@@ -85,7 +87,7 @@ input[type='radio'].visuallyHidden {
 .loader:before {
   width: 50%;
   height: 50%;
-  background: #541594;
+  background: var(--purple-9);
   border-radius: 100% 0 0 0;
   position: absolute;
   top: 0;
@@ -94,7 +96,7 @@ input[type='radio'].visuallyHidden {
 }
 
 .loader:after {
-  background: #ffffff;
+  background: var(--white);
   width: 75%;
   height: 75%;
   border-radius: 50%;
