@@ -1,12 +1,22 @@
 import React from 'react';
 
+import {LinkReset} from './../link';
+import {URLs} from './../../__data__/urls';
+import { Link as ConnectedLink } from 'react-router-dom';
+
 import style from './style.css';
 import Checkbox from '../checkbox/checkbox';
 
 const LoginActions = () => (
   <div className={style.form__actions}>
     <Checkbox color={'white'} labels={['Remember me']} />
-    <a className={style.form__restore} href='#'>{'Forgot Password?'}</a>
+    <LinkReset
+      type='link'
+      to={URLs.resetpassword.url}
+      as={ConnectedLink}
+    >
+      Forgot Password?
+      </LinkReset>
   </div>
 );
 

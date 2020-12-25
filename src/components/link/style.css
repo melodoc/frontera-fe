@@ -42,3 +42,16 @@
 
     transition: all .2s ease-in-out;
 }
+
+.LinkReset {
+  color: #8d6fdd;
+
+  text-decoration: underline;
+}
+
+.LinkReset:hover,
+.LinkReset:focus {
+  color: #bcaee2;
+
+  text-decoration: none;
+}

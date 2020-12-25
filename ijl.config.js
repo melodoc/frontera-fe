@@ -52,6 +52,7 @@ module.exports = {
       'link.frontera.suggestions':'/suggestions',
       'link.frontera.home':'/home',
       'link.frontera.registration':'/registration',
+      'link.frontera.resetpassword':'/resetpassword',
     },
     config: {
       'frontera.login': '/api/login'

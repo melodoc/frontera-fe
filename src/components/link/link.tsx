@@ -45,6 +45,23 @@ export const LinkButton: LinkType = ({
     )
 }
 
+export const LinkReset: LinkType = ({
+    type,
+    to,
+    children,
+    className,
+    as: LinkComponent
+}) => {
+    return (
+        <LinkComponent
+            className={style.LinkReset}
+            to={to}
+        >
+            {children}
+        </LinkComponent>
+    )
+}
+
 Link.defaultProps = {
     type: 'link',
     as: 'a'

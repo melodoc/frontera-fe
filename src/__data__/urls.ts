@@ -20,4 +20,7 @@ export const URLs = {
     registration: {
         url: navigations['link.frontera.registration']
     },
+    resetpassword: {
+        url: navigations['link.frontera.resetpassword']
+    },
 }
