@@ -15,9 +15,7 @@ module.exports = {
             {
               test: /\.css$/i,
               use: [
-                {
-                  loader: 'style-loader'
-                },
+                { loader: 'style-loader', },
                 {
                   loader: 'css-loader',
                   options: {
@@ -30,7 +28,7 @@ module.exports = {
                     postcssOptions: {
                       plugins: [
                         [
-                          "postcss-preset-env",
+                          'postcss-preset-env',
                           {
                             // Options
                           },
@@ -55,6 +53,6 @@ module.exports = {
       'link.frontera.resetpassword':'/resetpassword',
     },
     config: {
-      'frontera.login': '/api/login'
-    },
-}
+        'frontera.login': '/api/login'
+    }
+};
