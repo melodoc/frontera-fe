@@ -24,3 +24,7 @@ export const URLs = {
         url: navigations['link.frontera.resetpassword']
     },
 }
+
+const productLink = navigations['link.frontera.product.view'].replace('{{id}}', '12345')
+
+console.log({productLink})

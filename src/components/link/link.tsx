@@ -66,3 +66,9 @@ Link.defaultProps = {
     type: 'link',
     as: 'a'
 }
+
+const VideoList = [{
+    id: 14963052,
+    title: "Локальные сервера",
+    
+}]

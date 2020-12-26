@@ -17,6 +17,14 @@ import ChooseTheme from './init/themes';
 import Suggestions from './pages/suggestions';
 import Coursepage from './pages/coursepage';
 
+const Product = (props) => {
+    console.log(props);
+    
+    return (
+        <div>111</div>
+    )
+}
+
 
 const Dashboard = () => (
     <Switch>
@@ -41,6 +49,7 @@ const Dashboard = () => (
         <Route path={URLs.resetpassword.url}>
             <ResetPassword/>
         </Route>
+        <Route path="/product/:id" component={Product}/>
         <Route path="*">
             <h1>Not found</h1>
         </Route>
