@@ -18,7 +18,7 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/melodoc/frontera#readme",
   "dependencies": {
-    "@ijl/cli": "2.2.2",
+    "@ijl/cli": "2.3.1",
     "classnames": "^2.2.6",
     "express": "^4.17.1",
     "prop-types": "^15.7.2",
