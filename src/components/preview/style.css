@@ -1,7 +1,6 @@
 .preview{
     position: relative;
     min-height: 630px;
-    //background-color: black;
     background: url(./../../assets/images/notebook.png);
 }
 
