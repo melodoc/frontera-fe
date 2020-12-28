@@ -1,16 +1,18 @@
+@import './../../app.css';
+
 html,
 body {
   height: 100%;
 }
 
 body {
-  color: #3c2d86;
+  color: var(--purple-8);
 
-  background-color: #ffffff;
+  background-color: var(--white);
 }
 
 .header {
-  border-bottom: 1px solid #C0C0C0;
+  border-bottom: 1px solid var(--gray-6);
 }
 
 .container {
@@ -26,7 +28,7 @@ body {
 
   font-size: 18px;
   line-height: 20px;
-  color: #000000;
+  color: var(--black);
 }
 
 .form__wrapper {

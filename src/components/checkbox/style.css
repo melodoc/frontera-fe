@@ -1,14 +1,16 @@
+@import './../../app.css';
+
 .filterItemPurple,
 .filterItemWhite {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 
-  color: #541594;
+  color: var(--purple-9);
 }
 
 .filterItemWhite {
-  color: #8d6fdd;
+  color: var(--purple-7);
 }
 
 .checkboxItem {
@@ -30,7 +32,7 @@
   width: max-content;
   
   border-radius: 4px;
-  background-color: #eae7f3;
+  background-color: var(--white);
 
   transition: all .2s ease-in-out;
 }
@@ -53,6 +55,6 @@
 
 .form__checkboxLabel:hover,
 .form__checkboxLabel:focus {
-  color: #bcaee2;
+  color: var(--purple-6);
 }
 

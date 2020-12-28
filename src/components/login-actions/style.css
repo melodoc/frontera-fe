@@ -1,3 +1,5 @@
+@import './../../app.css';
+
 .form__actions {
   display: flex;
   flex-wrap: wrap;
@@ -8,14 +10,14 @@
 }
 
 .form__restore {
-  color: #8d6fdd;
+  color: var(--purple-7);
 
   text-decoration: underline;
 }
 
 .form__restore:hover,
 .form__restore:focus {
-  color: #bcaee2;
+  color: var(--purple-4);
 
   text-decoration: none;
 }

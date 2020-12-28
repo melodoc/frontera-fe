@@ -1,12 +1,36 @@
+@import './../../app.css';
+
 .accountBar {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-
+  
   margin-right: 30px;
-
+  
   list-style: none;
+}
+
+.profileWrapper {
+  margin: 0;
+  padding: 0;
+  
+  width: 35px;
+  height: 35px;
+}
+
+.profile {
+  width: 35px;
+  height: 35px;
+
+  border: none;
+  
+  background-image: url('../../assets/icons/user-account.svg');
+}
+
+.profile:hover,
+.profile:focus {
+  transition: all .2s ease-in-out;
 }
 
 .searchInput .searchForm {
@@ -38,10 +62,11 @@
 .searchInput input:focus {
   z-index: 1;
   width: 100%;
-
-  border: 1px solid #B3B6B6;
+  
+  border: 1px solid var(--gray-8);
   border-radius: 4px;
-  color: #541594;
+  
+  color: var(--purple-9);
 }
 
 .searchInput button {

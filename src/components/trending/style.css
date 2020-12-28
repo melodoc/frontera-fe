@@ -1,3 +1,5 @@
+@import './../../app.css';
+
 .trending {
     padding: 0 50px;
 }
@@ -8,5 +10,5 @@
     line-height: 42px;
     align-items: center;
 
-    color: #541594;
+    color: var(--purple-9);
 }

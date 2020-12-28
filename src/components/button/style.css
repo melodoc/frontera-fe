@@ -1,3 +1,5 @@
+@import './../../app.css';
+
 .form__button {
     width: 129px;
     height: 54px;
@@ -5,9 +7,9 @@
   
     font: inherit;
     text-align: center;
-    color: #3c2d86;
+    color: var(--purple-9);
   
-    background-color: #ffffff;
+    background-color: var(--white);
     border: none;
     border-radius: 10px;
   }
@@ -15,10 +17,10 @@
   .form__button:hover,
   .form__button:focus,
   .form__button:active {
-    color: #ffffff;
+    color: var(--white);
   
-    background-color: #553bd8;
-    box-shadow: 0px 4px 4px #3e1678;
+    background-color: var(--blue);
+    box-shadow: 0px 4px 4px var(--purple-9);
 
     transition: all .2s ease-in-out;
   }
@@ -30,9 +32,9 @@
   
     font: inherit;
     text-align: center;
-    color: #ffffff;
+    color: var(--white);
   
-    background-color: #3c2d86;
+    background-color: var(--purple-9);
     border: none;
     border-radius: 10px;
   }
@@ -40,10 +42,10 @@
 .form__buttonPurple:hover,
 .form__buttonPurple:focus,
 .form__buttonPurple:active  {
-  color: #3c2d86;
+  color: var(--purple-9);
   
-  background-color: #f9f7ff;
-  box-shadow: 0px 4px 4px rgba(13, 14, 56, 0.25);
+  background-color: var(--white);
+  box-shadow: 0px 4px 4px var(--blue-9);
 
   transition: all .2s ease-in-out;
 }

@@ -1,3 +1,5 @@
+@import './../../app.css';
+
 .catalogList {
   display: flex;
   justify-content: flex-start;
@@ -19,7 +21,7 @@
   
   background-color: #2b1f33;
   //background: url('../../assets/images/git.jpg') center;
-  box-shadow: 0 0 10px rgba(0, 1, 1, 0.2);
+  box-shadow: 0 0 10px var(--black-1);
 }
 
 .catalogItem:last-child {
@@ -27,7 +29,7 @@
 }
 
 .catalogItem:hover {
-  box-shadow: 5px 0 25px rgba(0, 1, 1, 0.3);
+  box-shadow: 5px 0 25px var(--black-1);
 }
 
 .catalogLink {
@@ -40,15 +42,15 @@
 
   text-decoration: none;
 
-  background: rgba(60, 17, 134, 0.3);
+  background: var(--purple-5);
   backdrop-filter: blur(36px);
   border-radius: 10px;
 }
 
 .catalogLink:hover,
 .catalogLink:focus {
-  color: #FFFFFF;
-  background: rgba(95, 35, 200, 0.3);
+  color: var(--white);
+  background: var(--purple-5);
   text-decoration: underline;
   
   transition: all .2s ease-in-out;
@@ -62,5 +64,5 @@
   line-height: 27px;
   align-items: center;
 
-  color: #FFFFFF;
+  color: var(--white);
 }
