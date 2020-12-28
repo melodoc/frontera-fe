@@ -20,7 +20,41 @@ export const Link: LinkType = ({
 }) => {
     return (
         <LinkComponent
-            className={style.nav__accountLink}
+            className={style.link}
+            to={to}
+        >
+            {children}
+        </LinkComponent>
+    )
+}
+
+export const LinkButton: LinkType = ({
+    type,
+    to,
+    children,
+    className,
+    as: LinkComponent
+}) => {
+    return (
+        <LinkComponent
+            className={style.button}
+            to={to}
+        >
+            {children}
+        </LinkComponent>
+    )
+}
+
+export const LinkReset: LinkType = ({
+    type,
+    to,
+    children,
+    className,
+    as: LinkComponent
+}) => {
+    return (
+        <LinkComponent
+            className={style.linkReset}
             to={to}
         >
             {children}
@@ -32,3 +66,9 @@ Link.defaultProps = {
     type: 'link',
     as: 'a'
 }
+
+const VideoList = [{
+    id: 14963052,
+    title: "Локальные сервера",
+    
+}]
