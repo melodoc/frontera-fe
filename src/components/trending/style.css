@@ -1,12 +1,14 @@
-.trending{
-    padding: 20px 50px;
+@import './../../app.css';
+
+.trending {
+    padding: 0 50px;
 }
 
-.trending_title{
+.trending_title {
     font-weight: 500;
     font-size: 28px;
     line-height: 42px;
     align-items: center;
 
-    color: #541594;
+    color: var(--purple-9);
 }

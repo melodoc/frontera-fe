@@ -1,3 +1,5 @@
+@import './../../app.css';
+
 .course_name{
     margin-bottom: 20px;
     font-weight: 500;
@@ -5,5 +7,5 @@
     line-height: 72px;
     display: flex;
     align-items: center;
-    color: #FFFFFF;
+    color: var(--white);
 }

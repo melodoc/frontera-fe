@@ -1,0 +1,17 @@
+@import './../../app.css';
+
+.header {
+    margin-bottom: 146px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--black);
+
+    margin: 20px 30px 0;
+}

@@ -10,6 +10,7 @@ import { useAsync } from 'react-async';
 
 import style from '../style.css';
 
+
 const loadSuggetions = async () => {
     const apiUrl = getConfigValue('frontera.api');
     return await fetch(`${apiUrl}/suggetions/search/1`, {
@@ -20,7 +21,7 @@ const loadSuggetions = async () => {
     }).then((res) => res.json());
 };
 
-const Suggestions = () => {
+const Coursepage = () => {
     const { data, error, isLoading } = useAsync({ promiseFn: loadSuggetions });
     // function handleSubmit() {
     //     const apiUrl = getConfigValue('frontera.api');
@@ -37,8 +38,8 @@ const Suggestions = () => {
             <header className={style.header}>
                 <nav className={style.userNav}>
                     <div className={style.userNav}>
-                        <IconLogo color={'purple'}/>
-                        <Navigation links={['Home', 'Trending', 'Suggestions']}/>
+                        <IconLogo color={'purple'} />
+                        <Navigation links={['Home', 'Trending', 'Suggestions']} />
                     </div>
                     <AccountBar/>
                 </nav>
@@ -71,4 +72,4 @@ const Suggestions = () => {
     )
 };
 
-export default Suggestions;
+export default Coursepage;

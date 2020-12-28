@@ -10,6 +10,15 @@ export const mount = (Сomponent) => {
         <Сomponent/>,
         document.getElementById('app')
     );
+
+    if(module.hot) {
+        module.hot.accept('./app', ()=> {
+            ReactDom.render(
+                <App/>,
+                document.getElementById('app')
+            );
+        })
+    }
 };
 
 export const unmount = () => {

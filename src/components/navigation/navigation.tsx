@@ -8,7 +8,7 @@ interface NavigationProps {
 
 type NavigationType = React.FunctionComponent<NavigationProps>;
 
-const Navigation: NavigationType = ({ links }: NavigationProps) => {
+const Navigation: NavigationType = ({ links}: NavigationProps) => {
   let linksTemplate = links.map((linkName) => {
     return (
         <li className={style.nav__accountItem}>

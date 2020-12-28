@@ -1,21 +1,18 @@
 @import './../../app.css';
 
-.header{
-    position: relative;
+.header {
     display: flex;
-    padding: 20px 30px;
+    justify-content: space-between;
+    padding: 10px 50px;
 }
 
-.header_logo{
+.header_nav {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin-right: 65px;
-}
+    flex-wrap: wrap;
 
-.header_nav{
-    display: flex;
-}
-
-.header_icons{
-    position: absolute;
-    right: 30px;
+    margin-right: 30px;
+  
+    list-style: none;
 }

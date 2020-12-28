@@ -1,6 +1,4 @@
-* {
-    font-family: Poppins;
-}
+@import './../../app.css';
 
 .catalogList {
     display: flex;
@@ -8,37 +6,59 @@
 }
 
 .catalogItem {
-    border-radius: 10px;
-    background-color: #2b1f33;
-    box-shadow: 0 0 10px rgba(0, 1, 1, 0.2);
-    margin: 15px;
-    /*background: url('../../assets/images/code.jpg');*/
+  margin-right: 108px;
+  margin-bottom: 20px;
+  width: 190px;
+  height: 280px;
+
+  border-radius: 10px;
+  
+  background-color: #2b1f33;
+  //background: url('../../assets/images/git.jpg') center;
+  box-shadow: 0 0 10px var(--black-1);
 }
 
 .card-container {
     display: flex;
 }
 
-.index {
-    font-weight: 500;
-    font-size: 58px;
-    line-height: 58px;
-    color: #B3B6B6;
-    width: 56px;
-}
-
 .catalogItem:hover {
-    box-shadow: 5px 0 25px rgba(0, 1, 1, 0.3);
+  box-shadow: 5px 0 25px var(--black-1);
 }
 
-.catalogLink:hover {
-    color: #FFFFFF;
-    background: rgba(95, 35, 200, 0.3);
-    text-decoration: underline;
+.catalogLink {
+  display: block;
+  position: relative;
+  top: 5%; 
+  left: 8%;
+  
+  width: 84%;
+
+  text-decoration: none;
+
+  background: var(--purple-5);
+  backdrop-filter: blur(36px);
+  border-radius: 10px;
+}
+
+.catalogLink:hover,
+.catalogLink:focus {
+  color: var(--white);
+  background: var(--purple-5);
+  text-decoration: underline;
+  
+  transition: all .2s ease-in-out;
 }
 
 .catalogHeader {
-    padding: 16px;
+  padding: 10px 10px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  align-items: center;
+
+  color: var(--white);
 }
 
 .catalogCategory {

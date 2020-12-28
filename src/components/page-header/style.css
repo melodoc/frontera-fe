@@ -1,3 +1,5 @@
+@import './../../app.css';
+
 .pageHeader {
 
 margin: 0;
@@ -10,9 +12,9 @@ line-height: 42px;
 
 text-align: left;
 
-color: #541594;
+color: var(--purple-9);
 }
 
 .pageHeaderWhite {
-color: #ffffff;
+color: var(--white);
 }

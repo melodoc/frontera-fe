@@ -1,8 +1,9 @@
+@import './../../app.css';
+
 .preview{
     position: relative;
     min-height: 630px;
-    background-color: black;
-    //background: url(./../../assets/images/notebook.png);
+    background: url(./../../assets/images/notebook.png);
 }
 
 .preview_info{
@@ -20,7 +21,7 @@
     line-height: 72px;
     display: flex;
     align-items: center;
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 .preview_info_button{

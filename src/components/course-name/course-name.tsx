@@ -7,6 +7,6 @@ interface CourseNameProps {
 
 export const CourseName = ({label}:CourseNameProps) => (
     <>
-        <h1 className={style.course_name}>{label}</h1>
+        <h2 className={style.course_name}>{label}</h2>
     </>
 )

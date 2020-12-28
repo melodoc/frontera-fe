@@ -17,9 +17,7 @@ module.exports = {
             {
               test: /\.css$/i,
               use: [
-                  {
-                      loader: 'style-loader'
-                  },
+                { loader: 'style-loader', },
                 {
                     loader: 'css-loader',
                     options: {
@@ -40,7 +38,7 @@ module.exports = {
                     postcssOptions: {
                       plugins: [
                         [
-                          "postcss-preset-env",
+                          'postcss-preset-env',
                           {
                             // Options
                           },
@@ -55,7 +53,16 @@ module.exports = {
           ],
         },
     },
+    navigations: {
+      'frontera':'/frontera',
+      'link.frontera.login':'/login',
+      'link.frontera.init':'/init',
+      'link.frontera.suggestions':'/suggestions',
+      'link.frontera.home':'/home',
+      'link.frontera.registration':'/registration',
+      'link.frontera.resetpassword':'/resetpassword',
+    },
     config: {
         'frontera.api': '/api'
     }
-}
+};

@@ -1,29 +1,7 @@
-body {
-  color: #ffffff;
-
-  background: linear-gradient(180deg, #503e9d 0%, #3c2d86 100%);
-  background-color: #3c2d86;
-  background-repeat: no-repeat;
-}
-
-.header {
-  margin-bottom: 146px;
-}
-
 .container {
   width: 554px;
   margin: 0 auto;
   padding: 0 10px;
-}
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-
-  font-size: 18px;
-  line-height: 20px;
-  color: #000000;
 }
 
 .form__wrapper {
@@ -47,6 +25,7 @@ body {
   border-radius: 10px 10px 10px 10px;
 }
 
+
 .form__buttons {
   display: flex;
   flex-wrap: wrap;
@@ -58,6 +37,10 @@ body {
 }
 
 .login__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
   position: relative;
   left: 245px;
   bottom: 93px;
