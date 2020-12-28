@@ -1,15 +1,25 @@
 import React from 'react';
-import style from './style.css';
+import { Link as ConnectedLink } from 'react-router-dom';
+import { Link } from './../link/link';
+import { URLs } from './../../__data__/urls';
 
 interface HeaderNavProps {
-    linkName: string;
-    linkAdress: string;
+    readonly labels: Array<string>;
 }
 
-export const HeaderNav = ({linkName, linkAdress}: HeaderNavProps) => (
-    <React.Fragment>
-        <a href={linkAdress} className={style.header_nav_item}>
-            {linkName}
-        </a>
-    </React.Fragment>
-)
+export const HeaderNav = ({ labels }: HeaderNavProps) => {
+    const labelsTemplate = labels.map((labelName) => (
+        <Link
+            type='link'
+            to={URLs.login.url}
+            as={ConnectedLink}>
+            {labelName}
+        </Link>
+    ));
+
+    return (
+        <React.Fragment>
+            {labelsTemplate}
+        </React.Fragment>
+    );
+};

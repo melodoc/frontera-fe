@@ -43,6 +43,10 @@ module.exports = {
           ],
         },
     },
+    navigations: {
+      'frontera':'/frontera',
+      'link.frontera.login':'/login',
+    },
     config: {
         'frontera.login': '/api/login'
     }
