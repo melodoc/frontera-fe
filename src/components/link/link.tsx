@@ -20,7 +20,7 @@ export const Link: LinkType = ({
 }) => {
     return (
         <LinkComponent
-            className={style.Link}
+            className={style.link}
             to={to}
         >
             {children}
@@ -54,7 +54,7 @@ export const LinkReset: LinkType = ({
 }) => {
     return (
         <LinkComponent
-            className={style.LinkReset}
+            className={style.linkReset}
             to={to}
         >
             {children}
@@ -66,9 +66,3 @@ Link.defaultProps = {
     type: 'link',
     as: 'a'
 }
-
-
-//LinkButton = 
-    //<div>111</div>
-
-//<Link.Button/>
