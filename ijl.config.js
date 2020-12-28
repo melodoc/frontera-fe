@@ -2,6 +2,8 @@ const pkg = require('./package');
 
 const path = require('path');
 
+const isProd = process.env.NODE_ENV === 'production';
+
 const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
@@ -15,12 +17,22 @@ module.exports = {
             {
               test: /\.css$/i,
               use: [
-                'style-loader',
+                  {
+                      loader: 'style-loader'
+                  },
                 {
-                  loader: 'css-loader',
-                  options: {
-                    modules:true,
-                  }
+                    loader: 'css-loader',
+                    options: {
+                        modules: {
+                            mode: 'local',
+                            exportGlobals: true,
+                            localIdentName: isProd ?
+                                '[hash:base64]'
+                                : '[path]--[name]__[local]--[hash:base64:3]',
+                            localIdentContext: path.resolve(__dirname, 'src'),
+                            exportLocalsConvention: "camelCase",
+                        },
+                    }
                 },
                 {
                   loader: 'postcss-loader',
@@ -40,31 +52,10 @@ module.exports = {
                 },
               ],
             },
-            {
-                test: /\.(jpe?g|gif|svg|png|woff|woff2|ttf|eot|wav|mp3)$/,
-                loader: "file-loader",
-                options: {
-                  // Итоговое имя файла, расположенного рядом с бандлом
-                  name: 'img/[name]--[hash:base64:5].[ext]'
-              }
-              },
-              // {
-              //   test: /\.svg$/,
-              //   // import icon from './icon.svg' // icon === '<svg><path /></svg>'
-              //   loader: 'svg-inline-loader',
-              //   options: {
-              //       // Удалять пустые теги
-              //       removeTags: true,
-              //       // Всегда удалять эти теги
-              //       removingTags: ['title', 'desc'],
-              //       // Удалять атрибуты с тэга svg
-              //       removeSVGTagAttrs: false
-              // }
-            //} 
           ],
         },
     },
     config: {
-        'frontera.login': '/api/login'
+        'frontera.api': '/api'
     }
 }

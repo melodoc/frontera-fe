@@ -7,7 +7,13 @@ export const Trending = () => (
     <div className={style.trending}>
         <PageHeader color='purple' label='Trending'/>
         <div className={style.trending_cards}>
-            <CourseCards labels={['Resourses', 'Angular', 'Dynamics', 'Web Design', 'Network', 'SEO']}/>
+            <CourseCards cards={[
+                {label:'Resourses', imageSrc: ''},
+                {label:'Angular', imageSrc: ''},
+                {label:'Dynamics', imageSrc: ''},
+                {label:'Web Design', imageSrc: ''},
+                {label:'Network', imageSrc: ''},
+                {label:'SEO', imageSrc: ''}]}/>
         </div>
     </div>
 )
