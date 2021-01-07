@@ -20,7 +20,7 @@ import Coursepage from './pages/coursepage';
 const Dashboard = () => (
     <Switch>
         <Route exact path="/">
-            <Redirect to={URLs.home.url}/>
+            <Redirect to={URLs.login.url}/>
         </Route>
         <Route path={URLs.login.url}>
             <Login/>
