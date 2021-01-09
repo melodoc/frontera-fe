@@ -7,7 +7,6 @@ import { Link as ConnectedLink } from 'react-router-dom';
 import IconLogo from '../../../components/icon-logo/icon-logo';
 import TitleWithSubtitle from '../../../components/title-with-subtitle/title-with-subtitle';
 import Checkbox from '../../../components/checkbox/checkbox';
-import Button from '../../../components/button/button';
 import Navigation from '../../../components/navigation/navigation';
 import Footer from '../../../components/footer/footer';
 
@@ -32,7 +31,7 @@ const ChooseLanguage = () => (
         <div className={style.form__buttons}>
           <LinkButton
             type='link'
-            to={URLs.home.url}
+            to={URLs.themes.url}
             as={ConnectedLink}>
             Continue
           </LinkButton>

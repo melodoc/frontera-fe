@@ -28,6 +28,12 @@ const Dashboard = () => (
         <Route path={URLs.lang.url}>
             <ChooseLanguage/>
         </Route>
+        <Route path={URLs.themes.url}>
+            <ChooseTheme/>
+        </Route>
+        <Route path={URLs.personalizing.url}>
+            <Personalizing/>
+        </Route>
         <Route path={URLs.suggestions.url}>
             <Suggestions/>
         </Route>

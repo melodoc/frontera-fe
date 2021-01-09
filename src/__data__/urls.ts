@@ -11,6 +11,12 @@ export const URLs = {
     lang: {
         url: navigations['link.frontera.lang']
     },
+    themes: {
+        url: navigations['link.frontera.themes']
+    },
+    personalizing: {
+        url: navigations['link.frontera.personalizing']
+    },
     suggestions: {
         url: navigations['link.frontera.suggestions']
     },
