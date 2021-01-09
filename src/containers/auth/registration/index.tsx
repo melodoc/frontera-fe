@@ -1,9 +1,12 @@
 import React from 'react';
 
+import { LinkButton } from './../../../components/link';
+import { URLs } from './../../../__data__/urls';
+import { Link as ConnectedLink } from 'react-router-dom';
+
 import HeaderForm from '../../../components/header-form';
 import TitleWithSubtitle from '../../../components/title-with-subtitle/title-with-subtitle';
 import Input from '../../../components/input/input';
-import Button from '../../../components/button/button';
 
 import style from '../style.css';
 
@@ -32,11 +35,21 @@ const Registration = () => (
           </p>
         </div>
         <div className={style.form__buttons}>
-          <Button color={COLOR} name={'signUp'} />
+          <LinkButton
+            type='link'
+            to={URLs.home.url}
+            as={ConnectedLink}>
+            Sign up
+          </LinkButton>
         </div>
       </form>
       <div className={style.login__buttons}>
-        <Button color={COLOR} name={'cancel'} />
+        <LinkButton
+          type='link'
+          to={URLs.login.url}
+          as={ConnectedLink}>
+          Cancel
+        </LinkButton>
       </div>
     </main>
   </React.Fragment>

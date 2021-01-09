@@ -32,7 +32,7 @@ const Login = () => (
           <div className={style.form__buttons}>
             <LinkButton
               type='link'
-              to={URLs.home.url}
+              to={URLs.lang.url}
               as={ConnectedLink}>
               Login
             </LinkButton>
