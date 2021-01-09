@@ -24,7 +24,7 @@ const ChooseLanguage = () => (
       <section className={style.login}>
         <TitleWithSubtitle color={'purple'} type={'lang'}/>
       </section>
-      <form method={'post'} action={'https://echo.imaginary-server.ru'}>
+      <form method={'post'} action={'#'}>
         <div className={style.form__wrapper}>
           <Checkbox color={'purple'} labels={['English', 'Espanol', 'Russian']}/>
         </div>

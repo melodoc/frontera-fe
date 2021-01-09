@@ -19,7 +19,7 @@ const Login = () => (
     <main className={style.container}>
       <section>
         <TitleWithSubtitle color={COLOR} type={'login'} />
-        <form method={'post'} action={'https://echo.imaginary-server.ru'}>
+        <form method={'post'} action={'#'}>
           <div className={style.form__wrapper}>
             <p className={style.form__item}>
               <Input type={'email'} />

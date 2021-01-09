@@ -20,7 +20,7 @@ const Restore = () => (
       <section className={style.login}>
         <TitleWithSubtitle color={COLOR} type={'restore'}/>
       </section>
-      <form method={'post'} action={'https://echo.imaginary-server.ru'}>
+      <form method={'post'} action={'#'}>
         <div className={style.form__wrapper}>
           <p className={style.form__itemSingle}>
             <Input type={'email'} />
