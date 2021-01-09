@@ -19,7 +19,7 @@ const Registration = () => (
       <section className={style.login}>
         <TitleWithSubtitle color={COLOR} type={'registartion'} />
       </section>
-      <form method={'post'} action={'https://echo.imaginary-server.ru'}>
+      <form method={'post'} action={'#'}>
         <div className={style.form__wrapper}>
           <p className={style.form__item}>
             <Input type={'username'} />

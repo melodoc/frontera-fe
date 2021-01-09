@@ -24,7 +24,7 @@ const ChooseTheme = () => (
       <section className={style.login}>
         <TitleWithSubtitle color={'purple'} type={'themes'}/>
       </section>
-      <form method={'post'} action={'https://echo.imaginary-server.ru'}>
+      <form method={'post'} action={'#'}>
         <div className={style.form__wrapper}>
           <Checkbox color={'purple'} labels={['HTML', 'CSS', 'JavaScript', 'git', 'webpack', 'TypeScript']}/>
         </div>
