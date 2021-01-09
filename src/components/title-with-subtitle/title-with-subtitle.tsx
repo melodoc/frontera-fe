@@ -66,9 +66,9 @@ const TitleWithSubtitle: TitleWithSubtitleType = ({ type }: TitleWithSubtitlePro
     <React.Fragment>
       <h2 className={style.visuallyHidden}>{titleValue.pageTitle}</h2>
       <div className={style.anthem}>
-        <p className={style.anthem__item}>{titleValue.anthem}</p>
+        <p className={style.anthem__itemPurple}>{titleValue.anthem}</p>
       </div>
-      <p className={style.login__heading}>{titleValue.heading}</p>
+      <p className={style.login__headingPurple}>{titleValue.heading}</p>
     </React.Fragment>
   );
 };
