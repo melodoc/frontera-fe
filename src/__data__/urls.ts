@@ -8,8 +8,8 @@ export const URLs = {
     login: {
         url: navigations['link.frontera.login']
     },
-    init: {
-        url: navigations['link.frontera.init']
+    lang: {
+        url: navigations['link.frontera.lang']
     },
     suggestions: {
         url: navigations['link.frontera.suggestions']

@@ -30,12 +30,12 @@ const ChooseLanguage = () => (
           <Checkbox color={'purple'} labels={['English', 'Espanol', 'Russian']}/>
         </div>
         <div className={style.form__buttons}>
-        <LinkButton
-              type='link'
-              to={URLs.init.url}
-              as={ConnectedLink}>
-              Login
-            </LinkButton>
+          <LinkButton
+            type='link'
+            to={URLs.home.url}
+            as={ConnectedLink}>
+            Continue
+          </LinkButton>
         </div>
       </form>
     </main>

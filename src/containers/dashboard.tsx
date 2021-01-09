@@ -25,7 +25,7 @@ const Dashboard = () => (
         <Route path={URLs.login.url}>
             <Login/>
         </Route>
-        <Route path={URLs.init.url}>
+        <Route path={URLs.lang.url}>
             <ChooseLanguage/>
         </Route>
         <Route path={URLs.suggestions.url}>
