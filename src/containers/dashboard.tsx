@@ -20,13 +20,19 @@ import Coursepage from './pages/coursepage';
 const Dashboard = () => (
     <Switch>
         <Route exact path="/">
-            <Redirect to={URLs.home.url}/>
+            <Redirect to={URLs.login.url}/>
         </Route>
         <Route path={URLs.login.url}>
             <Login/>
         </Route>
-        <Route path={URLs.init.url}>
+        <Route path={URLs.lang.url}>
             <ChooseLanguage/>
+        </Route>
+        <Route path={URLs.themes.url}>
+            <ChooseTheme/>
+        </Route>
+        <Route path={URLs.personalizing.url}>
+            <Personalizing/>
         </Route>
         <Route path={URLs.suggestions.url}>
             <Suggestions/>

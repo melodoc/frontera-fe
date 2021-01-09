@@ -35,7 +35,7 @@ const Registration = () => (
         <div className={style.form__buttons}>
           <LinkButton
             type='link'
-            to={URLs.registration.url}
+            to={URLs.home.url}
             as={ConnectedLink}>
             Sign up
           </LinkButton>
