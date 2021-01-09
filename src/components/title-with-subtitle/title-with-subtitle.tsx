@@ -55,36 +55,21 @@ const titleAttributes = [
 ];
 
 interface TitleWithSubtitleProps {
-  readonly color: string;
   readonly type: string;
 }
 
 type TitleWithSubtitleType = React.FunctionComponent<TitleWithSubtitleProps>;
 
-const TitleWithSubtitle: TitleWithSubtitleType = ({
-  color,
-  type,
-}: TitleWithSubtitleProps) => {
+const TitleWithSubtitle: TitleWithSubtitleType = ({ type }: TitleWithSubtitleProps) => {
   const titleValue = getValues(titleAttributes, type);
-  if (color === "purple") {
-    return (
-      <div>
-        <h1 className={style.visuallyHidden}>{titleValue.pageTitle}</h1>
-        <div className={style.anthem}>
-          <p className={style.anthem__itemPurple}>{titleValue.anthem}</p>
-        </div>
-        <p className={style.login__headingPurple}>{titleValue.heading}</p>
-      </div>
-    );
-  }
   return (
-    <div>
-      <h1 className={style.visuallyHidden}>{titleValue.pageTitle}</h1>
+    <React.Fragment>
+      <h2 className={style.visuallyHidden}>{titleValue.pageTitle}</h2>
       <div className={style.anthem}>
         <p className={style.anthem__item}>{titleValue.anthem}</p>
       </div>
       <p className={style.login__heading}>{titleValue.heading}</p>
-    </div>
+    </React.Fragment>
   );
 };
 

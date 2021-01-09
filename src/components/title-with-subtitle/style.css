@@ -20,8 +20,7 @@ input[type='radio'].visuallyHidden {
   padding: 0 30px;
 }
 
-.anthem__item,
-.anthem__itemPurple {
+.anthem__item {
   margin: 0;
   padding: 0;
 
@@ -29,34 +28,16 @@ input[type='radio'].visuallyHidden {
   font-size: 36px;
   line-height: 60px;
 
-  color: var(--white);
+  color: var(--purple-8);
 }
 
-.anthem__itemPurple {
-  font-weight: 500;
-
-  font-size: 28px;
-  line-height: 42px;
-
-  color: var(--purple-9);
-}
-
-.login__heading,
-.login__headingPurple {
+.login__heading {
   margin: 0 0 40px;
   padding: 0 30px;
 
   font-weight: normal;
   font-size: 18px;
   line-height: 27px;
-
-  color: var(--purple-7);
-}
-
-.login__headingPurple {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
 
   color: var(--gray-9);
 }

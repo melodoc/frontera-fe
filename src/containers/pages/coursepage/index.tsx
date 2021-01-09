@@ -13,7 +13,7 @@ const Coursepage = () => (
     <header className={style.header}>
       <nav className={style.userNav}>
         <div className={style.userNav}>
-          <IconLogo color={'purple'} />
+          <IconLogo/>
           <Navigation links={['Home', 'Trending', 'Suggestions']} />
         </div>
         <AccountBar/>
@@ -21,7 +21,7 @@ const Coursepage = () => (
     </header>
     <main className={style.container}>
       <section className={style.login}>
-        <PageHeader color={'purple'} label={'JavaScript Mastering'} size={'medium'}/>
+        <PageHeader label={'JavaScript Mastering'}/>
         <section className={style.gallery}>
           <CourseCards labels={['React', 'CI/CD', 'Dynamics', 'git', 'React', 'CI/CD', 'Dynamics', 'git','React', 'CI/CD', 'Dynamics', 'git', 'React', 'CI/CD', 'Dynamics']}/>
         </section>

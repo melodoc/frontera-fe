@@ -13,20 +13,20 @@ const ChooseTheme = () => (
   <div className={style.body}>
     <header className={style.header}>
       <nav className={style.nav}>
-        <IconLogo color={'purple'} />
+        <IconLogo/>
         <Navigation links={['Sign Out']} />
       </nav>
     </header>
     <main className={style.container}>
       <section className={style.login}>
-        <TitleWithSubtitle color={'purple'} type={'themes'}/>
+        <TitleWithSubtitle type={'themes'}/>
       </section>
-      <form method={'post'} action={'https://echo.imaginary-server.ru'}>
+      <form method={'post'} action={'#'}>
         <div className={style.form__wrapper}>
-          <Checkbox color={'purple'} labels={['HTML', 'CSS', 'JavaScript', 'git', 'webpack', 'TypeScript']}/>
+          <Checkbox labels={['HTML', 'CSS', 'JavaScript', 'git', 'webpack', 'TypeScript']}/>
         </div>
         <div className={style.form__buttons}>
-          <Button color={'purple'} name={'continue'} />
+          <Button name={'continue'} />
         </div>
       </form>
     </main>

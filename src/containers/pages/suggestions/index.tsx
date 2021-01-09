@@ -12,7 +12,7 @@ const Suggestions = () => (
     <Header/>
     <main className={style.container}>
       <section className={style.login}>
-        <PageHeader color={'purple'} label={'Based on your choise'} size={'medium'}/>
+        <PageHeader label={'Based on your choise'}/>
         <section className={style.gallery}>
           <SuggestionGallery labels={['React', 'CI/CD', 'JavaScript Mastering', 'git']}/>
         </section>

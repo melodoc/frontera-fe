@@ -49,27 +49,18 @@ const buttonAttributes = [
 ];
 
 interface ButtonProps {
-  readonly color: string;
   readonly name: string;
 }
 
 type ButtonType = React.FunctionComponent<ButtonProps>;
 
-const Button: ButtonType = ({ color, name }: ButtonProps) => {
+const Button: ButtonType = ({ name }: ButtonProps) => {
   const buttonValue = getValues(buttonAttributes, name);
-
-  if (color === 'purple') {
     return (
       <button className={style.form__buttonPurple} type='submit'>
         {buttonValue.name}
       </button>
     );
-  }
-  return (
-    <button className={style.form__button} type='submit'>
-      {buttonValue.name}
-    </button>
-  );
 };
 
 export default Button;

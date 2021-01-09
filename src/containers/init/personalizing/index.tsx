@@ -11,7 +11,7 @@ const Personalizing = () => (
   <div className={style.body}>
     <header className={style.header}>
       <nav className={style.nav}>
-        <IconLogo color={'purple'} />
+        <IconLogo/>
         <Navigation links={['Sign Out']} />
       </nav>
     </header>

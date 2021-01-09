@@ -8,18 +8,15 @@ import HeaderForm from '../../../components/header-form';
 import TitleWithSubtitle from '../../../components/title-with-subtitle/title-with-subtitle';
 import Input from '../../../components/input/input';
 import LoginActions from '../../../components/login-actions/login-actions';
-import Button from '../../../components/button/button';
 import style from '../style.css';
-
-const COLOR = 'purple';
 
 const Login = () => (
   <React.Fragment>
-    <HeaderForm color={COLOR} />
+    <HeaderForm/>
     <main className={style.container}>
       <section>
-        <TitleWithSubtitle color={COLOR} type={'login'} />
-        <form method={'post'} action={'https://echo.imaginary-server.ru'}>
+        <TitleWithSubtitle type={'login'} />
+        <form method={'post'} action={'#'}>
           <div className={style.form__wrapper}>
             <p className={style.form__item}>
               <Input type={'email'} />

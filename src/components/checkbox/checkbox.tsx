@@ -3,13 +3,12 @@ import React from "react";
 import style from "./style.css";
 
 interface CheckboxProps {
-  readonly color: string;
   readonly labels: Array<string>;
 }
 
 type CheckboxType = React.FunctionComponent<CheckboxProps>;
 
-const Checkbox: CheckboxType = ({color, labels }: CheckboxProps) => {
+const Checkbox: CheckboxType = ({ labels }: CheckboxProps) => {
 
   let labelsTemplate = labels.map((labelName) => {
     return (
@@ -30,9 +29,6 @@ const Checkbox: CheckboxType = ({color, labels }: CheckboxProps) => {
     );
   });
 
-  if (color === 'purple') {
-    return <ul className={style.filterItemPurple}>{labelsTemplate}</ul>;
-  }
   return <ul className={style.filterItemWhite}>{labelsTemplate}</ul>;
 };
 

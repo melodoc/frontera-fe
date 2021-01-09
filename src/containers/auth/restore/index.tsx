@@ -7,27 +7,25 @@ import Button from '../../../components/button/button';
 
 import style from '../style.css';
 
-const COLOR = 'purple';
-
 const Restore = () => (
   <React.Fragment>
-    <HeaderForm color={COLOR} />
+    <HeaderForm/>
     <main className={style.container}>
       <section className={style.login}>
-        <TitleWithSubtitle color={COLOR} type={'restore'}/>
+        <TitleWithSubtitle type={'restore'}/>
       </section>
-      <form method={'post'} action={'https://echo.imaginary-server.ru'}>
+      <form method={'post'} action={'#'}>
         <div className={style.form__wrapper}>
           <p className={style.form__itemSingle}>
             <Input type={'email'} />
           </p>
         </div>
         <div className={style.form__buttons }>
-          <Button color={COLOR} name={'reset'} />
+          <Button name={'reset'} />
         </div>
       </form>
       <div className={style.login__buttons}>
-          <Button color={COLOR} name={'cancel'} />
+          <Button name={'cancel'} />
       </div>
     </main>
   </React.Fragment>

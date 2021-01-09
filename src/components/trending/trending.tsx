@@ -5,7 +5,7 @@ import style from './style.css';
 
 export const Trending = () => (
     <div className={style.trending}>
-        <PageHeader color='purple' label='Trending'/>
+        <PageHeader label='Trending'/>
         <div className={style.trending_cards}>
             <CourseCards labels={['Resourses', 'Angular', 'Dynamics', 'Web Design', 'Network', 'SEO']}/>
         </div>

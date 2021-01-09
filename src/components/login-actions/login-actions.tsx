@@ -9,7 +9,7 @@ import Checkbox from '../checkbox/checkbox';
 
 const LoginActions = () => (
   <div className={style.form__actions}>
-    <Checkbox color={'white'} labels={['Remember me']} />
+    <Checkbox labels={['Remember me']} />
     <LinkReset
       type='link'
       to={URLs.resetpassword.url}
