@@ -53,7 +53,9 @@ module.exports = {
     navigations: {
       'frontera':'/frontera',
       'link.frontera.login':'/login',
-      'link.frontera.init':'/init',
+      'link.frontera.lang':'/lang',
+      'link.frontera.themes':'/themes',
+      'link.frontera.personalizing':'/personalizing',
       'link.frontera.suggestions':'/suggestions',
       'link.frontera.home':'/home',
       'link.frontera.registration':'/registration',

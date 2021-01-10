@@ -1,5 +1,9 @@
 import React from 'react';
 
+import { LinkButton } from './../../../components/link';
+import { URLs } from './../../../__data__/urls';
+import { Link as ConnectedLink } from 'react-router-dom';
+
 import HeaderForm from '../../../components/header-form';
 import TitleWithSubtitle from '../../../components/title-with-subtitle/title-with-subtitle';
 import Input from '../../../components/input/input';
@@ -16,7 +20,7 @@ const Restore = () => (
       <section className={style.login}>
         <TitleWithSubtitle color={COLOR} type={'restore'}/>
       </section>
-      <form method={'post'} action={'https://echo.imaginary-server.ru'}>
+      <form method={'post'} action={'#'}>
         <div className={style.form__wrapper}>
           <p className={style.form__itemSingle}>
             <Input type={'email'} />
@@ -27,7 +31,12 @@ const Restore = () => (
         </div>
       </form>
       <div className={style.login__buttons}>
-          <Button color={COLOR} name={'cancel'} />
+        <LinkButton
+          type='link'
+          to={URLs.login.url}
+          as={ConnectedLink}>
+          Cancel
+        </LinkButton>
       </div>
     </main>
   </React.Fragment>

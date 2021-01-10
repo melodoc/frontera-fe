@@ -1,9 +1,12 @@
 import React from 'react';
 
+import {LinkButton} from './../../../components/link';
+import {URLs} from './../../../__data__/urls';
+import { Link as ConnectedLink } from 'react-router-dom';
+
 import IconLogo from '../../../components/icon-logo/icon-logo';
 import TitleWithSubtitle from '../../../components/title-with-subtitle/title-with-subtitle';
 import Checkbox from '../../../components/checkbox/checkbox';
-import Button from '../../../components/button/button';
 import Navigation from '../../../components/navigation/navigation';
 import Footer from '../../../components/footer/footer';
 
@@ -21,12 +24,17 @@ const ChooseLanguage = () => (
       <section className={style.login}>
         <TitleWithSubtitle color={'purple'} type={'lang'}/>
       </section>
-      <form method={'post'} action={'https://echo.imaginary-server.ru'}>
+      <form method={'post'} action={'#'}>
         <div className={style.form__wrapper}>
           <Checkbox color={'purple'} labels={['English', 'Espanol', 'Russian']}/>
         </div>
         <div className={style.form__buttons}>
-          <Button color={'purple'} name={'continue'} />
+          <LinkButton
+            type='link'
+            to={URLs.themes.url}
+            as={ConnectedLink}>
+            Continue
+          </LinkButton>
         </div>
       </form>
     </main>
