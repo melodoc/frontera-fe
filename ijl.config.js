@@ -1,10 +1,7 @@
 const pkg = require('./package');
-
 const path = require('path');
 
 const isProd = process.env.NODE_ENV === 'production';
-
-const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     "apiPath": "stubs/api",

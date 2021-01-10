@@ -1,13 +1,14 @@
 import React from 'react';
-import CourseCards from './../course-cards/course-cards';
 import PageHeader from './../page-header/page-header'
 import style from './style.css';
+import { CourseCards } from '../../components/course-cards/course-cards';
+
 
 export const Trending = () => (
     <div className={style.trending}>
         <PageHeader color='purple' label='Trending'/>
         <div className={style.trending_cards}>
-            <CourseCards cards={[
+            <CourseCards showNumber={true} cards={[
                 {label:'Resourses', imageSrc: ''},
                 {label:'Angular', imageSrc: ''},
                 {label:'Dynamics', imageSrc: ''},
