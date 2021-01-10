@@ -32,25 +32,7 @@ body {
 }
 
 .form__wrapper {
-  padding: 0 30px;
-  margin-bottom: 40px;
-}
-
-.form__item {
-  margin: 0;
-  padding: 0;
-}
-
-.form__item:first-child input{
-  border-radius: 10px 10px 0px 0px;
-}
-
-.form__item:last-child input{
-  border-radius: 0px 0px 10px 10px;
-}
-
-.form__item--single input{
-  border-radius: 10px 10px 10px 10px;
+  margin-bottom: 32px;
 }
 
 .form__buttons {
@@ -58,15 +40,6 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 
-  padding: 0 10px;
-}
-
-.login__buttons {
-  position: relative;
-  left: 245px;
-  bottom: 93px;
-
-  margin: 0 0 40px;
-
-  padding: 0 90px;
+  margin: 0;
+  margin-bottom: 32px;
 }

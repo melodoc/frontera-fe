@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {LinkButton} from './../../../components/link';
+import {LinkButton, LinkReset} from './../../../components/link';
 import {URLs} from './../../../__data__/urls';
 import { Link as ConnectedLink } from 'react-router-dom';
 
@@ -8,7 +8,7 @@ import HeaderForm from '../../../components/header-form';
 import TitleWithSubtitle from '../../../components/title-with-subtitle/title-with-subtitle';
 import Input from '../../../components/input/input';
 import LoginActions from '../../../components/login-actions/login-actions';
-import Button from '../../../components/button/button';
+
 import style from '../style.css';
 
 const COLOR = 'purple';
@@ -18,7 +18,7 @@ const Login = () => (
     <HeaderForm color={COLOR} />
     <main className={style.container}>
       <section>
-        <TitleWithSubtitle color={COLOR} type={'login'} />
+        <TitleWithSubtitle type={'login'} />
         <form method={'post'} action={'#'}>
           <div className={style.form__wrapper}>
             <p className={style.form__item}>
@@ -34,18 +34,17 @@ const Login = () => (
               type='link'
               to={URLs.lang.url}
               as={ConnectedLink}>
-              Login
+              Login now
             </LinkButton>
           </div>
         </form>
-        <div className={style.login__buttons}>
-          <LinkButton
+          <LinkReset
             type='link'
             to={URLs.registration.url}
-            as={ConnectedLink}>
-            Sign up
-          </LinkButton>
-        </div>
+            as={ConnectedLink}
+          >
+            Don't have an account? Join free today
+      </LinkReset>
       </section>
     </main>
   </React.Fragment>

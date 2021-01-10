@@ -17,7 +17,7 @@ const Registration = () => (
     <HeaderForm color={COLOR} />
     <main className={style.container}>
       <section className={style.login}>
-        <TitleWithSubtitle color={COLOR} type={'registartion'} />
+        <TitleWithSubtitle type={'registartion'} />
       </section>
       <form method={'post'} action={'#'}>
         <div className={style.form__wrapper}>
@@ -43,7 +43,7 @@ const Registration = () => (
           </LinkButton>
         </div>
       </form>
-      <div className={style.login__buttons}>
+      <div className={style.form__buttons}>
         <LinkButton
           type='link'
           to={URLs.login.url}
