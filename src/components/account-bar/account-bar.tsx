@@ -13,13 +13,14 @@ const AccountBar = () => (
       </form>
     </li>
     <li className={style.profileWrapper}>
-      <div className={style.profile}>
-      <div className={style.navDropdown}>
-        <p>view history</p>
-        <p>settings</p>
-        <p>help</p>
-        <p>sign out</p>
-      </div>
+      <div className={style.dropdown}>
+        <button className={style.profile} type="button" onClick={showMenu}></button>
+        <div className={style.navDropdown}>
+          <a href="#" className={style.dropdownLink}>view history</a>
+          <a href="#" className={style.dropdownLink}>settings</a>
+          <a href="#" className={style.dropdownLink}>help</a>
+          <a href="#" className={style.dropdownLink}>sign out</a>
+        </div>
       </div>
     </li>
   </ul>

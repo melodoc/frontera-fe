@@ -122,13 +122,15 @@ p:not(:last-child){
   padding: 0;
 }
 
+.dropdown{
+  position: relative;
+}
+
 .profile {
   width: 35px;
   height: 35px;
 
   padding: 0;
-
-  position: relative;
 
   font: inherit;
   color: inherit;
@@ -144,7 +146,7 @@ p:not(:last-child){
 .navDropdown {
   display: none;
   position: absolute;
-  width: 117px;
+  width: 107px;
   padding: 16px 8px;
   z-index: 9;
   top: 100%;
@@ -159,11 +161,15 @@ p:not(:last-child){
   filter: saturate(150%);
 
   transition: all .2s ease-in-out;
-  .navDropdown{
-    display: block;
-  }
 }
 
-.profile:hover .navDropdown, .profile:focus .navDropdown {
+.dropdown:hover .navDropdown, .dropdown:focus .navDropdown {
   display: block;
+}
+
+.dropdownLink{
+  display: block;
+  font-size: 14px;
+  align-items: center;
+  color: #541594;
 }
