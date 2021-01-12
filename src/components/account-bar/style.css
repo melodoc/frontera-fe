@@ -1,10 +1,10 @@
 @import './../../app.css';
 
-p{
+p {
   margin: 0;
 }
 
-p:not(:last-child){
+p:not(:last-child) {
   margin-bottom: 24px;
 }
 
@@ -122,7 +122,7 @@ p:not(:last-child){
   padding: 0;
 }
 
-.dropdown{
+.dropdown {
   position: relative;
 }
 
@@ -167,7 +167,7 @@ p:not(:last-child){
   display: block;
 }
 
-.dropdownLink{
+.dropdownLink {
   display: block;
   font-size: 14px;
   align-items: center;

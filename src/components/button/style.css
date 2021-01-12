@@ -1,47 +1,47 @@
 @import './../../app.css';
 
 .form__button {
-    width: 129px;
-    height: 54px;
-    vertical-align: middle;
+  width: 129px;
+  height: 54px;
+  vertical-align: middle;
   
-    font: inherit;
-    text-align: center;
-    color: var(--purple-8);
+  font: inherit;
+  text-align: center;
+  color: var(--purple-8);
   
-    background-color: var(--white);
-    border: none;
-    border-radius: 10px;
-  }
+  background-color: var(--white);
+  border: none;
+  border-radius: 10px;
+}
   
-  .form__button:hover,
-  .form__button:focus,
-  .form__button:active {
-    color: var(--white);
+.form__button:hover,
+.form__button:focus,
+.form__button:active {
+  color: var(--white);
   
-    background-color: var(--blue);
-    box-shadow: 0px 4px 4px var(--purple-8);
+  background-color: var(--blue);
+  box-shadow: 0px 4px 4px var(--purple-8);
 
-    transition: all .2s ease-in-out;
-  }
+  transition: all .2s ease-in-out;
+}
 
-  .form__buttonPurple {
-    width: 129px;
-    height: 54px;
-    vertical-align: middle;
+.form__buttonPurple {
+  width: 129px;
+  height: 54px;
+  vertical-align: middle;
   
-    font: inherit;
-    text-align: center;
-    color: var(--white);
+  font: inherit;
+  text-align: center;
+  color: var(--white);
   
-    background-color: var(--purple-8);
-    border: none;
-    border-radius: 10px;
-  }
+  background-color: var(--purple-8);
+  border: none;
+  border-radius: 10px;
+}
 
 .form__buttonPurple:hover,
 .form__buttonPurple:focus,
-.form__buttonPurple:active  {
+.form__buttonPurple:active {
   color: var(--purple-8);
   
   background-color: var(--white);

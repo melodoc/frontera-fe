@@ -8,7 +8,7 @@
   color: var(--purple-9);
 
   padding: 10px 20px;
-  }
+}
 
 .link:hover,
 .link:focus {
@@ -48,9 +48,9 @@
   background-color: var(--purple-8);
   border: none;
   border-radius: 10px;
-  }
+}
 
-.button:hover{
+.button:hover {
   color: var(--purple-8);
 
   background-color: var(--white);

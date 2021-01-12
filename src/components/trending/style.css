@@ -1,14 +1,14 @@
 @import './../../app.css';
 
 .trending {
-    padding: 0 50px;
+  padding: 0 50px;
 }
 
 .trending_title {
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 42px;
-    align-items: center;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 42px;
+  align-items: center;
 
-    color: var(--purple-9);
+  color: var(--purple-9);
 }

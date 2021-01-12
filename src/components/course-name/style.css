@@ -1,11 +1,11 @@
 @import './../../app.css';
 
-.course_name{
-    margin-bottom: 20px;
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 72px;
-    display: flex;
-    align-items: center;
-    color: var(--white);
+.course_name {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 72px;
+  display: flex;
+  align-items: center;
+  color: var(--white);
 }

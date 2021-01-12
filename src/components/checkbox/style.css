@@ -15,8 +15,8 @@
 
 .checkboxItem {
   list-style: none;
-    margin: 0;
-   padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .filterItemPurple .checkboxItem {
@@ -57,4 +57,3 @@
 .form__checkboxLabel:focus {
   color: var(--purple-6);
 }
-
