@@ -4,9 +4,11 @@
   display: flex;
   justify-content: space-between;
   padding: 10px 50px;
+
+  border-bottom: 1px solid var(--gray-6);
 }
 
-.header_nav {
+.header-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;

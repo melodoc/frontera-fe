@@ -3,32 +3,32 @@
   margin: 0 auto;
 }
 
-.form__wrapper {
+.form-wrapper {
   margin-bottom: 32px;
 }
 
-.form__item {
+.form-item {
   margin: 0;
   padding: 0;
 }
 
-.form__item:first-child input {
+.form-item:first-child input {
   border-radius: 10px 10px 0px 0px;
 }
 
-.form__item:last-child input {
+.form-item:last-child input {
   border-radius: 0px 0px 10px 10px;
 }
 
-.form__item:not(:first-child) input {
+.form-item:not(:first-child) input {
   border-top: none;
 }
 
-.form__itemSingle input {
+.form-itemSingle input {
   border-radius: 10px 10px 10px 10px;
 }
 
-.form__buttons {
+.buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -37,6 +37,6 @@
   margin-bottom: 32px;
 }
 
-.form__buttons a {
+.buttons a {
   width: 100%;
 }

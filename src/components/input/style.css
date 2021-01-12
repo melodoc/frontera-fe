@@ -1,6 +1,10 @@
 @import './../../app.css';
 
-.form__label input[placeholder] {
+.form-label {
+  position: relative;
+}
+
+.form-label input[placeholder] {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -9,7 +13,19 @@
   color: var(--purple-9);
 }
 
-.form__text {
+.form-label span {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+
+  color: var(--purple-9);
+
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.form-text {
   box-sizing: border-box;
   height: 73px;
   width: 100%;
@@ -21,22 +37,6 @@
   border: 1px solid var(--gray-7);
 }
 
-.form__text:focus {
+.form-text:focus {
   background-color: var(--white);
-}
-
-.form__label {
-  position: relative;
-}
-
-.form__label span {
-  position: absolute;
-  left: 30px;
-  bottom: 30px;
-
-  color: var(--purple-9);
-
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 27px;
 }

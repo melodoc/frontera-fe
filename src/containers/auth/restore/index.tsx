@@ -18,12 +18,12 @@ const Restore = () => (
         <TitleWithSubtitle type={'restore'}/>
       </section>
       <form method={'post'} action={'#'}>
-        <div className={style.form__wrapper}>
-          <p className={style.form__itemSingle}>
+        <div className={style.formWrapper}>
+          <p className={style.formItemSingle}>
             <Input type={'email'} />
           </p>
         </div>
-        <div className={style.form__buttons }>
+        <div className={style.buttons }>
         <LinkButton
           type='link'
           to={URLs.resetpassword.url}
@@ -32,7 +32,7 @@ const Restore = () => (
         </LinkButton>
         </div>
       </form>
-      <div className={style.form__buttons}>
+      <div className={style.buttons}>
         <LinkButton
           type='link'
           to={URLs.login.url}

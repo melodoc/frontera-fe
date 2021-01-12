@@ -11,8 +11,8 @@ type NavigationType = React.FunctionComponent<NavigationProps>;
 const Navigation: NavigationType = ({ links}: NavigationProps) => {
   let linksTemplate = links.map((linkName) => {
     return (
-        <li className={style.nav__accountItem}>
-          <a className={style.nav__accountLink} href="#">
+        <li className={style.navAccountItem}>
+          <a className={style.navAccountLink} href="#">
             {linkName}
           </a>
         </li>
@@ -20,7 +20,7 @@ const Navigation: NavigationType = ({ links}: NavigationProps) => {
   });
 
   return (
-      <ul className={style.nav__account}>
+      <ul className={style.navAccount}>
         {linksTemplate}
       </ul>
     );

@@ -25,10 +25,10 @@ const ChooseLanguage = () => (
         <TitleWithSubtitle type={'lang'}/>
       </section>
       <form method={'post'} action={'#'}>
-        <div className={style.form__wrapper}>
+        <div className={style.formWrapper}>
           <Checkbox labels={['English', 'Espanol', 'Russian']}/>
         </div>
-        <div className={style.form__buttons}>
+        <div className={style.buttons}>
           <LinkButton
             type='link'
             to={URLs.themes.url}

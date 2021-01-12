@@ -18,15 +18,15 @@ const ResetPassword = () => (
         <TitleWithSubtitle type={'reset'} />
       </section>
       <form method={'post'} action={'#'}>
-        <div className={style.form__wrapper}>
-          <p className={style.form__item}>
+        <div className={style.formWrapper}>
+          <p className={style.formItem}>
             <Input type={'password'} />
           </p>
-          <p className={style.form__item}>
+          <p className={style.formItem}>
             <Input type={'repeatPassword'} />
           </p>
         </div>
-        <div className={style.form__buttons}>
+        <div className={style.buttons}>
           <LinkButton
             type='link'
             to={URLs.home.url}
@@ -35,7 +35,7 @@ const ResetPassword = () => (
           </LinkButton>
         </div>
       </form>
-      <div className={style.form__buttons}>
+      <div className={style.buttons}>
         <LinkButton
           type='link'
           to={URLs.login.url}

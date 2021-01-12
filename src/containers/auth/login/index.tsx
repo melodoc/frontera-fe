@@ -18,16 +18,16 @@ const Login = () => (
       <section>
         <TitleWithSubtitle type={'login'} />
         <form method={'post'} action={'#'}>
-          <div className={style.form__wrapper}>
-            <p className={style.form__item}>
+          <div className={style.formWrapper}>
+            <p className={style.formItem}>
               <Input type={'email'} />
             </p>
-            <p className={style.form__item}>
+            <p className={style.formItem}>
               <Input type={'password'} />
             </p>
           </div>
           <LoginActions />
-          <div className={style.form__buttons}>
+          <div className={style.buttons}>
             <LinkButton
               type='link'
               to={URLs.lang.url}

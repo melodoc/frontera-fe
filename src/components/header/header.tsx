@@ -6,7 +6,7 @@ import AccountBar from './../account-bar/account-bar';
 
 export const Header = () => (
     <header className={style.header}>
-        <nav className={style.header_nav}>
+        <nav className={style.headerNav}>
             <IconLogo/>
             <HeaderNav/>
         </nav>

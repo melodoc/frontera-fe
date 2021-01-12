@@ -18,21 +18,21 @@ const Registration = () => (
         <TitleWithSubtitle type={'registartion'} />
       </section>
       <form method={'post'} action={'#'}>
-        <div className={style.form__wrapper}>
-          <p className={style.form__item}>
+        <div className={style.formWrapper}>
+          <p className={style.formItem}>
             <Input type={'username'} />
           </p>
-          <p className={style.form__item}>
+          <p className={style.formItem}>
             <Input type={'email'} />
           </p>
-          <p className={style.form__item}>
+          <p className={style.formItem}>
             <Input type={'password'} />
           </p>
-          <p className={style.form__item}>
+          <p className={style.formItem}>
             <Input type={'repeatPassword'} />
           </p>
         </div>
-        <div className={style.form__buttons}>
+        <div className={style.buttons}>
           <LinkButton
             type='link'
             to={URLs.home.url}
@@ -41,7 +41,7 @@ const Registration = () => (
           </LinkButton>
         </div>
       </form>
-      <div className={style.form__buttons}>
+      <div className={style.buttons}>
         <LinkButton
           type='link'
           to={URLs.login.url}

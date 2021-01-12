@@ -25,10 +25,10 @@ const ChooseTheme = () => (
         <TitleWithSubtitle type={'themes'}/>
       </section>
       <form method={'post'} action={'#'}>
-        <div className={style.form__wrapper}>
+        <div className={style.formWrapper}>
           <Checkbox labels={['HTML', 'CSS', 'JavaScript', 'git', 'webpack', 'TypeScript']}/>
         </div>
-        <div className={style.form__buttons}>
+        <div className={style.buttons}>
           <LinkButton
             type='link'
             to={URLs.personalizing.url}

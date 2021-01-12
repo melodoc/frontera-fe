@@ -3,11 +3,11 @@
 .preview {
   position: relative;
   min-height: 630px;
-  z-index: -1;
+  z-index: 0;
   background: url(./../../assets/images/notebook.png);
 }
 
-.preview_info {
+.preview-info {
   position: absolute;
   left: 0px;
   bottom: 0px;
@@ -15,17 +15,8 @@
   padding: 50px;
 }
 
-.preview_info_text {
-  margin-bottom: 20px;
-  font-weight: 500;
-  font-size: 48px;
-  line-height: 72px;
-  display: flex;
-  align-items: center;
-  color: var(--white);
-}
-
-.preview_info_button {
+.preview-buttons {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }

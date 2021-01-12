@@ -31,11 +31,11 @@ body {
   color: var(--black);
 }
 
-.form__wrapper {
+.form-wrapper {
   margin-bottom: 32px;
 }
 
-.form__buttons {
+.buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

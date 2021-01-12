@@ -22,8 +22,8 @@ const Personalizing = () => (
     <main className={style.container}>
       <section className={style.login}>
         <Loader type={'personalizing'}/>
-        <div className={style.form__buttons}>
-        <div className={style.form__buttons}>
+        <div className={style.buttons}>
+        <div className={style.buttons}>
           <LinkButton
             type='link'
             to={URLs.home.url}

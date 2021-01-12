@@ -75,9 +75,9 @@ type InputType = React.FunctionComponent<InputProps>;
 const Input: InputType = ({ type }: InputProps) => {
   const inputValue = getValues(inputAttributes, type);
   return (
-    <label className={style.form__label} htmlFor={inputValue.htmlFor}>
+    <label className={style.formLabel} htmlFor={inputValue.htmlFor}>
       <input
-        className={style.form__text}
+        className={style.formText}
         id={inputValue.id}
         type={inputValue.type}
         name={inputValue.name}

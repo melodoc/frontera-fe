@@ -22,7 +22,6 @@ const Suggestions = () => (
         </section>
       </section>
     </main>
-    <Footer links={['Frontera', 'Cookies Notice', 'Privacy Notice']}/>
   </div>
 );
 

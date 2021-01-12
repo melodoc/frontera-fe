@@ -1,6 +1,6 @@
 @import './../../app.css';
 
-.anthemItem {
+.anthem-item {
   margin: 0;
   margin-bottom: 8px;
   padding: 0;
@@ -13,7 +13,7 @@
   color: var(--purple-9);
 }
 
-.loginHeading {
+.login-heading {
   margin: 0;
   margin-bottom: 32px;
 
@@ -22,5 +22,5 @@
   font-size: 16px;
   line-height: 24px;
 
-  color: var(--gray-9);
+  color: var(--purple-7);
 }

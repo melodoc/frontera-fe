@@ -20,7 +20,7 @@ const Footer: FooterType = ({ links }: FooterProps) => {
   });
 
   return (
-    <footer className={style.mainFooter}>
+    <footer className={style.footerWrapper}>
       <ul className={style.footerList}>
         {linksTemplate}
       </ul>

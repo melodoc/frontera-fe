@@ -4,7 +4,7 @@ import {purpleLogo} from '../../assets';
 import style from './style.css';
 
 const IconLogo = () => (
-  <a className={style.nav__logo} href="#">
+  <a className={style.navLogo} href="#">
     <img src={purpleLogo} width="235" height="43" alt="Purple Frontera logo" />
   </a>
 );

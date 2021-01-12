@@ -1,6 +1,6 @@
 @import './../../app.css';
 
-.catalogList {
+.catalog-list {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -11,7 +11,7 @@
   list-style: none;
 }
 
-.catalogItem {
+.catalog-item {
   margin-right: 10px;
   margin-bottom: 20px;
   width: 290px;
@@ -24,15 +24,15 @@
   box-shadow: 0 0 10px var(--black-1);
 }
 
-.catalogItem:last-child {
+.catalog-item:last-child {
   margin-right: 0;
 }
 
-.catalogItem:hover {
+.catalog-item:hover {
   box-shadow: 5px 0 25px var(--black-1);
 }
 
-.catalogLink {
+.catalog-link {
   display: block;
   position: relative;
   top: 68%; 
@@ -48,8 +48,8 @@
   border-radius: 20px;
 }
 
-.catalogLink:hover,
-.catalogLink:focus {
+.catalog-link:hover,
+.catalog-link:focus {
   color: var(--white);
   background: var(--purple-3);
   text-decoration: underline;
@@ -57,7 +57,7 @@
   transition: all .2s ease-in-out;
 }
 
-.catalogHeader {
+.catalog-header {
   padding: 10px 10px;
 
   font-weight: 500;

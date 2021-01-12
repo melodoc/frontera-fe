@@ -7,7 +7,6 @@ import { CourseCards } from '../../components/course-cards/course-cards';
 export const Trending = () => (
     <div className={style.trending}>
         <PageHeader label='Trending'/>
-        <div className={style.trending_cards}>
             <CourseCards showNumber={true} cards={[
                 {label:'Resourses', imageSrc: ''},
                 {label:'Angular', imageSrc: ''},
@@ -15,6 +14,5 @@ export const Trending = () => (
                 {label:'Web Design', imageSrc: ''},
                 {label:'Network', imageSrc: ''},
                 {label:'SEO', imageSrc: ''}]}/>
-        </div>
     </div>
 )

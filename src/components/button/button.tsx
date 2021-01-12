@@ -57,7 +57,7 @@ type ButtonType = React.FunctionComponent<ButtonProps>;
 const Button: ButtonType = ({ name }: ButtonProps) => {
   const buttonValue = getValues(buttonAttributes, name);
     return (
-      <button className={style.form__buttonPurple} type='submit'>
+      <button className={style.button} type='submit'>
         {buttonValue.name}
       </button>
     );

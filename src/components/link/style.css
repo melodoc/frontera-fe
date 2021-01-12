@@ -22,14 +22,14 @@
   color: var(--gray-9);
 }
 
-.linkReset {
+.link-reset {
   color: var(--purple-7);
 
   text-decoration: underline;
 }
 
-.linkReset:hover,
-.linkReset:focus {
+.link-reset:hover,
+.link-reset:focus {
   color: var(--purple-6);
 
   text-decoration: none;

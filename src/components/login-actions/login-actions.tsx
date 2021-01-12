@@ -8,7 +8,7 @@ import style from './style.css';
 import Checkbox from '../checkbox/checkbox';
 
 const LoginActions = () => (
-  <div className={style.form__actions}>
+  <div className={style.formActions}>
     <Checkbox labels={['Remember me']} />
     <LinkReset
       type='link'

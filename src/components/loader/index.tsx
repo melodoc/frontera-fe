@@ -23,7 +23,7 @@ type LoaderType = React.FunctionComponent<LoaderProps>;
 const Loader: LoaderType = ({ type }: LoaderProps) => {
   const loaderValue = getValues(loaderAttributes, type);
   return (
-    <div>
+    <React.Fragment>
       <h1 className={style.visuallyHidden}>{loaderValue.pageTitle}</h1>
       <div className={style.anthem}>
         <p className={style.anthemItem}>{loaderValue.anthem}</p>
@@ -34,7 +34,7 @@ const Loader: LoaderType = ({ type }: LoaderProps) => {
       <div className={style.anthem}>
         <p className={style.loginHeading}>{loaderValue.heading}</p>
       </div>
-    </div>
+    </React.Fragment>
   );
 };
 

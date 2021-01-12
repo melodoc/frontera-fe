@@ -1,6 +1,6 @@
 @import './../../app.css';
 
-.form__actions {
+.form-actions {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -9,14 +9,14 @@
   margin-bottom: 32px;
 }
 
-.form__restore {
+.form-restore {
   color: var(--purple-7);
 
   text-decoration: underline;
 }
 
-.form__restore:hover,
-.form__restore:focus {
+.form-restore:hover,
+.form-restore:focus {
   color: var(--purple-4);
 
   text-decoration: none;
