@@ -41,7 +41,7 @@ const Registration = () => (
           </LinkButton>
         </div>
       </form>
-      <div className={style.login__buttons}>
+      <div className={style.form__buttons}>
         <LinkButton
           type='link'
           to={URLs.login.url}

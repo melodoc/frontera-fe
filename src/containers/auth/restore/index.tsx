@@ -7,7 +7,6 @@ import { Link as ConnectedLink } from 'react-router-dom';
 import HeaderForm from '../../../components/header-form';
 import TitleWithSubtitle from '../../../components/title-with-subtitle/title-with-subtitle';
 import Input from '../../../components/input/input';
-import Button from '../../../components/button/button';
 
 import style from '../style.css';
 
@@ -25,10 +24,15 @@ const Restore = () => (
           </p>
         </div>
         <div className={style.form__buttons }>
-          <Button name={'reset'} />
+        <LinkButton
+          type='link'
+          to={URLs.resetpassword.url}
+          as={ConnectedLink}>
+          Reset
+        </LinkButton>
         </div>
       </form>
-      <div className={style.login__buttons}>
+      <div className={style.form__buttons}>
         <LinkButton
           type='link'
           to={URLs.login.url}

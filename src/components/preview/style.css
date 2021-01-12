@@ -3,6 +3,7 @@
 .preview{
     position: relative;
     min-height: 630px;
+    z-index: -1;
     background: url(./../../assets/images/notebook.png);
 }
 

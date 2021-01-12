@@ -1,8 +1,7 @@
 const pkg = require('./package');
-
 const path = require('path');
 
-const CopyPlugin = require('copy-webpack-plugin');
+const isProd = process.env.NODE_ENV === 'production';
 
 module.exports = {
     "apiPath": "stubs/api",
@@ -17,10 +16,18 @@ module.exports = {
               use: [
                 { loader: 'style-loader', },
                 {
-                  loader: 'css-loader',
-                  options: {
-                    modules:true,
-                  }
+                    loader: 'css-loader',
+                    options: {
+                        modules: {
+                            mode: 'local',
+                            exportGlobals: true,
+                            localIdentName: isProd ?
+                                '[hash:base64]'
+                                : '[path]--[name]__[local]--[hash:base64:3]',
+                            localIdentContext: path.resolve(__dirname, 'src'),
+                            exportLocalsConvention: "camelCase",
+                        },
+                    }
                 },
                 {
                   loader: 'postcss-loader',
@@ -55,6 +62,6 @@ module.exports = {
       'link.frontera.resetpassword':'/resetpassword',
     },
     config: {
-        'frontera.login': '/api/login'
+        'frontera.api': '/api'
     }
 };
