@@ -26,13 +26,13 @@ const Loader: LoaderType = ({ type }: LoaderProps) => {
     <div>
       <h1 className={style.visuallyHidden}>{loaderValue.pageTitle}</h1>
       <div className={style.anthem}>
-        <p className={style.anthem__itemPurple}>{loaderValue.anthem}</p>
+        <p className={style.anthemItem}>{loaderValue.anthem}</p>
       </div>
       <div className={style.loader}>
           Loading...
           </div>
       <div className={style.anthem}>
-        <p className={style.login__headingPurple}>{loaderValue.heading}</p>
+        <p className={style.loginHeading}>{loaderValue.heading}</p>
       </div>
     </div>
   );

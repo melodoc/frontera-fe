@@ -22,7 +22,7 @@ const ChooseLanguage = () => (
     </header>
     <main className={style.container}>
       <section className={style.login}>
-        <TitleWithSubtitle color={'purple'} type={'lang'}/>
+        <TitleWithSubtitle type={'lang'}/>
       </section>
       <form method={'post'} action={'#'}>
         <div className={style.form__wrapper}>
