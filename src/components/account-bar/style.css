@@ -1,5 +1,13 @@
 @import './../../app.css';
 
+p{
+  margin: 0;
+}
+
+p:not(:last-child){
+  margin-bottom: 24px;
+}
+
 .accountBar {
   display: flex;
   justify-content: center;
@@ -20,6 +28,7 @@
 }
 
 .profile {
+  position: relative;
   width: 35px;
   height: 35px;
 
@@ -31,6 +40,7 @@
 .profile:hover,
 .profile:focus {
   transition: all .2s ease-in-out;
+
 }
 
 .searchInput .searchForm {
@@ -118,6 +128,8 @@
 
   padding: 0;
 
+  position: relative;
+
   font: inherit;
   color: inherit;
 
@@ -129,9 +141,29 @@
   cursor: pointer;
 }
 
+.navDropdown {
+  display: none;
+  position: absolute;
+  width: 117px;
+  padding: 16px 8px;
+  z-index: 9;
+  top: 100%;
+  left: -32px;
+  border: 0.5px solid var(--gray-8);
+  border-radius: 0 0 4px 4px;
+  background-color: var(--white);
+}
+
 .profile:hover,
 .profile:focus {
   filter: saturate(150%);
 
   transition: all .2s ease-in-out;
+  .navDropdown{
+    display: block;
+  }
+}
+
+.profile:hover .navDropdown, .profile:focus .navDropdown {
+  display: block;
 }

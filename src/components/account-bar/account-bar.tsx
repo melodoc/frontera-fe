@@ -13,7 +13,14 @@ const AccountBar = () => (
       </form>
     </li>
     <li className={style.profileWrapper}>
-      <button className={style.profile} type="button" onClick={showMenu}></button>
+      <div className={style.profile}>
+      <div className={style.navDropdown}>
+        <p>view history</p>
+        <p>settings</p>
+        <p>help</p>
+        <p>sign out</p>
+      </div>
+      </div>
     </li>
   </ul>
 );
