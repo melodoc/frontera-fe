@@ -9,8 +9,8 @@ export const Preview = () => (
         <div className={style.preview_info}>
             <CourseName label="JavaScript mastering"/>
             <div className={style.preview_info_button}>
-                <Button color={'purple'} name={'continue'} />
-                <Button color={'white'} name={'info'} />
+                <Button name={'continue'} />
+                <Button name={'info'} />
             </div>
         </div>
     </section>

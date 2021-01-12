@@ -13,7 +13,7 @@ const Suggestions = () => (
     <Header/>
     <main className={style.container}>
       <section className={style.login}>
-        <PageHeader color={'purple'} label={'Based on your choise'} size={'medium'}/>
+        <PageHeader label={'Based on your choise'}/>
         <section className={style.gallery}>
             <CourseCardsLarge showNumber={false} cards={[{label:'React', imageSrc: ''},
                 {label:'CI/CD', imageSrc: ''},

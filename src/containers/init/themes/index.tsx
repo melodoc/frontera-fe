@@ -16,7 +16,7 @@ const ChooseTheme = () => (
   <div className={style.body}>
     <header className={style.header}>
       <nav className={style.nav}>
-        <IconLogo color={'purple'} />
+        <IconLogo/>
         <Navigation links={['Sign Out']} />
       </nav>
     </header>
@@ -26,7 +26,7 @@ const ChooseTheme = () => (
       </section>
       <form method={'post'} action={'#'}>
         <div className={style.form__wrapper}>
-          <Checkbox color={'purple'} labels={['HTML', 'CSS', 'JavaScript', 'git', 'webpack', 'TypeScript']}/>
+          <Checkbox labels={['HTML', 'CSS', 'JavaScript', 'git', 'webpack', 'TypeScript']}/>
         </div>
         <div className={style.form__buttons}>
           <LinkButton

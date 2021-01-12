@@ -10,11 +10,9 @@ import Input from '../../../components/input/input';
 
 import style from '../style.css';
 
-const COLOR = 'purple';
-
 const Restore = () => (
   <React.Fragment>
-    <HeaderForm color={COLOR} />
+    <HeaderForm/>
     <main className={style.container}>
       <section className={style.login}>
         <TitleWithSubtitle type={'restore'}/>

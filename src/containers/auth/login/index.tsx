@@ -11,11 +11,9 @@ import LoginActions from '../../../components/login-actions/login-actions';
 
 import style from '../style.css';
 
-const COLOR = 'purple';
-
 const Login = () => (
   <React.Fragment>
-    <HeaderForm color={COLOR} />
+    <HeaderForm/>
     <main className={style.container}>
       <section>
         <TitleWithSubtitle type={'login'} />

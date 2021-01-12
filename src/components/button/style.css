@@ -7,7 +7,7 @@
   
     font: inherit;
     text-align: center;
-    color: var(--purple-9);
+    color: var(--purple-8);
   
     background-color: var(--white);
     border: none;
@@ -20,7 +20,7 @@
     color: var(--white);
   
     background-color: var(--blue);
-    box-shadow: 0px 4px 4px var(--purple-9);
+    box-shadow: 0px 4px 4px var(--purple-8);
 
     transition: all .2s ease-in-out;
   }
@@ -34,7 +34,7 @@
     text-align: center;
     color: var(--white);
   
-    background-color: var(--purple-9);
+    background-color: var(--purple-8);
     border: none;
     border-radius: 10px;
   }
@@ -42,7 +42,7 @@
 .form__buttonPurple:hover,
 .form__buttonPurple:focus,
 .form__buttonPurple:active  {
-  color: var(--purple-9);
+  color: var(--purple-8);
   
   background-color: var(--white);
   box-shadow: 0px 4px 4px var(--blue-9);

@@ -6,7 +6,7 @@ import { CourseCards } from '../../components/course-cards/course-cards';
 
 export const Trending = () => (
     <div className={style.trending}>
-        <PageHeader color='purple' label='Trending'/>
+        <PageHeader label='Trending'/>
         <div className={style.trending_cards}>
             <CourseCards showNumber={true} cards={[
                 {label:'Resourses', imageSrc: ''},
