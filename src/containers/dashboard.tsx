@@ -10,7 +10,7 @@ import {URLs} from './../__data__/urls'
 import Login from './auth/login';
 import Registration from './auth/registration';
 import ResetPassword from './auth/reset-password'
-import HomePage from './homepage';
+import HomePage from './pages/homepage';
 import ChooseLanguage from './init/language';
 import Personalizing from './init/personalizing';
 import ChooseTheme from './init/themes';

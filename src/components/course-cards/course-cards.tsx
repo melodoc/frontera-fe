@@ -19,7 +19,7 @@ export class CourseCards extends React.Component<CourseCardsProps, CourseCardsSt
     }
 
     componentDidMount() {
-        const imgUrl = `${__webpack_public_path__}/static/images/suggestions/bg-widget-m-5.png`;
+        const imgUrl = `${__webpack_public_path__}/static/images/suggestions/bg-widget-m-2.png`;
         this.setState({imgSrc: imgUrl});
     }
 
@@ -41,31 +41,31 @@ export class CourseCards extends React.Component<CourseCardsProps, CourseCardsSt
     };
     renderHeader = (card) => {
         return (
-            <div className={style.catalogHeader}>
+            <h3 className={style.catalogHeader}>
                 <span className={style.catalogCategory}>{card.label}</span>
-            </div>
+            </h3>
         )
     };
     renderItemCard = (card) => {
         return (
-            <div className={style.catalogItem}>
+            <li className={style.catalogItem}>
                 {this.renderImg()}
                 {this.renderCatalogLink(card)}
-            </div>);
+            </li>);
     };
     render() {
         return (
             <div className={style.catalogList}>
                 {this.props.cards.map((card, i) => {
                     return (
-                        <div className={style.cardContainer}>
+                        <ul className={style.cardContainer}>
                             {
-                                this.props.showNumber && <div className={style.index}>{i + 1}</div>
+                                this.props.showNumber && <span className={style.index}>{i + 1}</span>
                             }
                             {
                                 this.renderItemCard(card)
                             }
-                        </div>
+                        </ul>
                     );
                 })}
             </div>
@@ -77,9 +77,9 @@ export class CourseCardsLarge extends CourseCards {
 
     renderHeader = (card) => {
         return (
-            <div className={style.catalogHeaderLong}>
+            <h3 className={style.catalogHeaderLong}>
                 <span className={style.catalogCategoryLong}>{card.label}</span>
-            </div>
+            </h3>
         )
     };
 
@@ -92,9 +92,9 @@ export class CourseCardsLarge extends CourseCards {
     };
     renderItemCard = (card) => {
         return (
-            <div className={style.catalogItemLong}>
+            <li className={style.catalogItemLong}>
                 {this.renderImg()}
                 {this.renderCatalogLink(card)}
-            </div>);
+            </li>);
     };
 }
