@@ -3,57 +3,98 @@ import React from 'react';
 import style from './style.css';
 
 interface CourseCardsProps {
-    readonly labels: Array<string>;
+    readonly cards: Array<{label: string, imageSrc: string}>
+    readonly showNumber?: boolean;
+}
+interface CourseCardsState {
+    imgSrc: string;
 }
 
-const courseCard = [
-    {
-        name: 'React',
-        picUrl: '../../assets/images/git.jpg',
-        width: 320,
-        height: 640,
-    },
-    {
-        name: 'CI/CD',
-        picUrl: '../../assets/images/git.jpg',
-        width: 320,
-        height: 640,
-    },
-    {
-        name: 'JavaScript Mastering',
-        picUrl: '../../assets/images/git.jpg',
-        width: 320,
-        height: 640,
-    },
-    {
-        name: 'git',
-        picUrl: '../../assets/images/git.jpg',
-        width: 320,
-        height: 640,
-    },
-];
+export class CourseCards extends React.Component<CourseCardsProps, CourseCardsState>{
+    constructor(props) {
+        super(props);
+        this.state = {
+            imgSrc: '',
+        };
+    }
 
-type CourseCardsType = React.FunctionComponent<CourseCardsProps>;
+    componentDidMount() {
+        const imgUrl = `${__webpack_public_path__}/static/images/suggestions/bg-widget-m-2.png`;
+        this.setState({imgSrc: imgUrl});
+    }
 
-const CourseCards: CourseCardsType = ({ labels }: CourseCardsProps) => {
-    let labelsTemplate = labels.map((labelName) => {
+    handleError = () => {
+        const defaultImageUrl = `${__webpack_public_path__}/static/images/suggestions/bg-widget-m-1.png`;
+        this.setState({imgSrc: defaultImageUrl});
+    };
+
+    renderImg = () => {
+        return (<img onError={this.handleError} src={this.state.imgSrc}/>);
+    };
+
+    renderCatalogLink = (card) => {
+        return (
+            <a className={style.catalogLink} href="#">
+                {this.renderHeader(card)}
+            </a>
+        );
+    };
+    renderHeader = (card) => {
+        return (
+            <h3 className={style.catalogHeader}>
+                <span className={style.catalogCategory}>{card.label}</span>
+            </h3>
+        )
+    };
+    renderItemCard = (card) => {
         return (
             <li className={style.catalogItem}>
-                <a className={style.catalogLink} href="#">
-                    <h2 className={style.catalogHeader}>
-                        <span className={style.catalogCategory}>
-                            {labelName}</span>
-                    </h2>
-                </a>
-            </li>
+                {this.renderImg()}
+                {this.renderCatalogLink(card)}
+            </li>);
+    };
+    render() {
+        return (
+            <div className={style.catalogList}>
+                {this.props.cards.map((card, i) => {
+                    return (
+                        <ul className={style.cardContainer}>
+                            {
+                                this.props.showNumber && <span className={style.index}>{i + 1}</span>
+                            }
+                            {
+                                this.renderItemCard(card)
+                            }
+                        </ul>
+                    );
+                })}
+            </div>
         );
-    });
+    }
+}
 
-    return (
-        <ol className={style.catalogList}>
-            {labelsTemplate}
-        </ol>
-    );
-};
+export class CourseCardsLarge extends CourseCards {
 
-export default CourseCards;
+    renderHeader = (card) => {
+        return (
+            <h3 className={style.catalogHeaderLong}>
+                <span className={style.catalogCategoryLong}>{card.label}</span>
+            </h3>
+        )
+    };
+
+    renderCatalogLink = (card) => {
+        return (
+            <a className={style.catalogLinkLong} href="#">
+                {this.renderHeader(card)}
+            </a>
+        );
+    };
+    renderItemCard = (card) => {
+        return (
+            <li className={style.catalogItemLong}>
+                {this.renderImg()}
+                {this.renderCatalogLink(card)}
+            </li>);
+    };
+}
