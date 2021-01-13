@@ -20,6 +20,10 @@
   color: var(--black);
 }
 
+.icon-nav {
+  margin: 20px 30px;
+} 
+
 .form-wrapper {
   margin-bottom: 32px;
 }

@@ -16,7 +16,9 @@ const ChooseLanguage = () => (
   <React.Fragment>
     <header className={style.header}>
       <nav className={style.nav}>
-        <IconLogo/>
+        <div className={style.iconNav}>
+          <IconLogo/>
+        </div>
         <Navigation links={['Sign Out']} />
       </nav>
     </header>
