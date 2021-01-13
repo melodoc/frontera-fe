@@ -45,13 +45,13 @@
   color: var(--white);
   line-height: 54px;
 
-  background-color: var(--purple-8);
+  background-color: var(--purple-9);
   border: none;
   border-radius: 10px;
 }
 
 .button:hover {
-  color: var(--purple-8);
+  color: var(--purple-9);
 
   background-color: var(--white);
   box-shadow: 0px 4px 4px var(--blue-9);

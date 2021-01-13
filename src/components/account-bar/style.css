@@ -85,7 +85,6 @@
 .profile-wrapper {
   width: 35px;
   height: 35px;
-
   margin: 0;
   padding: 0;
 }
@@ -97,7 +96,6 @@
 .profile {
   width: 35px;
   height: 35px;
-
   padding: 0;
 
   font: inherit;
@@ -119,16 +117,18 @@
 }
 
 .nav-dropdown {
-  display: none;
   position: absolute;
-  width: 107px;
-  padding: 16px 8px;
-  z-index: 9;
   top: 100%;
   left: -32px;
+  z-index: 9;
+
+  display: none;
+  width: 107px;
+  padding: 16px 8px;
+  
+  background-color: var(--white);
   border: 0.5px solid var(--gray-8);
   border-radius: 0 0 4px 4px;
-  background-color: var(--white);
 }
 
 .dropdown:hover .nav-dropdown,
@@ -138,7 +138,8 @@
 
 .dropdown-link {
   display: block;
-  font-size: 14px;
   align-items: center;
+  
+  font-size: 14px;
   color: #541594;
 }

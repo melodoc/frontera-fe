@@ -7,15 +7,19 @@
 
 .catalog-link {
   position: absolute;
+
   width: 100%;
+
   border-radius: 10px;
 }
 
 .catalog-link-long {
   position: absolute;
-  width: 100%;
-  border-radius: 10px;
   bottom: 50px;
+
+  width: 100%;
+
+  border-radius: 10px;
 }
 
 .catalog-header-long {
@@ -24,24 +28,27 @@
 
 .catalog-item,
 .catalog-item-long {
-  list-style: none;
-  border-radius: 10px;
-  background-color: #2b1f33;
-  box-shadow: 0 0 10px rgba(0, 1, 1, 0.2);
+  position: relative;
+
+  overflow: hidden;
+
   margin: 0;
   padding: 0;
   margin-right: 10px;
   margin-bottom: 20px;
-  overflow: hidden;
-  position: relative;
-  height: 280px;
   width: 190px;
+  height: 280px;
+  
+  list-style: none;
+  background-color: var(--dark-purple);
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--black-1);
 }
 
 .catalog-item-long,
 .catalog-item-long img {
-  height: 640px;
   width: 290px;
+  height: 640px;
 }
 
 img {
@@ -56,11 +63,12 @@ img {
 }
 
 .index {
+  margin-right: 30px;
+
   font-weight: 500;
   font-size: 58px;
   line-height: 58px;
-  color: #B3B6B6;
-  margin-right: 30px;
+  color: var(--gray-8);
 }
 
 .card-container:not(:first-child) .index {
@@ -71,38 +79,42 @@ img {
 .catalog-item:focus,
 .catalog-item-long:hover,
 .catalog-item-long:focus {
-  box-shadow: 5px 0 25px rgba(0, 1, 1, 0.3);
+  box-shadow: 5px 0 25px var(--black-1);
 }
 
 .catalog-link:hover,
 .catalog-link:focus,
 .catalog-link-long:hover,
 .catalog-link-long:focus {
-  color: #FFFFFF;
+  color: var(--white);
   text-decoration: underline;
 }
 
 .catalog-header {
-  padding: 16px;
   margin: 0;
+  padding: 16px;
 }
 
 .catalog-category, .catalog-category-long {
+  display: flex;
   padding: 16px 8px;
-  background: rgba(45, 0, 122, 0.57);
-  backdrop-filter: blur(36px);
+  
   font-weight: 500;
   font-size: 18px;
-  display: flex;
-  color: #FFFFFF;
+  color: var(--white);
+  
+  background: var(--purple-5);
   border-radius: 10px;
+  backdrop-filter: blur(36px);
 }
 
 .catalog-category-long {
-  padding: 0 8px;
-  height: 120px;
   align-items: center;
-  line-height: 54px;
-  font-size: 36px;
+  
+  height: 120px;
   margin: 0 16px;
+  padding: 0 8px;
+  
+  font-size: 36px;
+  line-height: 54px;
 }

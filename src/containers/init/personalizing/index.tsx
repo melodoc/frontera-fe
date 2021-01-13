@@ -23,14 +23,12 @@ const Personalizing = () => (
       <section className={style.login}>
         <Loader type={'personalizing'}/>
         <div className={style.buttons}>
-        <div className={style.buttons}>
           <LinkButton
             type='link'
             to={URLs.home.url}
             as={ConnectedLink}>
             Home
           </LinkButton>
-        </div>
         </div>
       </section>
     </main>
