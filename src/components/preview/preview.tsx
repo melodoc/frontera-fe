@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from './../button/button';
+import Button from './../button/';
 import CourseName from './../course-name'
 
 import style from './style.css';
@@ -9,8 +9,8 @@ export const Preview = () => (
         <div className={style.previewInfo}>
             <CourseName label="JavaScript mastering"/>
             <div className={style.previewButtons}>
-                <Button name={'continue'} />
-                <Button name={'info'} />
+                <Button name={'Continue'} />
+                <Button name={'Info'} />
             </div>
         </div>
     </section>

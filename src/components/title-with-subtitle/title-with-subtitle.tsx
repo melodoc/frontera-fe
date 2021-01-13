@@ -54,7 +54,7 @@ interface TitleWithSubtitleProps {
 
 type TitleWithSubtitleType = React.FunctionComponent<TitleWithSubtitleProps>;
 
-const TitleWithSubtitle: TitleWithSubtitleType = ({type}: TitleWithSubtitleProps) => {
+export const TitleWithSubtitle: TitleWithSubtitleType = ({type}: TitleWithSubtitleProps) => {
   const titleValue = getValues(titleAttributes, type);
 
     return (
@@ -64,5 +64,3 @@ const TitleWithSubtitle: TitleWithSubtitleType = ({type}: TitleWithSubtitleProps
       </React.Fragment>
     );
 };
-
-export default TitleWithSubtitle;

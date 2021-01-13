@@ -8,7 +8,7 @@ interface CheckboxProps {
 
 type CheckboxType = React.FunctionComponent<CheckboxProps>;
 
-const Checkbox: CheckboxType = ({ labels }: CheckboxProps) => {
+export const Checkbox: CheckboxType = ({ labels }: CheckboxProps) => {
 
   let labelsTemplate = labels.map((labelName) => {
     return (
@@ -31,5 +31,3 @@ const Checkbox: CheckboxType = ({ labels }: CheckboxProps) => {
 
   return <ul className={style.filterItem}>{labelsTemplate}</ul>;
 };
-
-export default Checkbox;

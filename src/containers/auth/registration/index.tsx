@@ -5,8 +5,8 @@ import { URLs } from './../../../__data__/urls';
 import { Link as ConnectedLink } from 'react-router-dom';
 
 import HeaderForm from '../../../components/header-form';
-import TitleWithSubtitle from '../../../components/title-with-subtitle/title-with-subtitle';
-import Input from '../../../components/input/input';
+import TitleWithSubtitle from '../../../components/title-with-subtitle';
+import Input from '../../../components/input';
 
 import style from '../style.css';
 

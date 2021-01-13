@@ -72,7 +72,7 @@ interface InputProps {
 
 type InputType = React.FunctionComponent<InputProps>;
 
-const Input: InputType = ({ type }: InputProps) => {
+export const Input: InputType = ({ type }: InputProps) => {
   const inputValue = getValues(inputAttributes, type);
   return (
     <label className={style.formLabel} htmlFor={inputValue.htmlFor}>
@@ -88,5 +88,3 @@ const Input: InputType = ({ type }: InputProps) => {
     </label>
   );
 };
-
-export default Input;

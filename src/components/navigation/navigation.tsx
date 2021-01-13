@@ -8,7 +8,7 @@ interface NavigationProps {
 
 type NavigationType = React.FunctionComponent<NavigationProps>;
 
-const Navigation: NavigationType = ({ links}: NavigationProps) => {
+export const Navigation: NavigationType = ({ links}: NavigationProps) => {
   let linksTemplate = links.map((linkName) => {
     return (
         <li className={style.navAccountItem}>
@@ -25,5 +25,3 @@ const Navigation: NavigationType = ({ links}: NavigationProps) => {
       </ul>
     );
 };
-
-export default Navigation;

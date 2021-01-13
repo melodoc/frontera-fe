@@ -7,6 +7,7 @@
   
   font: inherit;
   text-align: center;
+  text-transform: capitalize;
   color: var(--white);
   
   background-color: var(--purple-9);

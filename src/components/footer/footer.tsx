@@ -8,7 +8,7 @@ interface FooterProps {
 
 type FooterType = React.FunctionComponent<FooterProps>;
 
-const Footer: FooterType = ({ links }: FooterProps) => {
+export const Footer: FooterType = ({ links }: FooterProps) => {
   let linksTemplate = links.map((linkName) => {
     return (
         <li className={style.footerItem}>
@@ -27,5 +27,3 @@ const Footer: FooterType = ({ links }: FooterProps) => {
     </footer>
     );
 };
-
-export default Footer;

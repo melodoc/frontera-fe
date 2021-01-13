@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './style.css';
 
-import IconLogo from '../icon-logo/icon-logo';
+import IconLogo from '../icon-logo';
 
 export const HeaderFrom = () => (
     <React.Fragment>

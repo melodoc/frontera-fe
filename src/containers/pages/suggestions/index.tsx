@@ -1,8 +1,7 @@
 import React from 'react';
 
 import Header from '../../../components/header';
-import PageHeader from '../../../components/page-header/page-header';
-import Footer from '../../../components/footer/footer'
+import PageHeader from '../../../components/page-header';
 
 import style from '../style.css';
 import { CourseCardsLarge } from '../../../components/course-cards/course-cards';

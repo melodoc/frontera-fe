@@ -1,12 +1,12 @@
 import React from 'react';
 
-import IconLogo from '../../../components/icon-logo/icon-logo';
-import PageHeader from '../../../components/page-header/page-header';
-import Navigation from '../../../components/navigation/navigation';
-import AccountBar from '../../../components/account-bar/account-bar';
+import IconLogo from '../../../components/icon-logo/';
+import PageHeader from '../../../components/page-header';
+import Navigation from '../../../components/navigation';
+import AccountBar from '../../../components/account-bar/';
+import { CourseCards } from '../../../components/course-cards/course-cards';
 
 import style from '../style.css';
-import { CourseCards } from '../../../components/course-cards/course-cards';
 
 const Coursepage = () => (
     <div className={style.body}>
