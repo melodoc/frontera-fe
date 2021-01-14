@@ -34,7 +34,6 @@ const Registration = () => (
         </div>
         <div className={style.buttons}>
           <LinkButton
-            type='link'
             to={URLs.home.url}
             as={ConnectedLink}>
             Sign up
@@ -43,7 +42,6 @@ const Registration = () => (
       </form>
       <div className={style.buttons}>
         <LinkButton
-          type='link'
           to={URLs.login.url}
           as={ConnectedLink}>
           Cancel

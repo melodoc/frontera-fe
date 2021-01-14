@@ -28,7 +28,6 @@ const ResetPassword = () => (
         </div>
         <div className={style.buttons}>
           <LinkButton
-            type='link'
             to={URLs.home.url}
             as={ConnectedLink}>
             Set Up Password
@@ -37,7 +36,6 @@ const ResetPassword = () => (
       </form>
       <div className={style.buttons}>
         <LinkButton
-          type='link'
           to={URLs.login.url}
           as={ConnectedLink}>
           Cancel

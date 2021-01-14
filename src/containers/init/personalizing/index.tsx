@@ -26,7 +26,6 @@ const Personalizing = () => (
         <Loader type={'personalizing'}/>
         <div className={style.buttons}>
           <LinkButton
-            type='link'
             to={URLs.home.url}
             as={ConnectedLink}>
             Home

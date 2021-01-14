@@ -11,7 +11,6 @@ export const LoginActions = () => (
   <div className={style.formActions}>
     <Checkbox labels={['Remember me']} />
     <LinkReset
-      type='link'
       to={URLs.resetpassword.url}
       as={ConnectedLink}
     >

@@ -29,7 +29,6 @@ const Login = () => (
           <LoginActions />
           <div className={style.buttons}>
             <LinkButton
-              type='link'
               to={URLs.lang.url}
               as={ConnectedLink}>
               Login now
@@ -37,7 +36,6 @@ const Login = () => (
           </div>
         </form>
           <LinkReset
-            type='link'
             to={URLs.registration.url}
             as={ConnectedLink}
           >

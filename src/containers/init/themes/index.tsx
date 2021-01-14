@@ -32,7 +32,6 @@ const ChooseTheme = () => (
         </div>
         <div className={style.buttons}>
           <LinkButton
-            type='link'
             to={URLs.personalizing.url}
             as={ConnectedLink}>
             Continue

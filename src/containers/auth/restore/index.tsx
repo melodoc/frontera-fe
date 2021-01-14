@@ -25,7 +25,6 @@ const Restore = () => (
         </div>
         <div className={style.buttons }>
         <LinkButton
-          type='link'
           to={URLs.resetpassword.url}
           as={ConnectedLink}>
           Reset
@@ -34,7 +33,6 @@ const Restore = () => (
       </form>
       <div className={style.buttons}>
         <LinkButton
-          type='link'
           to={URLs.login.url}
           as={ConnectedLink}>
           Cancel

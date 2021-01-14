@@ -32,7 +32,6 @@ const ChooseLanguage = () => (
         </div>
         <div className={style.buttons}>
           <LinkButton
-            type='link'
             to={URLs.themes.url}
             as={ConnectedLink}>
             Continue
