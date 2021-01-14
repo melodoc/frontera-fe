@@ -5,8 +5,8 @@ import { URLs } from './../../../__data__/urls';
 import { Link as ConnectedLink } from 'react-router-dom';
 
 import HeaderForm from '../../../components/header-form';
-import TitleWithSubtitle from '../../../components/title-with-subtitle/title-with-subtitle';
-import Input from '../../../components/input/input';
+import TitleWithSubtitle from '../../../components/title-with-subtitle';
+import Input from '../../../components/input';
 
 import style from '../style.css';
 
@@ -18,26 +18,24 @@ const ResetPassword = () => (
         <TitleWithSubtitle type={'reset'} />
       </section>
       <form method={'post'} action={'#'}>
-        <div className={style.form__wrapper}>
-          <p className={style.form__item}>
+        <div className={style.formWrapper}>
+          <p className={style.formItem}>
             <Input type={'password'} />
           </p>
-          <p className={style.form__item}>
+          <p className={style.formItem}>
             <Input type={'repeatPassword'} />
           </p>
         </div>
-        <div className={style.form__buttons}>
+        <div className={style.buttons}>
           <LinkButton
-            type='link'
             to={URLs.home.url}
             as={ConnectedLink}>
             Set Up Password
           </LinkButton>
         </div>
       </form>
-      <div className={style.form__buttons}>
+      <div className={style.buttons}>
         <LinkButton
-          type='link'
           to={URLs.login.url}
           as={ConnectedLink}>
           Cancel

@@ -1,16 +1,5 @@
 @import './../../app.css';
 
-html,
-body {
-  height: 100%;
-}
-
-body {
-  color: var(--purple-8);
-
-  background-color: var(--white);
-}
-
 .header {
   border-bottom: 1px solid var(--gray-6);
 }
@@ -31,11 +20,15 @@ body {
   color: var(--black);
 }
 
-.form__wrapper {
+.icon-nav {
+  margin: 20px 30px;
+} 
+
+.form-wrapper {
   margin-bottom: 32px;
 }
 
-.form__buttons {
+.buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

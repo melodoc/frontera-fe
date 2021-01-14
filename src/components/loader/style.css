@@ -25,40 +25,22 @@ input[type='radio'].visuallyHidden {
   padding: 0 30px;
 }
 
-.anthem__item,
-.anthem__itemPurple {
+.anthem-item {
   margin: 0;
   padding: 0;
 
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 60px;
-
-  color: var(--white);
-}
-
-.anthem__itemPurple {
   font-weight: 500;
-
   font-size: 28px;
   line-height: 42px;
 
   color: var(--purple-9);
 }
 
-.login__heading,
-.login__headingPurple {
+.login-heading,
+.login-heading {
   margin: 0 0 40px;
   padding: 0 30px;
 
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 27px;
-
-  color: var(--purple-7);
-}
-
-.login__headingPurple {
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
@@ -74,10 +56,6 @@ input[type='radio'].visuallyHidden {
   height: 40px;
   border-radius: 50%;
   background: var(--purple-9);
-  background: -moz-linear-gradient(left, var(--purple-9) 10%, var(--blue-1) 42%);
-  background: -webkit-linear-gradient(left, var(--purple-9) 10%, var(--blue-1) 42%);
-  background: -o-linear-gradient(left, var(--purple-9) 10%, var(--blue-1) 42%);
-  background: -ms-linear-gradient(left, var(--purple-9) 10%, var(--blue-1) 42%);
   background: linear-gradient(to right, var(--purple-9) 10%, var(--blue-1) 42%);
   position: relative;
   animation: load3 1.4s infinite linear;

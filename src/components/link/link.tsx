@@ -4,18 +4,14 @@ import style from './style.css';
 
 type LinkProps = {
     to: string;
-    className?: string;
-    type?: 'link' | 'button';
-    as?: any;
+    as: any;
 };
 
 export type LinkType = React.FC<LinkProps>
 
 export const Link: LinkType = ({
-    type,
     to,
     children,
-    className,
     as: LinkComponent
 }) => {
     return (
@@ -29,10 +25,8 @@ export const Link: LinkType = ({
 }
 
 export const LinkButton: LinkType = ({
-    type,
     to,
     children,
-    className,
     as: LinkComponent
 }) => {
     return (
@@ -46,10 +40,8 @@ export const LinkButton: LinkType = ({
 }
 
 export const LinkReset: LinkType = ({
-    type,
     to,
     children,
-    className,
     as: LinkComponent
 }) => {
     return (
@@ -63,6 +55,5 @@ export const LinkReset: LinkType = ({
 }
 
 Link.defaultProps = {
-    type: 'link',
     as: 'a'
 }

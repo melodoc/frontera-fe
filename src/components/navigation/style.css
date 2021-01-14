@@ -1,6 +1,6 @@
 @import './../../app.css';
 
-.nav__account {
+.nav-account {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,22 +11,22 @@
   list-style: none;
 }
 
-.nav__accountItem:not(:last-child) {
+.nav-account-item:not(:last-child) {
   padding-right: 20px;
 }
 
-.nav__accountLink {
+.nav-account-link {
   padding: 10px;
 }
 
-.nav__accountLink:hover,
-.nav__accountLink:focus {
+.nav-account-link:hover,
+.nav-account-link:focus {
   text-decoration: underline;
   background-color: var(--white);
 
   transition: all .2s ease-in-out;
 }
 
-.nav__accountLink:visited {
+.nav-account-link:visited {
   color: var(--black);
 }

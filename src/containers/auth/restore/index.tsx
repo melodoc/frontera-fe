@@ -5,8 +5,8 @@ import { URLs } from './../../../__data__/urls';
 import { Link as ConnectedLink } from 'react-router-dom';
 
 import HeaderForm from '../../../components/header-form';
-import TitleWithSubtitle from '../../../components/title-with-subtitle/title-with-subtitle';
-import Input from '../../../components/input/input';
+import TitleWithSubtitle from '../../../components/title-with-subtitle';
+import Input from '../../../components/input';
 
 import style from '../style.css';
 
@@ -18,23 +18,21 @@ const Restore = () => (
         <TitleWithSubtitle type={'restore'}/>
       </section>
       <form method={'post'} action={'#'}>
-        <div className={style.form__wrapper}>
-          <p className={style.form__itemSingle}>
+        <div className={style.formWrapper}>
+          <p className={style.formItemSingle}>
             <Input type={'email'} />
           </p>
         </div>
-        <div className={style.form__buttons }>
+        <div className={style.buttons }>
         <LinkButton
-          type='link'
           to={URLs.resetpassword.url}
           as={ConnectedLink}>
           Reset
         </LinkButton>
         </div>
       </form>
-      <div className={style.form__buttons}>
+      <div className={style.buttons}>
         <LinkButton
-          type='link'
           to={URLs.login.url}
           as={ConnectedLink}>
           Cancel

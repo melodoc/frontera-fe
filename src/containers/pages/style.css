@@ -1,16 +1,5 @@
 @import './../../app.css';
 
-html,
-body {
-  height: 100%;
-}
-
-body {
-  color: var(--purple-8);
-
-  background-color: var(--white);
-}
-
 .header {
   border-bottom: 1px solid var(--gray-6);
 }
@@ -30,4 +19,3 @@ body {
   line-height: 21px;
   color: var(--purple-9);
 }
-

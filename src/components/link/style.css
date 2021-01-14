@@ -8,7 +8,7 @@
   color: var(--purple-9);
 
   padding: 10px 20px;
-  }
+}
 
 .link:hover,
 .link:focus {
@@ -22,14 +22,14 @@
   color: var(--gray-9);
 }
 
-.linkReset {
+.link-reset {
   color: var(--purple-7);
 
   text-decoration: underline;
 }
 
-.linkReset:hover,
-.linkReset:focus {
+.link-reset:hover,
+.link-reset:focus {
   color: var(--purple-6);
 
   text-decoration: none;
@@ -45,13 +45,13 @@
   color: var(--white);
   line-height: 54px;
 
-  background-color: var(--purple-8);
+  background-color: var(--purple-9);
   border: none;
   border-radius: 10px;
-  }
+}
 
-.button:hover{
-  color: var(--purple-8);
+.button:hover {
+  color: var(--purple-9);
 
   background-color: var(--white);
   box-shadow: 0px 4px 4px var(--blue-9);

@@ -1,20 +1,15 @@
 @import './../../app.css';
 
-.pageHeader {
-
-margin: 0;
-padding: 30px 0;
-
-font-style: normal;
-font-weight: 500;
-font-size: 28px;
-line-height: 42px;
-
-text-align: left;
-
-color: var(--purple-9);
-}
-
-.pageHeaderWhite {
-color: var(--white);
+.page-header {
+  margin: 0;
+  padding: 30px 0;
+  
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 42px;
+  
+  text-align: left;
+  
+  color: var(--purple-9);
 }

@@ -2,7 +2,7 @@ import React from 'react';
 
 import style from './style.css';
 
-const AccountBar = () => (
+export const AccountBar = () => (
   <ul className={style.accountBar}>
     <li className={style.searchInput}>
       <form className={style.searchForm}> 
@@ -14,7 +14,7 @@ const AccountBar = () => (
     </li>
     <li className={style.profileWrapper}>
       <div className={style.dropdown}>
-        <button className={style.profile} type="button" onClick={showMenu}></button>
+        <button className={style.profile} type="button"></button>
         <div className={style.navDropdown}>
           <a href="#" className={style.dropdownLink}>view history</a>
           <a href="#" className={style.dropdownLink}>settings</a>
@@ -25,9 +25,3 @@ const AccountBar = () => (
     </li>
   </ul>
 );
-
-// TODO add showmenu
-const showMenu = () => {
-}
-
-export default AccountBar;

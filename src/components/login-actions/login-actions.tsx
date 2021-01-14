@@ -5,13 +5,12 @@ import {URLs} from './../../__data__/urls';
 import { Link as ConnectedLink } from 'react-router-dom';
 
 import style from './style.css';
-import Checkbox from '../checkbox/checkbox';
+import Checkbox from '../checkbox';
 
-const LoginActions = () => (
-  <div className={style.form__actions}>
+export const LoginActions = () => (
+  <div className={style.formActions}>
     <Checkbox labels={['Remember me']} />
     <LinkReset
-      type='link'
       to={URLs.resetpassword.url}
       as={ConnectedLink}
     >
@@ -19,5 +18,3 @@ const LoginActions = () => (
       </LinkReset>
   </div>
 );
-
-export default LoginActions;

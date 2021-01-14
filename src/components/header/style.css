@@ -1,18 +1,19 @@
 @import './../../app.css';
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+
+  border-bottom: 1px solid var(--gray-6);
 }
 
-.header_nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-
-    margin-right: 30px;
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-right: 30px;
   
-    list-style: none;
+  list-style: none;
 }
