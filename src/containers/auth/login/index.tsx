@@ -19,12 +19,8 @@ const Login = () => (
         <TitleWithSubtitle type={'login'} />
         <form method={'post'} action={'#'}>
           <div className={style.formWrapper}>
-            <p className={style.formItem}>
-              <Input type={'email'} />
-            </p>
-            <p className={style.formItem}>
-              <Input type={'password'} />
-            </p>
+            <Input label="Email Address" id="userEmail" name="email" type="email" placeholder="email@example.com"/>
+            <Input label="Password" id="password" name="password" type="password" placeholder="••••••"/>
           </div>
           <LoginActions />
           <div className={style.buttons}>

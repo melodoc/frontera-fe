@@ -19,9 +19,7 @@ const Restore = () => (
       </section>
       <form method={'post'} action={'#'}>
         <div className={style.formWrapper}>
-          <p className={style.formItemSingle}>
-            <Input type={'email'} />
-          </p>
+          <Input label="Email Address" id="userEmail" name="email" type="email" placeholder="email@example.com"/>
         </div>
         <div className={style.buttons }>
         <LinkButton

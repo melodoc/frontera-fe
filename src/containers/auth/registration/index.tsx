@@ -19,18 +19,10 @@ const Registration = () => (
       </section>
       <form method={'post'} action={'#'}>
         <div className={style.formWrapper}>
-          <p className={style.formItem}>
-            <Input type={'username'} />
-          </p>
-          <p className={style.formItem}>
-            <Input type={'email'} />
-          </p>
-          <p className={style.formItem}>
-            <Input type={'password'} />
-          </p>
-          <p className={style.formItem}>
-            <Input type={'repeatPassword'} />
-          </p>
+          <Input label="Username" id="username" name="username" type="text" placeholder="Elliot Page"/>
+          <Input label="Email Address" id="userEmail" name="email" type="email" placeholder="email@example.com"/>
+          <Input label="Password" id="password" name="password" type="password" placeholder="••••••"/>
+          <Input label="Repeat password" id="repeatPassword" name="repeatPassword" type="password" placeholder="••••••"/>
         </div>
         <div className={style.buttons}>
           <LinkButton

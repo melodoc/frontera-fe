@@ -19,12 +19,8 @@ const ResetPassword = () => (
       </section>
       <form method={'post'} action={'#'}>
         <div className={style.formWrapper}>
-          <p className={style.formItem}>
-            <Input type={'password'} />
-          </p>
-          <p className={style.formItem}>
-            <Input type={'repeatPassword'} />
-          </p>
+          <Input label="Password" id="password" name="password" type="password" placeholder="••••••" />
+          <Input label="Repeat password" id="repeatPassword" name="repeatPassword" type="password "placeholder="••••••" />
         </div>
         <div className={style.buttons}>
           <LinkButton
