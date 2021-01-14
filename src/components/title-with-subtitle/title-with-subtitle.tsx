@@ -52,9 +52,7 @@ interface TitleWithSubtitleProps {
   readonly type: string;
 }
 
-type TitleWithSubtitleType = React.FunctionComponent<TitleWithSubtitleProps>;
-
-export const TitleWithSubtitle: TitleWithSubtitleType = ({type}: TitleWithSubtitleProps) => {
+export const TitleWithSubtitle: React.FC<TitleWithSubtitleProps> = ({type}) => {
   const titleValue = getValues(titleAttributes, type);
 
     return (

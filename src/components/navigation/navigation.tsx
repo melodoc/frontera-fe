@@ -6,9 +6,7 @@ interface NavigationProps {
   readonly links: Array<string>;
 }
 
-type NavigationType = React.FunctionComponent<NavigationProps>;
-
-export const Navigation: NavigationType = ({ links}: NavigationProps) => {
+export const Navigation: React.FC<NavigationProps> = ({ links}) => {
   let linksTemplate = links.map((linkName) => {
     return (
         <li className={style.navAccountItem}>

@@ -18,9 +18,7 @@ interface LoaderProps {
   readonly type: string;
 }
 
-type LoaderType = React.FunctionComponent<LoaderProps>;
-
-export const Loader: LoaderType = ({ type }: LoaderProps) => {
+export const Loader: React.FC<LoaderProps> = ({ type }) => {
   const loaderValue = getValues(loaderAttributes, type);
   return (
     <React.Fragment>

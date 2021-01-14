@@ -5,8 +5,8 @@ interface CourseNameProps {
     readonly label: string;
   }
 
-export const CourseName = ({label}:CourseNameProps) => (
-    <>
+export const CourseName: React.FC<CourseNameProps> = ({label}) => (
+    <React.Fragment>
         <h2 className={style.courseName}>{label}</h2>
-    </>
+    </React.Fragment>
 )

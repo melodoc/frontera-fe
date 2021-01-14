@@ -6,9 +6,7 @@ interface CheckboxProps {
   readonly labels: Array<string>;
 }
 
-type CheckboxType = React.FunctionComponent<CheckboxProps>;
-
-export const Checkbox: CheckboxType = ({ labels }: CheckboxProps) => {
+export const Checkbox: React.FC<CheckboxProps> = ({ labels }) => {
 
   let labelsTemplate = labels.map((labelName) => {
     return (

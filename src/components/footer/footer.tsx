@@ -6,9 +6,7 @@ interface FooterProps {
   readonly links: Array<string>;
 }
 
-type FooterType = React.FunctionComponent<FooterProps>;
-
-export const Footer: FooterType = ({ links }: FooterProps) => {
+export const Footer: React.FC<FooterProps> = ({ links }) => {
   let linksTemplate = links.map((linkName) => {
     return (
         <li className={style.footerItem}>
