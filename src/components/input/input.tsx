@@ -1,4 +1,5 @@
 import React, { HTMLAttributes } from 'react';
+import PropTypes from 'prop-types';
 
 import style from './style.css';
 
@@ -6,10 +7,10 @@ interface InputProps extends HTMLAttributes<HTMLInputElement> {
   label: string;
   id: string;
   name: string;
-  type:string;
+  type?:string;
 }
 
-export const Input: React.FC<InputProps> = ({ label, id, name, type='text', ...rest }) => {
+export const Input: React.FC<InputProps> = ({ label, id, name, type, ...rest }) => {
   return (
     <p className={style.formItem}>
       <label className={style.formLabel} htmlFor={String(id)}>
@@ -21,7 +22,18 @@ export const Input: React.FC<InputProps> = ({ label, id, name, type='text', ...r
           {...rest}
         />
         <span>{label}</span>
-    </label>
+      </label>
     </p>
   );
 };
+
+Input.propTypes = {
+  label: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  type: PropTypes.oneOf(['email', 'password', 'text' ]),
+}
+
+Input.defaultProps = {
+  type: 'text',
+}
