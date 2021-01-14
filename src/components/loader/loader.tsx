@@ -26,9 +26,9 @@ export const Loader: React.FC<LoaderProps> = ({ type }) => {
       <div className={style.anthem}>
         <p className={style.anthemItem}>{loaderValue.anthem}</p>
       </div>
-      <div className={style.loader}>
+      <p className={style.loader}>
         Loading...
-      </div>
+      </p>
       <div className={style.anthem}>
         <p className={style.loginHeading}>{loaderValue.heading}</p>
       </div>

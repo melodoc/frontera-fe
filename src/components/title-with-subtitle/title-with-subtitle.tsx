@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import style from "./style.css";
 import getValues from "../../handlers/getValues";
@@ -62,3 +63,11 @@ export const TitleWithSubtitle: React.FC<TitleWithSubtitleProps> = ({type}) => {
       </React.Fragment>
     );
 };
+
+TitleWithSubtitle.propTypes = {
+  type: PropTypes.string.isRequired,
+}
+
+TitleWithSubtitle.defaultProps = {
+  type: 'No data',
+}

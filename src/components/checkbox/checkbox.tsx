@@ -1,6 +1,7 @@
-import React from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import style from "./style.css";
+import style from './style.css';
 
 interface CheckboxProps {
   readonly labels: Array<string>;
@@ -29,3 +30,11 @@ export const Checkbox: React.FC<CheckboxProps> = ({ labels }) => {
 
   return <ul className={style.filterItem}>{labelsTemplate}</ul>;
 };
+
+Checkbox.propTypes = {
+  labels: PropTypes.array.isRequired,
+}
+
+Checkbox.defaultProps = {
+  labels: ['No options'],
+}

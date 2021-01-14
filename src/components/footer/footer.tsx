@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import style from "./style.css";
 
@@ -25,3 +26,11 @@ export const Footer: React.FC<FooterProps> = ({ links }) => {
     </footer>
     );
 };
+
+Footer.propTypes = {
+  links: PropTypes.array.isRequired,
+}
+
+Footer.defaultProps = {
+  links: ['No links'],
+}
