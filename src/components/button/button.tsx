@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { AllHTMLAttributes, ButtonHTMLAttributes, Children, DetailedHTMLProps } from 'react';
 
 import style from './style.css';
 
-interface ButtonProps {
-  readonly name: string;
+interface ButtonProps extends React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {
+  loading?: boolean;
 }
 
-export const Button: React.FC<ButtonProps> = ({ name }) => (
-  <button className={style.button} type='submit'>
-    {name}
+export const Button: React.FC<ButtonProps> = ({children, ...rest}) => (
+  <button
+    {...rest} 
+    className={style.button}
+  >
+    {children}
   </button>
 );

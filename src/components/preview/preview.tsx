@@ -9,8 +9,12 @@ export const Preview = () => (
         <div className={style.previewInfo}>
             <CourseName label="JavaScript mastering"/>
             <div className={style.previewButtons}>
-                <Button name={'Continue'} />
-                <Button name={'Info'} />
+                <Button type="submit">
+                    Continue
+                </Button>
+                <Button type="submit">
+                    Info
+                </Button>
             </div>
         </div>
     </section>

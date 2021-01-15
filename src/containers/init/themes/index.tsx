@@ -28,7 +28,7 @@ class ChooseTheme extends React.Component {
           <section className={style.login}>
             <TitleWithSubtitle type={'themes'} />
           </section>
-          <form method={'post'} action={'#'}>
+          <form method="post" action="#">
             <div className={style.formWrapper}>
               <Checkbox labels={['HTML', 'CSS', 'JavaScript', 'git', 'webpack', 'TypeScript']} />
             </div>

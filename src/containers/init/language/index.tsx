@@ -28,7 +28,7 @@ class ChooseLanguage extends React.Component {
           <section className={style.login}>
             <TitleWithSubtitle type={'lang'} />
           </section>
-          <form method={'post'} action={'#'}>
+          <form method="post" action="#">
             <div className={style.formWrapper}>
               <Checkbox labels={['English', 'Espanol', 'Russian']} />
             </div>
