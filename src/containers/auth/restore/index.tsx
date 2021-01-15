@@ -26,7 +26,7 @@ class Restore extends React.Component {
           <section className={style.login}>
             <TitleWithSubtitle type={'restore'} />
           </section>
-          <form method={'post'} action={'#'}>
+          <form method="post" action="#">
             <div className={style.formWrapper}>
               <Input inputRef={this.firstInputRef} label="Email Address" id="restoreEmail" name="email" type="email" placeholder="email@example.com" />
             </div>

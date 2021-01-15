@@ -26,7 +26,7 @@ class Registration extends React.Component {
           <section className={style.login}>
             <TitleWithSubtitle type={'registartion'} />
           </section>
-          <form method={'post'} action={'#'}>
+          <form method="post" action="#">
             <div className={style.formWrapper}>
               <Input inputRef={this.firstInputRef} label="Username" id="username" name="username" type="text" placeholder="Elliot Page" />
               <Input inputRef={this.secondInputRef} label="Email Address" id="userEmail" name="email" type="email" placeholder="email@example.com" />

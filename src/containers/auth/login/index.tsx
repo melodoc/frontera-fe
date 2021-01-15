@@ -26,7 +26,7 @@ class Login extends React.Component {
         <main className={style.container}>
           <section>
             <TitleWithSubtitle type={'login'} />
-            <form method={'post'} action={'#'}>
+            <form method="post" action="#">
               <div className={style.formWrapper}>
                 <Input inputRef={this.firstInputRef} label="Email Address" id="userEmail" name="email" type="email" placeholder="email@example.com" />
                 <Input inputRef={this.secondInputRef} label="Password" id="password" name="password" type="password" placeholder="••••••" />

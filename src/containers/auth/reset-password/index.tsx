@@ -26,7 +26,7 @@ class ResetPassword extends React.Component {
           <section className={style.login}>
             <TitleWithSubtitle type={'reset'} />
           </section>
-          <form method={'post'} action={'#'}>
+          <form method="post" action="#">
             <div className={style.formWrapper}>
               <Input inputRef={this.firstInputRef} label="Password" id="password" name="password" type="password" placeholder="••••••" />
               <Input inputRef={this.secondInputRef} label="Repeat password" id="repeatPassword" name="repeatPassword" type="password " placeholder="••••••" />
