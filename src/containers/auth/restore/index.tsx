@@ -11,6 +11,13 @@ import Input from '../../../components/input';
 import style from '../style.css';
 
 class Restore extends React.Component {
+  firstInputRef = React.createRef<HTMLInputElement>();
+  secondInputRef = React.createRef<HTMLInputElement>();
+
+  componentDidMount() {
+    this.firstInputRef.current.focus();
+  }
+
   render() {
     return (
       <React.Fragment>
@@ -21,7 +28,7 @@ class Restore extends React.Component {
           </section>
           <form method={'post'} action={'#'}>
             <div className={style.formWrapper}>
-              <Input label="Email Address" id="restoreEmail" name="email" type="email" placeholder="email@example.com" />
+              <Input inputRef={this.firstInputRef} label="Email Address" id="restoreEmail" name="email" type="email" placeholder="email@example.com" />
             </div>
             <div className={style.buttons}>
               <LinkButton

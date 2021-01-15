@@ -12,6 +12,13 @@ import LoginActions from '../../../components/login-actions';
 import style from '../style.css';
 
 class Login extends React.Component {
+  firstInputRef = React.createRef<HTMLInputElement>();
+  secondInputRef = React.createRef<HTMLInputElement>();
+
+  componentDidMount() {
+    this.firstInputRef.current.focus();
+  }
+
   render() {
     return (
       <React.Fragment>
@@ -21,8 +28,8 @@ class Login extends React.Component {
             <TitleWithSubtitle type={'login'} />
             <form method={'post'} action={'#'}>
               <div className={style.formWrapper}>
-                <Input label="Email Address" id="userEmail" name="email" type="email" placeholder="email@example.com" />
-                <Input label="Password" id="password" name="password" type="password" placeholder="••••••" />
+                <Input inputRef={this.firstInputRef} label="Email Address" id="userEmail" name="email" type="email" placeholder="email@example.com" />
+                <Input inputRef={this.secondInputRef} label="Password" id="password" name="password" type="password" placeholder="••••••" />
               </div>
               <LoginActions />
               <div className={style.buttons}>

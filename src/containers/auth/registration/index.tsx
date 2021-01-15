@@ -11,6 +11,13 @@ import Input from '../../../components/input';
 import style from '../style.css';
 
 class Registration extends React.Component {
+  firstInputRef = React.createRef<HTMLInputElement>();
+  secondInputRef = React.createRef<HTMLInputElement>();
+
+  componentDidMount() {
+    this.firstInputRef.current.focus();
+  }
+
   render() {
     return (
       <React.Fragment>
@@ -21,10 +28,10 @@ class Registration extends React.Component {
           </section>
           <form method={'post'} action={'#'}>
             <div className={style.formWrapper}>
-              <Input label="Username" id="username" name="username" type="text" placeholder="Elliot Page" />
-              <Input label="Email Address" id="userEmail" name="email" type="email" placeholder="email@example.com" />
-              <Input label="Password" id="password" name="password" type="password" placeholder="••••••" />
-              <Input label="Repeat password" id="repeatPassword" name="repeatPassword" type="password" placeholder="••••••" />
+              <Input inputRef={this.firstInputRef} label="Username" id="username" name="username" type="text" placeholder="Elliot Page" />
+              <Input inputRef={this.secondInputRef} label="Email Address" id="userEmail" name="email" type="email" placeholder="email@example.com" />
+              <Input inputRef={this.secondInputRef} label="Password" id="password" name="password" type="password" placeholder="••••••" />
+              <Input inputRef={this.secondInputRef} label="Repeat password" id="repeatPassword" name="repeatPassword" type="password" placeholder="••••••" />
             </div>
             <div className={style.buttons}>
               <LinkButton

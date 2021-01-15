@@ -8,13 +8,15 @@ interface InputProps extends HTMLAttributes<HTMLInputElement> {
   id: string;
   name: string;
   type?:string;
+  inputRef: React.RefObject<HTMLInputElement>;
 }
 
-export const Input: React.FC<InputProps> = ({ label, id, name, type, ...rest }) => {
+export const Input: React.FC<InputProps> = ({ inputRef, label, id, name, type, ...rest }) => {
   return (
     <p className={style.formItem}>
       <label className={style.formLabel} htmlFor={String(id)}>
         <input
+          ref={inputRef}
           className={style.formText}
           id={id}
           type={type}

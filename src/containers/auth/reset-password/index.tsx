@@ -11,6 +11,13 @@ import Input from '../../../components/input';
 import style from '../style.css';
 
 class ResetPassword extends React.Component {
+  firstInputRef = React.createRef<HTMLInputElement>();
+  secondInputRef = React.createRef<HTMLInputElement>();
+
+  componentDidMount() {
+    this.firstInputRef.current.focus();
+  }
+
   render() {
     return (
       <React.Fragment>
@@ -21,8 +28,8 @@ class ResetPassword extends React.Component {
           </section>
           <form method={'post'} action={'#'}>
             <div className={style.formWrapper}>
-              <Input label="Password" id="password" name="password" type="password" placeholder="••••••" />
-              <Input label="Repeat password" id="repeatPassword" name="repeatPassword" type="password " placeholder="••••••" />
+              <Input inputRef={this.firstInputRef} label="Password" id="password" name="password" type="password" placeholder="••••••" />
+              <Input inputRef={this.secondInputRef} label="Repeat password" id="repeatPassword" name="repeatPassword" type="password " placeholder="••••••" />
             </div>
             <div className={style.buttons}>
               <LinkButton
