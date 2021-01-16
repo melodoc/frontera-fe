@@ -1,7 +1,7 @@
 import React from 'react';
 
 import IconLogo from '../../../components/icon-logo/';
-import PageHeader from '../../../components/page-header';
+import {PageHeader} from '../../../components/page-header';
 import Navigation from '../../../components/navigation';
 import AccountBar from '../../../components/account-bar/';
 import { CourseCards } from '../../../components/course-cards/course-cards';

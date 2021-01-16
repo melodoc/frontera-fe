@@ -1,5 +1,5 @@
 import React from 'react';
-import PageHeader from './../page-header'
+import {PageHeader} from './../page-header'
 import style from './style.css';
 import { CourseCards } from '../../components/course-cards/course-cards';
 
