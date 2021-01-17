@@ -7,9 +7,7 @@ import { CourseCardsLarge } from '../../../components/course-cards/course-cards'
 
 import style from '../style.css';
 
-class Suggestions extends React.Component {
-  render() {
-    return (
+const Suggestions = () => (
       <React.Fragment>
         <Header />
         <main className={style.container}>
@@ -25,8 +23,6 @@ class Suggestions extends React.Component {
           </section>
         </main>
       </React.Fragment>
-    );
-  }
-}
+);
 
 export default Suggestions;
