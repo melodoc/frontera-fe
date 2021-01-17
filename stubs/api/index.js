@@ -20,17 +20,24 @@ router.post('/recover/password/new', (req, res) => {
     // res.status(400).send(require('./mocks/recover/password/new/error'));
 });
 
-router.get('/suggetions/themes/:id', (req, res) => {
-    res.send(require('./mocks/suggetions/themes'));
+router.get('/suggestions/themes/:id', (req, res) => {
+    res.send(require('./mocks/suggestions/themes'));
 });
 
-router.post('/suggetions/updateUserThemes/:id', (req, res) => {
-    res.send(require('./mocks/suggetions/success'));
-    // res.status(400).send(require('./mocks/suggetions/error'));
+router.post('/suggestions/updateUserThemes/:id', (req, res) => {
+    res.send(require('./mocks/suggestions/success'));
+    // res.status(400).send(require('./mocks/suggestions/error'));
 });
 
-router.get('/suggetions/search/:id', (req, res) => {
-    res.send(require('./mocks/suggetions/suggetions'));
+router.get('/suggestions/search/:id', (req, res) => {
+    res.send(require('./mocks/suggestions/suggetions'));
+});
+
+router.get('/suggestions/success', (req, res) => {
+    setTimeout(() => {
+        res.send(require('./mocks/suggestions/success'));
+    }, 1000);
+    // res.status(400).send(require('./mocks/suggestions/error'));
 });
 
 router.get('/topics/videos/:id', (req, res) => {

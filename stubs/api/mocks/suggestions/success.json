@@ -4,20 +4,20 @@
   },
   "themes": [
     {
-      "name": "React",
-      "image": ""
+      "label": "React1",
+      "imageSrc": ""
     },
     {
-      "name": "CI/CD",
-      "image": ""
+      "label": "CI/CD",
+      "imageSrc": ""
     },
     {
-      "name": "JavaScript Mastering",
-      "image": ""
+      "label": "JavaScript Mastering",
+      "imageSrc": ""
     },
     {
-      "name": "git",
-      "image": ""
+      "label": "git",
+      "imageSrc": ""
     }
   ]
 }

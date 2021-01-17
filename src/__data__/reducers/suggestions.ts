@@ -3,8 +3,8 @@ import {SUGGESTIONS_ERROR, SUGGESTIONS_INIT, SUGGESTIONS_SUCCESS} from '../const
 const initialState = {
     themes: null,
     loading: false,
-    error: null
-}
+    errors: null
+};
 
 export default function (state = initialState, action) {
     const type = action.type;
@@ -14,18 +14,18 @@ export default function (state = initialState, action) {
                 ...state,
                 themes: action.themes,
                 loading: false,
-            })
+            });
         case SUGGESTIONS_INIT:
             return({
                 ...state,
                 loading: true
-            })
+            });
         case SUGGESTIONS_ERROR:
             return({
                 ...state,
-                error: action.error,
+                errors: action.errors,
                 loading: false,
-            })
+            });
         default:
             return state;
     }
