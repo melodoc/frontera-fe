@@ -12,7 +12,6 @@ import style from '../style.css';
 
 class Restore extends React.Component {
   firstInputRef = React.createRef<HTMLInputElement>();
-  secondInputRef = React.createRef<HTMLInputElement>();
 
   componentDidMount() {
     this.firstInputRef.current.focus();

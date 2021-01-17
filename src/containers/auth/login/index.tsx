@@ -13,7 +13,6 @@ import style from '../style.css';
 
 class Login extends React.Component {
   firstInputRef = React.createRef<HTMLInputElement>();
-  secondInputRef = React.createRef<HTMLInputElement>();
 
   componentDidMount() {
     this.firstInputRef.current.focus();
@@ -29,7 +28,7 @@ class Login extends React.Component {
             <form method="post" action="#">
               <div className={style.formWrapper}>
                 <Input inputRef={this.firstInputRef} label="Email Address" id="userEmail" name="email" type="email" placeholder="email@example.com" />
-                <Input inputRef={this.secondInputRef} label="Password" id="password" name="password" type="password" placeholder="••••••" />
+                <Input label="Password" id="password" name="password" type="password" placeholder="••••••" />
               </div>
               <LoginActions />
               <div className={style.buttons}>
