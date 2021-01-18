@@ -1,3 +1,3 @@
-import {Trending} from './trending';
+import { Trending } from './trending';
 
 export default Trending;
