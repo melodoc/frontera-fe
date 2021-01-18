@@ -9,9 +9,10 @@ interface CheckboxProps {
 
 export const Checkbox: React.FC<CheckboxProps> = ({ labels }) => {
 
-  let labelsTemplate = labels.map((labelName) => {
+  const labelsTemplate = labels.map((labelName, key) => {
     return (
-      <li className={style.checkboxItem}>
+      <li className={style.checkboxItem}
+      key={labelName+key}>
         <input
           className={style.checkbox}
           id={'filter' + labelName}

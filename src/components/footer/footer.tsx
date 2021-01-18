@@ -8,9 +8,10 @@ interface FooterProps {
 }
 
 export const Footer: React.FC<FooterProps> = ({ links }) => {
-  let linksTemplate = links.map((linkName) => {
+  const linksTemplate = links.map((linkName, key) => {
     return (
-        <li className={style.footerItem}>
+        <li className={style.footerItem}
+        key={linkName+key}>
           <a className={style.footerLink} href="#">
             {linkName}
           </a>

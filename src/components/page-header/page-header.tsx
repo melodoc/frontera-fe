@@ -9,6 +9,6 @@ interface PageHeaderProps {
 
 type PageHeaderType = React.FunctionComponent<PageHeaderProps>;
 
-export const PageHeader: PageHeaderType = ({label, size}: PageHeaderProps) => {
+export const PageHeader: PageHeaderType = ({label}: PageHeaderProps) => {
       return <h1 className={style.pageHeader}>{label}</h1>;
 };

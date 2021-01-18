@@ -2,7 +2,6 @@ import React from 'react';
 import {
     Switch,
     Route,
-    Link,
     Redirect
 } from 'react-router-dom';
 import {URLs} from './../__data__/urls'
@@ -15,7 +14,6 @@ import ChooseLanguage from './init/language';
 import Personalizing from './init/personalizing';
 import ChooseTheme from './init/themes';
 import Suggestions from './pages/suggestions';
-import Coursepage from './pages/coursepage';
 
 const Dashboard = () => (
     <Switch>

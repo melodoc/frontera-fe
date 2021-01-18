@@ -8,9 +8,10 @@ interface NavigationProps {
 }
 
 export const Navigation: React.FC<NavigationProps> = ({ links }) => {
-  let linksTemplate = links.map((linkName) => {
+  const linksTemplate = links.map((linkName, key) => {
     return (
-        <li className={style.navAccountItem}>
+        <li className={style.navAccountItem}
+        key={linkName+key}>
           <a className={style.navAccountLink} href="#">
             {linkName}
           </a>
