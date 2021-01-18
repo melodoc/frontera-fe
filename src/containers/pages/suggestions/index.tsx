@@ -3,10 +3,10 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import getSuggestion from '../../../__data__/action/suggestions';
 import Header from '../../../components/header';
-import PageHeader from '../../../components/page-header';
+import { PageHeader } from '../../../components/page-header';
+import { CourseCardsLarge } from '../../../components/course-cards/course-cards';
 
 import style from '../style.css';
-import { CourseCardsLarge } from '../../../components/course-cards/course-cards';
 
 
 const Suggestions = () => {

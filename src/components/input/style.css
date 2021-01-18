@@ -1,5 +1,32 @@
 @import './../../app.css';
 
+.form-item {
+  margin: 0;
+  padding: 0;
+}
+
+.form-item:first-child input {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.form-item:last-child input {
+  border-radius: 0px 0px 10px 10px;
+}
+
+.form-item:not(:first-child) input {
+  border-top: none;
+}
+
+.form-item:only-child input {
+  border-radius: 10px 10px 10px 10px;
+}
+
+.form-item input:focus {
+  outline: none;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0 0 0 2px var(--purple-9);
+}
+
 .form-label {
   position: relative;
 }

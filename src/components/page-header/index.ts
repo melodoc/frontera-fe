@@ -1,3 +1,1 @@
-import {PageHeader} from './page-header';
-
-export default PageHeader;
+export { PageHeader, CourseHeader } from './page-header';

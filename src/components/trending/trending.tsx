@@ -1,8 +1,9 @@
 import React from 'react';
-import PageHeader from './../page-header'
-import style from './style.css';
+
+import { PageHeader } from './../page-header'
 import { CourseCards } from '../../components/course-cards/course-cards';
 
+import style from './style.css';
 
 export const Trending = () => (
     <div className={style.trending}>

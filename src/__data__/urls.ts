@@ -29,4 +29,7 @@ export const URLs = {
     resetpassword: {
         url: navigations['link.frontera.resetpassword']
     },
+    coursepage: {
+        url: navigations['link.frontera.coursepage']
+    },
 }

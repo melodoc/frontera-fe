@@ -1,90 +1,41 @@
-import React from 'react';
+import React, { HTMLAttributes } from 'react';
+import PropTypes from 'prop-types';
 
 import style from './style.css';
-import getValues from '../../handlers/getValues';
 
-const inputAttributes = [
-  {
-    key: 'email',
-    value: {
-      htmlFor: 'userEmail',
-      id: 'userEmail',
-      type: 'email',
-      name: 'email',
-      placeholder: 'email@example.com',
-      inputText: 'Email Address',
-      isRequired: true,
-    },
-  },
-  {
-    key: 'repeatEmail',
-    value: {
-      htmlFor: 'repeatUserEmail',
-      id: 'repeatUserEmail',
-      type: 'email',
-      name: 'repeatEmail',
-      placeholder: 'email@example.com',
-      inputText: 'Repeat Email Address',
-      isRequired: true,
-    },
-  },
-  {
-    key: 'username',
-    value: {
-      htmlFor: 'username',
-      id: 'username',
-      type: 'text',
-      name: 'username',
-      placeholder: 'Elliot Page',
-      inputText: 'Username',
-      isRequired: true,
-    },
-  },
-  {
-    key: 'password',
-    value: {
-      htmlFor: 'password',
-      id: 'password',
-      type: 'password',
-      name: 'password',
-      placeholder: '••••••',
-      inputText: 'Password',
-      isRequired: true,
-    },
-  },
-  {
-    key: 'repeatPassword',
-    value: {
-      htmlFor: 'repeatPassword',
-      id: 'repeatPassword',
-      type: 'password',
-      name: 'repeatPassword',
-      placeholder: '••••••',
-      inputText: 'Repeat password',
-      isRequired: true,
-    },
-  },
-];
-
-interface InputProps {
-  readonly type: string;
+interface InputProps extends HTMLAttributes<HTMLInputElement> {
+  label: string;
+  id: string;
+  name: string;
+  type?:string;
+  inputRef?: React.RefObject<HTMLInputElement>;
 }
 
-type InputType = React.FunctionComponent<InputProps>;
-
-export const Input: InputType = ({ type }: InputProps) => {
-  const inputValue = getValues(inputAttributes, type);
+export const Input: React.FC<InputProps> = ({ inputRef, label, id, name, type, ...rest }) => {
   return (
-    <label className={style.formLabel} htmlFor={inputValue.htmlFor}>
-      <input
-        className={style.formText}
-        id={inputValue.id}
-        type={inputValue.type}
-        name={inputValue.name}
-        placeholder={inputValue.placeholder}
-        required={inputValue.isRequired}
-      />
-      <span>{inputValue.inputText}</span>
-    </label>
+    <p className={style.formItem}>
+      <label className={style.formLabel} htmlFor={String(id)}>
+        <input
+          ref={inputRef}
+          className={style.formText}
+          id={id}
+          type={type}
+          name={name}
+          {...rest}
+        />
+        <span>{label}</span>
+      </label>
+    </p>
   );
 };
+
+Input.propTypes = {
+  label: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  type: PropTypes.oneOf(['email', 'password', 'text' ]),
+}
+
+Input.defaultProps = {
+  type: 'text',
+}

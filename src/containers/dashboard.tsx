@@ -25,6 +25,9 @@ const Dashboard = () => (
         <Route path={URLs.login.url}>
             <Login/>
         </Route>
+        <Route path={URLs.coursepage.url}>
+            <Coursepage/>
+        </Route>
         <Route path={URLs.lang.url}>
             <ChooseLanguage/>
         </Route>
