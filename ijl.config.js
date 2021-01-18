@@ -60,6 +60,7 @@ module.exports = {
       'link.frontera.home':'/home',
       'link.frontera.registration':'/registration',
       'link.frontera.resetpassword':'/resetpassword',
+      'link.frontera.coursepage':'/coursepage',
     },
     config: {
         'frontera.api': '/api'

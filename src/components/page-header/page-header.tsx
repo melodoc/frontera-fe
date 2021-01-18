@@ -4,11 +4,16 @@ import style from "./style.css";
 
 interface PageHeaderProps {
   readonly label: string;
-  readonly size?: string;
 }
 
-type PageHeaderType = React.FunctionComponent<PageHeaderProps>;
+interface CourseHeaderProps {
+  readonly label: string;
+}
 
-export const PageHeader: PageHeaderType = ({label}: PageHeaderProps) => {
-      return <h1 className={style.pageHeader}>{label}</h1>;
+export const PageHeader: React.FC<PageHeaderProps> = ({ label }) => {
+  return <h2 className={style.pageHeader}>{label}</h2>;
+};
+
+export const CourseHeader: React.FC<CourseHeaderProps> = ({ label }) => {
+  return <h2 className={style.courseHeader}>{label}</h2>;
 };

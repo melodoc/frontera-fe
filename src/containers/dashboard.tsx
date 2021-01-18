@@ -9,11 +9,12 @@ import {URLs} from './../__data__/urls'
 import Login from './auth/login';
 import Registration from './auth/registration';
 import ResetPassword from './auth/reset-password'
-import HomePage from './pages/homepage';
 import ChooseLanguage from './init/language';
-import Personalizing from './init/personalizing';
 import ChooseTheme from './init/themes';
+import Personalizing from './init/personalizing';
+import HomePage from './pages/homepage';
 import Suggestions from './pages/suggestions';
+import Coursepage from './pages/coursepage';
 
 const Dashboard = () => (
     <Switch>
@@ -22,6 +23,9 @@ const Dashboard = () => (
         </Route>
         <Route path={URLs.login.url}>
             <Login/>
+        </Route>
+        <Route path={URLs.coursepage.url}>
+            <Coursepage/>
         </Route>
         <Route path={URLs.lang.url}>
             <ChooseLanguage/>
