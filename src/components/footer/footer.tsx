@@ -1,21 +1,21 @@
-import React from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import style from "./style.css";
+import style from './style.css';
 
 interface FooterProps {
   readonly links: Array<string>;
 }
 
-type FooterType = React.FunctionComponent<FooterProps>;
-
-export const Footer: FooterType = ({ links }: FooterProps) => {
-  let linksTemplate = links.map((linkName) => {
+export const Footer: React.FC<FooterProps> = ({ links }) => {
+  const linksTemplate = links.map((linkName, key) => {
     return (
-        <li className={style.footerItem}>
-          <a className={style.footerLink} href="#">
-            {linkName}
-          </a>
-        </li>
+      <li className={style.footerItem}
+        key={linkName + key}>
+        <a className={style.footerLink} href="#">
+          {linkName}
+        </a>
+      </li>
     );
   });
 
@@ -25,5 +25,13 @@ export const Footer: FooterType = ({ links }: FooterProps) => {
         {linksTemplate}
       </ul>
     </footer>
-    );
+  );
 };
+
+Footer.propTypes = {
+  links: PropTypes.array.isRequired,
+}
+
+Footer.defaultProps = {
+  links: ['No links'],
+}

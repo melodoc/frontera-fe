@@ -2,9 +2,9 @@ import { SUGGESTIONS_SUCCESS, SUGGESTIONS_INIT, SUGGESTIONS_ERROR } from '../con
 import { getConfigValue } from '@ijl/cli';
 
 
-const suggestionInitActionCreator = () => ({type: SUGGESTIONS_INIT});
-const suggestionSuccessActionCreator = (value) =>({type: SUGGESTIONS_SUCCESS, themes: value});
-const suggestionErrorActionCreator = (value) => ({type: SUGGESTIONS_ERROR, errors: value});
+const suggestionInitActionCreator = () => ({ type: SUGGESTIONS_INIT });
+const suggestionSuccessActionCreator = (value) => ({ type: SUGGESTIONS_SUCCESS, themes: value });
+const suggestionErrorActionCreator = (value) => ({ type: SUGGESTIONS_ERROR, errors: value });
 
 export default () => (dispatch) => {
     dispatch(suggestionInitActionCreator());

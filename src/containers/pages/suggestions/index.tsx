@@ -16,25 +16,25 @@ const Suggestions = () => {
     dispatch(getSuggestion());
   }, []);
 
-  const { isLoading } = useSelector((state: any)=> ({isLoading: state.suggestions.loading}));
-  const { themes } = useSelector((state: any)=> ({themes: state.suggestions.themes}));
-  const { errors } = useSelector((state: any)=> ({errors: state.suggestions.errors}));
+  const { isLoading } = useSelector((state: any) => ({ isLoading: state.suggestions.loading }));
+  const { themes } = useSelector((state: any) => ({ themes: state.suggestions.themes }));
+  const { errors } = useSelector((state: any) => ({ errors: state.suggestions.errors }));
 
 
   return (
-    <div className={style.body}>
+    <React.Fragment>
       <Header />
       <main className={style.container}>
         <section className={style.login}>
           <PageHeader label={'Based on your choise'} />
           <section className={style.gallery}>
-              { isLoading ? <span> Loading... </span>
-                  : themes && <CourseCardsLarge showNumber={false} cards={themes}/>}
-              {errors && <span>{errors.find((error) => error.field === 'suggestions').text}</span>}
+            {isLoading ? <span> Loading... </span>
+              : themes && <CourseCardsLarge showNumber={false} cards={themes} />}
+            {errors && <span>{errors.find((error) => error.field === 'suggestions').text}</span>}
           </section>
         </section>
       </main>
-    </div>
+    </React.Fragment>
   );
 };
 

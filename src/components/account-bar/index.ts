@@ -1,3 +1,3 @@
-import {AccountBar} from './account-bar';
+import { AccountBar } from './account-bar';
 
 export default AccountBar;

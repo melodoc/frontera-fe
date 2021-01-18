@@ -1,7 +1,6 @@
-import {combineReducers} from 'redux';
+import { combineReducers } from 'redux';
 import suggestions from './suggestions';
 
 export default combineReducers({
-    suggestions
-})
-
+  suggestions,
+});

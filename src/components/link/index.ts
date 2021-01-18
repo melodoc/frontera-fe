@@ -1,1 +1,1 @@
-export { Link, LinkButton, LinkReset} from './link';
+export { Link, LinkButton, LinkReset } from './link';

@@ -49,42 +49,49 @@ input[type='radio'].visuallyHidden {
 }
 
 .loader {
-  font-size: 10px;
+  position: relative;
   margin: 50px auto;
-  text-indent: -9999em;
   width: 40px;
   height: 40px;
+
+  font-size: 10px;
+  text-indent: -9999em;
   border-radius: 50%;
   background: var(--purple-9);
   background: linear-gradient(to right, var(--purple-9) 10%, var(--blue-1) 42%);
-  position: relative;
+  
   animation: load3 1.4s infinite linear;
   transform: translateZ(0);
 }
 
 .loader:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
   width: 50%;
   height: 50%;
   background: var(--purple-9);
   border-radius: 100% 0 0 0;
-  position: absolute;
-  top: 0;
-  left: 0;
+  
   content: '';
 }
 
 .loader:after {
-  background: var(--white);
-  width: 75%;
-  height: 75%;
-  border-radius: 50%;
-  content: '';
-  margin: auto;
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
+
+  width: 75%;
+  height: 75%;
+  margin: auto;
+  
+  background: var(--white);
+  border-radius: 50%;
+  
+  content: '';
 }
 
 @keyframes load3 {

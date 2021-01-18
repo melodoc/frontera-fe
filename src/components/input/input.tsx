@@ -7,7 +7,7 @@ interface InputProps extends HTMLAttributes<HTMLInputElement> {
   label: string;
   id: string;
   name: string;
-  type?:string;
+  type?: string;
   inputRef?: React.RefObject<HTMLInputElement>;
 }
 
@@ -33,7 +33,7 @@ Input.propTypes = {
   label: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  type: PropTypes.oneOf(['email', 'password', 'text' ]),
+  type: PropTypes.oneOf(['email', 'password', 'text']),
 }
 
 Input.defaultProps = {

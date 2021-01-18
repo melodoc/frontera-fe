@@ -1,7 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import style from "./style.css";
-import getValues from "../../handlers/getValues";
+import style from './style.css';
+
+import getValues from '../../handlers/getValues';
 
 const loaderAttributes = [
   {
@@ -18,9 +19,7 @@ interface LoaderProps {
   readonly type: string;
 }
 
-type LoaderType = React.FunctionComponent<LoaderProps>;
-
-export const Loader: LoaderType = ({ type }: LoaderProps) => {
+export const Loader: React.FC<LoaderProps> = ({ type }) => {
   const loaderValue = getValues(loaderAttributes, type);
   return (
     <React.Fragment>
@@ -28,9 +27,9 @@ export const Loader: LoaderType = ({ type }: LoaderProps) => {
       <div className={style.anthem}>
         <p className={style.anthemItem}>{loaderValue.anthem}</p>
       </div>
-      <div className={style.loader}>
+      <p className={style.loader}>
         Loading...
-      </div>
+      </p>
       <div className={style.anthem}>
         <p className={style.loginHeading}>{loaderValue.heading}</p>
       </div>

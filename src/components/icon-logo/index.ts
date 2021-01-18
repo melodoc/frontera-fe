@@ -1,3 +1,3 @@
-import {IconLogo} from './icon-logo';
+import { IconLogo } from './icon-logo';
 
 export default IconLogo;

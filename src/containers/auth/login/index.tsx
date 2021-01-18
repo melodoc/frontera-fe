@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { LinkButton, LinkReset } from './../../../components/link';
-import { URLs } from './../../../__data__/urls';
 import { Link as ConnectedLink } from 'react-router-dom';
+import { URLs } from './../../../__data__/urls';
 
+import { LinkButton, LinkReset } from './../../../components/link';
 import HeaderForm from '../../../components/header-form';
 import TitleWithSubtitle from '../../../components/title-with-subtitle';
 import Input from '../../../components/input';
@@ -42,7 +42,7 @@ class Login extends React.Component {
             <LinkReset
               to={URLs.registration.url}
               as={ConnectedLink}>
-              Don't have an account? Join free today
+              Don`t have an account? Join free today
             </LinkReset>
           </section>
         </main>

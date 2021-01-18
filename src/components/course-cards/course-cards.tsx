@@ -3,7 +3,7 @@ import React from 'react';
 import style from './style.css';
 
 interface CourseCardsProps {
-    readonly cards: Array<{label: string, imageSrc: string}>
+    readonly cards: Array<{ label: string, imageSrc: string }>
     readonly showNumber?: boolean;
 }
 interface CourseCardsState {
@@ -20,16 +20,16 @@ export class CourseCards extends React.Component<CourseCardsProps, CourseCardsSt
 
     componentDidMount() {
         const imgUrl = `${__webpack_public_path__}/static/images/suggestions/bg-widget-m-2.png`;
-        this.setState({imgSrc: imgUrl});
+        this.setState({ imgSrc: imgUrl });
     }
 
     handleError = () => {
         const defaultImageUrl = `${__webpack_public_path__}/static/images/suggestions/bg-widget-m-1.png`;
-        this.setState({imgSrc: defaultImageUrl});
+        this.setState({ imgSrc: defaultImageUrl });
     };
 
     renderImg = () => {
-        return (<img onError={this.handleError} src={this.state.imgSrc}/>);
+        return (<img onError={this.handleError} src={this.state.imgSrc} />);
     };
 
     renderCatalogLink = (card) => {
@@ -48,27 +48,28 @@ export class CourseCards extends React.Component<CourseCardsProps, CourseCardsSt
     };
     renderItemCard = (card) => {
         return (
-            <li className={style.catalogItem}>
+            <div className={style.catalogItem}>
                 {this.renderImg()}
                 {this.renderCatalogLink(card)}
-            </li>);
+            </div>);
     };
     render() {
         return (
-            <div className={style.catalogList}>
+            <ul className={style.catalogList}>
                 {this.props.cards.map((card, i) => {
                     return (
-                        <ul className={style.cardContainer}>
+                        <li className={style.cardContainer}
+                            key={card.label + i}>
                             {
                                 this.props.showNumber && <span className={style.index}>{i + 1}</span>
                             }
                             {
                                 this.renderItemCard(card)
                             }
-                        </ul>
+                        </li>
                     );
                 })}
-            </div>
+            </ul>
         );
     }
 }
@@ -92,9 +93,9 @@ export class CourseCardsLarge extends CourseCards {
     };
     renderItemCard = (card) => {
         return (
-            <li className={style.catalogItemLong}>
+            <div className={style.catalogItemLong}>
                 {this.renderImg()}
                 {this.renderCatalogLink(card)}
-            </li>);
+            </div>);
     };
 }

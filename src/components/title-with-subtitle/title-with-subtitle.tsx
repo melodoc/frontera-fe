@@ -1,7 +1,8 @@
-import React from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import style from "./style.css";
-import getValues from "../../handlers/getValues";
+import style from './style.css';
+import getValues from '../../handlers/getValues';
 
 const titleAttributes = [
   {
@@ -52,15 +53,21 @@ interface TitleWithSubtitleProps {
   readonly type: string;
 }
 
-type TitleWithSubtitleType = React.FunctionComponent<TitleWithSubtitleProps>;
-
-export const TitleWithSubtitle: TitleWithSubtitleType = ({type}: TitleWithSubtitleProps) => {
+export const TitleWithSubtitle: React.FC<TitleWithSubtitleProps> = ({ type }) => {
   const titleValue = getValues(titleAttributes, type);
 
-    return (
-      <React.Fragment>
-        <h1 className={style.anthemItem}>{titleValue.anthem}</h1>
-        <p className={style.loginHeading}>{titleValue.heading}</p>
-      </React.Fragment>
-    );
+  return (
+    <React.Fragment>
+      <h1 className={style.anthemItem}>{titleValue.anthem}</h1>
+      <p className={style.loginHeading}>{titleValue.heading}</p>
+    </React.Fragment>
+  );
 };
+
+TitleWithSubtitle.propTypes = {
+  type: PropTypes.string.isRequired,
+}
+
+TitleWithSubtitle.defaultProps = {
+  type: 'No data',
+}
