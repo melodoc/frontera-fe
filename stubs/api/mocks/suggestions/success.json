@@ -1,0 +1,23 @@
+{
+  "status": {
+    "code": 0
+  },
+  "themes": [
+    {
+      "label": "React1",
+      "imageSrc": ""
+    },
+    {
+      "label": "CI/CD",
+      "imageSrc": ""
+    },
+    {
+      "label": "JavaScript Mastering",
+      "imageSrc": ""
+    },
+    {
+      "label": "git",
+      "imageSrc": ""
+    }
+  ]
+}
