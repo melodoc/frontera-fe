@@ -1,7 +1,7 @@
 import React from 'react';
 
 import IconLogo from '../../../components/icon-logo/';
-import {PageHeader} from '../../../components/page-header';
+import { PageHeader } from '../../../components/page-header';
 import Navigation from '../../../components/navigation';
 import AccountBar from '../../../components/account-bar/';
 import { CourseCards } from '../../../components/course-cards/course-cards';
@@ -21,7 +21,7 @@ const Coursepage = () => (
         </header>
         <main className={style.container}>
             <section className={style.login}>
-                <PageHeader label={'JavaScript Mastering'} size={'medium'}/>
+                <PageHeader label={'JavaScript Mastering'}/>
                 <section className={style.gallery}>
                     <CourseCards cards={[
                         {label:'React', imageSrc: '../../assets/images/code.jpg'},

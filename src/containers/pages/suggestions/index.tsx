@@ -1,10 +1,10 @@
 import React from 'react';
 
 import Header from '../../../components/header';
-import {PageHeader} from '../../../components/page-header';
+import { PageHeader } from '../../../components/page-header';
+import { CourseCardsLarge } from '../../../components/course-cards/course-cards';
 
 import style from '../style.css';
-import { CourseCardsLarge } from '../../../components/course-cards/course-cards';
 
 
 const Suggestions = () => (

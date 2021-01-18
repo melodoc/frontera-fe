@@ -1,6 +1,7 @@
 import React from 'react';
+
 import Button from './../button/';
-import {CourseHeader} from './../page-header'
+import { CourseHeader } from './../page-header'
 
 import style from './style.css';
 
