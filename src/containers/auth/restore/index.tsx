@@ -10,36 +10,44 @@ import Input from '../../../components/input';
 
 import style from '../style.css';
 
-const Restore = () => (
-  <React.Fragment>
-    <HeaderForm/>
-    <main className={style.container}>
-      <section className={style.login}>
-        <TitleWithSubtitle type={'restore'}/>
-      </section>
-      <form method={'post'} action={'#'}>
-        <div className={style.formWrapper}>
-          <p className={style.formItemSingle}>
-            <Input type={'email'} />
-          </p>
-        </div>
-        <div className={style.buttons }>
-        <LinkButton
-          to={URLs.resetpassword.url}
-          as={ConnectedLink}>
-          Reset
-        </LinkButton>
-        </div>
-      </form>
-      <div className={style.buttons}>
-        <LinkButton
-          to={URLs.login.url}
-          as={ConnectedLink}>
-          Cancel
-        </LinkButton>
-      </div>
-    </main>
-  </React.Fragment>
-);
+class Restore extends React.Component {
+  firstInputRef = React.createRef<HTMLInputElement>();
+
+  componentDidMount() {
+    this.firstInputRef.current.focus();
+  }
+
+  render() {
+    return (
+      <React.Fragment>
+        <HeaderForm />
+        <main className={style.container}>
+          <section className={style.login}>
+            <TitleWithSubtitle type={'restore'} />
+          </section>
+          <form method="post" action="#">
+            <div className={style.formWrapper}>
+              <Input inputRef={this.firstInputRef} label="Email Address" id="restoreEmail" name="email" type="email" placeholder="email@example.com" />
+            </div>
+            <div className={style.buttons}>
+              <LinkButton
+                to={URLs.resetpassword.url}
+                as={ConnectedLink}>
+                Reset
+              </LinkButton>
+            </div>
+          </form>
+          <div className={style.buttons}>
+            <LinkButton
+              to={URLs.login.url}
+              as={ConnectedLink}>
+              Cancel
+            </LinkButton>
+          </div>
+        </main>
+      </React.Fragment>
+    );
+  }
+}
 
 export default Restore;
