@@ -1,7 +1,7 @@
 import React from 'react';
 
-import {LinkReset} from './../link';
-import {URLs} from './../../__data__/urls';
+import { LinkReset } from './../link';
+import { URLs } from './../../__data__/urls';
 import { Link as ConnectedLink } from 'react-router-dom';
 
 import style from './style.css';

@@ -4,7 +4,7 @@ import {
     Route,
     Redirect
 } from 'react-router-dom';
-import {URLs} from './../__data__/urls'
+import { URLs } from './../__data__/urls'
 
 import Login from './auth/login';
 import Registration from './auth/registration';
@@ -19,34 +19,34 @@ import Coursepage from './pages/coursepage';
 const Dashboard = () => (
     <Switch>
         <Route exact path="/">
-            <Redirect to={URLs.login.url}/>
+            <Redirect to={URLs.login.url} />
         </Route>
         <Route path={URLs.login.url}>
-            <Login/>
+            <Login />
         </Route>
         <Route path={URLs.coursepage.url}>
-            <Coursepage/>
+            <Coursepage />
         </Route>
         <Route path={URLs.lang.url}>
-            <ChooseLanguage/>
+            <ChooseLanguage />
         </Route>
         <Route path={URLs.themes.url}>
-            <ChooseTheme/>
+            <ChooseTheme />
         </Route>
         <Route path={URLs.personalizing.url}>
-            <Personalizing/>
+            <Personalizing />
         </Route>
         <Route path={URLs.suggestions.url}>
-            <Suggestions/>
+            <Suggestions />
         </Route>
         <Route path={URLs.home.url}>
-            <HomePage/>
+            <HomePage />
         </Route>
         <Route path={URLs.registration.url}>
-            <Registration/>
+            <Registration />
         </Route>
         <Route path={URLs.resetpassword.url}>
-            <ResetPassword/>
+            <ResetPassword />
         </Route>
         <Route path="*">
             <h1>Not found</h1>

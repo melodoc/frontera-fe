@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import style from "./style.css";
+import style from './style.css';
 
 interface PageHeaderProps {
   readonly label: string;

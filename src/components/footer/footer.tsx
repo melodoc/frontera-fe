@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import style from "./style.css";
+import style from './style.css';
 
 interface FooterProps {
   readonly links: Array<string>;
@@ -10,12 +10,12 @@ interface FooterProps {
 export const Footer: React.FC<FooterProps> = ({ links }) => {
   const linksTemplate = links.map((linkName, key) => {
     return (
-        <li className={style.footerItem}
-        key={linkName+key}>
-          <a className={style.footerLink} href="#">
-            {linkName}
-          </a>
-        </li>
+      <li className={style.footerItem}
+        key={linkName + key}>
+        <a className={style.footerLink} href="#">
+          {linkName}
+        </a>
+      </li>
     );
   });
 
@@ -25,7 +25,7 @@ export const Footer: React.FC<FooterProps> = ({ links }) => {
         {linksTemplate}
       </ul>
     </footer>
-    );
+  );
 };
 
 Footer.propTypes = {

@@ -6,9 +6,9 @@ interface ButtonProps extends React.DetailedHTMLProps<React.ButtonHTMLAttributes
   loading?: boolean;
 }
 
-export const Button: React.FC<ButtonProps> = ({children, ...rest}) => (
+export const Button: React.FC<ButtonProps> = ({ children, ...rest }) => (
   <button
-    {...rest} 
+    {...rest}
     className={style.button}
   >
     {children}

@@ -5,10 +5,10 @@ import style from './style.css';
 export const AccountBar = () => (
   <ul className={style.accountBar}>
     <li className={style.searchInput}>
-      <form className={style.searchForm}> 
-      <label htmlFor="search">
-        <input id="search"type="text" placeholder="Search..." />
-      </label>
+      <form className={style.searchForm}>
+        <label htmlFor="search">
+          <input id="search" type="text" placeholder="Search..." />
+        </label>
         <button type="submit"></button>
       </form>
     </li>

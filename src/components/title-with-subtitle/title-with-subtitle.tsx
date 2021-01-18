@@ -1,8 +1,8 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import style from "./style.css";
-import getValues from "../../handlers/getValues";
+import style from './style.css';
+import getValues from '../../handlers/getValues';
 
 const titleAttributes = [
   {
@@ -53,15 +53,15 @@ interface TitleWithSubtitleProps {
   readonly type: string;
 }
 
-export const TitleWithSubtitle: React.FC<TitleWithSubtitleProps> = ({type}) => {
+export const TitleWithSubtitle: React.FC<TitleWithSubtitleProps> = ({ type }) => {
   const titleValue = getValues(titleAttributes, type);
 
-    return (
-      <React.Fragment>
-        <h1 className={style.anthemItem}>{titleValue.anthem}</h1>
-        <p className={style.loginHeading}>{titleValue.heading}</p>
-      </React.Fragment>
-    );
+  return (
+    <React.Fragment>
+      <h1 className={style.anthemItem}>{titleValue.anthem}</h1>
+      <p className={style.loginHeading}>{titleValue.heading}</p>
+    </React.Fragment>
+  );
 };
 
 TitleWithSubtitle.propTypes = {

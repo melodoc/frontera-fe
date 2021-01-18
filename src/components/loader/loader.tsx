@@ -1,7 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import style from "./style.css";
-import getValues from "../../handlers/getValues";
+import style from './style.css';
+
+import getValues from '../../handlers/getValues';
 
 const loaderAttributes = [
   {

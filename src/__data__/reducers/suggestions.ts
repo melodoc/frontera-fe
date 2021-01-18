@@ -1,4 +1,4 @@
-import {SUGGESTIONS_ERROR, SUGGESTIONS_INIT, SUGGESTIONS_SUCCESS} from '../constants/action-types'
+import { SUGGESTIONS_ERROR, SUGGESTIONS_INIT, SUGGESTIONS_SUCCESS } from '../constants/action-types';
 
 const initialState = {
     themes: null,
@@ -8,7 +8,7 @@ const initialState = {
 
 export default function (state = initialState, action) {
     const type = action.type;
-    switch (type){
+    switch (type) {
         case SUGGESTIONS_SUCCESS:
             return ({
                 ...state,
@@ -16,12 +16,12 @@ export default function (state = initialState, action) {
                 loading: false,
             });
         case SUGGESTIONS_INIT:
-            return({
+            return ({
                 ...state,
                 loading: true
             });
         case SUGGESTIONS_ERROR:
-            return({
+            return ({
                 ...state,
                 errors: action.errors,
                 loading: false,

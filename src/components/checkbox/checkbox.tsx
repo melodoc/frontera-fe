@@ -12,7 +12,7 @@ export const Checkbox: React.FC<CheckboxProps> = ({ labels }) => {
   const labelsTemplate = labels.map((labelName, key) => {
     return (
       <li className={style.checkboxItem}
-      key={labelName+key}>
+        key={labelName + key}>
         <input
           className={style.checkbox}
           id={'filter' + labelName}

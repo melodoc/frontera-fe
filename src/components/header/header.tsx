@@ -1,15 +1,17 @@
 import React from 'react';
-import style from './style.css';
+
 import IconLogo from './../icon-logo';
 import HeaderNav from './../header-nav';
 import AccountBar from './../account-bar/';
 
+import style from './style.css';
+
 export const Header = () => (
     <header className={style.header}>
         <nav className={style.headerNav}>
-            <IconLogo/>
-            <HeaderNav/>
+            <IconLogo />
+            <HeaderNav />
         </nav>
-            <AccountBar/>
+        <AccountBar />
     </header>
 )
