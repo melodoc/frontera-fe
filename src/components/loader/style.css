@@ -1,8 +1,6 @@
-@import './../../app.css';
-
-.visuallyHidden:not(:focus):not(:active),
-input[type='checkbox'].visuallyHidden,
-input[type='radio'].visuallyHidden {
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
