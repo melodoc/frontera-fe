@@ -1,5 +1,3 @@
-@import './../../app.css';
-
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
