@@ -1,4 +1,13 @@
 .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 112px 0;
+  min-height: 500px;
+}
+
+.form {
   width: 504px;
   margin: 0 auto;
 }

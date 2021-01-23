@@ -118,3 +118,10 @@ img {
   font-size: 36px;
   line-height: 54px;
 }
+
+@media (--media-sm) {
+  .catalog-item,
+  .catalog-item-long {
+    border: 10px solid red;
+  }
+}

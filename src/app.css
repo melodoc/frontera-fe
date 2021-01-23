@@ -21,6 +21,10 @@
   --blue: #553bd8;
 }
 
+@custom-media --media-lg (min-width: 1400px);
+@custom-media --media-md (min-width: 732px) and (max-width: 1399.98px);
+@custom-media --media-sm (max-width: 731.98px);
+
 html,
 body {
   height: 100%;
