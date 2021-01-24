@@ -1,17 +1,9 @@
-import { SUGGESTIONS_SUCCESS, SUGGESTIONS_INIT, SUGGESTIONS_ERROR } from '../constants/action-types';
 import { getConfigValue } from '@ijl/cli';
-
-
-const suggestionInitActionCreator = () => ({ type: SUGGESTIONS_INIT });
-const suggestionSuccessActionCreator = (value) => ({ type: SUGGESTIONS_SUCCESS, themes: value });
-const suggestionErrorActionCreator = (value) => ({ type: SUGGESTIONS_ERROR, errors: value });
-
-export default () => (dispatch) => {
-    dispatch(suggestionInitActionCreator());
-    dispatch(getSuggestions());
-}
+import { init, success, error } from '../slice/suggestions'
 
 export const getSuggestions = () => async (dispatch) => {
+    dispatch(init());
+
     const baseApiUrl = getConfigValue('frontera.api');
 
     const response = await fetch(`${baseApiUrl}/suggestions/success`, {
@@ -24,13 +16,15 @@ export const getSuggestions = () => async (dispatch) => {
 
     if (response.ok) {
         const result = await response.json();
-        dispatch(suggestionSuccessActionCreator(result.themes));
+        dispatch(success(result.themes));
     } else {
         try {
             const result = await response.json();
-            dispatch(suggestionErrorActionCreator(result.errors));
+            dispatch(error(result.errors));
         } catch (error) {
             console.error(error);
         }
     }
 };
+
+export default getSuggestions;

@@ -1,17 +1,8 @@
 import { getConfigValue } from '@ijl/cli';
-import { TRENDING_ERROR, TRENDING_INIT, TRENDING_SUCCESS } from '../constants/action-types';
-
-
-const trendingInitActionCreator = () => ({ type: TRENDING_INIT });
-const trendingSuccessActionCreator = (value) => ({ type: TRENDING_SUCCESS, themes: value });
-const trendingErrorActionCreator = (value) => ({ type: TRENDING_ERROR, errors: value });
-
-export default () => (dispatch) => {
-    dispatch(trendingInitActionCreator());
-    dispatch(getCourses());
-}
+import { success, error, init } from  '../slice/trending'
 
 export const getCourses = () => async (dispatch) => {
+    dispatch(init());
     const baseApiUrl = getConfigValue('frontera.api');
 
     const response = await fetch(`${baseApiUrl}/trending/success`, {
@@ -24,13 +15,15 @@ export const getCourses = () => async (dispatch) => {
 
     if (response.ok) {
         const result = await response.json();
-        dispatch(trendingSuccessActionCreator(result.themes));
+        dispatch(success(result.themes));
     } else {
         try {
             const result = await response.json();
-            dispatch(trendingErrorActionCreator(result.errors));
+            dispatch(error(result.errors));
         } catch (error) {
             console.error(error);
         }
     }
 };
+
+export default getCourses;

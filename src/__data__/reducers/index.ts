@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import suggestions from './suggestions';
-import trending from './trending'
+import { reducer as suggestions } from '../slice/suggestions';
+import { reducer as trending } from '../slice/trending';
 
 export default combineReducers({
     suggestions,
