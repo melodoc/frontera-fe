@@ -36,15 +36,15 @@ const titleAttributes = [
   {
     key: "lang",
     value: {
-      anthem: "Which languages do you like to watch courses in?",
-      heading: "Letting us know helps set up your audio.",
+      anthem: "Letting us know helps set up your audio.",
+      heading: "Which languages do you like to watch courses in?",
     },
   },
   {
     key: "themes",
     value: {
-      anthem: "Choose themes you likes",
-      heading: "It will help us find courses you will love",
+      anthem: "It will help us find courses you will love",
+      heading: "Choose themes you likes",
     },
   },
 ];

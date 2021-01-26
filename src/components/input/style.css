@@ -65,3 +65,11 @@
 .form-text:focus {
   background-color: var(--white);
 }
+
+@media (max-width: 532.98px) {
+  .form-label input[placeholder], 
+  .form-label span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

@@ -1,7 +1,3 @@
-.header {
-  border-bottom: 1px solid var(--gray-6);
-}
-
 .container {
   width: max-content;
   margin: 0 auto;
@@ -16,6 +12,7 @@
   font-size: 18px;
   line-height: 20px;
   color: var(--black);
+  margin: 20px 30px;
 }
 
 .icon-nav {
@@ -33,4 +30,25 @@
 
   margin: 0;
   margin-bottom: 32px;
+}
+
+@media (max-width: 532.98px) {
+  .container {
+    padding: 155px 10px;
+  }
+  
+
+  .header {
+    border-bottom: none;
+  }
+  
+  .iconNav {
+    display: none;
+  }
+
+  .nav {
+    display: block;
+    text-align: right;
+    margin: 0;
+  }
 }

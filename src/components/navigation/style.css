@@ -28,3 +28,16 @@
 .nav-account-link:visited {
   color: var(--black);
 }
+
+@media (max-width: 532.98px) {
+  .nav-account {
+    display: block;
+    text-align: right;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    margin-right: 20px;
+
+  }
+}

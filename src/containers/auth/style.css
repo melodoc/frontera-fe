@@ -1,10 +1,7 @@
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin: 112px 0;
-  min-height: 500px;
+  min-height: 612px;
+  margin: 128px 0;
+  margin-top: calc(128px - 20px);
 }
 
 .form {
@@ -27,4 +24,21 @@
 
 .buttons a {
   width: 100%;
+}
+
+@media (max-width: 532.98px) {
+  .container {
+    min-height: 612px;
+    margin: 72px 0;
+    margin-top: calc(72px - 20px);
+  }
+
+  .form {
+    width: 300px;
+  }
+
+  .form-wrapper {
+    margin-bottom: 24px;
+  }
+  
 }

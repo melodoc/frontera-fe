@@ -56,3 +56,18 @@
 
   transition: all .2s ease-in-out;
 }
+
+
+@media (max-width: 532.98px) {
+  .link-reset {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .button {
+    width: 112px;
+    height: 52px;
+
+    font-size: 16px;
+  }
+}

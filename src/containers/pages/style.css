@@ -17,3 +17,9 @@
   line-height: 21px;
   color: var(--purple-9);
 }
+
+@media (max-width: 532.98px) {
+  .header {
+    border-bottom: none;
+  }
+}

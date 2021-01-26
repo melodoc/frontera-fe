@@ -15,3 +15,9 @@
   
   list-style: none;
 }
+
+@media (max-width: 532.98px) {
+  .header {
+    border-bottom: none;
+  }
+}

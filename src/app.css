@@ -19,15 +19,12 @@
   --blue-9: rgba(13, 14, 56, 0.25);
   --blue-1: rgba(71,32,213, 0);
   --blue: #553bd8;
-}
 
-@custom-media --media-lg (min-width: 1400px);
-@custom-media --media-md (min-width: 732px) and (max-width: 1399.98px);
-@custom-media --media-sm (max-width: 731.98px);
-
-html,
-body {
-  height: 100%;
+  @custom-media --media-xlg (min-width: 1920px);
+  @custom-media --media-lg (min-width: 1280px) and (max-width: 1919.98px);
+  @custom-media --media-md (min-width: 768px) and (max-width: 1279.98px);
+  @custom-media --media-sm (min-width: 533px) and (max-width: 767.98px);
+  @custom-media --media-xsm (max-width: 532.98px);
 }
   
 body {
@@ -52,7 +49,7 @@ img {
   height: auto;
 }
 
-.visuallyHidden:not(:focus):not(:active),
+.visually-hidden:not(:focus):not(:active),
 input[type='checkbox'].visuallyHidden,
 input[type='radio'].visuallyHidden {
   position: absolute;
