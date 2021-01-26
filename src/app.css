@@ -1,5 +1,5 @@
-/* poppins-regular - latin */
 @import './assets/font.css';
+@import './utils/style/media.config.css';
 
 :root {
   --purple-9: #541594;
@@ -19,12 +19,6 @@
   --blue-9: rgba(13, 14, 56, 0.25);
   --blue-1: rgba(71,32,213, 0);
   --blue: #553bd8;
-
-  @custom-media --media-xlg (min-width: 1920px);
-  @custom-media --media-lg (min-width: 1280px) and (max-width: 1919.98px);
-  @custom-media --media-md (min-width: 768px) and (max-width: 1279.98px);
-  @custom-media --media-sm (min-width: 533px) and (max-width: 767.98px);
-  @custom-media --media-xsm (max-width: 532.98px);
 }
   
 body {
@@ -38,6 +32,10 @@ body {
   line-height: 27px;
   font-weight: 500;
   color: #3c2d86;
+
+  @media (--media-xlg) {
+    background-color: red;
+  }
 }
   
 a {
