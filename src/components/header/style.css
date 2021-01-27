@@ -16,7 +16,22 @@
   list-style: none;
 }
 
-@media (max-width: 532.98px) {
+
+@media (min-width: 768px) and (max-width: 1279.98px) { 
+  .header-nav {
+    display: inline-block;
+  }
+
+  .header-nav a {
+    margin-right: 30px
+  }
+
+  .header-wrapper {
+    margin: 20px 0;
+  }
+}
+
+@media (min-width: 533px) and (max-width: 767.98px) {
   .header {
     border-bottom: none;
   }

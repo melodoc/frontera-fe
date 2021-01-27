@@ -11,7 +11,6 @@
 .link:hover,
 .link:focus {
   text-decoration: underline;
-  background-color: var(--white);
 
   transition: all .2s ease-in-out;
 }
@@ -57,6 +56,17 @@
   transition: all .2s ease-in-out;
 }
 
+@media (min-width: 768px) and (max-width: 1279.98px) { 
+  .link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  
+    color: var(--purple-9);
+  
+    padding: 10px;
+  }
+}
 
 @media (max-width: 532.98px) {
   .link-reset {
