@@ -1,0 +1,30 @@
+{
+  "status": {
+    "code": 0
+  },
+  "themes": [
+    {
+      "label": "Resourses",
+      "imageSrc": ""
+    },
+    {
+      "label": "Angular",
+      "imageSrc": ""
+    },
+    {
+      "label": "Dynamics",
+      "imageSrc": ""
+    },
+    {
+      "label": "Web Design",
+      "imageSrc": ""
+    },
+    {
+      "label": "Network",
+      "imageSrc": ""
+    },
+    {
+      "label": "SEO",
+      "imageSrc": ""
+    }]
+}
