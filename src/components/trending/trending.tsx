@@ -15,8 +15,6 @@ export const Trending = () => (
             { label: 'Web Design', imageSrc: '' },
             { label: 'Network', imageSrc: '' },
             { label: 'SEO', imageSrc: '' },
-            { label: 'SEO', imageSrc: '' },
-            { label: 'SEO', imageSrc: '' },
             ]} />
     </div>
 )
