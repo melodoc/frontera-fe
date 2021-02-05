@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import suggestions from './suggestions';
+import { reducer as themes } from '../slice/themes';
 
 export default combineReducers({
-  suggestions,
+    themes
 });
