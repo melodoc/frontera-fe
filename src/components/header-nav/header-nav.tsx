@@ -1,5 +1,5 @@
 import React from 'react';
-
+import i18next from 'i18next';
 import { Link as ConnectedLink } from 'react-router-dom';
 import { Link } from './../link/link';
 import { URLs } from './../../__data__/urls';
@@ -9,17 +9,17 @@ export const HeaderNav = () => (
         <Link
             to={URLs.home.url}
             as={ConnectedLink}>
-            Home
+            { i18next.t('js.navigation.home') }
         </Link>
         <Link
             to={URLs.home.url}
             as={ConnectedLink}>
-            Trending
+            { i18next.t('js.navigation.trending') }
         </Link>
         <Link
             to={URLs.suggestions.url}
             as={ConnectedLink}>
-            Suggestion
+            { i18next.t('js.navigation.suggestion') }
         </Link>
     </React.Fragment>
 )
