@@ -12,7 +12,7 @@ const initialState: TrendingState = {
 };
 
 const slice = createSlice({
-    name: 'trending',
+    name: 'themes',
     initialState,
     reducers: {
         success(state, action) {
