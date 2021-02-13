@@ -1,5 +1,5 @@
 import React, { AllHTMLAttributes, ButtonHTMLAttributes, Children, DetailedHTMLProps } from 'react';
-
+import PropTypes from 'prop-types';
 import style from './style.css';
 
 interface ButtonProps extends React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {
@@ -14,3 +14,7 @@ export const Button: React.FC<ButtonProps> = ({ children, ...rest }) => (
     {children}
   </button>
 );
+
+Button.propTypes = {
+  children: PropTypes.string.isRequired
+}
