@@ -4,38 +4,41 @@ import PropTypes from 'prop-types';
 import style from './style.css';
 
 interface InputProps extends HTMLAttributes<HTMLInputElement> {
-  label: string;
-  id: string;
-  name: string;
+  label?: string;
+  value?: string;
   type?: string;
-  inputRef?: React.RefObject<HTMLInputElement>;
+  inputRef?: any;
+  name?: string;
 }
 
-export const Input: React.FC<InputProps> = ({ inputRef, label, id, name, type, ...rest }) => {
+export const Input: React.FC<InputProps> = ({ label, value, type, inputRef, name, ...rest }) => {
   return (
-    <p className={style.formItem}>
-      <label className={style.formLabel} htmlFor={String(id)}>
+    <div className={style.formItem}>
+        {label && <label className={style.formLabel} htmlFor={String(rest.id)}>{label}</label>}
         <input
-          ref={inputRef}
+            name={name}
           className={style.formText}
-          id={id}
+          value={value}
           type={type}
-          name={name}
           {...rest}
         />
-        <span>{label}</span>
-      </label>
-    </p>
+    </div>
   );
 };
 
 Input.propTypes = {
-  label: PropTypes.string.isRequired,
-  id: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  type: PropTypes.oneOf(['email', 'password', 'text']),
-}
+  inputRef: PropTypes.oneOfType([
+      PropTypes.func,
+      PropTypes.object
+  ]),
+  label: PropTypes.string,
+  value: PropTypes.string,
+  type: PropTypes.string,
+  name: PropTypes.string,
+};
 
 Input.defaultProps = {
   type: 'text',
-}
+  inputRef: void 0,
+    name: void 0
+};
