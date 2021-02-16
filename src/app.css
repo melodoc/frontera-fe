@@ -32,10 +32,6 @@ body {
   line-height: 27px;
   font-weight: 500;
   color: #3c2d86;
-
-  @media (--media-xlg) {
-    background-color: red;
-  }
 }
   
 a {

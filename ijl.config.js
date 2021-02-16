@@ -12,12 +12,7 @@ module.exports = {
         module: {
           rules: [
             {
-              test: /\.config\.css$/,
-              use: ['babel-loader', 'postcss-variables-loader'],
-            },
-            {
               test: /\.css$/i,
-              exclude: /\.config\.css$/,
               use: [
                 { loader: 'style-loader', },
                 {
@@ -39,39 +34,14 @@ module.exports = {
                   options: {
                     postcssOptions: {
                       plugins: [
-                          // @import "path/to/my.css";
-                          require('postcss-import'),
-                          // for () {}
-                          require('postcss-for'),
-                          // TODO: устарело
-                          require('postcss-simple-vars'),
-                          // :root { --my-var: 0 } ... div { padding: var(--my-var) }
-                          require('postcss-custom-properties')({
-                              // Не оставлять переменную
-                              preserve: false
-                          }),
-                          // @custom-media --media (min-width: 1281px) ... @media (--media-xl) {}
-                          require('postcss-custom-media')({
-                              // Не оставлять переменную
-                              preserve: false
-                          }),
-                          // div { div {} }
-                          require('postcss-nested'),
-                          // color(#fff a(90%));
-                          require('postcss-color-function'),
-                          // импорт css файлов через @global-import './style.css';
-                          require('postcss-global-import'),
-                          // Лучшее не нуждается в комментариях
-                          require('autoprefixer')(),
-                          // calc(2 * 50px) -> 100px
-                          require('postcss-calc'),
-                          // Удаляем колмментарии из CSS
-                          require('postcss-discard-comments'),
-                          // Минификация css (удаление пустых :root {}, отступов, переносов строк и т.д.)
-                          require('cssnano')({
-                              preset: 'default'
-                          })
-                      ]
+                        [
+                          'postcss-preset-env',
+                          {
+                            // Options
+                          },
+                        ],
+                        
+                      ],
                     },
                   },
                 },

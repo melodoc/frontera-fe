@@ -8,16 +8,6 @@
   padding: 30px 10px;
 }
 
-.userNav {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-
-  font-size: 14px;
-  line-height: 21px;
-  color: var(--purple-9);
-}
-
 @media (max-width: 532.98px) {
   .header {
     border-bottom: none;
