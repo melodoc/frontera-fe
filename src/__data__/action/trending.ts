@@ -1,18 +1,17 @@
 import { getConfigValue } from '@ijl/cli';
+import { success, error, init } from  '../slice/trending'
 
-import { init, success, error } from '../slice/suggestions'
-
-export const getSuggestions = () => async (dispatch) => {
+export const getCourses = () => async (dispatch) => {
     dispatch(init());
-
     const baseApiUrl = getConfigValue('frontera.api');
 
-    const response = await fetch(`${baseApiUrl}/suggestions/success`, {
+    const response = await fetch(`${baseApiUrl}/trending/success`, {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json;charset=utf-8',
         }
     });
+
 
     if (response.ok) {
         const result = await response.json();
@@ -27,4 +26,4 @@ export const getSuggestions = () => async (dispatch) => {
     }
 };
 
-export default getSuggestions;
+export default getCourses;
