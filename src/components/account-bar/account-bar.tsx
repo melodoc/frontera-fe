@@ -1,5 +1,5 @@
 import React from 'react';
-
+import i18next from 'i18next';
 import style from './style.css';
 
 export const AccountBar = () => (
@@ -16,10 +16,10 @@ export const AccountBar = () => (
       <div className={style.dropdown}>
         <button className={style.profile} type="button"></button>
         <div className={style.navDropdown}>
-          <a href="#" className={style.dropdownLink}>view history</a>
-          <a href="#" className={style.dropdownLink}>settings</a>
-          <a href="#" className={style.dropdownLink}>help</a>
-          <a href="#" className={style.dropdownLink}>sign out</a>
+          <a href="#" className={style.dropdownLink}>{ i18next.t('js.navigation.viewHistory') }</a>
+          <a href="#" className={style.dropdownLink}>{ i18next.t('js.navigation.settings') }</a>
+          <a href="#" className={style.dropdownLink}>{ i18next.t('js.navigation.help') }</a>
+          <a href="#" className={style.dropdownLink}>{ i18next.t('js.navigation.out') }</a>
         </div>
       </div>
     </li>

@@ -1,0 +1,10 @@
+{
+    "js.navigation.home": "Home",
+    "js.navigation.trending": "Trending",
+    "js.navigation.suggestion": "Suggestion",
+    "js.navigation.viewHisory": "view history",
+    "js.navigation.settings": "settings",
+    "js.navigation.help": "help",
+    "js.navigation.out": "sign out",
+    "js.navigation.notFound": "Not found"
+}
