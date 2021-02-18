@@ -8,9 +8,15 @@
   height: 43px;
 }
 
+@media  (min-width: 925px) and (max-width: 1026px) {
+  .nav-logo,
+  .nav-logo img {
+    width: 135px;
+  }
+}
 
-@media (min-width: 768px) and (max-width: 1279.98px) { 
+@media (max-width: 924.98px) {
   .nav-logo {
-    margin-right: 10px;
+    display: none;
   }
 }

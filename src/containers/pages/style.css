@@ -5,7 +5,7 @@
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 30px 10px;
+  padding: 5px 0px;
 }
 
 @media (max-width: 532.98px) {

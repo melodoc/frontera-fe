@@ -1,7 +1,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 10px 50px;
+  padding: 20px 50px;
 
   border-bottom: 1px solid var(--gray-6);
 }
@@ -14,21 +14,6 @@
   margin-right: 30px;
   
   list-style: none;
-}
-
-
-@media (min-width: 768px) and (max-width: 1279.98px) { 
-  .header-nav {
-    display: inline-block;
-  }
-
-  .header-nav a {
-    margin-right: 30px
-  }
-
-  .header-wrapper {
-    margin: 20px 0;
-  }
 }
 
 @media (min-width: 533px) and (max-width: 767.98px) {

@@ -63,9 +63,7 @@
     line-height: 24px;
   
     color: var(--purple-9);
-  
-    padding: 10px;
-  }
+    }
 }
 
 @media (max-width: 532.98px) {
