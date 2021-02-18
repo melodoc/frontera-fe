@@ -32,4 +32,7 @@ export const URLs = {
     coursepage: {
         url: navigations['link.frontera.coursepage']
     },
+    courseinfo: {
+        url: navigations['link.frontera.courseinfo']
+    },
 }

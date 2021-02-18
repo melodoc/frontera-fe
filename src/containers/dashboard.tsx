@@ -15,6 +15,7 @@ import Personalizing from './init/personalizing';
 import HomePage from './pages/homepage';
 import Suggestions from './pages/suggestions';
 import Coursepage from './pages/coursepage';
+import CourseInfo from './pages/course-info';
 
 const Dashboard = () => (
     <Switch>
@@ -24,8 +25,11 @@ const Dashboard = () => (
         <Route path={URLs.login.url}>
             <Login />
         </Route>
-        <Route path={URLs.coursepage.url}>
-            <Coursepage />
+        <Route path={URLs.registration.url}>
+            <Registration />
+        </Route>
+        <Route path={URLs.resetpassword.url}>
+            <ResetPassword />
         </Route>
         <Route path={URLs.lang.url}>
             <ChooseLanguage />
@@ -42,11 +46,11 @@ const Dashboard = () => (
         <Route path={URLs.home.url}>
             <HomePage />
         </Route>
-        <Route path={URLs.registration.url}>
-            <Registration />
+        <Route path={URLs.coursepage.url}>
+            <Coursepage />
         </Route>
-        <Route path={URLs.resetpassword.url}>
-            <ResetPassword />
+        <Route path={URLs.courseinfo.url}>
+            <CourseInfo />
         </Route>
         <Route path="*">
             <h1>Not found</h1>
