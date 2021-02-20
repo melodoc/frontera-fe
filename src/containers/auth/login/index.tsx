@@ -15,7 +15,7 @@ class Login extends React.Component {
   firstInputRef = React.createRef<HTMLInputElement>();
 
   componentDidMount() {
-    this.firstInputRef.current.focus();
+    // this.firstInputRef.current.focus();
   }
 
   render() {

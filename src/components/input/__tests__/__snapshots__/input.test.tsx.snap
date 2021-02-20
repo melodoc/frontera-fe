@@ -1,9 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Тестируем компонент input Тестируем рендер компонента input 1`] = `
+<Input
+  label="label"
+  type="text"
+>
+  <div
+    className="formItem"
+  >
+    <label
+      className="formLabel"
+      htmlFor="undefined"
+    >
+      label
+    </label>
+    <input
+      className="formText"
+      type="text"
+    />
+  </div>
+</Input>
+`;
+
 exports[`Тестируем компонент input Тестируем событие 1`] = `
 <Input
-  id="3"
-  name="testInput"
+  name="value"
   onChange={[Function]}
   type="text"
   value="test1"
@@ -13,8 +34,7 @@ exports[`Тестируем компонент input Тестируем собы
   >
     <input
       className="formText"
-      id="3"
-      name="testInput"
+      name="value"
       onChange={[Function]}
       type="text"
       value="test1"
@@ -25,45 +45,20 @@ exports[`Тестируем компонент input Тестируем собы
 
 exports[`Тестируем компонент input Тестируем событие 2`] = `
 <Input
-  id="3"
-  name="testInput"
+  name="value"
   onChange={[Function]}
   type="text"
-  value="test1"
+  value="test2"
 >
   <div
     className="formItem"
   >
     <input
       className="formText"
-      id="3"
-      name="testInput"
+      name="value"
       onChange={[Function]}
       type="text"
-      value="test1"
-    />
-  </div>
-</Input>
-`;
-
-exports[`Тестируем компонент input Тестируем событие 3`] = `
-<Input
-  id="3"
-  name="testInput"
-  onChange={[Function]}
-  type="text"
-  value="test1"
->
-  <div
-    className="formItem"
-  >
-    <input
-      className="formText"
-      id="3"
-      name="testInput"
-      onChange={[Function]}
-      type="text"
-      value="test1"
+      value="test2"
     />
   </div>
 </Input>
