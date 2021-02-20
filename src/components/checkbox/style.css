@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
 
-  color: var(--purple-7);
+  color: var(--link);
 }
 
 .checkbox-item {
@@ -47,7 +47,7 @@
 
 .checkbox-label:hover,
 .checkbox-label:focus {
-  color: var(--purple-6);
+  color: var(--link-hovered);
 }
 
 @media (max-width: 532.98px) {

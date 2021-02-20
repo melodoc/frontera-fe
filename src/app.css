@@ -2,32 +2,42 @@
 @import './utils/style/media.config.css';
 
 :root {
-  --purple-9: #541594;
-  --dark-purple: #2b1f33;
-  --purple-7: #8d6fdd;
-  --purple-6: #A199C7;
-  --purple-5: rgba(60,17,134,0.3);
-  --purple-4: #bcaee2;
-  --purple-3: rgba(95, 35, 200, 0.3);
-  --gray-9: #999999;
-  --gray-8: #B3B6B6;
-  --gray-7: rgba(235,235,235,1);
-  --gray-6: #C0C0C0;
-  --white: #FFFFFF;
-  --black-1: rgba(0, 1, 1, 0.2);
-  --black: #000000;
-  --blue-9: rgba(13, 14, 56, 0.25);
-  --blue-1: rgba(71,32,213, 0);
-  --blue: #553bd8;
-}
+  --black-transparent: rgba(0, 1, 1, 0.2);
+  --gray-light: #b3b6b6;
+  --gray: #757575;
+  --white: #ffffff;
+
+  --purple-primary: #541594;
+  --purple-dark: #2b1f33;
+  --blue-magenta: rgba(60,17,134,0.3);
   
+  --link: #8d6fdd;
+  --link-hovered: #a199c7;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  color: var(--purple-primary);
+
+  font-size: 18px;
+  font-family: 'Poppins', 'Century Gothic', 'Arial', sans-serif;
+  
+  min-width: 1240px;
+  min-height: 100%;
+}
+
 body {
+  box-sizing: border-box;
+
   margin: 0;
   padding: 0;
+  width: 100%;
 
   background-color: var(--white);
   
-  font-family: 'Poppins', 'Century Gothic', 'Arial', sans-serif;
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;

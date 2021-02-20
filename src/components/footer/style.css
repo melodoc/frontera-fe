@@ -2,7 +2,7 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  border-top: 1px solid var(--gray-6);
+  border-top: 1px solid var(--gray-light);
   background-color: var(--white);
 }
 
@@ -28,7 +28,7 @@
   font-size: 14px;
   line-height: 21px;
 
-  color: var(--gray-9);
+  color: var(--gray);
 }
 
 .footer-link:hover,

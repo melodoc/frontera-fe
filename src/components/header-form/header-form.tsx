@@ -5,7 +5,7 @@ import IconLogo from '../icon-logo';
 import style from './style.css';
 
 export const HeaderFrom = () => (
-    <header className={style.header}>
+    <header>
         <nav className={style.headerNav}>
             <IconLogo />
         </nav>

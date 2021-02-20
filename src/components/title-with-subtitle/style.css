@@ -8,7 +8,7 @@
   font-size: 28px;
   line-height: 42px;
 
-  color: var(--purple-9);
+  color: var(--purple-primary);
 }
 
 .login-heading {
@@ -20,7 +20,7 @@
   font-size: 16px;
   line-height: 24px;
 
-  color: var(--gray-9);
+  color: var(--gray-light);
 }
 
 @media (min-width: 533px) and (max-width: 767.98px) {
@@ -46,6 +46,6 @@
     font-size: 18px;
     line-height: 27px;
 
-    color: var(--purple-9);
+    color: var(--purple-primary);
   }
 }

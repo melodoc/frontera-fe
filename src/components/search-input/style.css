@@ -27,10 +27,10 @@
   z-index: 1;
   width: 100%;
   
-  border: 1px solid var(--gray-8);
+  border: 1px solid var(--gray-light);
   border-radius: 4px;
   
-  color: var(--purple-9);
+  color: var(--purple-primary);
 }
 
 .search-input button {

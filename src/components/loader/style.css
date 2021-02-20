@@ -31,7 +31,7 @@ input[type='radio'].visually-hidden {
   font-size: 28px;
   line-height: 42px;
 
-  color: var(--purple-9);
+  color: var(--purple-primary);
 }
 
 .login-heading,
@@ -43,9 +43,8 @@ input[type='radio'].visually-hidden {
   font-size: 14px;
   line-height: 21px;
 
-  color: var(--gray-9);
+  color: var(--gray);
 }
-
 
 .spinner {
   margin: 50px auto 50px;
@@ -56,7 +55,7 @@ input[type='radio'].visually-hidden {
 .spinner > div {
   width: 18px;
   height: 18px;
-  background-color: var(--purple-9);
+  background-color: var(--purple-primary);
 
   border-radius: 100%;
   display: inline-block;

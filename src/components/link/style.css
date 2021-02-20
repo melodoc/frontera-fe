@@ -3,7 +3,7 @@
   font-size: 16px;
   line-height: 24px;
 
-  color: var(--purple-9);
+  color: var(--purple-primary);
 
   padding: 10px 20px;
 }
@@ -16,18 +16,18 @@
 }
 
 .link:visited {
-  color: var(--gray-9);
+  color: var(--gray);
 }
 
 .link-reset {
-  color: var(--purple-7);
+  color: var(--link);
 
   text-decoration: underline;
 }
 
 .link-reset:hover,
 .link-reset:focus {
-  color: var(--purple-6);
+  color: var(--link-hovered);
 
   text-decoration: none;
 }
@@ -42,16 +42,16 @@
   color: var(--white);
   line-height: 54px;
 
-  background-color: var(--purple-9);
+  background-color: var(--purple-primary);
   border: none;
   border-radius: 10px;
 }
 
 .button:hover {
-  color: var(--purple-9);
+  color: var(--purple-primary);
 
   background-color: var(--white);
-  box-shadow: 0px 4px 4px var(--blue-9);
+  box-shadow: 0px 4px 4px var(--link-hovered);
 
   transition: all .2s ease-in-out;
 }
@@ -62,7 +62,7 @@
     font-size: 16px;
     line-height: 24px;
   
-    color: var(--purple-9);
+    color: var(--purple-primary);
     }
 }
 

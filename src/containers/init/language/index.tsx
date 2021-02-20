@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { LinkButton } from './../../../components/link';
 import { URLs } from './../../../__data__/urls';
+import { LinkButton } from './../../../components/link';
 import { Link as ConnectedLink } from 'react-router-dom';
 
 import IconLogo from '../../../components/icon-logo';

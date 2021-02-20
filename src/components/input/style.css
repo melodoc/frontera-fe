@@ -22,7 +22,7 @@
 .form-item input:focus {
   outline: none;
   border-radius: 10px 10px 10px 10px;
-  box-shadow: 0 0 0 2px var(--purple-9);
+  box-shadow: 0 0 0 2px var(--purple-primary);
 }
 
 .form-label {
@@ -35,7 +35,7 @@
   font-size: 18px;
   line-height: 27px;
 
-  color: var(--purple-9);
+  color: var(--purple-primary);
 }
 
 .form-label span {
@@ -43,7 +43,7 @@
   left: 30px;
   bottom: 30px;
 
-  color: var(--purple-9);
+  color: var(--purple-primary);
 
   font-weight: normal;
   font-size: 18px;
@@ -59,7 +59,7 @@
   font: inherit;
   background-color: transparent;
 
-  border: 1px solid var(--gray-7);
+  border: 1px solid var(--gray-light);
 }
 
 .form-text:focus {

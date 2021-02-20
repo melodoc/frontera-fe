@@ -26,7 +26,7 @@
 }
 
 .nav-account-link:visited {
-  color: var(--black);
+  color: var(--purple-dark);
 }
 
 @media (max-width: 532.98px) {

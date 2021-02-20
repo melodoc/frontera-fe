@@ -48,7 +48,7 @@
   padding: 16px 8px;
   
   background-color: var(--white);
-  border: 0.5px solid var(--gray-8);
+  border: 0.5px solid var(--gray-light);
   border-radius: 0 0 4px 4px;
 }
 
