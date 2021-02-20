@@ -1,6 +1,6 @@
 .page-header {
   margin: 0;
-  padding: 28px 0;
+  padding: var(--offset) 0;
   
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-medium);
@@ -15,7 +15,7 @@
   display: flex;
   align-items: center;
 
-  margin-bottom: 24px;
+  margin-bottom: var(--offset);
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-large);
   line-height: var(--line-height-large);

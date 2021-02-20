@@ -1,6 +1,6 @@
 .anthem-item {
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: var(--offset-small);
   padding: 0;
   
   font-style: normal;
@@ -13,7 +13,7 @@
 
 .login-heading {
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: var(--offset-large);
 
   font-style: normal;
   font-weight: 500px;

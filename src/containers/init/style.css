@@ -1,7 +1,7 @@
 .container {
   width: max-content;
   margin: 0 auto;
-  padding: 136px 8px;
+  padding: var(--offset-container) var(--offset-small);
 }
 
 .nav {
@@ -11,15 +11,15 @@
 
   font-size: var(--font-size);
   line-height: var(--line-height);
-  margin: 24px 32px;
+  margin: var(--offset) var(--offset-large);
 }
 
 .icon-nav {
-  margin: 24px 31px;
+  margin: var(--offset) var(--offset-large);
 } 
 
 .form-wrapper {
-  margin-bottom: 32px;
+  margin-bottom: var(--offset-large);
 }
 
 .buttons {
@@ -28,15 +28,10 @@
   justify-content: center;
 
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: var(--offset-large);
 }
 
 @media (max-width: 532.98px) {
-  .container {
-    padding: 152px 8px;
-  }
-  
-
   .header {
     border-bottom: none;
   }

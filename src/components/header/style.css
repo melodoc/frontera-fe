@@ -5,7 +5,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  margin: 24px 48px;
+  margin: var(--offset) var(--offset-extra-large);
 }
 
 .header-nav {
@@ -13,7 +13,7 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin-right: 24px;
+  margin-right: var(--offset);
   
   list-style: none;
 }
@@ -32,5 +32,9 @@
   .header-nav {
     display: contents;
     vertical-align: middle;
+  }
+
+  .header-wrapper {
+    border-bottom: none;
   }
 }

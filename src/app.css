@@ -32,8 +32,15 @@
   --font-weight-bold: 500;
 
   /* offsets */
-  --center-form-margin: 144px;
+  --offset-small: 8px;
+  --offset-medium: 16px;
+  --offset: 24px;
+  --offset-large: 32px;
+  --offset-extra-large: 48px;
+  --offset-superior-large: 72px;
+  --offset-container: 136px;
 
+  --center-form-offset: 128px;
 }
 
 html {

@@ -5,7 +5,7 @@
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 8px 0px;
+  padding: var(--offset-small) 0px;
 }
 
 @media (min-width: 900px) and (max-width: 1279.98px) {
@@ -20,7 +20,11 @@
    }
 }
 
-@media (max-width: 532.98px) {
+@media (max-width: 767.98px) {
+  .container {
+    width: 320px;
+   }
+   
   .header {
     border-bottom: none;
   }

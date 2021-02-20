@@ -1,7 +1,7 @@
 .nav-logo {
   display: flex;
   align-items: center;
-  margin-right: 32px;
+  margin-right: var(--offset-large);
   padding: 0;
 
   width: 235px;

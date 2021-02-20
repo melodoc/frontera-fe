@@ -45,7 +45,7 @@
 
   display: none;
   width: 107px;
-  padding: 16px 8px;
+  padding: var(--offset-medium) var(--offset-small);
   
   background-color: var(--white);
   border: 0.5px solid var(--gray-light);

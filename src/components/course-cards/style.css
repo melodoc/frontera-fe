@@ -32,7 +32,7 @@
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  margin-right: 32px;
+  margin-right: var(--offset-large);
 }
 
 .catalog-item,
@@ -43,8 +43,8 @@
 
   margin: 0;
   padding: 0;
-  margin-right: 8px;
-  margin-bottom: 24px;
+  margin-right: var(--offset-small);
+  margin-bottom: var(--offset);
   width: 190px;
   height: 280px;
   
@@ -57,7 +57,7 @@
 .catalog-item-long,
 .catalog-item-long img {
   margin-right: 0;
-  margin-bottom: 24px;
+  margin-bottom: var(--offset);
   
   width: 268px;
   height: 640px;
@@ -69,7 +69,7 @@ img {
 
 .index {
   margin: 0;
-  margin-right: 16px;
+  margin-right: var(--offset-medium);
   width: 40px;
 
   font-weight: var(--font-weight-bold);
@@ -95,13 +95,13 @@ img {
 
 .catalog-header {
   margin: 0;
-  padding: 16px;
+  padding: var(--offset-medium);
 }
 
 .catalog-category,
 .catalog-category-long {
   display: flex;
-  padding: 16px 8px;
+  padding: var(--offset-medium) var(--offset-small);
   
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size);
@@ -116,8 +116,8 @@ img {
   align-items: center;
   
   height: 120px;
-  margin: 0 16px;
-  padding: 0 8px;
+  margin: 0 var(--offset-medium);
+  padding: 0 var(--offset-small);
   
   font-size: var(--font-size-medium);
   line-height: var(--line-height-medium);
@@ -125,37 +125,58 @@ img {
 
 @media (min-width: 900px) and (max-width: 1279.98px) {
   .card-container {
-    margin-right: 16px;
+    margin-right: var(--offset-medium);
   }
 
   .catalog-item {
     width: 168px;
-    height: 280px;
+    height: 248px;
   }
 
   .catalog-item-long,
   .catalog-item-long img {
-    margin-bottom: 24px;
+    margin-bottom: var(--offset);
     
     width: 176px;
     height: 400px;
   }
 }
-
-@media (max-width: 899.98px) {
+@media (min-width: 533px) and (max-width: 899.98px) {
   .card-container {
-    margin-right: 8px;
+    margin-right: var(--offset-small);
   }
 
   .catalog-item {
     width: 144px;
-    height: 368px;
+    height: 212px;
   }
 
   .catalog-item-long,
   .catalog-item-long img {
     width: 152px;
-    height: 376px;
+    height: 224px;
+  }
+
+  .catalog-category-long {
+    font-size: var(--font-size-small);
+    line-height: var(--line-height-small);
+  }
+}
+
+@media (max-width: 532.98px) {
+  .index {
+    margin-right: var(--offset-small);
+  }
+
+  .catalog-item {
+    width: 128px;
+    height: 188px;
+  }
+
+  .catalog-item-long,
+  .catalog-item-long img {
+    width: 152px;
+    height: 224px;
   }
 
   .catalog-category-long {

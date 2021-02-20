@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 24px 32px 0;
+  margin: var(--offset) var(--offset-large) 0;
 
   font-size: var(--font-size);
   line-height: var(--line-height);

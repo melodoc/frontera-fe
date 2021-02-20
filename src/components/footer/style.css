@@ -15,15 +15,15 @@
   
   list-style: none;
   padding: 0;
-  margin: 16px 48px;
+  margin: var(--offset-medium) var(--offset-extra-large);
 }
 
 .footer-item:not(:last-child) {
-  margin-right: 24px;
+  margin-right: var(--offset);
 }
 
 .footer-link {
-  padding: 8px 8px;
+  padding: var(--offset-small) var(--offset-small);
 
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size);
@@ -43,7 +43,7 @@
 
 @media (min-width: 533px) and (max-width: 767.98px) {
   .footer-list {
-    margin: 8px 48px;
+    margin: var(--offset-small) var(--offset-extra-large);
   }
 
   .footer-link {

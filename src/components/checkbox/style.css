@@ -1,5 +1,4 @@
 .filter-item {
-  
   list-style: none;
 
   margin: 0;
@@ -14,13 +13,13 @@
   justify-content: flex-start;
   align-items: center;
 
-  margin-bottom: 8px;
+  margin-bottom: var(--offset-small);
 }
 
 .checkbox-item input[type=checkbox] {
   width: 16px;
   height: 16px;
-  margin: 0 16px 0 0;
+  margin: 0 var(--offset-medium) 0 0;
 
   cursor: pointer;
 }
@@ -43,7 +42,7 @@
 
 @media (max-width: 532.98px) {
   .checkbox {
-    margin-right: 8px;
+    margin-right: var(--offset-small);
   }
 
   .checkbox-label {

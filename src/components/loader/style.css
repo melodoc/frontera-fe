@@ -19,8 +19,8 @@ input[type='radio'].visually-hidden {
   align-items: center;
   flex-wrap: wrap;
 
-  margin: 0 0 24px;
-  padding: 0 24px;
+  margin: 0 0 var(--offset);
+  padding: 0 var(--offset);
 }
 
 .anthem-item {
@@ -35,8 +35,8 @@ input[type='radio'].visually-hidden {
 }
 
 .login-heading {
-  margin: 0 0 24px;
-  padding: 0 24px;
+  margin: 0 0 var(--offset);
+  padding: 0 var(--offset);
 
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size);
@@ -46,7 +46,7 @@ input[type='radio'].visually-hidden {
 }
 
 .spinner {
-  margin: 48px auto 48px;
+  margin: var(--offset-extra-large) auto var(--offset-extra-large);
   width: 72px;
   text-align: center;
 }

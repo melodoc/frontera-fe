@@ -11,11 +11,11 @@
 }
 
 .nav-account-item:not(:last-child) {
-  padding-right: 24px;
+  padding-right: var(--offset);
 }
 
 .nav-account-link {
-  padding: 8px;
+  padding: var(--offset-small);
 }
 
 .nav-account-link:hover,
@@ -38,6 +38,6 @@
     font-size: var(--font-size-small);
     line-height: var(--line-height-small);
 
-    margin: 24px 48px;
+    margin: var(--offset) var(--offset-extra-large);
   }
 }
