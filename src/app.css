@@ -2,6 +2,7 @@
 @import './utils/style/media.config.css';
 
 :root {
+  /* color pallete */
   --black-transparent: rgba(0, 1, 1, 0.2);
   --gray-light: #b3b6b6;
   --gray: #757575;
@@ -13,6 +14,22 @@
   
   --link: #8d6fdd;
   --link-hovered: #a199c7;
+
+  /* font sizes */
+
+  --font: 'Poppins', 'Century Gothic', 'Arial', sans-serif;
+  --font-size: 16px;
+  --font-size-small: 14px;
+  --font-size-medium: 24px;
+  --font-size-large: 48px;
+
+  --line-height: 24px
+  --line-height-small: 21px;
+  --line-height-medium: 42px;
+  --line-height-large: 58px;
+
+  --font-weight-normal: 400;
+  --font-weight-bold: 500;
 }
 
 html {
@@ -22,10 +39,10 @@ html {
 
   color: var(--purple-primary);
 
-  font-size: 18px;
-  font-family: 'Poppins', 'Century Gothic', 'Arial', sans-serif;
+  font-size: var(--font-size);
+  font-family: var(--font);
   
-  min-width: 1240px;
+  min-width: 480px;
   min-height: 100%;
 }
 
@@ -38,10 +55,10 @@ body {
 
   background-color: var(--white);
   
-  font-size: 18px;
-  line-height: 27px;
-  font-weight: 500;
-  color: #3c2d86;
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  font-weight: var(--font-weight-bold);
+  color: var(--purple-primary);
 }
   
 a {

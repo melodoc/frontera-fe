@@ -3,9 +3,9 @@
   padding: 30px 0;
   
   font-style: normal;
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 42px;
+  font-weight: var(--font-weight-bold);
+   font-size: var(--font-size-medium);
+  line-height: var(--line-height-medium);
   
   text-align: left;
   
@@ -17,9 +17,9 @@
   align-items: center;
 
   margin-bottom: 20px;
-  font-weight: 500;
-  font-size: 48px;
-  line-height: 72px;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-large);
+  line-height: var(--line-height-large);
   
   color: var(--white);
 }

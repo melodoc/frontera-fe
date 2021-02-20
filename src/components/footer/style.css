@@ -24,9 +24,9 @@
 .footer-link {
   padding: 0 15px;
 
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
 
   color: var(--gray);
 }
@@ -37,6 +37,15 @@
   border-radius: 4px;
 
   transition: all .2s ease-in-out;
+}
+
+
+@media (min-width: 533px) and (max-width: 767.98px) {
+  .footer-link {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-small);
+    line-height: var(--line-height-small);
+  }
 }
 
 @media (max-width: 532.98px) {

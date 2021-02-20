@@ -15,9 +15,9 @@
   outline: none;
 
   font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
 
   background: transparent;
   transition: .4s cubic-bezier(0, 0.8, 0, 1);

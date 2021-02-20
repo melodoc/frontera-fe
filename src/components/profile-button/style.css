@@ -56,7 +56,8 @@
   display: block;
   align-items: center;
   
-  font-size: 14px;
+  font-size: var(--font-size);
+  line-height: var(--line-height);
   color: #541594;
 }
 
