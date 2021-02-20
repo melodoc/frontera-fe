@@ -3,20 +3,12 @@
   justify-content: flex-end;
   align-items: flex-end;
   flex-wrap: wrap;
-  
-  margin-right: 30px;
-  
+    
   list-style: none;
 }
 
-@media (min-width: 768px) and (max-width: 1279.98px) {
+@media (max-width: 1279.98px) {
   .account-bar {
-    width: 255px;
-  }
-}
-
-@media (min-width: 627px) and (max-width: 767.98px) {
-  .account-bar {
-    width: 255px;
+    width: 248px;
   }
 }

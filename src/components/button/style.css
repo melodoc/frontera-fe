@@ -1,16 +1,18 @@
 .button {
-  width: 129px;
-  height: 54px;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  width: 128px;
+  height: 56px;
   
   font: inherit;
-  text-align: center;
   text-transform: capitalize;
   color: var(--white);
   
   background-color: var(--purple-primary);
   border: none;
-  border-radius: 10px;
+  border-radius: 8px;
 }
   
 .button:hover,
@@ -21,5 +23,5 @@
   background-color: var(--white);
   box-shadow: 0px 2px 2px var(--link-hovered);
 
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }

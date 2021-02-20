@@ -3,18 +3,19 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  
-  margin-right: 30px;
+
+  margin: 0;
+  padding: 0;
   
   list-style: none;
 }
 
 .nav-account-item:not(:last-child) {
-  padding-right: 20px;
+  padding-right: 24px;
 }
 
 .nav-account-link {
-  padding: 10px;
+  padding: 8px;
 }
 
 .nav-account-link:hover,
@@ -22,7 +23,7 @@
   text-decoration: underline;
   background-color: var(--white);
 
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .nav-account-link:visited {
@@ -37,7 +38,6 @@
     font-size: var(--font-size-small);
     line-height: var(--line-height-small);
 
-    margin-right: 20px;
-
+    margin: 24px 48px;
   }
 }

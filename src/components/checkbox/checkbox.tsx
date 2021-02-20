@@ -16,7 +16,7 @@ export const Checkbox: React.FC<CheckboxProps> = ({ labels }) => {
         <input
           className={style.checkbox}
           id={'filter' + labelName}
-          type={'checkbox'}
+          type='checkbox'
           name={labelName}
         />
         <label

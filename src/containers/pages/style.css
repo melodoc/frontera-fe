@@ -5,7 +5,19 @@
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 5px 0px;
+  padding: 8px 0px;
+}
+
+@media (min-width: 900px) and (max-width: 1279.98px) {
+  .container {
+   width: 776px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 899.98px) {
+  .container {
+    width: 648px;
+   }
 }
 
 @media (max-width: 532.98px) {

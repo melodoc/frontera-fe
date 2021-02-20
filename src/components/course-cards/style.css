@@ -1,5 +1,6 @@
 .catalog-list {
   display: flex;
+  justify-content: flex-start;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
@@ -10,16 +11,16 @@
 
   width: 100%;
 
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 .catalog-link-long {
   position: absolute;
-  bottom: 50px;
+  bottom: 48px;
 
   width: 100%;
 
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 .catalog-header-long {
@@ -42,21 +43,21 @@
 
   margin: 0;
   padding: 0;
-  margin-right: 10px;
-  margin-bottom: 20px;
+  margin-right: 8px;
+  margin-bottom: 24px;
   width: 190px;
   height: 280px;
   
   list-style: none;
   background-color: var(--purple-dark);
-  border-radius: 10px;
-  box-shadow: 0 0 10px var(--black-transparent);
+  border-radius: 8px;
+  box-shadow: 0 0 8px var(--black-transparent);
 }
 
 .catalog-item-long,
 .catalog-item-long img {
   margin-right: 0;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   
   width: 268px;
   height: 640px;
@@ -81,7 +82,7 @@ img {
 .catalog-item:focus,
 .catalog-item-long:hover,
 .catalog-item-long:focus {
-  box-shadow: 5px 0 25px var(--black-transparent);
+  box-shadow: 8px 0 24px var(--black-transparent);
 }
 
 .catalog-link:hover,
@@ -107,7 +108,7 @@ img {
   color: var(--white);
   
   background: var(--purple-5);
-  border-radius: 10px;
+  border-radius: 8px;
   backdrop-filter: blur(36px);
 }
 
@@ -120,4 +121,45 @@ img {
   
   font-size: var(--font-size-medium);
   line-height: var(--line-height-medium);
+}
+
+@media (min-width: 900px) and (max-width: 1279.98px) {
+  .card-container {
+    margin-right: 16px;
+  }
+
+  .catalog-item {
+    width: 168px;
+    height: 280px;
+  }
+
+  .catalog-item-long,
+  .catalog-item-long img {
+    margin-bottom: 24px;
+    
+    width: 176px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 899.98px) {
+  .card-container {
+    margin-right: 8px;
+  }
+
+  .catalog-item {
+    width: 144px;
+    height: 368px;
+  }
+
+  .catalog-item-long,
+  .catalog-item-long img {
+    width: 152px;
+    height: 376px;
+  }
+
+  .catalog-category-long {
+    font-size: var(--font-size-small);
+    line-height: var(--line-height-small);
+  }
 }

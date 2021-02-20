@@ -30,6 +30,10 @@
 
   --font-weight-normal: 400;
   --font-weight-bold: 500;
+
+  /* offsets */
+  --center-form-margin: 144px;
+
 }
 
 html {
