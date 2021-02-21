@@ -16,7 +16,6 @@ import Personalizing from './init/personalizing';
 import HomePage from './pages/homepage';
 import Suggestions from './pages/suggestions';
 import Coursepage from './pages/coursepage';
-import CourseInfo from './pages/course-info';
 
 const Dashboard = () => (
     <Switch>
@@ -49,9 +48,6 @@ const Dashboard = () => (
         </Route>
         <Route path={URLs.coursepage.url}>
             <Coursepage />
-        </Route>
-        <Route path={URLs.courseinfo.url}>
-            <CourseInfo />
         </Route>
         <Route path="*">
             <h1>{ i18next.t('js.navigation.notFound') }</h1>
