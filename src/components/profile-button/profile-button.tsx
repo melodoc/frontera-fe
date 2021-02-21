@@ -1,4 +1,5 @@
 import React from 'react';
+import i18next from 'i18next';
 
 import style from './style.css';
 
@@ -26,16 +27,16 @@ export class ProfileButton extends React.Component<ProfileButtonProps, ProfileBu
     if (this.state.isOpened) {
       dropdownMenu =  <ul className={style.dropdownMenu}>
       <li className={style.dropdopdownItem}>
-        <a href="#" className={style.dropdownLink}>view history</a>
+        <a href="#" className={style.dropdownLink}>{ i18next.t('js.navigation.viewHistory') }</a>
       </li>
       <li className={style.dropdopdownItem}>
-        <a href="#" className={style.dropdownLink}>settings</a>
+        <a href="#" className={style.dropdownLink}>{ i18next.t('js.navigation.settings') }</a>
       </li>
       <li className={style.dropdopdownItem}>
-        <a href="#" className={style.dropdownLink}>help</a>
+        <a href="#" className={style.dropdownLink}>{ i18next.t('js.navigation.help') }</a>
       </li>
       <li className={style.dropdopdownItem}>
-        <a href="#" className={style.dropdownLink}>sign out</a>
+        <a href="#" className={style.dropdownLink}>{ i18next.t('js.navigation.out') }</a>
       </li>
     </ul>
     }

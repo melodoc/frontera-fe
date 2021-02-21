@@ -1,4 +1,5 @@
 import { getConfigValue } from '@ijl/cli';
+
 import { init, success, error } from '../slice/suggestions'
 
 export const getSuggestions = () => async (dispatch) => {
@@ -12,7 +13,6 @@ export const getSuggestions = () => async (dispatch) => {
             'Content-Type': 'application/json;charset=utf-8',
         }
     });
-
 
     if (response.ok) {
         const result = await response.json();

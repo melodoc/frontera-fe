@@ -1,4 +1,5 @@
 import React from 'react';
+import i18next from 'i18next';
 import {
     Switch,
     Route,
@@ -53,7 +54,7 @@ const Dashboard = () => (
             <CourseInfo />
         </Route>
         <Route path="*">
-            <h1>Not found</h1>
+            <h1>{ i18next.t('js.navigation.notFound') }</h1>
         </Route>
     </Switch>
 )
