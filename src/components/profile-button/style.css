@@ -9,11 +9,6 @@
   position: relative;
 }
 
-.dropdown:hover .dropdown-menu,
-.dropdown:focus .dropdown-menu {
-  display: block;
-}
-
 .dropdown-button {
   width: 30px;
   height: 30px;
@@ -38,12 +33,12 @@
 }
 
 .dropdown-menu {
+  list-style: none;
   position: absolute;
-  top: 100%;
-  left: -32px;
+  top: 70%;
+  left: -85px;
   z-index: 1;
 
-  display: none;
   width: 107px;
   padding: var(--offset-medium) var(--offset-small);
   
