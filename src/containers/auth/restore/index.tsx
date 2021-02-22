@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { LinkButton } from './../../../components/link';
-import { URLs } from './../../../__data__/urls';
+import { LinkButton } from '../../../components/link';
+import { URLs } from '../../../__data__/urls';
 import { Link as ConnectedLink } from 'react-router-dom';
 
 import HeaderForm from '../../../components/header-form';
