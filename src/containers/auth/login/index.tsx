@@ -1,9 +1,9 @@
 import React from 'react';
 
 import { Link as ConnectedLink } from 'react-router-dom';
-import { URLs } from './../../../__data__/urls';
+import { URLs } from '../../../__data__/urls';
 
-import { LinkButton, LinkReset } from './../../../components/link';
+import { LinkButton, LinkReset } from '../../../components/link';
 import HeaderForm from '../../../components/header-form';
 import TitleWithSubtitle from '../../../components/title-with-subtitle';
 import Input from '../../../components/input';
@@ -28,7 +28,7 @@ class Login extends React.Component {
               <LoginActions />
               <div className={style.buttons}>
                 <LinkButton
-                  to={URLs.lang.url}
+                  to={URLs.personalizations.url}
                   as={ConnectedLink}>
                   Login now
                 </LinkButton>

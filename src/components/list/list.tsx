@@ -9,7 +9,7 @@ export const List = (props: any) => {
     <ul className={style.filterItem}>
         {
             props.labels.map((value) => (
-                <ListItem key={value.name} labels={value.name}/>
+                <ListItem key={value.name} label={value.name} isCheked={value.checked}/>
             ))
         }
     </ul>

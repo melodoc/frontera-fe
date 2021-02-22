@@ -2,20 +2,12 @@ import { getNavigations } from '@ijl/cli';
 
 const navigations = getNavigations('frontera');
 
-export const baseUrl = ['frontera'];
-
 export const URLs = {
     login: {
         url: navigations['link.frontera.login']
     },
-    lang: {
-        url: navigations['link.frontera.lang']
-    },
-    themes: {
-        url: navigations['link.frontera.themes']
-    },
-    personalizing: {
-        url: navigations['link.frontera.personalizing']
+    personalizations: {
+        url: navigations['link.frontera.personalizations']
     },
     suggestions: {
         url: navigations['link.frontera.suggestions']

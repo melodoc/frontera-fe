@@ -5,14 +5,12 @@ import {
     Route,
     Redirect
 } from 'react-router-dom';
-import { URLs } from './../__data__/urls'
+import { URLs } from '../__data__/urls'
 
 import Login from './auth/login';
 import Registration from './auth/registration';
 import ResetPassword from './auth/reset-password'
-import ChooseLanguage from './init/language';
-import ChooseTheme from './init/themes';
-import Personalizing from './init/personalizing';
+import Personalizations from '../pages/personalization';
 import HomePage from './pages/homepage';
 import Suggestions from './pages/suggestions';
 import Coursepage from './pages/coursepage';
@@ -31,14 +29,8 @@ const Dashboard = () => (
         <Route path={URLs.resetpassword.url}>
             <ResetPassword />
         </Route>
-        <Route path={URLs.lang.url}>
-            <ChooseLanguage />
-        </Route>
-        <Route path={URLs.themes.url}>
-            <ChooseTheme />
-        </Route>
-        <Route path={URLs.personalizing.url}>
-            <Personalizing />
+        <Route path={URLs.personalizations.url}>
+            <Personalizations />
         </Route>
         <Route path={URLs.suggestions.url}>
             <Suggestions />
