@@ -7,30 +7,26 @@ interface InputProps extends HTMLAttributes<HTMLInputElement> {
   label?: string;
   value?: string;
   type?: string;
-  inputRef?: any;
   name?: string;
 }
 
-export const Input: React.FC<InputProps> = ({ label, value, type, inputRef, name, ...rest }) => {
+export const Input: React.FC<InputProps> = ({ label, value, type, name, ...rest }) => {
   return (
     <div className={style.formItem}>
         {label && <label className={style.formLabel} htmlFor={String(rest.id)}>{label}</label>}
         <input
-            name={name}
           className={style.formText}
+          name={name}
           value={value}
           type={type}
           {...rest}
         />
+        <span>{label}</span>
     </div>
   );
 };
 
 Input.propTypes = {
-  inputRef: PropTypes.oneOfType([
-      PropTypes.func,
-      PropTypes.object
-  ]),
   label: PropTypes.string,
   value: PropTypes.string,
   type: PropTypes.string,
@@ -39,6 +35,5 @@ Input.propTypes = {
 
 Input.defaultProps = {
   type: 'text',
-  inputRef: void 0,
-    name: void 0
+  name: void 0
 };

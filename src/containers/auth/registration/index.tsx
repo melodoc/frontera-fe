@@ -11,11 +11,6 @@ import Input from '../../../components/input';
 import style from '../style.css';
 
 class Registration extends React.Component {
-  firstInputRef = React.createRef<HTMLInputElement>();
-
-  componentDidMount() {
-    this.firstInputRef.current.focus();
-  }
 
   render() {
     return (
@@ -26,7 +21,7 @@ class Registration extends React.Component {
             <TitleWithSubtitle type={'registartion'} />
             <form method="post" action="#">
               <div className={style.formWrapper}>
-                <Input inputRef={this.firstInputRef} label="Username" id="username" name="username" type="text" placeholder="Elliot Page" />
+                <Input label="Username" id="username" name="username" type="text" placeholder="Elliot Page" />
                 <Input label="Email Address" id="userEmail" name="email" type="email" placeholder="email@example.com" />
                 <Input label="Password" id="password" name="password" type="password" placeholder="••••••" />
                 <Input label="Repeat password" id="repeatPassword" name="repeatPassword" type="password" placeholder="••••••" />

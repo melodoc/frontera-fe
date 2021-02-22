@@ -1,5 +1,6 @@
 import React from 'react';
 import i18next from 'i18next';
+
 import { Link as ConnectedLink } from 'react-router-dom';
 import { Link } from './../link/link';
 import { URLs } from './../../__data__/urls';
