@@ -5,7 +5,6 @@ import style from './style.css';
 
 export const IconLogo = () => (
   <a className={style.navLogo} href="#">
-    <img src={purpleLogo} width="235" height="43" alt="Purple Frontera logo" />
+    <img src={purpleLogo} alt="Purple Frontera logo" />
   </a>
 );
-

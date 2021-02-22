@@ -1,14 +1,9 @@
-.header {
-  margin-bottom: 146px;
-}
-
 .header-nav {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 20px 30px 0;
+  margin: var(--offset) var(--offset-large) 0;
 
-  font-size: 18px;
-  line-height: 20px;
-  color: var(--black);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
 }

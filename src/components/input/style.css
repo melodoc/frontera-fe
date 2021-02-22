@@ -4,11 +4,11 @@
 }
 
 .form-item:first-child input {
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 8px 8px 0px 0px;
 }
 
 .form-item:last-child input {
-  border-radius: 0px 0px 10px 10px;
+  border-radius: 0px 0px 8px 8px;
 }
 
 .form-item:not(:first-child) input {
@@ -16,13 +16,13 @@
 }
 
 .form-item:only-child input {
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 8px 8px 8px 8px;
 }
 
 .form-item input:focus {
   outline: none;
-  border-radius: 10px 10px 10px 10px;
-  box-shadow: 0 0 0 2px var(--purple-9);
+  border-radius: 8px 8px 8px 8px;
+  box-shadow: 0 0 0 2px var(--purple-primary);
 }
 
 .form-label {
@@ -31,37 +31,45 @@
 
 .form-label input[placeholder] {
   font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 27px;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
 
-  color: var(--purple-9);
+  color: var(--purple-primary);
 }
 
 .form-label span {
   position: absolute;
-  left: 30px;
-  bottom: 30px;
+  left: 24px;
+  bottom: 24px;
 
-  color: var(--purple-9);
+  color: var(--purple-primary);
 
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 27px;
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
 }
 
 .form-text {
   box-sizing: border-box;
   height: 73px;
   width: 100%;
-  padding: 30px 0 0 30px;
+  padding: var(--offset) 0 0 var(--offset);
 
   font: inherit;
   background-color: transparent;
 
-  border: 1px solid var(--gray-7);
+  border: 1px solid var(--gray-light);
 }
 
 .form-text:focus {
   background-color: var(--white);
+}
+
+@media (max-width: 532.98px) {
+  .form-label input[placeholder], 
+  .form-label span {
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+  }
 }

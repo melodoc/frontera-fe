@@ -10,7 +10,7 @@
   left: 0px;
   bottom: 0px;
   max-width: 300px;
-  padding: 50px;
+  padding: var(--offset-extra-large);
 }
 
 .preview-buttons {

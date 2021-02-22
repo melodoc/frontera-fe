@@ -7,11 +7,13 @@ import AccountBar from './../account-bar/';
 import style from './style.css';
 
 export const Header = () => (
-    <header className={style.header}>
-        <nav className={style.headerNav}>
-            <IconLogo />
-            <HeaderNav />
-        </nav>
-        <AccountBar />
-    </header>
+    <div className={style.headerWrapper}>
+        <header className={style.header}>
+            <nav className={style.headerNav}>
+                <IconLogo />
+                <HeaderNav />
+            </nav>
+            <AccountBar />
+        </header>
+    </div>
 )

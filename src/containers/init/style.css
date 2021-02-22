@@ -1,11 +1,7 @@
-.header {
-  border-bottom: 1px solid var(--gray-6);
-}
-
 .container {
   width: max-content;
   margin: 0 auto;
-  padding: 135px 10px;
+  padding: var(--offset-container) var(--offset-small);
 }
 
 .nav {
@@ -13,17 +9,17 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
-  font-size: 18px;
-  line-height: 20px;
-  color: var(--black);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  margin: var(--offset) var(--offset-large);
 }
 
 .icon-nav {
-  margin: 20px 30px;
+  margin: var(--offset) var(--offset-large);
 } 
 
 .form-wrapper {
-  margin-bottom: 32px;
+  margin-bottom: var(--offset-large);
 }
 
 .buttons {
@@ -32,5 +28,21 @@
   justify-content: center;
 
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: var(--offset-large);
+}
+
+@media (max-width: 532.98px) {
+  .header {
+    border-bottom: none;
+  }
+  
+  .iconNav {
+    display: none;
+  }
+
+  .nav {
+    display: block;
+    text-align: right;
+    margin: 0;
+  }
 }

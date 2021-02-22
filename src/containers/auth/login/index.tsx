@@ -23,7 +23,7 @@ class Login extends React.Component {
       <React.Fragment>
         <HeaderForm />
         <main className={style.container}>
-          <section>
+          <section className={style.form}>
             <TitleWithSubtitle type={'login'} />
             <form method="post" action="#">
               <div className={style.formWrapper}>

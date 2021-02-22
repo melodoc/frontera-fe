@@ -1,24 +1,48 @@
 .anthem-item {
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: var(--offset-small);
   padding: 0;
   
   font-style: normal;
-  font-weight: normal;
-  font-size: 28px;
-  line-height: 42px;
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-medium);
+  line-height: var(--line-height-medium);
 
-  color: var(--purple-9);
+  color: var(--purple-primary);
 }
 
 .login-heading {
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: var(--offset-large);
 
   font-style: normal;
   font-weight: 500px;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: var(--font-size);
+  line-height: var(--line-height);
 
-  color: var(--gray-9);
+  color: var(--gray);
+}
+
+@media (min-width: 533px) and (max-width: 767.98px) {
+  .anthem-item {
+    max-width: 504px;
+  }
+
+  .login-heading {
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+  }
+}
+
+@media (max-width: 532.98px) {
+  .anthem-item {
+    display: none;
+  }
+
+  .login-heading {
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+
+    color: var(--purple-primary);
+  }
 }

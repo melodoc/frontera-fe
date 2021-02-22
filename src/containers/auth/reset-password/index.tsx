@@ -22,29 +22,29 @@ class ResetPassword extends React.Component {
       <React.Fragment>
         <HeaderForm />
         <main className={style.container}>
-          <section className={style.login}>
+          <section className={style.form}>
             <TitleWithSubtitle type={'reset'} />
-          </section>
-          <form method="post" action="#">
-            <div className={style.formWrapper}>
-              <Input inputRef={this.firstInputRef} label="Password" id="password" name="password" type="password" placeholder="••••••" />
-              <Input label="Repeat password" id="repeatPassword" name="repeatPassword" type="password " placeholder="••••••" />
-            </div>
+            <form method="post" action="#">
+              <div className={style.formWrapper}>
+                <Input inputRef={this.firstInputRef} label="Password" id="password" name="password" type="password" placeholder="••••••" />
+                <Input label="Repeat password" id="repeatPassword" name="repeatPassword" type="password " placeholder="••••••" />
+              </div>
+              <div className={style.buttons}>
+                <LinkButton
+                  to={URLs.home.url}
+                  as={ConnectedLink}>
+                  Set Up Password
+              </LinkButton>
+              </div>
+            </form>
             <div className={style.buttons}>
               <LinkButton
-                to={URLs.home.url}
+                to={URLs.login.url}
                 as={ConnectedLink}>
-                Set Up Password
-              </LinkButton>
-            </div>
-          </form>
-          <div className={style.buttons}>
-            <LinkButton
-              to={URLs.login.url}
-              as={ConnectedLink}>
-              Cancel
+                Cancel
             </LinkButton>
-          </div>
+            </div>
+          </section>
         </main>
       </React.Fragment>
     );

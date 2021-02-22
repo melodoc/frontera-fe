@@ -25,8 +25,11 @@ const Dashboard = () => (
         <Route path={URLs.login.url}>
             <Login />
         </Route>
-        <Route path={URLs.coursepage.url}>
-            <Coursepage />
+        <Route path={URLs.registration.url}>
+            <Registration />
+        </Route>
+        <Route path={URLs.resetpassword.url}>
+            <ResetPassword />
         </Route>
         <Route path={URLs.lang.url}>
             <ChooseLanguage />
@@ -43,11 +46,8 @@ const Dashboard = () => (
         <Route path={URLs.home.url}>
             <HomePage />
         </Route>
-        <Route path={URLs.registration.url}>
-            <Registration />
-        </Route>
-        <Route path={URLs.resetpassword.url}>
-            <ResetPassword />
+        <Route path={URLs.coursepage.url}>
+            <Coursepage />
         </Route>
         <Route path="*">
             <h1>{ i18next.t('js.navigation.notFound') }</h1>

@@ -22,31 +22,31 @@ class Registration extends React.Component {
       <React.Fragment>
         <HeaderForm />
         <main className={style.container}>
-          <section className={style.login}>
+          <section className={style.form}>
             <TitleWithSubtitle type={'registartion'} />
-          </section>
-          <form method="post" action="#">
-            <div className={style.formWrapper}>
-              <Input inputRef={this.firstInputRef} label="Username" id="username" name="username" type="text" placeholder="Elliot Page" />
-              <Input label="Email Address" id="userEmail" name="email" type="email" placeholder="email@example.com" />
-              <Input label="Password" id="password" name="password" type="password" placeholder="••••••" />
-              <Input label="Repeat password" id="repeatPassword" name="repeatPassword" type="password" placeholder="••••••" />
-            </div>
+            <form method="post" action="#">
+              <div className={style.formWrapper}>
+                <Input inputRef={this.firstInputRef} label="Username" id="username" name="username" type="text" placeholder="Elliot Page" />
+                <Input label="Email Address" id="userEmail" name="email" type="email" placeholder="email@example.com" />
+                <Input label="Password" id="password" name="password" type="password" placeholder="••••••" />
+                <Input label="Repeat password" id="repeatPassword" name="repeatPassword" type="password" placeholder="••••••" />
+              </div>
+              <div className={style.buttons}>
+                <LinkButton
+                  to={URLs.home.url}
+                  as={ConnectedLink}>
+                  Sign up
+              </LinkButton>
+              </div>
+            </form>
             <div className={style.buttons}>
               <LinkButton
-                to={URLs.home.url}
+                to={URLs.login.url}
                 as={ConnectedLink}>
-                Sign up
-              </LinkButton>
-            </div>
-          </form>
-          <div className={style.buttons}>
-            <LinkButton
-              to={URLs.login.url}
-              as={ConnectedLink}>
-              Cancel
+                Cancel
             </LinkButton>
-          </div>
+            </div>
+          </section>
         </main>
       </React.Fragment>
     );

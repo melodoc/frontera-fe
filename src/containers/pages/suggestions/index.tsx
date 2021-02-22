@@ -25,14 +25,12 @@ const Suggestions = () => {
     <React.Fragment>
       <Header />
       <main className={style.container}>
-        <section className={style.login}>
           <PageHeader label={'Based on your choise'} />
           <section className={style.gallery}>
             {isLoading ? <span> Loading... </span>
               : themes && <CourseCardsLarge showNumber={false} cards={themes} />}
             {errors && <span>{errors.find((error) => error.field === 'suggestions').text}</span>}
           </section>
-        </section>
       </main>
     </React.Fragment>
   );

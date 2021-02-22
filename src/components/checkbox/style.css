@@ -1,44 +1,3 @@
-.filter-item {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-
-  color: var(--purple-7);
-}
-
-.checkbox-item {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.filter-item .checkbox-item {
-  list-style: none;
-
-  margin-bottom: 8px;
-  padding-left: 0;
-}
-
-.filter-item .checkbox-item:hover,
-.filter-item .checkbox-item:focus {
-  width: max-content;
-  
-  border-radius: 4px;
-  background-color: var(--white);
-
-  transition: all .2s ease-in-out;
-}
-
-.checkbox {
-  position: relative;
-
-  width: 15px;
-  height: 15px;
-  margin-right: 15px;
-
-  cursor: pointer;
-}
-
 .checkbox-label {
   color: inherit;
 
@@ -47,5 +6,16 @@
 
 .checkbox-label:hover,
 .checkbox-label:focus {
-  color: var(--purple-6);
+  color: var(--link-hovered);
+}
+
+@media (max-width: 532.98px) {
+  .checkbox {
+    margin-right: var(--offset-small);
+  }
+
+  .checkbox-label {
+    font-size: var(--font-size-small);
+    line-height: var(--line-height-small);
+  }
 }

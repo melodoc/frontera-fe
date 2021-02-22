@@ -3,18 +3,12 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: var(--offset-large);
 }
 
-.form-restore {
-  color: var(--purple-7);
-
-  text-decoration: underline;
-}
-
-.form-restore:hover,
-.form-restore:focus {
-  color: var(--purple-4);
-
-  text-decoration: none;
+@media (max-width: 532.98px) {
+  .form-actions {
+    display: block;
+    text-align: left;
+  }
 }
