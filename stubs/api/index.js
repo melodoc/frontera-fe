@@ -46,6 +46,13 @@ router.get('/trending/success', (req, res) => {
     // res.status(400).send(require('./mocks/trending/error'));
 });
 
+router.get('/themes/success', (req, res) => {
+    setTimeout(() => {
+        res.send(require('./mocks/themes/success'));
+    }, 1000);
+    // res.status(400).send(require('./mocks/themes/error'));
+});
+
 router.get('/topics/videos/:id', (req, res) => {
     res.send(require('./mocks/topics/videos'));
 });

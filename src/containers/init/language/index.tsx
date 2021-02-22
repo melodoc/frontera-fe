@@ -6,7 +6,7 @@ import { Link as ConnectedLink } from 'react-router-dom';
 
 import IconLogo from '../../../components/icon-logo';
 import TitleWithSubtitle from '../../../components/title-with-subtitle';
-import Checkbox from '../../../components/checkbox';
+import List from '../../../components/list';
 import Navigation from '../../../components/navigation';
 import Footer from '../../../components/footer';
 
@@ -30,7 +30,7 @@ class ChooseLanguage extends React.Component {
           </section>
           <form method="post" action="#">
             <div className={style.formWrapper}>
-              <Checkbox labels={['English', 'Espanol', 'Russian']} />
+              <List labels={['English', 'Espanol', 'Russian']} />
             </div>
             <div className={style.buttons}>
               <LinkButton
