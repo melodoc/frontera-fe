@@ -8,7 +8,7 @@ import { Link as ConnectedLink } from 'react-router-dom';
 
 import IconLogo from '../../../components/icon-logo';
 import TitleWithSubtitle from '../../../components/title-with-subtitle';
-import Checkbox from '../../../components/checkbox';
+import List from '../../../components/list';
 import Navigation from '../../../components/navigation';
 import Footer from '../../../components/footer';
 
@@ -43,7 +43,7 @@ const ChooseTheme= () =>{
         <form method="post" action="#">
           <div className={style.formWrapper}>
             {isLoading ? <span> Loading... </span>
-              : themes && <Checkbox labels={themes} />}
+              : themes && <List labels={themes} />}
             {errors && <span>{errors.find((error) => error.field === 'themes').text}</span>}
           </div>
           <div className={style.buttons}>
