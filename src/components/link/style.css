@@ -1,58 +1,95 @@
 .link {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
 
-  color: var(--purple-9);
+  color: var(--purple-primary);
 
-  padding: 10px 20px;
+  padding: var(--offset-small) var(--offset-medium);
 }
 
 .link:hover,
 .link:focus {
   text-decoration: underline;
-  background-color: var(--white);
 
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .link:visited {
-  color: var(--gray-9);
+  color: var(--gray);
 }
 
 .link-reset {
-  color: var(--purple-7);
+  color: var(--link);
 
   text-decoration: underline;
 }
 
 .link-reset:hover,
 .link-reset:focus {
-  color: var(--purple-6);
+  color: var(--link-hovered);
 
   text-decoration: none;
 }
 
 .button {
-  width: 129px;
-  height: 54px;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 128px;
+  height: 56px;
 
   font: inherit;
-  text-align: center;
   color: var(--white);
-  line-height: 54px;
+  line-height: var(--line-height-large);
 
-  background-color: var(--purple-9);
+  background-color: var(--purple-primary);
   border: none;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 .button:hover {
-  color: var(--purple-9);
+  color: var(--purple-primary);
 
   background-color: var(--white);
-  box-shadow: 0px 4px 4px var(--blue-9);
+  box-shadow: 0px 4px 4px var(--link-hovered);
 
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+@media (min-width: 768px) and (max-width: 1279.98px) { 
+  .link {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+  
+    color: var(--purple-primary);
+    }
+}
+
+@media (min-width: 533px) and (max-width: 767.98px) { 
+  .link {
+    padding: var(--offset-small) var(--offset-small);
+  }
+}
+
+@media (max-width: 532.98px) {
+  .link {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-small);
+  }
+
+  .link-reset {
+    font-size: var(--font-size-small);
+    line-height: var(--line-height-small);
+  }
+
+  .button {
+    width: 104px;
+    height: 48px;
+
+    font-size: var(--font-size-small);
+    line-height: var(--line-height-small);
+  }
 }

@@ -1,10 +1,16 @@
 .container {
+  min-height: 600px;
+  margin: var(--center-form-offset) 0;
+  margin-top: calc(var(--center-form-offset) - 20px);
+}
+
+.form {
   width: 504px;
   margin: 0 auto;
 }
 
 .form-wrapper {
-  margin-bottom: 32px;
+  margin-bottom: var(--offset-large);
 }
 
 .buttons {
@@ -13,9 +19,26 @@
   justify-content: center;
 
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: var(--offset-large);
 }
 
 .buttons a {
   width: 100%;
+}
+
+@media (max-width: 532.98px) {
+  .container {
+    min-height: 612px;
+    margin: var(--offset-superior-large) 0;
+    margin-top: calc(var(--offset-superior-large) - 20px);
+  }
+
+  .form {
+    width: 300px;
+  }
+
+  .form-wrapper {
+    margin-bottom: var(--offset);
+  }
+  
 }
