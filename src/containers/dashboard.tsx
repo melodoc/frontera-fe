@@ -11,6 +11,7 @@ import Login from './auth/login';
 import Registration from './auth/registration';
 import ResetPassword from './auth/reset-password'
 import Personalizations from '../pages/personalization';
+import DetailCourse from '../pages/detail-course';
 import HomePage from './pages/homepage';
 import Suggestions from './pages/suggestions';
 import Coursepage from './pages/coursepage';
@@ -38,8 +39,13 @@ const Dashboard = () => (
         <Route path={URLs.home.url}>
             <HomePage />
         </Route>
-        <Route path={URLs.coursepage.url}>
-            <Coursepage />
+        <Route path={`${URLs.coursepage.url}/:id`}>
+            {
+                (props) => {
+                    return(
+                        <DetailCourse courseId={props.match.params.id}/>)
+                    } 
+            }
         </Route>
         <Route path="*">
             <h1>{ i18next.t('js.navigation.notFound') }</h1>

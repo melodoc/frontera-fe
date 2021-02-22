@@ -1,5 +1,6 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom'; 
+import { URLs } from 'src/__data__/urls';
 import style from './style.css';
 
 interface CourseCardsProps {
@@ -86,9 +87,9 @@ export class CourseCardsLarge extends CourseCards {
 
     renderCatalogLink = (card) => {
         return (
-            <a className={style.catalogLinkLong} href="#">
+            <Link className={style.catalogLinkLong} to={`${URLs.coursepage.url}/${card.label}`}>
                 {this.renderHeader(card)}
-            </a>
+            </Link>
         );
     };
     renderItemCard = (card) => {
