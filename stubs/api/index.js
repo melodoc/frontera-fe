@@ -39,6 +39,12 @@ router.get('/suggestions/success', (req, res) => {
     }, 1000);
     // res.status(400).send(require('./mocks/suggestions/error'));
 });
+router.get('/trending/success', (req, res) => {
+    setTimeout(() => {
+        res.send(require('./mocks/trending/success'));
+    }, 1000);
+    // res.status(400).send(require('./mocks/trending/error'));
+});
 
 router.get('/themes/success', (req, res) => {
     setTimeout(() => {
