@@ -3,39 +3,18 @@ import PropTypes from 'prop-types';
 
 import style from './style.css';
 
-interface CheckboxProps {
-  readonly labels: Array<string>;
-}
-
-export const Checkbox: React.FC<CheckboxProps> = ({ labels }) => {
-
-  const labelsTemplate = labels.map((labelName, key) => {
-    return (
-      <li className={style.checkboxItem}
-        key={labelName + key}>
+export const Checkbox = (props: any) => (
+    <>
         <input
-          className={style.checkbox}
-          id={'filter' + labelName}
-          type={'checkbox'}
-          name={labelName}
+        id={props.labels}
+        className={style.checkbox}
+        type={'checkbox'}
+        name={props.labels}
         />
         <label
-          className={style.checkboxLabel}
-          htmlFor={'filter' + labelName}
+        className={style.checkboxLabel}
         >
-          {labelName}
+            {props.labels}
         </label>
-      </li>
-    );
-  });
-
-  return <ul className={style.filterItem}>{labelsTemplate}</ul>;
-};
-
-Checkbox.propTypes = {
-  labels: PropTypes.array.isRequired,
-}
-
-Checkbox.defaultProps = {
-  labels: ['No options'],
-}
+    </>
+);
