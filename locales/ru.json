@@ -6,5 +6,17 @@
     "js.navigation.settings": "settings",
     "js.navigation.help": "help",
     "js.navigation.out": "sign out",
-    "js.navigation.notFound": "Not found"
+    "js.navigation.notFound": "Not found",
+
+
+
+    "personalizations.common.log.out": "Выход",
+    "personalizations.lang.title": "Выберите язык учебного материала?",
+    "personalizations.lang.descriptions": "Этот фильтр необходим, для того чтобы в подборку материалов не попал материал на языке, которого вы не знаете",
+    "personalizations.lang.button": "Продолжить",
+    "personalizations.categories.title": "Выберите интересующие вас темы",
+    "personalizations.categories.descriptions": "Этот фильтр необходим, для того чтобы подобрать для вас релевантный материал",
+    "personalizations.processing.title": "Готовим для вас главную страницу с интересным материалом",
+    "personalizations.processing.descriptions": "Процесс займет несколько секунд..."
+
 }

@@ -5,69 +5,69 @@ import style from './style.css';
 import getValues from '../../handlers/getValues';
 
 const titleAttributes = [
-  {
-    key: "login",
-    value: {
-      anthem: "Explore course materials in a single place",
-      heading: "Welcome back! Please login to your account.",
+    {
+        key: "login",
+        value: {
+            anthem: "Explore course materials in a single place",
+            heading: "Welcome back! Please login to your account.",
+        },
     },
-  },
-  {
-    key: "registartion",
-    value: {
-      anthem: "Explore course materials in a single place",
-      heading: "Hello! Let's create your account.",
+    {
+        key: "registartion",
+        value: {
+            anthem: "Explore course materials in a single place",
+            heading: "Hello! Let's create your account.",
+        },
     },
-  },
-  {
-    key: "restore",
-    value: {
-      anthem: "Dang.",
-      heading: "Forgot your password, eh?",
+    {
+        key: "restore",
+        value: {
+            anthem: "Dang.",
+            heading: "Forgot your password, eh?",
+        },
     },
-  },
-  {
-    key: "reset",
-    value: {
-      anthem: "Alright",
-      heading: "Let's set up your new password...",
+    {
+        key: "reset",
+        value: {
+            anthem: "Alright",
+            heading: "Let's set up your new password...",
+        },
     },
-  },
-  {
-    key: "lang",
-    value: {
-      anthem: "Choosing languages help us set up your audio",
-      heading: "Which languages do you like to watch courses in?",
+    {
+        key: "lang",
+        value: {
+            anthem: "Choosing languages help us set up your audio",
+            heading: "Which languages do you like to watch courses in?",
+        },
     },
-  },
-  {
-    key: "themes",
-    value: {
-      anthem: "Choosing themes help us find courses",
-      heading: "Choose themes you likes",
+    {
+        key: "themes",
+        value: {
+            anthem: "Choosing themes help us find courses",
+            heading: "Choose themes you likes",
+        },
     },
-  },
 ];
 
 interface TitleWithSubtitleProps {
-  readonly type: string;
+    readonly type: string;
 }
 
 export const TitleWithSubtitle: React.FC<TitleWithSubtitleProps> = ({ type }) => {
-  const titleValue = getValues(titleAttributes, type);
+    const titleValue = getValues(titleAttributes, type);
 
-  return (
-    <React.Fragment>
-      <h1 className={style.anthemItem}>{titleValue.anthem}</h1>
-      <p className={style.loginHeading}>{titleValue.heading}</p>
-    </React.Fragment>
-  );
+    return (
+        <React.Fragment>
+            <h1 className={style.anthemItem}>{titleValue.anthem}</h1>
+            <p className={style.loginHeading}>{titleValue.heading}</p>
+        </React.Fragment>
+    );
 };
 
 TitleWithSubtitle.propTypes = {
-  type: PropTypes.string.isRequired,
+    type: PropTypes.string.isRequired,
 }
 
 TitleWithSubtitle.defaultProps = {
-  type: 'No data',
+    type: 'No data',
 }
