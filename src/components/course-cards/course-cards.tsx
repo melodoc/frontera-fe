@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; 
 import { URLs } from 'src/__data__/urls';
+import { SmartImage } from './smart-image';
 import style from './style.css';
 
 interface CourseCardsProps {
@@ -19,20 +20,6 @@ export class CourseCards extends React.Component<CourseCardsProps, CourseCardsSt
         };
     }
 
-    componentDidMount() {
-        const imgUrl = `${__webpack_public_path__}/static/images/suggestions/bg-widget-m-2.png`;
-        this.setState({ imgSrc: imgUrl });
-    }
-
-    handleError = () => {
-        const defaultImageUrl = `${__webpack_public_path__}/static/images/suggestions/bg-widget-m-1.png`;
-        this.setState({ imgSrc: defaultImageUrl });
-    };
-
-    renderImg = () => {
-        return (<img onError={this.handleError} src={this.state.imgSrc} />);
-    };
-
     renderCatalogLink = (card) => {
         return (
             <a className={style.catalogLink} href="#">
@@ -50,7 +37,7 @@ export class CourseCards extends React.Component<CourseCardsProps, CourseCardsSt
     renderItemCard = (card) => {
         return (
             <div className={style.catalogItem}>
-                {this.renderImg()}
+                <SmartImage path={card.imageSrc} />
                 {this.renderCatalogLink(card)}
             </div>);
     };
@@ -87,15 +74,16 @@ export class CourseCardsLarge extends CourseCards {
 
     renderCatalogLink = (card) => {
         return (
-            <Link className={style.catalogLinkLong} to={`${URLs.coursepage.url}/${card.label}`}>
+            <Link className={style.catalogLinkLong} to={`${URLs.coursepage.url}/${card.id}`}>
                 {this.renderHeader(card)}
             </Link>
         );
     };
+
     renderItemCard = (card) => {
         return (
             <div className={style.catalogItemLong}>
-                {this.renderImg()}
+                <SmartImage path={card.imageSrc} />
                 {this.renderCatalogLink(card)}
             </div>);
     };

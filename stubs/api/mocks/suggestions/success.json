@@ -1,23 +1,26 @@
 {
-  "status": {
-    "code": 0
-  },
-  "themes": [
-    {
-      "label": "React1",
-      "imageSrc": ""
+    "status": {
+        "code": 0
     },
-    {
-      "label": "CI/CD",
-      "imageSrc": ""
-    },
-    {
-      "label": "JavaScript Mastering",
-      "imageSrc": ""
-    },
-    {
-      "label": "git",
-      "imageSrc": ""
-    }
-  ]
+    "courseList": [{
+            "label": "React",
+            "id": 1,
+            "imageSrc": "remote-assets/images/suggestions/sg-course-1.png"
+        },
+        {
+            "label": "CI/CD",
+            "id": 2,
+            "imageSrc": "remote-assets/images/suggestions/sg-course-2.png"
+        },
+        {
+            "label": "JavaScript Mastering",
+            "id": 3,
+            "imageSrc": "remote-assets/images/suggestions/sg-course-3.png"
+        },
+        {
+            "label": "git",
+            "id": 4,
+            "imageSrc": "remote-assets/images/suggestions/sg-course-4.png"
+        }
+    ]
 }

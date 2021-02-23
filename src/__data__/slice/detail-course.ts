@@ -1,28 +1,45 @@
+
 import { createSlice } from '@reduxjs/toolkit';
 
-type Course = {
+type Video = {
     label: string,
+    imageSrc: string,
     id: number,
-    imageSrc: string
+    videoSrc: string
 }
 
-type SuggestionsState = {
-    courseList: Array<Course>,
+type Info = {
+    authors: string[],
+    language: string,
+    lastUpdate: string,
+    duration: string   
+}
+
+type Data = {
+    title: string,
+    id: number,
+    description: string,
+    info: Info,
+    videoList: Array<Video>
+}
+
+type DetailCourseState = {
+    data: Data,
     loading: boolean,
     errors: string[]
 }
-const initialState: SuggestionsState = {
-    courseList: null,
+const initialState: DetailCourseState = {
+    data: null,
     loading: false,
     errors: null
 };
 
 const slice = createSlice({
-    name: 'suggestions',
+    name: 'detailCourse',
     initialState,
     reducers: {
        success(state, action) {
-           state.courseList = action.payload;
+           state.data = action.payload;
            state.loading = false;
        },
         init(state) {
