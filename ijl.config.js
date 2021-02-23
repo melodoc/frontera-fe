@@ -52,7 +52,7 @@ module.exports = {
         'frontera': '/frontera',
         'link.frontera.login': '/login',
         'link.frontera.personalizations': '/personalizations',
-        'link.frontera.suggestions': '/suggestions',
+        'link.frontera.catalogCourses': '/catalog-courses',
         'link.frontera.home': '/home',
         'link.frontera.registration': '/registration',
         'link.frontera.resetpassword': '/resetpassword',

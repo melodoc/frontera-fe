@@ -63,7 +63,9 @@ module.exports = {
     // globalTeardown: undefined,
 
     // A set of global variables that need to be available in all test environments
-    // globals: {},
+    globals: {
+        __webpack_public_path__: ''
+    },
 
     // The maximum amount of workers used to run your tests. Can be specified as % or a number. E.g. maxWorkers: 10% will use 10% of your CPU amount + 1 as the maximum worker number. maxWorkers: 2 will use a maximum of 2 workers.
     // maxWorkers: "50%",
@@ -87,9 +89,10 @@ module.exports = {
     moduleNameMapper: {
         "\\.(css)$": "identity-obj-proxy",
         "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
-        // "@ijl/cli": "<rootDir>/__mocks__/ijl.cli.js",
-        // "react-router-dom": "<rootDir>/__mocks__/react-router.tsx",
-        // "i18next": "<rootDir>/__mocks__/i18next.js",
+        "@ijl/cli": "<rootDir>/__mocks__/ijl.cli.js",
+        "react-router-dom": "<rootDir>/__mocks__/react-router.tsx",
+        "i18next": "<rootDir>/__mocks__/i18next.js",
+        "react-i18next": "<rootDir>/__mocks__/react-i18next.js",
     },
 
     // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader

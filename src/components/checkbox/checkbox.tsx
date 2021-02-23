@@ -9,7 +9,7 @@ export const Checkbox = (props) => {
         setCheck(!cheked)
     }
     return (
-        <>
+        <div>
             <input
                 id={props.label}
                 className={style.checkbox}
@@ -24,7 +24,7 @@ export const Checkbox = (props) => {
             >
                 {props.label}
             </label>
-        </>
+        </div>
     );
 }
 

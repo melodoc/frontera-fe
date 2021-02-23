@@ -8,16 +8,16 @@ exports[`Тестируем компонент input Тестируем ренд
   <div
     className="formItem"
   >
+    <input
+      className="formText"
+      type="text"
+    />
     <label
       className="formLabel"
       htmlFor="undefined"
     >
       label
     </label>
-    <input
-      className="formText"
-      type="text"
-    />
   </div>
 </Input>
 `;

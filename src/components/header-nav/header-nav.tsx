@@ -2,8 +2,8 @@ import React from 'react';
 import i18next from 'i18next';
 
 import { Link as ConnectedLink } from 'react-router-dom';
-import { Link } from './../link/link';
-import { URLs } from './../../__data__/urls';
+import { Link } from '../link';
+import { URLs } from '../../__data__/urls';
 
 export const HeaderNav = () => (
     <React.Fragment>
@@ -13,12 +13,7 @@ export const HeaderNav = () => (
             { i18next.t('js.navigation.home') }
         </Link>
         <Link
-            to={URLs.home.url}
-            as={ConnectedLink}>
-            { i18next.t('js.navigation.trending') }
-        </Link>
-        <Link
-            to={URLs.suggestions.url}
+            to={URLs.catalogCourses.url}
             as={ConnectedLink}>
             { i18next.t('js.navigation.suggestion') }
         </Link>

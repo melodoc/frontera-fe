@@ -14,7 +14,6 @@ export const DetailCourse = ({courseId}) => {
     const dispatch = useDispatch();
     const { data } = useSelector((state: any) => ({ data: state.detailCourse.data }));
     useEffect(() => {
-//        if (data == null ||
         dispatch(getDetailCourse(courseId))
     }, []);
     if (data == null || !data){
