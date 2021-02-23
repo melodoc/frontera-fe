@@ -1,1 +1,1 @@
-module.exports = 'FILE_MOCK'
+module.exports = 'FILE_MOCK';

@@ -13,8 +13,7 @@ import ResetPassword from './auth/reset-password'
 import Personalizations from '../pages/personalization';
 import DetailCourse from '../pages/detail-course';
 import HomePage from './pages/homepage';
-import Suggestions from './pages/suggestions';
-import Coursepage from './pages/coursepage';
+import CatalogCourses from '../pages/catalog-courses';
 
 const Dashboard = () => (
     <Switch>
@@ -33,8 +32,8 @@ const Dashboard = () => (
         <Route path={URLs.personalizations.url}>
             <Personalizations />
         </Route>
-        <Route path={URLs.suggestions.url}>
-            <Suggestions />
+        <Route path={URLs.catalogCourses.url}>
+            <CatalogCourses />
         </Route>
         <Route path={URLs.home.url}>
             <HomePage />

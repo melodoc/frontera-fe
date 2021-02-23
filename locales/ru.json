@@ -17,6 +17,11 @@
     "personalizations.categories.title": "Выберите интересующие вас темы",
     "personalizations.categories.descriptions": "Этот фильтр необходим, для того чтобы подобрать для вас релевантный материал",
     "personalizations.processing.title": "Готовим для вас главную страницу с интересным материалом",
-    "personalizations.processing.descriptions": "Процесс займет несколько секунд..."
+    "personalizations.processing.descriptions": "Процесс займет несколько секунд...",
+
+
+    "catalog.courses.title": "На основании вашего выбора",
+
+    "home.trends.title": "В тренде"
 
 }

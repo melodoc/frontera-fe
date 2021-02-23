@@ -13,7 +13,6 @@ interface InputProps extends HTMLAttributes<HTMLInputElement> {
 export const Input: React.FC<InputProps> = ({ label, value, type, name, ...rest }) => {
   return (
     <div className={style.formItem}>
-        {label && <label className={style.formLabel} htmlFor={String(rest.id)}>{label}</label>}
         <input
           className={style.formText}
           name={name}
@@ -21,7 +20,7 @@ export const Input: React.FC<InputProps> = ({ label, value, type, name, ...rest 
           type={type}
           {...rest}
         />
-        <span>{label}</span>
+        {label && <label className={style.formLabel} htmlFor={String(rest.id)}>{label}</label>}
     </div>
   );
 };

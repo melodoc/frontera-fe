@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; 
-import { URLs } from 'src/__data__/urls';
+import { URLs } from '../../__data__/urls';
 import { SmartImage } from './smart-image';
 import style from './style.css';
 

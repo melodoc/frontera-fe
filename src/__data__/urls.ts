@@ -9,8 +9,8 @@ export const URLs = {
     personalizations: {
         url: navigations['link.frontera.personalizations']
     },
-    suggestions: {
-        url: navigations['link.frontera.suggestions']
+    catalogCourses: {
+        url: navigations['link.frontera.catalogCourses']
     },
     home: {
         url: navigations['link.frontera.home']

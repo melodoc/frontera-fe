@@ -1,5 +1,6 @@
 .checkbox-label {
   color: inherit;
+  margin-left: 8px;
 
   cursor: pointer;
 }
