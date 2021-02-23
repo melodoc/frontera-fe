@@ -62,4 +62,15 @@ router.get('/topics/search/:name', (req, res) => {
     res.status(400).send(require('./mocks/topics/error'));
 });
 
+router.get('/detail-course/:id', (req, res) => {
+    const answer = require('./mocks/detail-course/success');
+    const { id } = req.params;
+    if (id == 2) {
+        answer.data.title = 'Java';
+    } else {
+        answer.data.title = 'JavaScript Mastering';
+    }
+    res.send(answer);
+});
+
 module.exports = router;

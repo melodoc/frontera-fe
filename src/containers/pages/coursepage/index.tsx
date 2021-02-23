@@ -14,7 +14,6 @@ class Coursepage extends React.Component {
                 <Header />
                 <main className={style.container}>
                     <PageHeader label={'JavaScript Mastering'} />
-                    <CourseInfo/>
                     <section className={style.gallery}>
                         <CourseCards cards={[
                             { label: 'React', imageSrc: '../../assets/images/code.jpg' },

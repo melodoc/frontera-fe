@@ -17,7 +17,7 @@ const Suggestions = () => {
   }, []);
 
   const { isLoading } = useSelector((state: any) => ({ isLoading: state.suggestions.loading }));
-  const { themes } = useSelector((state: any) => ({ themes: state.suggestions.themes }));
+  const { courseList } = useSelector((state: any) => ({ courseList: state.suggestions.courseList }));
   const { errors } = useSelector((state: any) => ({ errors: state.suggestions.errors }));
 
 
@@ -28,7 +28,7 @@ const Suggestions = () => {
           <PageHeader label={'Based on your choise'} />
           <section className={style.gallery}>
             {isLoading ? <span> Loading... </span>
-              : themes && <CourseCardsLarge showNumber={false} cards={themes} />}
+              : courseList && <CourseCardsLarge showNumber={false} cards={courseList} />}
             {errors && <span>{errors.find((error) => error.field === 'suggestions').text}</span>}
           </section>
       </main>
