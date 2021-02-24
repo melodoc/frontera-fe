@@ -30,9 +30,11 @@
   margin-bottom: var(--offset-large);
 }
 
-.course-film-description {
+.course-description {
   width: 650px;
+  margin: 0;
+  margin-bottom: var(--offset-large);
+  
   font-size: var(--font-size);
   line-height: var(--line-height);
-  margin: 0;
 }

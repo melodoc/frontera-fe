@@ -19,7 +19,7 @@ class ResetPassword extends React.Component {
           <section className={style.form}>
             <TitleWithSubtitle type={'reset'} />
             <form method="post" action="#">
-              <div className={style.formWrapper}>
+              <div>
                 <Input label="Password" id="password" name="password" type="password" placeholder="••••••" />
                 <Input label="Repeat password" id="repeatPassword" name="repeatPassword" type="password " placeholder="••••••" />
               </div>

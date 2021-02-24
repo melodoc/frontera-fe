@@ -1,5 +1,4 @@
 @import './assets/font.css';
-@import './utils/style/media.config.css';
 
 :root {
   /* color pallete */
@@ -17,7 +16,7 @@
 
   /* font sizes */
 
-  --font: 'Poppins', 'Century Gothic', 'Arial', sans-serif;
+  --font: 'Montserrat', 'Century Gothic', 'Arial', sans-serif;
   --font-size: 16px;
   --font-size-small: 14px;
   --font-size-medium: 24px;

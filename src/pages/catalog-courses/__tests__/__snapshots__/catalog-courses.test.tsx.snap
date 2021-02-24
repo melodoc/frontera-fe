@@ -282,22 +282,22 @@ exports[`Тестируем CatalogCourses Тестируем рендер  2`] 
             Array [
               Object {
                 "id": 1,
-                "imageSrc": "remote-assets/images/suggestions/sg-course-1.png",
+                "imageSrc": "remote-assets/images/suggestions/sg-course-1.jpg",
                 "label": "React",
               },
               Object {
                 "id": 2,
-                "imageSrc": "remote-assets/images/suggestions/sg-course-2.png",
+                "imageSrc": "remote-assets/images/suggestions/sg-course-2.jpg",
                 "label": "CI/CD",
               },
               Object {
                 "id": 3,
-                "imageSrc": "remote-assets/images/suggestions/sg-course-3.png",
+                "imageSrc": "remote-assets/images/suggestions/sg-course-3.jpg",
                 "label": "JavaScript Mastering",
               },
               Object {
                 "id": 4,
-                "imageSrc": "remote-assets/images/suggestions/sg-course-4.png",
+                "imageSrc": "remote-assets/images/suggestions/sg-course-4.jpg",
                 "label": "git",
               },
             ]
@@ -315,12 +315,12 @@ exports[`Тестируем CatalogCourses Тестируем рендер  2`] 
                 className="catalogItemLong"
               >
                 <SmartImage
-                  path="remote-assets/images/suggestions/sg-course-1.png"
+                  path="remote-assets/images/suggestions/sg-course-1.jpg"
                 >
                   <img
                     className="cardImage"
                     onError={[Function]}
-                    src="remote-assets/images/suggestions/sg-course-1.png"
+                    src="remote-assets/images/suggestions/sg-course-1.jpg"
                   />
                 </SmartImage>
                 <Link
@@ -352,12 +352,12 @@ exports[`Тестируем CatalogCourses Тестируем рендер  2`] 
                 className="catalogItemLong"
               >
                 <SmartImage
-                  path="remote-assets/images/suggestions/sg-course-2.png"
+                  path="remote-assets/images/suggestions/sg-course-2.jpg"
                 >
                   <img
                     className="cardImage"
                     onError={[Function]}
-                    src="remote-assets/images/suggestions/sg-course-2.png"
+                    src="remote-assets/images/suggestions/sg-course-2.jpg"
                   />
                 </SmartImage>
                 <Link
@@ -389,12 +389,12 @@ exports[`Тестируем CatalogCourses Тестируем рендер  2`] 
                 className="catalogItemLong"
               >
                 <SmartImage
-                  path="remote-assets/images/suggestions/sg-course-3.png"
+                  path="remote-assets/images/suggestions/sg-course-3.jpg"
                 >
                   <img
                     className="cardImage"
                     onError={[Function]}
-                    src="remote-assets/images/suggestions/sg-course-3.png"
+                    src="remote-assets/images/suggestions/sg-course-3.jpg"
                   />
                 </SmartImage>
                 <Link
@@ -411,7 +411,7 @@ exports[`Тестируем CatalogCourses Тестируем рендер  2`] 
                       <span
                         className="catalogCategoryLong"
                       >
-                        JavaScript Mastering
+                        Изучаем JS
                       </span>
                     </h3>
                   </a>
@@ -426,12 +426,12 @@ exports[`Тестируем CatalogCourses Тестируем рендер  2`] 
                 className="catalogItemLong"
               >
                 <SmartImage
-                  path="remote-assets/images/suggestions/sg-course-4.png"
+                  path="remote-assets/images/suggestions/sg-course-4.jpg"
                 >
                   <img
                     className="cardImage"
                     onError={[Function]}
-                    src="remote-assets/images/suggestions/sg-course-4.png"
+                    src="remote-assets/images/suggestions/sg-course-4.jpg"
                   />
                 </SmartImage>
                 <Link

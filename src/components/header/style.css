@@ -5,7 +5,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  margin: var(--offset) var(--offset-extra-large);
+  margin: var(--offset) var(--offset-large);
 }
 
 .header-nav {

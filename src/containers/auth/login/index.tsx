@@ -21,10 +21,9 @@ class Login extends React.Component {
           <section className={style.form}>
             <TitleWithSubtitle type={'login'} />
             <form method="post" action="#">
-              <div className={style.formWrapper}>
-                <Input label="Email Address" id="userEmail" name="email" type="email" />
-                  <div className={style.devider}/>
-                <Input label="Password" id="password" name="password" type="password" />
+              <div>
+                <Input label="Email Address" id="userEmail" name="email" type="email" placeholder="email@example.com"/>
+                <Input label="Password" id="password" name="password" type="password" placeholder="••••••"/>
               </div>
               <LoginActions />
               <div className={style.buttons}>

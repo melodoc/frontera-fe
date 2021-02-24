@@ -4,27 +4,23 @@
   },
   "themes": [
     {
-      "label": "Resourses",
-      "imageSrc": "remote-assets/images/suggestions/sg-course-1.png"
+      "label": "Ресурсы",
+      "imageSrc": "remote-assets/images/courses/bg-widget-m-1.jpg"
     },
     {
       "label": "Angular",
-      "imageSrc": "remote-assets/images/suggestions/sg-course-2.png"
+      "imageSrc": "remote-assets/images/courses/bg-widget-m-2.jpg"
     },
     {
-      "label": "Dynamics",
-      "imageSrc": "remote-assets/images/suggestions/sg-course-3.png"
+      "label": "SSR",
+      "imageSrc": "remote-assets/images/courses/bg-widget-m-3.jpg"
     },
     {
-      "label": "Web Design",
-      "imageSrc": "remote-assets/images/suggestions/sg-course-4.png"
+      "label": "Web-дизайн",
+      "imageSrc": "remote-assets/images/courses/bg-widget-m-4.jpg"
     },
     {
-      "label": "Network",
-      "imageSrc": "remote-assets/images/suggestions/sg-course-3.png"
-    },
-    {
-      "label": "SEO",
-      "imageSrc": "remote-assets/images/suggestions/sg-course-4.png"
+      "label": "Сети",
+      "imageSrc": "remote-assets/images/courses/bg-widget-m-5.jpg"
     }]
 }

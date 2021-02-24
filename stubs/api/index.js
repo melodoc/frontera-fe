@@ -68,7 +68,7 @@ router.get('/detail-course/:id', (req, res) => {
     if (id == 2) {
         answer.data.title = 'Java';
     } else {
-        answer.data.title = 'JavaScript Mastering';
+        answer.data.title = 'Изучаем JS';
     }
     res.send(answer);
 });

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import style from './style.css';
 
-const defaultImageUrl = `${__webpack_public_path__}remote-assets/images/suggestions/bg-widget-m-1.png`;
+const defaultImageUrl = `${__webpack_public_path__}remote-assets/images/suggestions/bg-widget-m-1.jpg`;
 
 export const SmartImage = ({ path }) => {
     const [imgSrc, setImgSrc] = useState(`${__webpack_public_path__}${path}`);

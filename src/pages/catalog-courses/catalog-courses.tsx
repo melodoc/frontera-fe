@@ -2,14 +2,14 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
 
-import getSuggestion from '../../__data__/action/suggestions';
 import Header from '../../components/header';
 import { PageHeader } from '../../components/page-header';
-import { CourseCardsLarge } from '../../components/course-cards/course-cards';
-
-import style from './style.css';
 import Loader from "../../components/loader";
 
+import { CourseCardsLarge } from '../../components/course-cards/course-cards';
+import getSuggestion from '../../__data__/action/suggestions';
+
+import style from './style.css';
 
 export const CatalogCourses = () => {
     const { t } = useTranslation();
