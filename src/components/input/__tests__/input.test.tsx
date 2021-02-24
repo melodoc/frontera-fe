@@ -2,6 +2,7 @@ import React from "react";
 import { mount } from 'enzyme';
 import { describe, it, expect } from '@jest/globals';
 import {Input} from "../input";
+
 describe('Тестируем компонент input', () => {
     const props = {
         label: 'label',

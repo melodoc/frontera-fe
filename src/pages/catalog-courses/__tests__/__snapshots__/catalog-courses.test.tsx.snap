@@ -26,7 +26,7 @@ exports[`Тестируем CatalogCourses Тестируем рендер  1`] 
             <IconLogo>
               <a
                 className="navLogo"
-                href="#"
+                href=""
               >
                 <img
                   alt="Purple Frontera logo"
@@ -47,7 +47,7 @@ exports[`Тестируем CatalogCourses Тестируем рендер  1`] 
                     className="link"
                     href="/home"
                   >
-                    Home
+                    Главная
                   </a>
                 </Link>
               </Link>
@@ -63,7 +63,7 @@ exports[`Тестируем CatalogCourses Тестируем рендер  1`] 
                     className="link"
                     href="/catalog-courses"
                   >
-                    Suggestion
+                    Рекомендации
                   </a>
                 </Link>
               </Link>
@@ -90,6 +90,7 @@ exports[`Тестируем CatalogCourses Тестируем рендер  1`] 
                       />
                     </label>
                     <button
+                      onClick={[Function]}
                       type="submit"
                     />
                   </form>
@@ -175,7 +176,7 @@ exports[`Тестируем CatalogCourses Тестируем рендер  2`] 
             <IconLogo>
               <a
                 className="navLogo"
-                href="#"
+                href=""
               >
                 <img
                   alt="Purple Frontera logo"
@@ -196,7 +197,7 @@ exports[`Тестируем CatalogCourses Тестируем рендер  2`] 
                     className="link"
                     href="/home"
                   >
-                    Home
+                    Главная
                   </a>
                 </Link>
               </Link>
@@ -212,7 +213,7 @@ exports[`Тестируем CatalogCourses Тестируем рендер  2`] 
                     className="link"
                     href="/catalog-courses"
                   >
-                    Suggestion
+                    Рекомендации
                   </a>
                 </Link>
               </Link>
@@ -239,6 +240,7 @@ exports[`Тестируем CatalogCourses Тестируем рендер  2`] 
                       />
                     </label>
                     <button
+                      onClick={[Function]}
                       type="submit"
                     />
                   </form>
@@ -293,7 +295,7 @@ exports[`Тестируем CatalogCourses Тестируем рендер  2`] 
               Object {
                 "id": 3,
                 "imageSrc": "remote-assets/images/suggestions/sg-course-3.jpg",
-                "label": "JavaScript Mastering",
+                "label": "Изучаем JS",
               },
               Object {
                 "id": 4,
@@ -383,7 +385,7 @@ exports[`Тестируем CatalogCourses Тестируем рендер  2`] 
             </li>
             <li
               className="cardContainer"
-              key="JavaScript Mastering2"
+              key="Изучаем JS2"
             >
               <div
                 className="catalogItemLong"
