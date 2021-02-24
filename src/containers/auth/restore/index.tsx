@@ -19,7 +19,7 @@ class Restore extends React.Component {
           <section className={style.form}>
             <TitleWithSubtitle type={'restore'} />
             <form method="post" action="#">
-              <div className={style.formWrapper}>
+              <div>
                 <Input label="Email Address" id="restoreEmail" name="email" type="email" placeholder="email@example.com" />
               </div>
               <div className={style.buttons}>

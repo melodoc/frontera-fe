@@ -20,7 +20,7 @@ class Registration extends React.Component {
           <section className={style.form}>
             <TitleWithSubtitle type={'registartion'} />
             <form method="post" action="#">
-              <div className={style.formWrapper}>
+              <div>
                 <Input label="Username" id="username" name="username" type="text" placeholder="Elliot Page" />
                 <Input label="Email Address" id="userEmail" name="email" type="email" placeholder="email@example.com" />
                 <Input label="Password" id="password" name="password" type="password" placeholder="••••••" />

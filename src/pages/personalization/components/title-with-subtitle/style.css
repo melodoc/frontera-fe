@@ -13,7 +13,7 @@
 
 .login-heading {
   margin: 0;
-  margin-bottom: var(--offset-large);
+  margin-bottom: var(--offset);
 
   font-style: normal;
   font-weight: 500;

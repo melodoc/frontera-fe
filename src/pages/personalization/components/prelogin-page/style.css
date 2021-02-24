@@ -1,23 +1,27 @@
 .wrapper {
-    margin: 0 auto;
-    max-width: 960px;
+  max-width: 640px;
+  margin: 0 auto;
 }
 
-.nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+
+  margin: var(--offset) var(--offset-large) 0;
 }
 
 .log-out-link {
-    color: var(--purple-primary);
+  color: var(--purple-primary);
 }
 
 .log-out-link:visited {
-    color: var(--purple-primary);
+  color: var(--purple-primary);
 }
 
 .container {
-    margin-top: 80px;
+  padding: var(--offset-container) var(--offset-small);
 }

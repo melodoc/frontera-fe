@@ -1,12 +1,12 @@
 {
-    "js.navigation.home": "Home",
-    "js.navigation.trending": "Trending",
-    "js.navigation.suggestion": "Suggestion",
-    "js.navigation.viewHisory": "view history",
-    "js.navigation.settings": "settings",
-    "js.navigation.help": "help",
-    "js.navigation.out": "sign out",
-    "js.navigation.notFound": "Not found",
+    "js.navigation.home": "Главная",
+    "js.navigation.trending": "В тренде",
+    "js.navigation.suggestion": "Рекомендации",
+    "js.navigation.viewHistory": "История",
+    "js.navigation.settings": "Настройки",
+    "js.navigation.help": "Помощь",
+    "js.navigation.out": "Выход",
+    "js.navigation.notFound": "Не найдено",
 
 
 

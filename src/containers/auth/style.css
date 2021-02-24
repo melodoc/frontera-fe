@@ -9,16 +9,6 @@
   margin: 0 auto;
 }
 
-.form-wrapper {
-  border: 1px solid var(--gray-light);
-  margin-bottom: var(--offset-large);
-  border-radius: 8px;
-}
-.devider {
-  height: 1px;
-  background-color: var(--gray-light);
-  width: 100%;
-}
 .buttons {
   display: flex;
   flex-wrap: wrap;
@@ -42,9 +32,4 @@
   .form {
     width: 300px;
   }
-
-  .form-wrapper {
-    margin-bottom: var(--offset);
-  }
-  
 }
