@@ -4,9 +4,7 @@ import { useTranslation } from 'react-i18next';
 import Page from './components/auth-page';
 
 import Login from './steps/login';
-import RecoverPassword from './steps/recover-password';
 import Register from './steps/registration';
-import ResetPassword from './steps/reset-password';
 
 import { AuthSteps } from './constants/steps';
 
@@ -16,18 +14,6 @@ const steps = {
         title: 'auth.login.title',
         descriptions: 'auth.login.descriptions',
         next: null,
-    },
-    [AuthSteps.RECOVER_PASSWORD_STEP]: {
-        component: RecoverPassword,
-        title: 'auth.recover.password.title',
-        descriptions: 'auth.recover.password.descriptions',
-        next: AuthSteps.RESET_PASSWORD_STEP,
-    },
-    [AuthSteps.RESET_PASSWORD_STEP]: {
-        component: ResetPassword,
-        title: 'auth.reset.password.title',
-        descriptions: 'auth.reset.password.descriptions',
-        next: AuthSteps.LOGIN_STEP,
     },
     [AuthSteps.REGISTRATION_STEP]: {
         component: Register,

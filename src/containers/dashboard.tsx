@@ -7,11 +7,8 @@ import {
 } from 'react-router-dom';
 import { URLs } from '../__data__/urls'
 
-import Auth from '../pages/auth';
-
 import Login from './auth/login';
 import Registration from './auth/registration';
-import ResetPassword from './auth/reset-password'
 import Personalizations from '../pages/personalization';
 import DetailCourse from '../pages/detail-course';
 import HomePage from './pages/homepage';
@@ -27,9 +24,6 @@ const Dashboard = () => (
         </Route>
         <Route path={URLs.registration.url}>
             <Registration />
-        </Route>
-        <Route path={URLs.resetpassword.url}>
-            <ResetPassword />
         </Route>
         <Route path={URLs.personalizations.url}>
             <Personalizations />
