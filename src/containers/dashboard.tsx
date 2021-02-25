@@ -7,6 +7,8 @@ import {
 } from 'react-router-dom';
 import { URLs } from '../__data__/urls'
 
+import Auth from '../pages/auth';
+
 import Login from './auth/login';
 import Registration from './auth/registration';
 import ResetPassword from './auth/reset-password'

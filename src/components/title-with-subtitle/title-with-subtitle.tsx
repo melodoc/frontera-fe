@@ -33,20 +33,6 @@ const titleAttributes = [
             heading: "Let's set up your new password...",
         },
     },
-    {
-        key: "lang",
-        value: {
-            anthem: "Choosing languages help us set up your audio",
-            heading: "Which languages do you like to watch courses in?",
-        },
-    },
-    {
-        key: "themes",
-        value: {
-            anthem: "Choosing themes help us find courses",
-            heading: "Choose themes you likes",
-        },
-    },
 ];
 
 interface TitleWithSubtitleProps {
