@@ -1,21 +1,26 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link as ConnectedLink } from 'react-router-dom';
+import { useHistory } from 'react-router-dom'
 
 import { URLs } from '../../../../__data__/urls';
 
 import Button from '../../../../components/button'
-import { LinkReset } from '../../../../components/link';
 import Input from '../../../../components/input';
 import LoginActions from '../../../../components/login-actions';
 
 import style from './style.css';
 
-const Login = ({ moveNextStep }) => {
+const Registration = ({ moveNextStep }) => {
     const { t } = useTranslation();
     const handleSubmit = (event) => {
         event.preventDefault();
         moveNextStep()
+    }
+
+    const history = useHistory();
+    const handleClick = (event) => {
+        event.preventDefault();
+        history.push(URLs.home.url);
     }
 
     return (
@@ -35,14 +40,12 @@ const Login = ({ moveNextStep }) => {
                 </div>
             </form>
             <div className={style.buttons}>
-                <LinkReset
-                    to={URLs.login.url}
-                    as={ConnectedLink}>
+                <Button onClick={handleClick}>
                     {t('auth.cancel.button')}
-                </LinkReset>
+                </Button>
             </div>
         </React.Fragment>
     );
 }
 
-export default Login;
+export default Registration;

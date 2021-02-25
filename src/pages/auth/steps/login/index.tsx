@@ -34,11 +34,6 @@ const Login = () => {
                     </Button>
                 </div>
             </form>
-            <LinkReset
-              to={URLs.registration.url}
-              as={ConnectedLink}>
-              {t('auth.login.registration')}
-            </LinkReset>
         </React.Fragment>
     );
 }
