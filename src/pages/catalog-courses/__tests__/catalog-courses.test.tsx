@@ -9,7 +9,8 @@ import { multipleRequest } from "../../../test-utils";
 import { store } from "../../../__data__/store";
 import { CatalogCourses } from '../catalog-courses';
 
-import catalogCoursesResponse from '../../../../stubs/api/mocks/suggestions/success.json';
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const catalogCoursesResponse = require('../../../../stubs/api/mocks/suggestions/success');
 
 describe('Тестируем CatalogCourses', () => {
     let mockApi;
