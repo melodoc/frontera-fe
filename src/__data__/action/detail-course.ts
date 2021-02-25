@@ -1,29 +1,24 @@
 import { getConfigValue } from '@ijl/cli';
 
 import { init, success, error } from '../slice/detail-course'
+import axios from "axios";
 
 export const getDetailCourse = (id) => async (dispatch) => {
     dispatch(init());
 
     const baseApiUrl = getConfigValue('frontera.api');
 
-    const response = await fetch(`${baseApiUrl}/detail-course/${id}`, {
+    const response =  await axios(`${baseApiUrl}/detail-course/${id}`, {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json;charset=utf-8',
         }
     });
 
-    if (response.ok) {
-        const result = await response.json();
-        dispatch(success(result.data));
+    if (response.data) {
+        dispatch(success(response.data.data));
     } else {
-        try {
-            const result = await response.json();
-            dispatch(error(result.errors));
-        } catch (error) {
-            console.error(error);
-        }
+        dispatch(error('Ошибка!'));
     }
 };
 
