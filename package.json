@@ -1,6 +1,6 @@
 {
     "name": "frontera",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "main": "./src/index.tsx",
     "scripts": {
         "start": "ijl-cli --server --port=8099 --with-open-browser",
