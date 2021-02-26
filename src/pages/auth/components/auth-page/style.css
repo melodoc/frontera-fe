@@ -9,19 +9,6 @@
   margin: 0 auto;
 }
 
-.buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  margin: 0;
-  margin-bottom: var(--offset-large);
-}
-
-.buttons a {
-  width: 100%;
-}
-
 @media (max-width: 532.98px) {
   .container {
     min-height: 612px;

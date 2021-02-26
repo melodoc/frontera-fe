@@ -7,7 +7,6 @@
   height: 56px;
   
   font: inherit;
-  text-transform: capitalize;
   color: var(--white);
   
   background-color: var(--purple-primary);

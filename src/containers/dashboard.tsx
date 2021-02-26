@@ -7,27 +7,19 @@ import {
 } from 'react-router-dom';
 import { URLs } from '../__data__/urls'
 
-import Login from './auth/login';
-import Registration from './auth/registration';
-import ResetPassword from './auth/reset-password'
+import Auth from '../pages/auth/';
 import Personalizations from '../pages/personalization';
 import DetailCourse from '../pages/detail-course';
-import HomePage from './pages/homepage';
+import HomePage from './homepage';
 import CatalogCourses from '../pages/catalog-courses';
 
 const Dashboard = () => (
     <Switch>
         <Route exact path="/">
-            <Redirect to={URLs.login.url} />
+            <Redirect to={URLs.auth.url} />
         </Route>
-        <Route path={URLs.login.url}>
-            <Login />
-        </Route>
-        <Route path={URLs.registration.url}>
-            <Registration />
-        </Route>
-        <Route path={URLs.resetpassword.url}>
-            <ResetPassword />
+        <Route path={URLs.auth.url}>
+            <Auth />
         </Route>
         <Route path={URLs.personalizations.url}>
             <Personalizations />
