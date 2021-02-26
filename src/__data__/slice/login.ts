@@ -19,6 +19,9 @@ const slice = createSlice({
         error(state, action) {
             state.errors = action.payload;
             state.loading = false;
+        },
+        reset(state) {
+            state.errors = false;
         }
     }
 });
@@ -26,7 +29,8 @@ const slice = createSlice({
 export const {
     init,
     success,
-    error
+    error,
+    reset
 } = slice.actions;
 
 export const reducer = slice.reducer;
