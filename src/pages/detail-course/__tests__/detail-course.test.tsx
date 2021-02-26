@@ -7,25 +7,26 @@ import MockAdapter from "axios-mock-adapter";
 
 import { multipleRequest } from "../../../test-utils";
 import { store } from "../../../__data__/store";
-import { CatalogCourses } from '../catalog-courses';
+import { DetailCourse } from "../detail-course";
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const catalogCoursesResponse = require('../../../../stubs/api/mocks/suggestions/success');
+const detailCourseResponse = require('../../../../stubs/api/mocks/detail-course/success');
 
-describe('Тестируем CatalogCourses', () => {
+describe('Тестируем DetailCourse', () => {
     let mockApi;
     beforeEach(() => {
         mockApi = new MockAdapter(axios);
     });
     it('Тестируем рендер ', async () => {
+        const courseId = 1;
         const component = mount(
             <Provider store={store}>
-                <CatalogCourses />
+                <DetailCourse courseId={courseId} />
             </Provider>
         );
         expect(component).toMatchSnapshot();
         const response = [
-            ['GET', '/suggestions/success', {}, 200, { ...catalogCoursesResponse }]
+            ['GET', `/detail-course/${courseId}`, {}, 200, { ...detailCourseResponse }]
         ];
         await multipleRequest(mockApi, response);
         component.update();
