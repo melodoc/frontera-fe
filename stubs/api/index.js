@@ -1,10 +1,5 @@
 const router = require("express").Router();
 
-router.post("/register", (req, res) => {
-  res.send(require("./mocks/register/success"));
-  // res.status(400).send(require('./mocks/register/error'));
-});
-
 router.post("/recover/password", (req, res) => {
   res.send(require("./mocks/recover/password/success"));
   // res.send(require('./mocks/recover/password/error'));
@@ -72,20 +67,28 @@ let users = ['username'];
 
 let user = {
   login: "username",
-  password: "123",
+  password: "1",
 };
 
 router.post("/login", (req, res) => {
   const { login, password } = req.body;
 
   if (users.includes(login)) {
-  // if (login === user.login && password === user.password) {
     res.send(require("./mocks/login/success"));
   } else {
-    users.push(login);
-
     res.send(require("./mocks/login/error"));
   }
 });
+
+// router.post("/registration", (req, res) => {
+//   const { login } = req.body;
+
+//   if (users.includes(login)) {
+//     res.send(require("./mocks/registration/error"));
+//   } else {
+//     users.push(login);
+//     res.send(require("./mocks/registration/success"));
+//   }
+// });
 
 module.exports = router;

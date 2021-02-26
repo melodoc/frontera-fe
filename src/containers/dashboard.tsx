@@ -10,7 +10,7 @@ import { URLs } from '../__data__/urls'
 import Auth from '../pages/auth/';
 import Personalizations from '../pages/personalization';
 import DetailCourse from '../pages/detail-course';
-import HomePage from './pages/homepage';
+import HomePage from './homepage';
 import CatalogCourses from '../pages/catalog-courses';
 
 const Dashboard = () => (
