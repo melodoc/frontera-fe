@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { LinkReset } from '../link';
 import { URLs } from '../../__data__/urls';
@@ -8,14 +9,18 @@ import Checkbox from '../checkbox';
 
 import style from './style.css';
 
-export const LoginActions = () => (
-  <div className={style.formActions}>
-    <Checkbox label="Remember me"/>
+export const LoginActions = () => {
+  const { t } = useTranslation();
+
+  return (
+    <div className={style.formActions}>
+    <Checkbox label={t('auth.login.remember')}/>
     <LinkReset
-      to={URLs.resetpassword.url}
+      to={URLs.auth.url}
       as={ConnectedLink}
-    >
-      Forgot Password?
+      >
+      {t('auth.login.forgot')}
       </LinkReset>
   </div>
 );
+}
