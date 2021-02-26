@@ -1,8 +1,6 @@
 import React from 'react';
 
-import { LinkButton } from '../../../components/link';
-import { URLs } from '../../../__data__/urls';
-import { Link as ConnectedLink } from 'react-router-dom';
+import Button from '../../../components/button';
 
 import HeaderForm from '../../../components/header-form';
 import TitleWithSubtitle from '../../../components/title-with-subtitle';
@@ -23,19 +21,15 @@ class Restore extends React.Component {
                 <Input label="Email Address" id="restoreEmail" name="email" type="email" placeholder="email@example.com" />
               </div>
               <div className={style.buttons}>
-                <LinkButton
-                  to={URLs.resetpassword.url}
-                  as={ConnectedLink}>
+                <Button>
                   Reset
-              </LinkButton>
+              </Button>
               </div>
             </form>
             <div className={style.buttons}>
-              <LinkButton
-                to={URLs.login.url}
-                as={ConnectedLink}>
+              <Button>
                 Cancel
-            </LinkButton>
+              </Button>
             </div>
           </section>
         </main>

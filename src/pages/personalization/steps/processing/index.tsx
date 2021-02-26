@@ -2,15 +2,15 @@ import React, { useEffect } from 'react';
 
 import { useHistory } from 'react-router-dom'
 
-import {URLs} from '../../../../__data__/urls';
+import { URLs } from '../../../../__data__/urls';
 import Loader from '../../../../components/loader';
 
 const Processing = () => {
     const history = useHistory();
 
-    useEffect(()=> {
-        setTimeout(()=> {
-            history.push(URLs.home.url);
+    useEffect(() => {
+        setTimeout(() => {
+            history.push(URLs.catalogCourses.url);
         }, 2000)
     }, [])
 
@@ -18,7 +18,7 @@ const Processing = () => {
     return (
         <React.Fragment>
             <section>
-                <Loader/>
+                <Loader />
             </section>
         </React.Fragment>
     );

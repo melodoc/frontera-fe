@@ -12,15 +12,16 @@ import style from './style.css';
 
 const Registration = ({ moveNextStep }) => {
     const { t } = useTranslation();
-    const handleSubmit = (event) => {
+    const handleClick = (event) => {
         event.preventDefault();
         moveNextStep()
     }
 
     const history = useHistory();
-    const handleClick = (event) => {
+    const handleSubmit = (event) => {
         event.preventDefault();
-        history.push(URLs.home.url);
+        alert('Зарегестрированы!');
+        history.push(URLs.personalizations.url);
     }
 
     return (
@@ -32,9 +33,8 @@ const Registration = ({ moveNextStep }) => {
                     <Input label={t('auth.login.form.password.label')} id="password" name="password" type="password" placeholder="••••••" />
                     <Input label={t('auth.login.form.repeat.password.label')} id="repeatPassword" name="repeatPassword" type="password" placeholder="••••••" />
                 </div>
-                <LoginActions />
                 <div className={style.buttons}>
-                    <Button>
+                    <Button onClick={handleSubmit}>
                         {t('auth.singup.button')}
                     </Button>
                 </div>

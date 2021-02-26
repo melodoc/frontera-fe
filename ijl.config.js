@@ -50,7 +50,7 @@ module.exports = {
     },
     navigations: {
         'frontera': '/frontera',
-        'link.frontera.login': '/login',
+        'link.frontera.auth': '/auth',
         'link.frontera.personalizations': '/personalizations',
         'link.frontera.catalogCourses': '/catalog-courses',
         'link.frontera.home': '/home',

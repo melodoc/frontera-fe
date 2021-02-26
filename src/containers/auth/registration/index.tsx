@@ -36,7 +36,7 @@ class Registration extends React.Component {
             </form>
             <div className={style.buttons}>
               <LinkButton
-                to={URLs.login.url}
+                to={URLs.auth.url}
                 as={ConnectedLink}>
                 Cancel
             </LinkButton>

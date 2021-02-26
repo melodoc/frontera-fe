@@ -7,6 +7,6 @@
     margin-bottom: var(--offset-large);
   }
   
-  .buttons a {
+.buttons button {
     width: 100%;
   }

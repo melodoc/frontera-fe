@@ -13,7 +13,7 @@ const steps = {
         component: Login,
         title: 'auth.login.title',
         descriptions: 'auth.login.descriptions',
-        next: null,
+        next: AuthSteps.REGISTRATION_STEP,
     },
     [AuthSteps.REGISTRATION_STEP]: {
         component: Register,
