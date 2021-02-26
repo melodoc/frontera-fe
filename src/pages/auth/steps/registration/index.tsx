@@ -6,7 +6,6 @@ import { URLs } from '../../../../__data__/urls';
 
 import Button from '../../../../components/button'
 import Input from '../../../../components/input';
-import LoginActions from '../../../../components/login-actions';
 
 import style from './style.css';
 
