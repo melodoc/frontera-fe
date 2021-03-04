@@ -3,7 +3,7 @@ import React from 'react';
 import ErrorBoundary from '../../../../components/error-boundary';
 
 import HeaderForm from '../../../../components/header-form';
-import TitleWithSubtitle from "../title-with-subtitle";
+import TitleWithSubtitle from "../../../../components/title-with-subtitle";
 
 import style from './style.css';
 

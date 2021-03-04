@@ -3,9 +3,9 @@ import { useTranslation } from 'react-i18next';
 
 import ErrorBoundary from '../../../../components/error-boundary';
 
-import IconLogo from "../../../../components/icon-logo";
-import Footer from "../../../../components/footer";
-import TitleWithSubtitle from "../title-with-subtitle";
+import IconLogo from '../../../../components/icon-logo';
+import Footer from '../../../../components/footer';
+import TitleWithSubtitle from '../../../../components/title-with-subtitle';
 
 import style from './style.css';
 
