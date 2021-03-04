@@ -63,32 +63,41 @@ router.get("/detail-course/:id", (req, res) => {
   res.send(answer);
 });
 
-let users = ['username'];
-
-let user = {
-  login: "username",
-  password: "1",
-};
+const users = [
+  {
+    login: "username",
+    email: "username@mail.com",
+    password: "1",
+  },
+  {
+    login: "usersname2",
+    email: "username@mail.com",
+    password: "12",
+  },
+];
 
 router.post("/login", (req, res) => {
   const { login, password } = req.body;
 
-  if (users.includes(login)) {
-    res.send(require("./mocks/login/success"));
-  } else {
-    res.send(require("./mocks/login/error"));
+  for (let i = 0; i < users.length; i += 1) {
+    if (login === users[i].login && password === users[i].password) {
+      res.send(require("./mocks/login/success"));
+    } else {
+      res.send(require("./mocks/login/error"));
+    }
   }
 });
 
-// router.post("/registration", (req, res) => {
-//   const { login } = req.body;
+router.post("/registration", (req, res) => {
+  const { login, email } = req.body;
 
-//   if (users.includes(login)) {
-//     res.send(require("./mocks/registration/error"));
-//   } else {
-//     users.push(login);
-//     res.send(require("./mocks/registration/success"));
-//   }
-// });
+  for (let i = 0; i < users.length; i += 1) {
+    if (login === users[i].login || email === users[i].email) {
+      res.send(require("./mocks/registration/error"));
+    } else {
+      res.send(require("./mocks/registration/success"));
+    }
+  }
+});
 
 module.exports = router;

@@ -61,7 +61,7 @@ const Login = ({ moveNextStep }) => {
     return (
         <React.Fragment>
             <form onSubmit={handleSubmit}>
-                {errors && <span>Пользователь не найден</span>}
+                {errors && <span>{t('auth.login.form.error')}</span>}
                 <div>
                     <Input onChange={handleChangeLogin} label={t('auth.login.form.username.label')} id="username" name="username" type="text" placeholder="Elliot Page" />
                     <Input onChange={handleChangePassword} label={t('auth.login.form.password.label')} id="password" name="password" type="password" placeholder="••••••" />
