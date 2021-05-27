@@ -24,7 +24,3 @@ npm install
 ``` shell
 npm start
 ```
-
-## Макет
-
-[Frontera](https://www.figma.com/file/8aRmpJwTvwvBu0N00T756c/frontera)
