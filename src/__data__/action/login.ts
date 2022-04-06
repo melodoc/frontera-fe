@@ -1,4 +1,3 @@
-import { getConfigValue } from '@ijl/cli'
 import axios from 'axios';
 
 import { init, success, error } from '../slice/login'
@@ -6,9 +5,9 @@ import { init, success, error } from '../slice/login'
 export const getLogin = (login, password) => async (dispatch) => {
     dispatch(init());
 
-    const baseApiUrl = getConfigValue('frontera.api');
+    const baseApiUrl = 'https://httpbin.org/post';
 
-    const response = await axios(`${baseApiUrl}/login`, {
+    const response = await axios(`${baseApiUrl}`, {
         method: 'POST',
         data: { login, password },
         headers: {
@@ -16,8 +15,8 @@ export const getLogin = (login, password) => async (dispatch) => {
         }
     });
 
-    if (response.data && response.data.status.code === 0) {
-        dispatch(success(response.data.token));
+    if (response.data && response.status === 200) {
+        dispatch(success(response.data.json));
     } else {
         dispatch(error('Ошибка!'));
     }
