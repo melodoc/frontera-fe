@@ -1,4 +1,4 @@
-{
+export const detailCourseRes = {
     "status": {
         "code": 0
     },
