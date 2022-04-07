@@ -2,6 +2,7 @@ import { init, success, error } from '../slice/detail-course'
 import axios from "axios";
 import { detailCourseRes } from 'api/detail-course/detail-course';
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const getDetailCourse = (id) => async (dispatch) => {
     dispatch(init());
 

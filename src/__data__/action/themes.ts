@@ -13,10 +13,12 @@ export const getThemes = () => async (dispatch) => {
     });
 
     if (response.ok) {
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         const result = await response.json();
         dispatch(success(themesRes.themes));
     } else {
         try {
+            // eslint-disable-next-line @typescript-eslint/no-unused-vars
             const result = await response.json();
             dispatch(error(themesErr.errors));
         } catch (error) {
