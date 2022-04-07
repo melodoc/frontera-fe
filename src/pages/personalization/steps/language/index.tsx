@@ -11,7 +11,7 @@ const ChooseLanguage = ({ moveNextStep }) => {
     const {t} = useTranslation();
     const handleSubmit = (event) => {
         event.preventDefault();
-        moveNextStep()
+        moveNextStep();
     }
 
     return (

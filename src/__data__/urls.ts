@@ -1,21 +1,17 @@
-import { getNavigations } from '@ijl/cli';
-
-const navigations = getNavigations('frontera');
-
 export const URLs = {
     auth: {
-        url: navigations['link.frontera.auth']
+        url:  '/auth',
     },
     personalizations: {
-        url: navigations['link.frontera.personalizations']
+        url: '/personalizations',
     },
     catalogCourses: {
-        url: navigations['link.frontera.catalogCourses']
+        url: '/catalog-courses',
     },
     home: {
-        url: navigations['link.frontera.home']
+        url: '/home',
     },
     coursepage: {
-        url: navigations['link.frontera.coursepage']
+        url: '/coursepage',
     },
-}
+};

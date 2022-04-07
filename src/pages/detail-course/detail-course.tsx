@@ -12,6 +12,7 @@ import style from './style.css';
 
 export const DetailCourse = ({courseId}) => {
     const dispatch = useDispatch();
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const { data } = useSelector((state: any) => ({ data: state.detailCourse.data }));
     useEffect(() => {
         dispatch(getDetailCourse(courseId))
