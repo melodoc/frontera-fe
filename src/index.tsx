@@ -1,30 +1,29 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-import i18next from 'i18next';
-import { i18nextReactInitConfig } from '@ijl/cli';
+import { I18nextProvider } from 'react-i18next';
+import { i18n } from './common/i18n';
 
-i18next.t = i18next.t.bind(i18next);
-
-const i18nextPromise = i18nextReactInitConfig(i18next);
-
-import App from './app'
+import App from './app';
 
 export default () => <App />;
 
-export const mount = async (Сomponent) => {
-    await Promise.all([i18nextPromise]);
+export const mount = async (Component) => {
+
     ReactDom.render(
-        <Сomponent />,
+        <Component />,
         document.getElementById('app')
     );
 
     if (module.hot) {
         module.hot.accept('./app', () => {
             ReactDom.render(
-                <App />,
+                <I18nextProvider i18n={i18n}>
+                    <App />
+                </I18nextProvider>
+                ,
                 document.getElementById('app')
             );
-        })
+        });
     }
 };
 
