@@ -1,13 +1,12 @@
-import React from 'react';
+import { IconLogo } from "../icon-logo/icon-logo";
+import style from "./header-form.module.scss";
 
-import IconLogo from '../icon-logo';
-
-import style from './style.css';
-
-export const HeaderFrom = () => (
+export function HeaderFrom() {
+  return (
     <header>
-        <nav className={style.headerNav}>
-            <IconLogo />
-        </nav>
+      <nav className={style.headerNav}>
+        <IconLogo />
+      </nav>
     </header>
-)
+  );
+}

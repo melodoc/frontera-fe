@@ -1,26 +1,20 @@
-import React from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
+import { Link as ConnectedLink } from "react-router-dom";
 
-import { LinkReset } from '../link';
-import { URLs } from '../../__data__/urls';
-import { Link as ConnectedLink } from 'react-router-dom';
+import { LinkReset } from "../link";
+import { URLs } from "../../__data__/urls";
+import { Checkbox } from "../checkbox/checkbox";
+import style from "./login-actions.module.scss";
 
-import Checkbox from '../checkbox';
-
-import style from './style.css';
-
-export const LoginActions = () => {
+export function LoginActions() {
   const { t } = useTranslation();
 
   return (
     <div className={style.formActions}>
-    <Checkbox label={t('auth.login.remember')}/>
-    <LinkReset
-      to={URLs.auth.url}
-      as={ConnectedLink}
-      >
-      {t('auth.login.forgot')}
+      <Checkbox label={t("auth.login.remember")} />
+      <LinkReset to={URLs.auth.url} as={ConnectedLink}>
+        {t("auth.login.forgot")}
       </LinkReset>
-  </div>
-);
+    </div>
+  );
 }

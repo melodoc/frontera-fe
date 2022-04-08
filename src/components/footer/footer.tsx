@@ -1,37 +1,34 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+/* eslint-disable react/default-props-match-prop-types */
+/* eslint-disable react/forbid-prop-types */
+import React from "react";
+import PropTypes from "prop-types";
 
-import style from './style.css';
+import style from "./footer.module.scss";
 
 interface FooterProps {
   readonly links: Array<string>;
 }
 
 export const Footer: React.FC<FooterProps> = ({ links }) => {
-  const linksTemplate = links.map((linkName, key) => {
-    return (
-      <li className={style.footerItem}
-        key={linkName + key}>
-        <a className={style.footerLink} href="#">
-          {linkName}
-        </a>
-      </li>
-    );
-  });
+  const linksTemplate = links.map((linkName, key) => (
+    <li className={style.footerItem} key={linkName + key}>
+      <a className={style.footerLink} href="#">
+        {linkName}
+      </a>
+    </li>
+  ));
 
   return (
     <footer className={style.footerWrapper}>
-      <ul className={style.footerList}>
-        {linksTemplate}
-      </ul>
+      <ul className={style.footerList}>{linksTemplate}</ul>
     </footer>
   );
 };
 
 Footer.propTypes = {
   links: PropTypes.array.isRequired,
-}
+};
 
 Footer.defaultProps = {
-  links: ['No links'],
-}
+  links: ["No links"],
+};

@@ -1,13 +1,12 @@
-import React from 'react';
+import { SearchInput } from "../search-input/search-input";
+import { ProfileButton } from "../profile-button/profile-button";
+import style from "./account-bar.module.scss";
 
-import SearchInput from '../search-input';
-import ProfileButton from '../profile-button';
-
-import style from './style.css';
-
-export const AccountBar = () => (
-  <div className={style.accountBar}>
-    <SearchInput/>
-    <ProfileButton/>
-  </div>
-);
+export const AccountBar = () => {
+  return (
+    <div className={style.accountBar}>
+      <SearchInput />
+      <ProfileButton />
+    </div>
+  );
+};

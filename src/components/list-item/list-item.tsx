@@ -1,11 +1,11 @@
-import React from 'react';
+/* eslint-disable react/destructuring-assignment */
+import { Checkbox } from "../checkbox/checkbox";
+import style from "./list-item.module.scss";
 
-import Checkbox from '../checkbox'
-
-import style from './style.css';
-
-export const ListItem = (props: any) => (
+export const ListItem = (props: any) => {
+  return (
     <li className={style.checkboxItem}>
-        <Checkbox label={props.label} isCheked={props.checked}/>
+      <Checkbox label={props.label} isChecked={props.checked} />
     </li>
-);
+  );
+};

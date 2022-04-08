@@ -1,25 +1,24 @@
-import { courseListRes } from 'api/suggestions/suggestions';
-import axios from 'axios';
+import axios from "axios";
 
-import { init, success, error } from '../slice/suggestions'
+import { courseListRes } from "api/suggestions/suggestions";
+
+import { init, success, error } from "../slice/suggestions";
 
 export const getSuggestions = () => async (dispatch) => {
-    dispatch(init());
+  dispatch(init());
 
-    const baseApiUrl = 'https://httpbin.org/get';
+  const baseApiUrl = "https://httpbin.org/get";
 
-    const response = await axios(`${baseApiUrl}`, {
-        method: 'GET',
-        headers: {
-            'Content-Type': 'application/json;charset=utf-8',
-        }
-    });
+  const response = await axios(`${baseApiUrl}`, {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json;charset=utf-8",
+    },
+  });
 
-    if (response.status === 200) {
-        dispatch(success(courseListRes.courseList));
-    } else {
-        dispatch(error('Ошибка!'));
-    }
+  if (response.status === 200) {
+    dispatch(success(courseListRes.courseList));
+  } else {
+    dispatch(error("Ошибка!"));
+  }
 };
-
-export default getSuggestions;

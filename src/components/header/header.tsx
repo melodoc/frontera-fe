@@ -1,19 +1,18 @@
-import React from 'react';
+import { IconLogo } from "../icon-logo/icon-logo";
+import { HeaderNav } from "../header-nav/header-nav";
+import { AccountBar } from "../account-bar/account-bar";
+import style from "./header.module.scss";
 
-import IconLogo from './../icon-logo';
-import HeaderNav from './../header-nav';
-import AccountBar from './../account-bar/';
-
-import style from './style.css';
-
-export const Header = () => (
+export const Header = () => {
+  return (
     <div className={style.headerWrapper}>
-        <header className={style.header}>
-            <nav className={style.headerNav}>
-                <IconLogo />
-                <HeaderNav />
-            </nav>
-            <AccountBar />
-        </header>
+      <header className={style.header}>
+        <nav className={style.headerNav}>
+          <IconLogo />
+          <HeaderNav />
+        </nav>
+        <AccountBar />
+      </header>
     </div>
-)
+  );
+};

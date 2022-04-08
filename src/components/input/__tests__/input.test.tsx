@@ -1,15 +1,16 @@
-import React from "react";
+import React from 'react';
 import { mount } from 'enzyme';
 import { describe, it, expect } from '@jest/globals';
-import {Input} from "../input";
+
+import { Input } from '../input';
 
 describe('Тестируем компонент input', () => {
     const props = {
         label: 'label',
-        type: 'text'
+        type: 'text',
     };
     it('Тестируем рендер компонента input', () => {
-        const InputTest = mount(<Input {...props}/>);
+        const InputTest = mount(<Input {...props} />);
         expect(InputTest).toMatchSnapshot();
     });
 
@@ -19,20 +20,24 @@ describe('Тестируем компонент input', () => {
     });
 
     it('Тестируем событие', () => {
-
-        const testState = { value: 'test1'};
-        const component = mount(<Input name="value" value={testState.value}  onChange={(e:any) => {
-            testState[e.target.name] = e.target.value;
-        }} />);
+        const testState = { value: 'test1' };
+        const component = mount(
+            <Input
+                name="value"
+                value={testState.value}
+                onChange={(e: any) => {
+                    testState[e.target.name] = e.target.value;
+                }}
+            />,
+        );
         expect(component).toMatchSnapshot();
 
         component.find('input').simulate('change', {
-            target: { name: 'value', value: 'test2' }
+            target: { name: 'value', value: 'test2' },
         });
         component.setProps({ value: testState.value });
 
         expect(component).toMatchSnapshot();
         expect(testState.value).toEqual('test2');
-
-    })
+    });
 });
