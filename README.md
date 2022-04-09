@@ -1,25 +1,21 @@
-# Frontera  —  помогает в изучении Frontend-разработке
+# Frontera 
 
-## MVP-1
+Frontera app helps in learning Frontend development
 
-+ авторизация;
-+ подборка видео по предпочтениям и темам при инициализации;
-+ регистрация;
-+ подборка топ-видео на главной;
-+ поисковая строка;
-+ просмотр карточки курса.
++ authorization;
++ registration;
++ selection of videos by preferences and topics during initialization;
++ a selection of top videos on the main page;
++ search;
++ view the course card.
 
-## Исходник
-
-https://bitbucket.org/melodoc/frontera/src/master/
-
-## Установка
+## install
 
 ``` shell
 npm install
 ```
 
-## Запуск
+## launch
 
 ``` shell
 npm start
