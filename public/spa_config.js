@@ -1,3 +1,3 @@
 window.SPA_CONFIG = {
-  key: 'VALUE',
+  IMG_URL: 'https://raw.githubusercontent.com/melodoc/frontera/master'
 };
