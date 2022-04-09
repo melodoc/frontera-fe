@@ -16,7 +16,7 @@ export const getSuggestions = () => async (dispatch) => {
     },
   });
 
-  if (response.status === 200) {
+  if (response.data) {
     dispatch(success(courseListRes.courseList));
   } else {
     dispatch(error("Ошибка!"));
