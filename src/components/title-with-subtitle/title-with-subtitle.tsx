@@ -1,19 +1,17 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
-import style from './style.css';
+import style from "./title-with-subtitle.module.scss";
 
-export const TitleWithSubtitle = ({ title,  descriptions}) => {
-
+export const TitleWithSubtitle = ({ title, descriptions }) => {
   return (
-    <React.Fragment>
-      <h1 className={style.anthemItem}>{title}</h1>
-      <p className={style.loginHeading}>{descriptions}</p>
-    </React.Fragment>
+    <>
+      <h1 className={style.AnthemItem}>{title}</h1>
+      <p className={style.LoginHeading}>{descriptions}</p>
+    </>
   );
 };
 
 TitleWithSubtitle.propTypes = {
   title: PropTypes.string.isRequired,
-  descriptions: PropTypes.string.isRequired
-}
+  descriptions: PropTypes.string.isRequired,
+};

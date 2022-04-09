@@ -1,0 +1,20 @@
+.Preview {
+  position: relative;
+  min-height: 630px;
+  z-index: 0;
+  background: url(./../../assets/images/notebook.png);
+}
+
+.PreviewInfo {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  max-width: 300px;
+  padding: var(--offset-extra-large);
+}
+
+.PreviewButtons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

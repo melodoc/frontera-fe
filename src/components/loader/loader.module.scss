@@ -1,0 +1,31 @@
+.Spinner {
+  margin: var(--offset-extra-large) auto var(--offset-extra-large);
+  width: 72px;
+  text-align: center;
+}
+
+.Spinner > div {
+  width: 16px;
+  height: 16px;
+  background-color: var(--purple-primary);
+
+  border-radius: 80%;
+  display: inline-block;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.Spinner .Bounce1 {
+  animation-delay: -0.32s;
+}
+
+.Spinner .Bounce2 {
+  animation-delay: -0.16s;
+}
+
+@keyframes sk-Bouncedelay {
+  0%, 80%, 100% { 
+    transform: scale(0);
+  } 40% { 
+    transform: scale(1.0);
+  }
+}

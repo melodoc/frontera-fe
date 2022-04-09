@@ -107,7 +107,7 @@ exports[`Тестируем DetailCourse Тестируем рендер  2`] = 
           </nav>
           <AccountBar>
             <div
-              className="accountBar"
+              className="AccountBar"
             >
               <SearchInput>
                 <div
@@ -292,33 +292,33 @@ exports[`Тестируем DetailCourse Тестируем рендер  2`] = 
           }
         >
           <ul
-            className="catalogList"
+            className="CatalogList"
           >
             <li
-              className="cardContainer"
+              className="CardContainer"
               key="React0"
             >
               <div
-                className="catalogItem"
+                className="CatalogItem"
               >
                 <SmartImage
                   path="remote-assets/images/courses/bg-widget-m-1.jpg"
                 >
                   <img
-                    className="cardImage"
+                    className="CardImage"
                     onError={[Function]}
                     src="remote-assets/images/courses/bg-widget-m-1.jpg"
                   />
                 </SmartImage>
                 <a
-                  className="catalogLink"
-                  href="#"
+                  className="CatalogLink"
+                  href=""
                 >
                   <h3
-                    className="catalogHeader"
+                    className="CatalogHeader"
                   >
                     <span
-                      className="catalogCategory"
+                      className="CatalogCategory"
                     >
                       React
                     </span>
@@ -327,30 +327,30 @@ exports[`Тестируем DetailCourse Тестируем рендер  2`] = 
               </div>
             </li>
             <li
-              className="cardContainer"
+              className="CardContainer"
               key="CI/CD1"
             >
               <div
-                className="catalogItem"
+                className="CatalogItem"
               >
                 <SmartImage
                   path="remote-assets/images/courses/bg-widget-m-2.jpg"
                 >
                   <img
-                    className="cardImage"
+                    className="CardImage"
                     onError={[Function]}
                     src="remote-assets/images/courses/bg-widget-m-2.jpg"
                   />
                 </SmartImage>
                 <a
-                  className="catalogLink"
-                  href="#"
+                  className="CatalogLink"
+                  href=""
                 >
                   <h3
-                    className="catalogHeader"
+                    className="CatalogHeader"
                   >
                     <span
-                      className="catalogCategory"
+                      className="CatalogCategory"
                     >
                       CI/CD
                     </span>
@@ -359,30 +359,30 @@ exports[`Тестируем DetailCourse Тестируем рендер  2`] = 
               </div>
             </li>
             <li
-              className="cardContainer"
+              className="CardContainer"
               key="Отрисовка на стороне сервера2"
             >
               <div
-                className="catalogItem"
+                className="CatalogItem"
               >
                 <SmartImage
                   path="remote-assets/images/courses/bg-widget-m-3.jpg"
                 >
                   <img
-                    className="cardImage"
+                    className="CardImage"
                     onError={[Function]}
                     src="remote-assets/images/courses/bg-widget-m-3.jpg"
                   />
                 </SmartImage>
                 <a
-                  className="catalogLink"
-                  href="#"
+                  className="CatalogLink"
+                  href=""
                 >
                   <h3
-                    className="catalogHeader"
+                    className="CatalogHeader"
                   >
                     <span
-                      className="catalogCategory"
+                      className="CatalogCategory"
                     >
                       Отрисовка на стороне сервера
                     </span>
@@ -391,30 +391,30 @@ exports[`Тестируем DetailCourse Тестируем рендер  2`] = 
               </div>
             </li>
             <li
-              className="cardContainer"
+              className="CardContainer"
               key="ES20213"
             >
               <div
-                className="catalogItem"
+                className="CatalogItem"
               >
                 <SmartImage
                   path="remote-assets/images/courses/bg-widget-m-4.jpg"
                 >
                   <img
-                    className="cardImage"
+                    className="CardImage"
                     onError={[Function]}
                     src="remote-assets/images/courses/bg-widget-m-4.jpg"
                   />
                 </SmartImage>
                 <a
-                  className="catalogLink"
-                  href="#"
+                  className="CatalogLink"
+                  href=""
                 >
                   <h3
-                    className="catalogHeader"
+                    className="CatalogHeader"
                   >
                     <span
-                      className="catalogCategory"
+                      className="CatalogCategory"
                     >
                       ES2021
                     </span>
@@ -423,30 +423,30 @@ exports[`Тестируем DetailCourse Тестируем рендер  2`] = 
               </div>
             </li>
             <li
-              className="cardContainer"
+              className="CardContainer"
               key="git4"
             >
               <div
-                className="catalogItem"
+                className="CatalogItem"
               >
                 <SmartImage
                   path="remote-assets/images/courses/bg-widget-m-5.jpg"
                 >
                   <img
-                    className="cardImage"
+                    className="CardImage"
                     onError={[Function]}
                     src="remote-assets/images/courses/bg-widget-m-5.jpg"
                   />
                 </SmartImage>
                 <a
-                  className="catalogLink"
-                  href="#"
+                  className="CatalogLink"
+                  href=""
                 >
                   <h3
-                    className="catalogHeader"
+                    className="CatalogHeader"
                   >
                     <span
-                      className="catalogCategory"
+                      className="CatalogCategory"
                     >
                       git
                     </span>

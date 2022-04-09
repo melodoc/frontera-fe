@@ -1,40 +1,38 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types'
+/* eslint-disable react/destructuring-assignment */
+import { useState } from "react";
+import PropTypes from "prop-types";
 
-import style from './style.css';
+import style from "./checkbox.module.scss";
+
+// TODO: Fix eslint issues
 
 export const Checkbox = (props) => {
-    const [cheked, setCheck] = useState(props.isCheked)
-    const handleChange = () => {
-        setCheck(!cheked)
-    }
-    return (
-        <div>
-            <input
-                id={props.label}
-                className={style.checkbox}
-                type='checkbox'
-                name={props.label}
-                checked={cheked}
-                onChange={handleChange}
-            />
-            <label
-                htmlFor={props.label}
-                className={style.checkboxLabel}
-            >
-                {props.label}
-            </label>
-        </div>
-    );
-}
+  const [checked, setCheck] = useState(props.isChecked);
+  const handleChange = () => {
+    setCheck(!checked);
+  };
+  return (
+    <div>
+      <input
+        id={props.label}
+        className={style.Checkbox}
+        type="checkbox"
+        name={props.label}
+        checked={checked}
+        onChange={handleChange}
+      />
+      <label htmlFor={props.label} className={style.CheckboxLabel}>
+        {props.label}
+      </label>
+    </div>
+  );
+};
 
 Checkbox.propTypes = {
-    isCheked: PropTypes.bool,
-    label: PropTypes.string.isRequired
-}
+  isChecked: PropTypes.bool,
+  label: PropTypes.string.isRequired,
+};
 
 Checkbox.defaultProps = {
-    isCheked: false
-}
-
-
+  isChecked: false,
+};

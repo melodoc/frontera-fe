@@ -1,28 +1,21 @@
-import React, { useEffect } from 'react';
+import { useEffect } from "react";
+import { useHistory } from "react-router-dom";
 
-import { useHistory } from 'react-router-dom'
+import { URLs } from "../../../../__data__/urls";
+import { Loader } from "../../../../components/loader/loader";
 
-import { URLs } from '../../../../__data__/urls';
-import Loader from '../../../../components/loader';
+export const Processing = () => {
+  const history = useHistory();
 
-const Processing = () => {
-    const history = useHistory();
+  useEffect(() => {
+    setTimeout(() => {
+      history.push(URLs.catalogCourses.url);
+    }, 2000);
+  }, []);
 
-    useEffect(() => {
-        setTimeout(() => {
-            history.push(URLs.catalogCourses.url);
-        }, 2000)
-    }, [])
-
-
-    return (
-        <React.Fragment>
-            <section>
-                <Loader />
-            </section>
-        </React.Fragment>
-    );
-}
-
-
-export default Processing;
+  return (
+    <section>
+      <Loader />
+    </section>
+  );
+};

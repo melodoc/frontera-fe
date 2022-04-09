@@ -1,20 +1,22 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import style from './style.css';
+import React from "react";
+import PropTypes from "prop-types";
 
-interface ButtonProps extends React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {
+import style from "./button.module.scss";
+
+interface ButtonProps
+  extends React.DetailedHTMLProps<
+    React.ButtonHTMLAttributes<HTMLButtonElement>,
+    HTMLButtonElement
+  > {
   loading?: boolean;
 }
 
 export const Button: React.FC<ButtonProps> = ({ children, ...rest }) => (
-  <button
-    {...rest}
-    className={style.button}
-  >
+  <button {...rest} className={style.Button}>
     {children}
   </button>
 );
 
 Button.propTypes = {
-  children: PropTypes.string.isRequired
-}
+  children: PropTypes.string.isRequired,
+};

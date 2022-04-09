@@ -1,0 +1,23 @@
+.Container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: var(--offset-small) 0px;
+}
+
+@media (min-width: 900px) and (max-width: 1279.98px) {
+  .Container {
+   width: 776px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 899.98px) {
+  .Container {
+    width: 648px;
+   }
+}
+
+@media (max-width: 767.98px) {
+  .Container {
+    width: 320px;
+   }
+}

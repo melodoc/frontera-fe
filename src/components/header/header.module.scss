@@ -1,0 +1,40 @@
+.HeaderWrapper {
+  border-bottom: 1px solid var(--gray-light);
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  margin: var(--offset) var(--offset-large);
+}
+
+.HeaderNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-right: var(--offset);
+  
+  list-style: none;
+}
+
+@media (min-width: 549px) and (max-width: 767.98px) {
+  .HeaderNav {
+    width: stretch;
+  }
+
+  .HeaderWrapper {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 548.98px) {
+  .HeaderNav {
+    display: contents;
+    vertical-align: middle;
+  }
+
+  .HeaderWrapper {
+    border-bottom: none;
+  }
+}

@@ -1,0 +1,27 @@
+.Wrapper {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.Nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+
+  margin: var(--offset) var(--offset-large) 0;
+}
+
+.LogOutLink {
+  color: var(--purple-primary);
+}
+
+.LogOutLink:visited {
+  color: var(--purple-primary);
+}
+
+.Container {
+  padding: var(--offset-container) var(--offset-small);
+}

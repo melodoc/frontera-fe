@@ -2,11 +2,11 @@ import React from 'react';
 import { describe, it, expect, beforeEach } from '@jest/globals';
 import { mount } from 'enzyme';
 import axios from 'axios';
-import { Provider } from "react-redux";
-import MockAdapter from "axios-mock-adapter";
+import { Provider } from 'react-redux';
+import MockAdapter from 'axios-mock-adapter';
 
-import { multipleRequest } from "../../../test-utils";
-import { store } from "../../../__data__/store";
+import { multipleRequest } from '../../../test-utils';
+import { store } from '../../../__data__/store';
 import { CatalogCourses } from '../catalog-courses';
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
@@ -21,12 +21,10 @@ describe('Тестируем CatalogCourses', () => {
         const component = mount(
             <Provider store={store}>
                 <CatalogCourses />
-            </Provider>
+            </Provider>,
         );
         expect(component).toMatchSnapshot();
-        const response = [
-            ['GET', '/suggestions/success', {}, 200, { ...catalogCoursesResponse }]
-        ];
+        const response = [['GET', '/suggestions/success', {}, 200, { ...catalogCoursesResponse }]];
         await multipleRequest(mockApi, response);
         component.update();
         expect(component).toMatchSnapshot();

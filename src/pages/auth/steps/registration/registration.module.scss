@@ -1,0 +1,12 @@
+.Buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+    margin: 0;
+    margin-bottom: var(--offset-large);
+  }
+  
+.Buttons button {
+    width: 100%;
+  }

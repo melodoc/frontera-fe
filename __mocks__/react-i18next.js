@@ -5,7 +5,7 @@ module.exports = {
         return {
             t: key => {
                 return locales[key];
-            }
-        }
-    }
+            },
+        };
+    },
 };

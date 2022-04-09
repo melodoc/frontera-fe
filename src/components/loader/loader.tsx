@@ -1,15 +1,11 @@
-import React from 'react';
-
-import style from './style.css';
+import style from "./loader.module.scss";
 
 export const Loader = () => {
   return (
-    <React.Fragment>
-      <div className={style.spinner}>
-        <div className={style.bounce1}/>
-        <div className={style.bounce2}/>
-        <div className={style.bounce3}/>
-      </div>
-    </React.Fragment>
+    <div className={style.Spinner}>
+      <div className={style.Bounce1} />
+      <div className={style.Bounce2} />
+      <div className={style.Bounce3} />
+    </div>
   );
 };

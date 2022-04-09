@@ -1,0 +1,63 @@
+.Wrapper {
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  padding: 3px;
+}
+
+.Dropdown {
+  position: relative;
+}
+
+.DropdownButton {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+
+  font: inherit;
+  color: inherit;
+
+  background: url('../../assets/icons/user-account.svg') no-repeat;
+  background-color: transparent;
+  background-size: cover;
+  border: none;
+
+  cursor: pointer;
+}
+
+.DropdownButton:hover,
+.DropdownButton:focus {
+  filter: saturate(150%);
+
+  transition: all 0.2s ease-in-out;
+}
+
+.DropdownMenu {
+  list-style: none;
+  position: absolute;
+  top: 70%;
+  left: -85px;
+  z-index: 1;
+
+  width: 107px;
+  padding: var(--offset-medium) var(--offset-small);
+  
+  background-color: var(--white);
+  border: 0.5px solid var(--gray-light);
+  border-radius: 0 0 4px 4px;
+}
+
+.DropdownLink {
+  display: block;
+  align-items: center;
+  
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  color: #541594;
+}
+
+@media (max-width: 641.98px) {
+  .DropdownButton {
+    background: url('../../assets/icons/menu.svg') center no-repeat;
+  }
+} 

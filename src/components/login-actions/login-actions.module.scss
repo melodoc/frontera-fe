@@ -1,0 +1,14 @@
+.FormActions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: var(--offset-large);
+}
+
+@media (max-width: 532.98px) {
+  .FormActions {
+    display: block;
+    text-align: left;
+  }
+}

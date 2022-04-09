@@ -1,6 +1,6 @@
 export const URLs = {
     auth: {
-        url:  '/auth',
+        url: '/auth',
     },
     personalizations: {
         url: '/personalizations',

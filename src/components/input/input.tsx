@@ -1,7 +1,7 @@
-import React, { HTMLAttributes } from 'react';
-import PropTypes from 'prop-types';
+import React, { HTMLAttributes } from "react";
+import PropTypes from "prop-types";
 
-import style from './style.css';
+import style from "./input.module.scss";
 
 interface InputProps extends HTMLAttributes<HTMLInputElement> {
   label?: string;
@@ -10,20 +10,28 @@ interface InputProps extends HTMLAttributes<HTMLInputElement> {
   name?: string;
 }
 
-export const Input: React.FC<InputProps> = ({ label, value, type, name, ...rest }) => {
-  return (
-    <div className={style.formItem}>
-        <input
-          className={style.formText}
-          name={name}
-          value={value}
-          type={type}
-          {...rest}
-        />
-        {label && <label className={style.formLabel} htmlFor={String(rest.id)}>{label}</label>}
-    </div>
-  );
-};
+export const Input: React.FC<InputProps> = ({
+  label,
+  value,
+  type,
+  name,
+  ...rest
+}) => (
+  <div className={style.FormItem}>
+    <input
+      className={style.FormText}
+      name={name}
+      value={value}
+      type={type}
+      {...rest}
+    />
+    {label && (
+      <label className={style.FormLabel} htmlFor={String(rest.id)}>
+        {label}
+      </label>
+    )}
+  </div>
+);
 
 Input.propTypes = {
   label: PropTypes.string,
@@ -33,6 +41,7 @@ Input.propTypes = {
 };
 
 Input.defaultProps = {
-  type: 'text',
-  name: void 0
+  type: "text",
+  // eslint-disable-next-line no-void
+  name: void 0,
 };

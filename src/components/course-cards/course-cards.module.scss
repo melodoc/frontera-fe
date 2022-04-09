@@ -1,0 +1,184 @@
+.CatalogList {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.CatalogLink {
+  position: absolute;
+
+  width: 100%;
+
+  border-radius: 8px;
+}
+
+.CatalogLinkLong {
+  position: absolute;
+  bottom: 48px;
+
+  width: 100%;
+
+  border-radius: 8px;
+}
+
+.CatalogHeaderLong {
+  margin: 0;
+}
+
+.CardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-right: var(--offset-medium);
+}
+
+.CatalogItem,
+.CatalogItemLong {
+  position: relative;
+  overflow: hidden;
+
+  margin: 0;
+  padding: 0;
+  margin-right: var(--offset-medium);
+  margin-bottom: var(--offset);
+  width: 190px;
+  height: 280px;
+
+  list-style: none;
+  background-color: var(--purple-dark);
+  border-radius: 8px;
+  box-shadow: 0 0 8px var(--black-transparent);
+}
+
+.CatalogItemLong,
+.CatalogItemLong img {
+  margin-right: 0;
+  margin-bottom: var(--offset);
+
+  width: 268px;
+  height: 640px;
+}
+
+
+
+.Index {
+  margin: 0;
+  margin-right: var(--offset-medium);
+  width: 32px;
+
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-large);
+  line-height: var(--line-height-large);
+  color: var(--gray);
+}
+
+.CatalogItem:hover,
+.CatalogItem:focus,
+.CatalogItemLong:hover,
+.CatalogItemLong:focus {
+  box-shadow: 8px 0 24px var(--black-transparent);
+}
+
+.CatalogLink:hover,
+.CatalogLink:focus,
+.CatalogLinkLong:hover,
+.CatalogLinkLong:focus {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+.CatalogHeader {
+  margin: 0;
+  padding: var(--offset-medium);
+}
+
+.CatalogCategory,
+.CatalogCategoryLong {
+  display: flex;
+  padding: var(--offset-medium) var(--offset-small);
+
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size);
+  color: var(--white);
+
+  background: transparent;
+  border-radius: 8px;
+  backdrop-filter: blur(36px);
+}
+
+.CatalogCategoryLong {
+  align-items: center;
+
+  height: 120px;
+  margin: 0 var(--offset-medium);
+  padding: 0 var(--offset-small);
+
+  font-size: var(--font-size-medium);
+  line-height: var(--line-height-medium);
+}
+
+@media (min-width: 900px) and (max-width: 1279.98px) {
+  .CardContainer {
+    margin-right: var(--offset-medium);
+  }
+
+  .CatalogItem {
+    width: 168px;
+    height: 248px;
+  }
+
+  .CatalogItemLong,
+  .CatalogItemLong img {
+    margin-bottom: var(--offset);
+
+    width: 176px;
+    height: 400px;
+  }
+}
+
+@media (min-width: 533px) and (max-width: 899.98px) {
+  .CardContainer {
+    margin-right: var(--offset-small);
+  }
+
+  .CatalogItem {
+    width: 144px;
+    height: 212px;
+  }
+
+  .CatalogItemLong,
+  .CatalogItemLong img {
+    width: 152px;
+    height: 224px;
+  }
+
+  .CatalogCategoryLong {
+    font-size: var(--font-size-small);
+    line-height: var(--line-height-small);
+  }
+}
+
+@media (max-width: 532.98px) {
+  .Index {
+    margin-right: var(--offset-small);
+  }
+
+  .CatalogItem {
+    width: 128px;
+    height: 188px;
+  }
+
+  .CatalogItemLong,
+  .CatalogItemLong img {
+    width: 152px;
+    height: 224px;
+  }
+
+  .CatalogCategoryLong {
+    font-size: var(--font-size-small);
+    line-height: var(--line-height-small);
+  }
+}

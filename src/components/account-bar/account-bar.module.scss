@@ -1,0 +1,14 @@
+.AccountBar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-wrap: wrap;
+    
+  list-style: none;
+}
+
+@media (max-width: 1279.98px) {
+  .AccountBar {
+    width: 248px;
+  }
+}

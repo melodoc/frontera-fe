@@ -1,0 +1,95 @@
+.Link {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+
+  color: var(--purple-primary);
+
+  padding: var(--offset-small) var(--offset-medium);
+}
+
+.Link:hover,
+.Link:focus {
+  text-decoration: underline;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.Link:visited {
+  color: var(--gray);
+}
+
+.LinkReset {
+  color: var(--Link);
+
+  text-decoration: underline;
+}
+
+.LinkReset:hover,
+.LinkReset:focus {
+  color: var(--Link-hovered);
+
+  text-decoration: none;
+}
+
+.Button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 128px;
+  height: 56px;
+
+  font: inherit;
+  color: var(--white);
+  line-height: var(--line-height-large);
+
+  background-color: var(--purple-primary);
+  border: none;
+  border-radius: 8px;
+}
+
+.Button:hover {
+  color: var(--purple-primary);
+
+  background-color: var(--white);
+  box-shadow: 0px 4px 4px var(--Link-hovered);
+
+  transition: all 0.2s ease-in-out;
+}
+
+@media (min-width: 768px) and (max-width: 1279.98px) {
+  .Link {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+
+    color: var(--purple-primary);
+  }
+}
+
+@media (min-width: 533px) and (max-width: 767.98px) {
+  .Link {
+    padding: var(--offset-small) var(--offset-small);
+  }
+}
+
+@media (max-width: 532.98px) {
+  .Link {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-small);
+  }
+
+  .LinkReset {
+    font-size: var(--font-size-small);
+    line-height: var(--line-height-small);
+  }
+
+  .Button {
+    width: 104px;
+    height: 48px;
+
+    font-size: var(--font-size-small);
+    line-height: var(--line-height-small);
+  }
+}

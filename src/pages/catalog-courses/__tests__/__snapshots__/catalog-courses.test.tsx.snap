@@ -71,7 +71,7 @@ exports[`Тестируем CatalogCourses Тестируем рендер  1`] 
           </nav>
           <AccountBar>
             <div
-              className="accountBar"
+              className="AccountBar"
             >
               <SearchInput>
                 <div
@@ -221,7 +221,7 @@ exports[`Тестируем CatalogCourses Тестируем рендер  2`] 
           </nav>
           <AccountBar>
             <div
-              className="accountBar"
+              className="AccountBar"
             >
               <SearchInput>
                 <div
@@ -307,37 +307,37 @@ exports[`Тестируем CatalogCourses Тестируем рендер  2`] 
           showNumber={false}
         >
           <ul
-            className="catalogList"
+            className="CatalogList"
           >
             <li
-              className="cardContainer"
+              className="CardContainer"
               key="React0"
             >
               <div
-                className="catalogItemLong"
+                className="CatalogItemLong"
               >
                 <SmartImage
                   path="remote-assets/images/suggestions/sg-course-1.jpg"
                 >
                   <img
-                    className="cardImage"
+                    className="CardImage"
                     onError={[Function]}
                     src="remote-assets/images/suggestions/sg-course-1.jpg"
                   />
                 </SmartImage>
                 <Link
-                  className="catalogLinkLong"
+                  className="CatalogLinkLong"
                   to="/coursepage/1"
                 >
                   <a
-                    className="catalogLinkLong"
+                    className="CatalogLinkLong"
                     href="/coursepage/1"
                   >
                     <h3
-                      className="catalogHeaderLong"
+                      className="CatalogHeaderLong"
                     >
                       <span
-                        className="catalogCategoryLong"
+                        className="CatalogCategoryLong"
                       >
                         React
                       </span>
@@ -347,34 +347,34 @@ exports[`Тестируем CatalogCourses Тестируем рендер  2`] 
               </div>
             </li>
             <li
-              className="cardContainer"
+              className="CardContainer"
               key="CI/CD1"
             >
               <div
-                className="catalogItemLong"
+                className="CatalogItemLong"
               >
                 <SmartImage
                   path="remote-assets/images/suggestions/sg-course-2.jpg"
                 >
                   <img
-                    className="cardImage"
+                    className="CardImage"
                     onError={[Function]}
                     src="remote-assets/images/suggestions/sg-course-2.jpg"
                   />
                 </SmartImage>
                 <Link
-                  className="catalogLinkLong"
+                  className="CatalogLinkLong"
                   to="/coursepage/2"
                 >
                   <a
-                    className="catalogLinkLong"
+                    className="CatalogLinkLong"
                     href="/coursepage/2"
                   >
                     <h3
-                      className="catalogHeaderLong"
+                      className="CatalogHeaderLong"
                     >
                       <span
-                        className="catalogCategoryLong"
+                        className="CatalogCategoryLong"
                       >
                         CI/CD
                       </span>
@@ -384,34 +384,34 @@ exports[`Тестируем CatalogCourses Тестируем рендер  2`] 
               </div>
             </li>
             <li
-              className="cardContainer"
+              className="CardContainer"
               key="Изучаем JS2"
             >
               <div
-                className="catalogItemLong"
+                className="CatalogItemLong"
               >
                 <SmartImage
                   path="remote-assets/images/suggestions/sg-course-3.jpg"
                 >
                   <img
-                    className="cardImage"
+                    className="CardImage"
                     onError={[Function]}
                     src="remote-assets/images/suggestions/sg-course-3.jpg"
                   />
                 </SmartImage>
                 <Link
-                  className="catalogLinkLong"
+                  className="CatalogLinkLong"
                   to="/coursepage/3"
                 >
                   <a
-                    className="catalogLinkLong"
+                    className="CatalogLinkLong"
                     href="/coursepage/3"
                   >
                     <h3
-                      className="catalogHeaderLong"
+                      className="CatalogHeaderLong"
                     >
                       <span
-                        className="catalogCategoryLong"
+                        className="CatalogCategoryLong"
                       >
                         Изучаем JS
                       </span>
@@ -421,34 +421,34 @@ exports[`Тестируем CatalogCourses Тестируем рендер  2`] 
               </div>
             </li>
             <li
-              className="cardContainer"
+              className="CardContainer"
               key="git3"
             >
               <div
-                className="catalogItemLong"
+                className="CatalogItemLong"
               >
                 <SmartImage
                   path="remote-assets/images/suggestions/sg-course-4.jpg"
                 >
                   <img
-                    className="cardImage"
+                    className="CardImage"
                     onError={[Function]}
                     src="remote-assets/images/suggestions/sg-course-4.jpg"
                   />
                 </SmartImage>
                 <Link
-                  className="catalogLinkLong"
+                  className="CatalogLinkLong"
                   to="/coursepage/4"
                 >
                   <a
-                    className="catalogLinkLong"
+                    className="CatalogLinkLong"
                     href="/coursepage/4"
                   >
                     <h3
-                      className="catalogHeaderLong"
+                      className="CatalogHeaderLong"
                     >
                       <span
-                        className="catalogCategoryLong"
+                        className="CatalogCategoryLong"
                       >
                         git
                       </span>
