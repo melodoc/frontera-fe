@@ -110,11 +110,11 @@ export const Registration = ({ moveNextStep }) => {
             placeholder="••••••"
           />
         </div>
-        <div className={style.buttons}>
+        <div className={style.Buttons}>
           <Button>{t("auth.singup.button")}</Button>
         </div>
       </form>
-      <div className={style.buttons}>
+      <div className={style.Buttons}>
         <Button onClick={handleClick}>{t("auth.cancel.button")}</Button>
       </div>
     </>

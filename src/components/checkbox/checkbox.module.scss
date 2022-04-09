@@ -1,21 +1,21 @@
-.checkboxLabel {
+.CheckboxLabel {
   color: var(--link);
   margin-left: 8px;
 
   cursor: pointer;
 }
 
-.checkboxLabel:hover,
-.checkboxLabel:focus {
+.CheckboxLabel:hover,
+.CheckboxLabel:focus {
   color: var(--link-hovered);
 }
 
 @media (max-width: 532.98px) {
-  .checkbox {
+  .Checkbox {
     margin-right: var(--offset-small);
   }
 
-  .checkboxLabel {
+  .CheckboxLabel {
     font-size: var(--font-size-small);
     line-height: var(--line-height-small);
   }

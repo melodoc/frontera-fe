@@ -17,16 +17,16 @@ export const Input: React.FC<InputProps> = ({
   name,
   ...rest
 }) => (
-  <div className={style.formItem}>
+  <div className={style.FormItem}>
     <input
-      className={style.formText}
+      className={style.FormText}
       name={name}
       value={value}
       type={type}
       {...rest}
     />
     {label && (
-      <label className={style.formLabel} htmlFor={String(rest.id)}>
+      <label className={style.FormLabel} htmlFor={String(rest.id)}>
         {label}
       </label>
     )}

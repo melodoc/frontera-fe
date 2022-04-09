@@ -1,56 +1,56 @@
-.form-item {
+.FormItem {
   position: relative;
   margin: 0;
   padding: 0;
 }
 
-.form-item input {
+.FormItem input {
   border: 0.5px solid var(--gray-light);
 }
 
-.form-item:first-child input {
+.FormItem:first-child input {
   border-radius: 8px 8px 0px 0px;
 }
 
-.form-item:last-child input {
+.FormItem:last-child input {
   border-radius: 0px 0px 8px 8px;
   border-top: none;
 
   margin-bottom: var(--offset-large);
 }
 
-.form-item:not(:first-child) input {
+.FormItem:not(:first-child) input {
   border-top: none;
 }
 
-.form-item:only-child input {
+.FormItem:only-child input {
   border-radius: 8px 8px 8px 8px;
 }
 
-.form-label {
+.FormLabel {
   position: absolute;
   top: 30px;
   left: 24px;
 }
 
-.form-text:focus + .form-label {
+.FormText:focus + .FormLabel {
   top: 8px;
   transition: top 0.1s ease-out;
 }
 
-.form-text::placeholder {
+.FormText::placeholder {
   color: transparent;
 }
 
-.form-text:focus::placeholder {
+.FormText:focus::placeholder {
   color: var(--gray-light); 
 }
 
-.form-text:not(:focus):not(:placeholder-shown) + .form-label {
+.FormText:not(:focus):not(:placeholder-shown) + .FormLabel {
   top: 8px;
 }
 
-.form-label span {
+.FormLabel span {
   position: absolute;
   left: 24px;
   bottom: 24px;
@@ -62,7 +62,7 @@
   line-height: var(--line-height);
 }
 
-.form-text {
+.FormText {
   box-sizing: border-box;
   height: 73px;
   width: 100%;
@@ -75,20 +75,20 @@
   outline: none;
 }
 
-.form-text:focus {
+.FormText:focus {
   background-color: var(--white);
   border: 0.5px solid var(--purple-primary);
   box-shadow: none;
 }
 
 @media (max-width: 532.98px) {
-  .form-label input[placeholder], 
-  .form-label span {
+  .FormLabel input[placeholder], 
+  .FormLabel span {
     font-size: var(--font-size);
     line-height: var(--line-height);
   }
 
-  .form-item:last-child input {
+  .FormItem:last-child input {
     margin-bottom: var(--offset);
   }
 }

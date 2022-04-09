@@ -29,7 +29,7 @@ export const Trending = () => {
   }));
 
   return (
-    <div className={style.trending}>
+    <div className={style.Wrapper}>
       <PageHeader label={t("home.trends.title")} />
       {isLoading ? (
         <Loader />

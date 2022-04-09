@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import style from "./course-cards.module.scss";
+import style from "./smart-image.module.scss";
 
 export const SmartImage = ({ path }) => {
   const defaultImageUrl = "assets/images/code.jpg";
@@ -13,7 +13,7 @@ export const SmartImage = ({ path }) => {
 
   return (
     <img
-      className={style.cardImage}
+      className={style.CardImage}
       onError={handleError}
       src={imgSrc}
       // TODO: Add translation

@@ -11,16 +11,16 @@ interface FooterProps {
 
 export const Footer: React.FC<FooterProps> = ({ links }) => {
   const linksTemplate = links.map((linkName, key) => (
-    <li className={style.footerItem} key={linkName + key}>
-      <a className={style.footerLink} href="#">
+    <li className={style.FooterItem} key={linkName + key}>
+      <a className={style.FooterLink} href="">
         {linkName}
       </a>
     </li>
   ));
 
   return (
-    <footer className={style.footerWrapper}>
-      <ul className={style.footerList}>{linksTemplate}</ul>
+    <footer className={style.FooterWrapper}>
+      <ul className={style.FooterList}>{linksTemplate}</ul>
     </footer>
   );
 };

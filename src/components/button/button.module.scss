@@ -1,4 +1,4 @@
-.button {
+.Button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,9 +14,9 @@
   border-radius: 8px;
 }
   
-.button:hover,
-.button:focus,
-.button:active {
+.Button:hover,
+.Button:focus,
+.Button:active {
   color: var(--purple-primary);
   
   background-color: var(--white);

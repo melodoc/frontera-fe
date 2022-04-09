@@ -25,7 +25,7 @@ export const DetailCourse = ({ courseId }) => {
   return (
     <>
       <Header />
-      <main className={style.container}>
+      <main className={style.Container}>
         <PageHeader label={data.title} />
         <CourseInfo info={data.info} description={data.description} />
         <section className={style.gallery}>

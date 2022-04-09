@@ -1,9 +1,9 @@
-.wrapper {
+.Wrapper {
   max-width: 640px;
   margin: 0 auto;
 }
 
-.nav {
+.Nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,14 +14,14 @@
   margin: var(--offset) var(--offset-large) 0;
 }
 
-.log-out-link {
+.LogOutLink {
   color: var(--purple-primary);
 }
 
-.log-out-link:visited {
+.LogOutLink:visited {
   color: var(--purple-primary);
 }
 
-.container {
+.Container {
   padding: var(--offset-container) var(--offset-small);
 }

@@ -1,57 +1,10 @@
-.visually-hidden:not(:focus):not(:active),
-input[type='checkbox'].visually-hidden,
-input[type='radio'].visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.anthem {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-
-  margin: 0 0 var(--offset);
-  padding: 0 var(--offset);
-}
-
-.anthem-item {
-  margin: 0;
-  padding: 0;
-
-  font-weight: var(--font-weight-normal);
-  font-size: var(--font-size-medium);
-  line-height: var(--line-height-medium);
-
-  color: var(--purple-primary);
-}
-
-.login-heading {
-  margin: 0 0 var(--offset);
-  padding: 0 var(--offset);
-
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size);
-  line-height: var(--line-height);
-
-  color: var(--gray);
-}
-
-.spinner {
+.Spinner {
   margin: var(--offset-extra-large) auto var(--offset-extra-large);
   width: 72px;
   text-align: center;
 }
 
-.spinner > div {
+.Spinner > div {
   width: 16px;
   height: 16px;
   background-color: var(--purple-primary);
@@ -61,15 +14,15 @@ input[type='radio'].visually-hidden {
   animation: sk-bouncedelay 1.4s infinite ease-in-out both;
 }
 
-.spinner .bounce1 {
+.Spinner .Bounce1 {
   animation-delay: -0.32s;
 }
 
-.spinner .bounce2 {
+.Spinner .Bounce2 {
   animation-delay: -0.16s;
 }
 
-@keyframes sk-bouncedelay {
+@keyframes sk-Bouncedelay {
   0%, 80%, 100% { 
     transform: scale(0);
   } 40% { 

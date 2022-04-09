@@ -40,7 +40,7 @@ export const ChooseCategories = ({ moveNextStep }) => {
           </span>
         )}
       </div>
-      <div className={style.buttons}>
+      <div className={style.Buttons}>
         <Button>{t("personalizations.lang.button")}</Button>
       </div>
     </form>

@@ -1,36 +1,36 @@
-.course-info {
+.CourseInfo {
   display: flex;
   justify-content:space-between;
   margin-right: var(--offset-superior-large);
 }
 
-.course-row {
+.CourseRow {
   margin: var(--offset-small) 0;
   font-size: var(--font-size);
   line-height: var(--line-height);
   box-sizing: content-box;
 }
 
-.course-row td {
+.CourseRow td {
   padding-top: var(--offset-small);
   vertical-align: top;
 }
 
-.course-term {
+.CourseTerm {
   width: 140px;
   padding-right: var(--offset-medium);
 }
 
-.course-cell {
+.CourseCell {
   width: 330px;
   font-weight: var(--font-weight-bold);
 }
 
-.course-table {
+.CourseTable {
   margin-bottom: var(--offset-large);
 }
 
-.course-description {
+.CourseDescription {
   width: 650px;
   margin: 0;
   margin-bottom: var(--offset-large);

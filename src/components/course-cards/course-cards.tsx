@@ -32,7 +32,7 @@ export class CourseCards extends React.Component<
 
   static renderCatalogLink(card: any) {
     return (
-      <a className={style.catalogLink} href="#">
+      <a className={style.CatalogLink} href="">
         {this.renderHeader(card)}
       </a>
     );
@@ -40,15 +40,15 @@ export class CourseCards extends React.Component<
 
   static renderHeader(card) {
     return (
-      <h3 className={style.catalogHeader}>
-        <span className={style.catalogCategory}>{card.label}</span>
+      <h3 className={style.CatalogHeader}>
+        <span className={style.CatalogCategory}>{card.label}</span>
       </h3>
     );
   }
 
   static renderItemCard(card) {
     return (
-      <div className={style.catalogItem}>
+      <div className={style.CatalogItem}>
         <SmartImage path={card.imageSrc} />
         {this.renderCatalogLink(card)}
       </div>
@@ -57,11 +57,11 @@ export class CourseCards extends React.Component<
 
   render() {
     return (
-      <ul className={style.catalogList}>
+      <ul className={style.CatalogList}>
         {this.props.cards.map((card, i) => (
-          <li className={style.cardContainer} key={card.label + i}>
+          <li className={style.CardContainer} key={card.label + i}>
             {this.props.showNumber && (
-              <span className={style.index}>{i + 1}</span>
+              <span className={style.Index}>{i + 1}</span>
             )}
             {CourseCards.renderItemCard(card)}
           </li>
@@ -74,8 +74,8 @@ export class CourseCards extends React.Component<
 export class CourseCardsLarge extends CourseCards {
   static renderHeader(card) {
     return (
-      <h3 className={style.catalogHeaderLong}>
-        <span className={style.catalogCategoryLong}>{card.label}</span>
+      <h3 className={style.CatalogHeaderLong}>
+        <span className={style.CatalogCategoryLong}>{card.label}</span>
       </h3>
     );
   }
@@ -83,7 +83,7 @@ export class CourseCardsLarge extends CourseCards {
   static renderCatalogLink(card) {
     return (
       <Link
-        className={style.catalogLinkLong}
+        className={style.CatalogLinkLong}
         to={`${URLs.coursepage.url}/${card.id}`}
       >
         {this.renderHeader(card)}
@@ -93,7 +93,7 @@ export class CourseCardsLarge extends CourseCards {
 
   static renderItemCard(card) {
     return (
-      <div className={style.catalogItemLong}>
+      <div className={style.CatalogItemLong}>
         <SmartImage path={card.imageSrc} />
         {this.renderCatalogLink(card)}
       </div>

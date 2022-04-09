@@ -1,4 +1,4 @@
-.form-actions {
+.FormActions {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -7,7 +7,7 @@
 }
 
 @media (max-width: 532.98px) {
-  .form-actions {
+  .FormActions {
     display: block;
     text-align: left;
   }

@@ -1,4 +1,4 @@
-.anthem-item {
+.AnthemItem {
   margin: 0;
   margin-bottom: var(--offset-small);
   padding: 0;
@@ -11,7 +11,7 @@
   color: var(--purple-primary);
 }
 
-.login-heading {
+.LoginHeading {
   margin: 0;
   margin-bottom: var(--offset-large);
 
@@ -24,22 +24,22 @@
 }
 
 @media (min-width: 533px) and (max-width: 767.98px) {
-  .anthem-item {
+  .AnthemItem {
     max-width: 504px;
   }
 
-  .login-heading {
+  .LoginHeading {
     font-size: var(--font-size);
     line-height: var(--line-height);
   }
 }
 
 @media (max-width: 532.98px) {
-  .anthem-item {
+  .AnthemItem {
     display: none;
   }
 
-  .login-heading {
+  .LoginHeading {
     font-size: var(--font-size);
     line-height: var(--line-height);
 

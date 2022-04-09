@@ -11,10 +11,10 @@ export const Preview = () => {
     history.push(`${URLs.coursepage.url}/1`);
   };
   return (
-    <section className={style.preview}>
-      <div className={style.previewInfo}>
+    <section className={style.Preview}>
+      <div className={style.PreviewInfo}>
         <CourseHeader label="Изучаем JS" />
-        <div className={style.previewButtons}>
+        <div className={style.PreviewButtons}>
           <Button onClick={handleClick}>Подробнее</Button>
         </div>
       </div>

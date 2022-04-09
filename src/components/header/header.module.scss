@@ -1,14 +1,14 @@
-.header-wrapper {
+.HeaderWrapper {
   border-bottom: 1px solid var(--gray-light);
 }
 
-.header {
+.Header {
   display: flex;
   justify-content: space-between;
   margin: var(--offset) var(--offset-large);
 }
 
-.header-nav {
+.HeaderNav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,22 +19,22 @@
 }
 
 @media (min-width: 549px) and (max-width: 767.98px) {
-  .header-nav {
+  .HeaderNav {
     width: stretch;
   }
 
-  .header-wrapper {
+  .HeaderWrapper {
     border-bottom: none;
   }
 }
 
 @media (max-width: 548.98px) {
-  .header-nav {
+  .HeaderNav {
     display: contents;
     vertical-align: middle;
   }
 
-  .header-wrapper {
+  .HeaderWrapper {
     border-bottom: none;
   }
 }

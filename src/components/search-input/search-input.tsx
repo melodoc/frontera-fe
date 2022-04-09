@@ -6,8 +6,8 @@ export const SearchInput = () => {
   }
 
   return (
-    <div className={style.searchInput}>
-      <form className={style.searchForm}>
+    <div className={style.SearchInput}>
+      <form className={style.SearchForm}>
         <label htmlFor="search">
           <input id="search" type="text" placeholder="Search..." />
         </label>

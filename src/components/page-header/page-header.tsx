@@ -11,9 +11,9 @@ interface CourseHeaderProps {
 }
 
 export const PageHeader: React.FC<PageHeaderProps> = ({ label }) => (
-  <h2 className={style.pageHeader}>{label}</h2>
+  <h2 className={style.PageHeader}>{label}</h2>
 );
 
 export const CourseHeader: React.FC<CourseHeaderProps> = ({ label }) => (
-  <h2 className={style.courseHeader}>{label}</h2>
+  <h2 className={style.CourseHeader}>{label}</h2>
 );

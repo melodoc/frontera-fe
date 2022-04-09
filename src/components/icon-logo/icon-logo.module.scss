@@ -1,4 +1,4 @@
-.nav-logo {
+.NavLogo {
   display: flex;
   align-items: center;
   margin-right: var(--offset-large);
@@ -8,15 +8,17 @@
   height: 43px;
 }
 
-@media  (min-width: 925px) and (max-width: 1026px) {
-  .nav-logo,
-  .nav-logo img {
-    width: 135px;
+// TODO: Fix svg size control
+
+@media (min-width: 925px) and (max-width: 1026px) {
+  .NavLogo {
+    // width: 135px;
+    // height: 32px;
   }
 }
 
 @media (max-width: 924.98px) {
-  .nav-logo {
+  .NavLogo {
     display: none;
   }
 }

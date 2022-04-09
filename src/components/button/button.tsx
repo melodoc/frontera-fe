@@ -12,7 +12,7 @@ interface ButtonProps
 }
 
 export const Button: React.FC<ButtonProps> = ({ children, ...rest }) => (
-  <button {...rest} className={style.button}>
+  <button {...rest} className={style.Button}>
     {children}
   </button>
 );

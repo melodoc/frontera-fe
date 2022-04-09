@@ -1,4 +1,4 @@
-.checkbox-item {
+.ListItem {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -8,7 +8,7 @@
 }
 
 
-.checkbox-item input[type="checkbox"] {
+.ListItem input[type="checkbox"] {
   width: 16px;
   height: 16px;
   margin: 0 var(--offset-medium) 0 0;
@@ -16,7 +16,7 @@
   cursor: pointer;
 }
 
-.checkbox-item input[type="checkbox"]:hover,
-.checkbox-item input[type="checkbox"]:focus {
+.ListItem input[type="checkbox"]:hover,
+.ListItem input[type="checkbox"]:focus {
   transition: all 0.2s ease-in-out;
 }

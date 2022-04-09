@@ -4,12 +4,12 @@ import style from "./list.module.scss";
 
 export const List = (props: any) => {
   return (
-    <ul className={style.filterItem}>
+    <ul className={style.ListItem}>
       {props.labels.map((value) => (
         <ListItem
           key={value.name}
           label={value.name}
-          isCheked={value.checked}
+          isChecked={value.checked}
         />
       ))}
     </ul>

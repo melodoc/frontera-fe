@@ -1,4 +1,4 @@
-.filter-item {
+.ListItem {
   list-style: none;
 
   margin: 0;
@@ -7,15 +7,15 @@
   color: var(--link);
 }
 
-.filter-item .checkbox-item {
+.ListItem li {
   list-style: none;
 
   margin-bottom: var(--offset-small);
   padding-left: 0;
 }
 
-.filter-item .checkbox-item:hover,
-.filter-item .checkbox-item:focus {
+.ListItem li:hover,
+.ListItem li:focus {
   width: max-content;
 
   border-radius: 4px;

@@ -18,7 +18,7 @@ export class ErrorBoundary extends React.Component {
     const { isError } = this.state;
 
     if (isError) {
-      return <div>Что то пошло не так :( </div>;
+      return <div>Что-то пошло не так</div>;
     }
 
     return this.props.children;

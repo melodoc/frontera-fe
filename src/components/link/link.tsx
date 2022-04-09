@@ -10,19 +10,19 @@ type LinkProps = {
 export type LinkType = React.FC<LinkProps>;
 
 export const Link: LinkType = ({ to, children, as: LinkComponent }) => (
-  <LinkComponent className={style.link} to={to}>
+  <LinkComponent className={style.Link} to={to}>
     {children}
   </LinkComponent>
 );
 
 export const LinkButton: LinkType = ({ to, children, as: LinkComponent }) => (
-  <LinkComponent className={style.button} to={to}>
+  <LinkComponent className={style.Button} to={to}>
     {children}
   </LinkComponent>
 );
 
 export const LinkReset: LinkType = ({ to, children, as: LinkComponent }) => (
-  <LinkComponent className={style.linkReset} to={to}>
+  <LinkComponent className={style.LinkReset} to={to}>
     {children}
   </LinkComponent>
 );

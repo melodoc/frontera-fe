@@ -77,11 +77,11 @@ export const Login = ({ moveNextStep }) => {
             placeholder="••••••"
           />
         </div>
-        <div className={style.buttons}>
+        <div className={style.Buttons}>
           <Button type="submit">{t("auth.login.button")}</Button>
         </div>
       </form>
-      <div className={style.buttons}>
+      <div className={style.Buttons}>
         <Button onClick={handleClick}>{t("auth.login.registration")}</Button>
       </div>
     </>

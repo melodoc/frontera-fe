@@ -1,4 +1,4 @@
-.page-header {
+.PageHeader {
   margin: 0;
   padding: var(--offset) 0;
   
@@ -11,7 +11,7 @@
   color: var(--purple-primary);
 }
 
-.course-header {
+.CourseHeader {
   display: flex;
   align-items: center;
 
@@ -24,13 +24,13 @@
 }
 
 @media (max-width: 1279.98px) {
-  .page-header {
+  .PageHeader {
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-medium);
     line-height: var(--line-height-medium);
   }
   
-  .course-header {
+  .CourseHeader {
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-medium);
     line-height: var(--line-height-medium);

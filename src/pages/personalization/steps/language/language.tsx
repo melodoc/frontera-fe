@@ -22,7 +22,7 @@ export const ChooseLanguage = ({ moveNextStep }) => {
           ]}
         />
       </div>
-      <div className={style.buttons}>
+      <div className={style.Buttons}>
         <Button>{t("personalizations.lang.button")}</Button>
       </div>
     </form>

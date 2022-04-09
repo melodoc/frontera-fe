@@ -10,18 +10,18 @@ export const Page = ({ children, title, descriptions }) => {
   const { t } = useTranslation();
   return (
     <ErrorBoundary>
-      <header className={style.header}>
-        <nav className={style.nav}>
-          <div className={style.iconNav}>
+      <header className={style.Header}>
+        <nav className={style.Nav}>
+          <div className={style.IconNav}>
             <IconLogo />
           </div>
-          <a className={style.logOutLink} href="#">
+          <a className={style.LogOutLink} href="">
             {t("personalizations.common.log.out")}
           </a>
         </nav>
       </header>
-      <div className={style.wrapper}>
-        <main className={style.container}>
+      <div className={style.Wrapper}>
+        <main className={style.Container}>
           <section className={style.login}>
             <TitleWithSubtitle title={title} descriptions={descriptions} />
           </section>

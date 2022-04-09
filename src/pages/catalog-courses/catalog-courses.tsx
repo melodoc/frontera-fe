@@ -34,7 +34,7 @@ export const CatalogCourses = () => {
   return (
     <>
       <Header />
-      <main className={style.container}>
+      <main className={style.Container}>
         <PageHeader label={t("catalog.courses.title")} />
         <section>
           {isLoading ? (

@@ -1,29 +1,29 @@
 import style from "./course-info.module.scss";
 
-export function CourseInfo({ info, description }) {
+export const CourseInfo = ({ info, description }) => {
   return (
-    <div className={style.courseInfo}>
-      <table className={style.courseTable}>
+    <div className={style.CourseInfo}>
+      <table className={style.CourseTable}>
         <tbody>
-          <tr className={style.courseRow}>
-            <td className={style.courseTerm}>Авторы</td>
-            <td className={style.courseCell}>{info.authors[0]}</td>
+          <tr className={style.CourseRow}>
+            <td className={style.CourseTerm}>Авторы</td>
+            <td className={style.CourseCell}>{info.authors[0]}</td>
           </tr>
-          <tr className={style.courseRow}>
-            <td className={style.courseTerm}>Язык</td>
-            <td className={style.courseCell}>{info.language}</td>
+          <tr className={style.CourseRow}>
+            <td className={style.CourseTerm}>Язык</td>
+            <td className={style.CourseCell}>{info.language}</td>
           </tr>
-          <tr className={style.courseRow}>
-            <td className={style.courseTerm}>Обновлено</td>
-            <td className={style.courseCell}>{info.lastUpdate} </td>
+          <tr className={style.CourseRow}>
+            <td className={style.CourseTerm}>Обновлено</td>
+            <td className={style.CourseCell}>{info.lastUpdate} </td>
           </tr>
-          <tr className={style.courseRow}>
-            <td className={style.courseTerm}>Продолжительность</td>
-            <td className={style.courseCell}>{info.duration}</td>
+          <tr className={style.CourseRow}>
+            <td className={style.CourseTerm}>Продолжительность</td>
+            <td className={style.CourseCell}>{info.duration}</td>
           </tr>
         </tbody>
       </table>
-      <p className={style.courseDescription}> {description} </p>
+      <p className={style.CourseDescription}> {description} </p>
     </div>
   );
-}
+};

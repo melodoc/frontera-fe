@@ -4,6 +4,8 @@ import PropTypes from "prop-types";
 
 import style from "./checkbox.module.scss";
 
+// TODO: Fix eslint issues
+
 export const Checkbox = (props) => {
   const [checked, setCheck] = useState(props.isChecked);
   const handleChange = () => {
@@ -13,13 +15,13 @@ export const Checkbox = (props) => {
     <div>
       <input
         id={props.label}
-        className={style.checkbox}
+        className={style.Checkbox}
         type="checkbox"
         name={props.label}
         checked={checked}
         onChange={handleChange}
       />
-      <label htmlFor={props.label} className={style.checkboxLabel}>
+      <label htmlFor={props.label} className={style.CheckboxLabel}>
         {props.label}
       </label>
     </div>

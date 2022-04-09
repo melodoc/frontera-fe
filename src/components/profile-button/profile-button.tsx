@@ -35,24 +35,24 @@ export class ProfileButton extends React.Component<
     // eslint-disable-next-line react/destructuring-assignment
     if (this.state.isOpened) {
       dropdownMenu = (
-        <ul className={style.dropdownMenu}>
-          <li className={style.dropdopdownItem}>
-            <a href="#" className={style.dropdownLink}>
+        <ul className={style.DropdownMenu}>
+          <li className={style.DropdownItem}>
+            <a href="" className={style.DropdownLink}>
               {i18next.t("js.navigation.viewHistory")}
             </a>
           </li>
-          <li className={style.dropdopdownItem}>
-            <a href="#" className={style.dropdownLink}>
+          <li className={style.DropdownItem}>
+            <a href="" className={style.DropdownLink}>
               {i18next.t("js.navigation.settings")}
             </a>
           </li>
-          <li className={style.dropdopdownItem}>
-            <a href="#" className={style.dropdownLink}>
+          <li className={style.DropdownItem}>
+            <a href="" className={style.DropdownLink}>
               {i18next.t("js.navigation.help")}
             </a>
           </li>
-          <li className={style.dropdopdownItem}>
-            <a href="#" className={style.dropdownLink}>
+          <li className={style.DropdownItem}>
+            <a href="" className={style.DropdownLink}>
               {i18next.t("js.navigation.out")}
             </a>
           </li>
@@ -61,11 +61,11 @@ export class ProfileButton extends React.Component<
     }
 
     return (
-      <div className={style.wrapper}>
-        <div className={style.dropdown}>
+      <div className={style.Wrapper}>
+        <div className={style.Dropdown}>
           <button
             onClick={this.toggleState}
-            className={style.dropdownButton}
+            className={style.DropdownButton}
             type="button"
           />
           {dropdownMenu}

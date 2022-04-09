@@ -1,15 +1,15 @@
-.wrapper {
+.Wrapper {
   width: 30px;
   height: 30px;
   margin: 0;
   padding: 3px;
 }
 
-.dropdown {
+.Dropdown {
   position: relative;
 }
 
-.dropdown-button {
+.DropdownButton {
   width: 30px;
   height: 30px;
   padding: 0;
@@ -25,14 +25,14 @@
   cursor: pointer;
 }
 
-.dropdown-button:hover,
-.dropdown-button:focus {
+.DropdownButton:hover,
+.DropdownButton:focus {
   filter: saturate(150%);
 
   transition: all 0.2s ease-in-out;
 }
 
-.dropdown-menu {
+.DropdownMenu {
   list-style: none;
   position: absolute;
   top: 70%;
@@ -47,7 +47,7 @@
   border-radius: 0 0 4px 4px;
 }
 
-.dropdown-link {
+.DropdownLink {
   display: block;
   align-items: center;
   
@@ -57,7 +57,7 @@
 }
 
 @media (max-width: 641.98px) {
-  .dropdown-button {
+  .DropdownButton {
     background: url('../../assets/icons/menu.svg') center no-repeat;
   }
 } 
