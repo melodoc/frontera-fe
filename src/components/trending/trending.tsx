@@ -19,12 +19,15 @@ export const Trending = () => {
   const { isLoading } = useSelector((state: any) => ({
     isLoading: state.trending.loading,
   }));
+
   const { themes } = useSelector((state: any) => ({
     themes: state.trending.themes,
   }));
+
   const { errors } = useSelector((state: any) => ({
     errors: state.trending.errors,
   }));
+
   return (
     <div className={style.trending}>
       <PageHeader label={t("home.trends.title")} />

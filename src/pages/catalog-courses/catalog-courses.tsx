@@ -12,21 +12,24 @@ import style from "./catalog-courses.module.scss";
 export const CatalogCourses = () => {
   const { t } = useTranslation();
   const dispatch = useDispatch();
+
   const { isLoading } = useSelector((state: any) => ({
     isLoading: state.suggestions.loading,
   }));
+
   const { courseList } = useSelector((state: any) => ({
     courseList: state.suggestions.courseList,
   }));
+
   const { errors } = useSelector((state: any) => ({
     errors: state.suggestions.errors,
   }));
 
   useEffect(() => {
-    if (!isLoading && courseList === null) {
+    if (!isLoading) {
       dispatch(getSuggestions());
     }
-  }, []);
+  }, [courseList]);
 
   return (
     <>
