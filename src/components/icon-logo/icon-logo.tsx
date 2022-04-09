@@ -7,4 +7,4 @@ export const IconLogo = () => {
       {purpleLogo}
     </a>
   );
-}
+};

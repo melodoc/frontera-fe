@@ -5,6 +5,7 @@ import i18next from "i18next";
 import style from "./profile-button.module.scss";
 
 interface ProfileButtonProps {
+  // eslint-disable-next-line react/no-unused-prop-types
   list?: Array<string>;
 }
 interface ProfileButtonState {
