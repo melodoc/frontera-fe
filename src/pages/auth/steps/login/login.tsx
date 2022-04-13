@@ -2,11 +2,15 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+// eslint-disable-next-line prettier/prettier
+import Button, { ButtonProps } from '@mui/material/Button';
+import { styled } from "@mui/material/styles";
+import { purple } from "@mui/material/colors";
 
 import { URLs } from "../../../../__data__/urls";
 import { getLogin } from "../../../../__data__/action/login";
 import { reset } from "../../../../__data__/slice/login";
-import { Button } from "../../../../components/button/button";
+// import { Button } from "../../../../components/button/button";
 import { Input } from "../../../../components/input/input";
 import style from "./login.module.scss";
 
@@ -55,6 +59,15 @@ export const Login = ({ moveNextStep }) => {
     moveNextStep();
   };
 
+  const ColorButton = styled(Button)<ButtonProps>(({ theme }) => ({
+    color: theme.palette.getContrastText(purple[900]),
+    backgroundColor: purple[900],
+    '&:hover': {
+      backgroundColor: purple[800],
+    },
+  }));
+
+
   return (
     <>
       <form onSubmit={handleSubmit}>
@@ -77,11 +90,9 @@ export const Login = ({ moveNextStep }) => {
             placeholder="••••••"
           />
         </div>
-        <div className={style.Buttons}>
-          <Button type="submit">{t("auth.login.button")}</Button>
-        </div>
       </form>
       <div className={style.Buttons}>
+        <ColorButton onClick={handleSubmit} type="submit">{t("auth.login.button")}</ColorButton>
         <Button onClick={handleClick}>{t("auth.login.registration")}</Button>
       </div>
     </>
