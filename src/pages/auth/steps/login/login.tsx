@@ -62,11 +62,10 @@ export const Login = ({ moveNextStep }) => {
   const ColorButton = styled(Button)<ButtonProps>(({ theme }) => ({
     color: theme.palette.getContrastText(purple[900]),
     backgroundColor: purple[900],
-    '&:hover': {
+    "&:hover": {
       backgroundColor: purple[800],
     },
   }));
-
 
   return (
     <>
@@ -92,8 +91,13 @@ export const Login = ({ moveNextStep }) => {
         </div>
       </form>
       <div className={style.Buttons}>
-        <ColorButton onClick={handleSubmit} type="submit">{t("auth.login.button")}</ColorButton>
-        <Button onClick={handleClick}>{t("auth.login.registration")}</Button>
+        {/* https://mui.com/material-ui/react-button/#main-content */}
+        <ColorButton onClick={handleSubmit} type="submit">
+          {t("auth.login.button")}
+        </ColorButton>
+        <ColorButton onClick={handleClick} type="submit">
+          {t("auth.login.registration")}
+        </ColorButton>
       </div>
     </>
   );

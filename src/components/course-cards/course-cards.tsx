@@ -84,7 +84,7 @@ export class CourseCardsLarge extends CourseCards {
     return (
       <Link
         className={style.CatalogLinkLong}
-        to={`${URLs.coursepage.url}/${card.id}`}
+        to={`${URLs.coursePage.url}/${card.id}`}
       >
         {this.renderHeader(card)}
       </Link>

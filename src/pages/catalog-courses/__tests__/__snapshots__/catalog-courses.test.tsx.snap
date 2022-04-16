@@ -327,11 +327,11 @@ exports[`Тестируем CatalogCourses Тестируем рендер  2`] 
                 </SmartImage>
                 <Link
                   className="CatalogLinkLong"
-                  to="/coursepage/1"
+                  to="/course-page/1"
                 >
                   <a
                     className="CatalogLinkLong"
-                    href="/coursepage/1"
+                    href="/course-page/1"
                   >
                     <h3
                       className="CatalogHeaderLong"
@@ -364,11 +364,11 @@ exports[`Тестируем CatalogCourses Тестируем рендер  2`] 
                 </SmartImage>
                 <Link
                   className="CatalogLinkLong"
-                  to="/coursepage/2"
+                  to="/course-page/2"
                 >
                   <a
                     className="CatalogLinkLong"
-                    href="/coursepage/2"
+                    href="/course-page/2"
                   >
                     <h3
                       className="CatalogHeaderLong"
@@ -401,11 +401,11 @@ exports[`Тестируем CatalogCourses Тестируем рендер  2`] 
                 </SmartImage>
                 <Link
                   className="CatalogLinkLong"
-                  to="/coursepage/3"
+                  to="/course-page/3"
                 >
                   <a
                     className="CatalogLinkLong"
-                    href="/coursepage/3"
+                    href="/course-page/3"
                   >
                     <h3
                       className="CatalogHeaderLong"
@@ -438,11 +438,11 @@ exports[`Тестируем CatalogCourses Тестируем рендер  2`] 
                 </SmartImage>
                 <Link
                   className="CatalogLinkLong"
-                  to="/coursepage/4"
+                  to="/course-page/4"
                 >
                   <a
                     className="CatalogLinkLong"
-                    href="/coursepage/4"
+                    href="/course-page/4"
                   >
                     <h3
                       className="CatalogHeaderLong"

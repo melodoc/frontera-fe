@@ -3,10 +3,16 @@
   flex-wrap: wrap;
   justify-content: center;
 
-  margin: 0;
-  margin-bottom: var(--offset-large);
+  margin: 0 auto;
+  width: 60%;
 }
 
 .Buttons button {
   min-width: 100px;
+  margin-bottom: var(--offset-large);
+  margin-right: var(--offset-large);
+}
+
+.Buttons button:last-child {
+  margin-right: 0;
 }

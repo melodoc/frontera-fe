@@ -64,7 +64,7 @@ export const Registration = ({ moveNextStep }) => {
   const history = useHistory();
 
   if (token) {
-    history.push(URLs.personalizations.url);
+    history.push(URLs.personalization.url);
   }
 
   const handleClick = (event) => {
@@ -75,7 +75,7 @@ export const Registration = ({ moveNextStep }) => {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        {errors && <span>{t("auth.registartion.form.error")}</span>}
+        {errors && <span>{t("auth.signUp.form.error")}</span>}
         <div>
           <Input
             onChange={handleChangeLogin}

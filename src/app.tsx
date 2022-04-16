@@ -9,7 +9,7 @@ import "./app.css";
 export const App = () => {
   return (
     <Provider store={store}>
-      <BrowserRouter basename="/frontera">
+      <BrowserRouter basename="/">
         <Dashboard />
       </BrowserRouter>
     </Provider>

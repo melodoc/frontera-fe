@@ -16,7 +16,7 @@ export const Page = ({ children, title, descriptions }) => {
             <IconLogo />
           </div>
           <a className={style.LogOutLink} href="">
-            {t("personalizations.common.log.out")}
+            {t("personalization.common.log.out")}
           </a>
         </nav>
       </header>

@@ -8,11 +8,12 @@ import style from "./preview.module.scss";
 export const Preview = () => {
   const history = useHistory();
   const handleClick = () => {
-    history.push(`${URLs.coursepage.url}/1`);
+    history.push(`${URLs.coursePage.url}/1`);
   };
   return (
     <section className={style.Preview}>
       <div className={style.PreviewInfo}>
+        {/* TODO: Fix hardcode */}
         <CourseHeader label="Изучаем JS" />
         <div className={style.PreviewButtons}>
           <Button onClick={handleClick}>Подробнее</Button>

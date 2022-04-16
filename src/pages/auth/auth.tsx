@@ -15,16 +15,18 @@ const steps = {
   },
   [AuthSteps.REGISTRATION_STEP]: {
     component: Registration,
-    title: "auth.registartion.title",
-    descriptions: "auth.registartion.descriptions",
+    title: "auth.signUp.title",
+    descriptions: "auth.signUp.descriptions",
     next: AuthSteps.LOGIN_STEP,
   },
 };
 
 export const Auth = () => {
   const { t } = useTranslation();
+
   const [currentStep, setStep] = useState(AuthSteps.LOGIN_STEP);
-  const Stage: any = steps[currentStep].component;
+  const Stage = steps[currentStep].component;
+
   const moveNextStep = () => {
     setStep(steps[currentStep].next);
   };
