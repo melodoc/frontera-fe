@@ -11,7 +11,7 @@
 
 
     "personalization.common.log.out": "Выход",
-    "personalization.lang.title": "Выберите язык учебного материала?",
+    "personalization.lang.title": "Выберите язык учебного материала",
     "personalization.lang.descriptions": "Этот фильтр необходим, для того чтобы в подборку материалов не попал материал на языке, которого вы не знаете",
     "personalization.lang.button": "Продолжить",
     "personalization.categories.title": "Выберите интересующие вас темы",
@@ -23,7 +23,7 @@
 
     "auth.login.button": "Войти",
     "auth.recover.button": "Восстановить",
-    "auth.singup.button": "Зарегистрироваться",
+    "auth.singUp.button": "Зарегистрироваться",
     "auth.setup.button": "Восстановить",
     "auth.cancel.button": "Назад",
     "auth.login.registration": "Регистрация",

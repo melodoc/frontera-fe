@@ -1,11 +1,11 @@
 .NavLogo {
   display: flex;
   align-items: center;
-  margin-right: var(--offset-large);
+  margin: 0 auto;
   padding: 0;
 
   width: 182px;
-  height: 43px;
+  height: auto;
 }
 
 // TODO: Fix svg size control

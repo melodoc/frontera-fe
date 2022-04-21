@@ -1,8 +1,11 @@
 .FooterWrapper {
+  display: flex;
+  justify-content: space-between;
+
   position: fixed;
   bottom: 0;
   width: 100%;
-
+  
   border-top: 1px solid var(--gray-light);
   background-color: var(--white);
 }

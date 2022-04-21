@@ -2,8 +2,8 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import { AuthPage } from "./components/auth-page/auth-page";
-import { Login } from "./steps/login/login";
-import { Registration } from "./steps/registration/registration";
+import { Login } from "./steps/login";
+import { Registration } from "./steps/registration";
 import { AuthSteps } from "./constants/steps";
 
 const steps = {
