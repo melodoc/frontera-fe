@@ -2,7 +2,6 @@
 /* eslint-disable max-classes-per-file */
 /* eslint-disable react/destructuring-assignment */
 import React from "react";
-import { Link } from "react-router-dom";
 
 import { URLs } from "../../__data__/urls";
 import { SmartImage } from "./smart-image";
@@ -70,36 +69,6 @@ export class CourseCards extends React.Component<
           </li>
         ))}
       </ul>
-    );
-  }
-}
-
-export class CourseCardsLarge extends CourseCards {
-  static renderHeader(card) {
-    return (
-      <h3 className={style.CatalogHeaderLong}>
-        <span className={style.CatalogCategoryLong}>{card.label}</span>
-      </h3>
-    );
-  }
-
-  static renderCatalogLink(card) {
-    return (
-      <Link
-        className={style.CatalogLinkLong}
-        to={`${URLs.coursePage.url}/${card.id}`}
-      >
-        {this.renderHeader(card)}
-      </Link>
-    );
-  }
-
-  static renderItemCard(card) {
-    return (
-      <div className={style.CatalogItemLong}>
-        <SmartImage path={card.imageSrc} />
-        {this.renderCatalogLink(card)}
-      </div>
     );
   }
 }

@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import { Header } from "../../components/header/header";
 import { PageHeader } from "../../components/page-header";
 import { Loader } from "../../components/loader/loader";
-import { CourseCardsLarge } from "../../components/course-cards/course-cards";
+import { CourseCards } from "../../components/course-cards/course-cards";
 import { getSuggestions } from "../../__data__/action/suggestions";
 import style from "./catalog-courses.module.scss";
 
@@ -40,9 +40,7 @@ export const CatalogCourses = () => {
           {isLoading ? (
             <Loader />
           ) : (
-            courseList && (
-              <CourseCardsLarge showNumber={false} cards={courseList} />
-            )
+            courseList && <CourseCards showNumber={false} cards={courseList} />
           )}
           {errors && (
             <span>
