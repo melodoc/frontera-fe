@@ -14,8 +14,39 @@
   align-items: center;
   flex-wrap: wrap;
   margin-right: var(--offset);
-  
+
   list-style: none;
+}
+
+
+.NavLogo {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+
+  // width: 182px;
+  // height: auto;
+}
+
+.Logo {
+  width: 135px;
+  height: 32px;
+}
+
+// TODO: Fix svg size control
+
+@media screen and (min-width: 925px) and (max-width: 1026px) {
+  .NavLogo {
+    // width: 135px;
+    // height: 32px;
+  }
+}
+
+@media screen and (max-width: 924.98px) {
+  .NavLogo {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 549px) and (max-width: 767.98px) {
