@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
-import { Page } from "./components/prelogin-page/prelogin-page";
-import { ChooseLanguage } from "./steps/language/language";
-import { ChooseCategories } from "./steps/categories/categories";
+import { PersonalizationPage } from "./components/personalization-page/personalization-page";
+import { ChooseLanguage } from "./steps/language";
+import { ChooseCategories } from "./steps/categories";
 import { Processing } from "./steps/processing";
 import { PersonalizationSteps } from "./constants/steps";
 
@@ -39,11 +39,11 @@ export const Personalization = () => {
   };
 
   return (
-    <Page
+    <PersonalizationPage
       title={t(steps[currentStep].title)}
       descriptions={t(steps[currentStep].descriptions)}
     >
       <Stage moveNextStep={moveNextStep} />
-    </Page>
+    </PersonalizationPage>
   );
 };

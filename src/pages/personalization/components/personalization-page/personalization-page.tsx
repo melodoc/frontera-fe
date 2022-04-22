@@ -5,7 +5,7 @@ import { Footer } from "../../../../components/footer/footer";
 import { ErrorBoundary } from "../../../../components/error-boundary/error-boundary";
 import { TitleWithSubtitle } from "../../../../components/title-with-subtitle/title-with-subtitle";
 
-export const AuthPage = ({ children, title, descriptions }) => {
+export const PersonalizationPage = ({ children, title, descriptions }) => {
   return (
     <ErrorBoundary>
       <Header />
@@ -15,7 +15,7 @@ export const AuthPage = ({ children, title, descriptions }) => {
             marginTop: 8,
             display: "flex",
             flexDirection: "column",
-            alignItems: "center",
+            alignItems: "flex-start",
           }}
         >
           <TitleWithSubtitle title={title} descriptions={descriptions} />

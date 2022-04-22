@@ -18,7 +18,9 @@
     "personalization.categories.descriptions": "Этот фильтр необходим, для того чтобы подобрать для вас релевантный материал",
     "personalization.processing.title": "Готовим для вас главную страницу с интересным материалом",
     "personalization.processing.descriptions": "Процесс займет несколько секунд...",
-    "personalization.loading.descriptions": "Загрузка...",
+    "personalization.lang.english": "English",
+    "personalization.lang.espanol": "Español",
+    "personalization.lang.russian": "Русский",
 
 
     "auth.login.button": "Войти",
