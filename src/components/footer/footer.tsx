@@ -6,8 +6,14 @@ import { Typography, Link } from "@mui/material";
 
 import style from "./footer.module.scss";
 
+interface FooterLinks {
+  id: string;
+  name: string;
+  route: string;
+}
+
 interface FooterProps {
-  readonly links: Array<string>;
+  readonly links: Array<FooterLinks>;
 }
 
 function Copyright(props: any) {
@@ -31,10 +37,10 @@ function Copyright(props: any) {
   );
 }
 export const Footer: React.FC<FooterProps> = ({ links }) => {
-  const linksTemplate = links.map((linkName, key) => (
-    <li className={style.FooterItem} key={linkName + key}>
-      <a className={style.FooterLink} href="">
-        {linkName}
+  const linksTemplate = links.map((link) => (
+    <li className={style.FooterItem} key={link.id}>
+      <a className={style.FooterLink} href={link.route}>
+        {link.name}
       </a>
     </li>
   ));
@@ -54,5 +60,5 @@ Footer.propTypes = {
 };
 
 Footer.defaultProps = {
-  links: ["No links"],
+  links: [{ id: "rlijn3", name: "Конфиденциальность", route: "/terms" }],
 };

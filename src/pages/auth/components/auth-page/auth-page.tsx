@@ -5,6 +5,7 @@ import { Footer } from "../../../../components/footer/footer";
 import { ErrorBoundary } from "../../../../components/error-boundary/error-boundary";
 import { TitleWithSubtitle } from "../../../../components/title-with-subtitle/title-with-subtitle";
 
+// TODO: Join with PersonalizationPage
 export const AuthPage = ({ children, title, descriptions }) => {
   return (
     <ErrorBoundary>
@@ -22,7 +23,13 @@ export const AuthPage = ({ children, title, descriptions }) => {
           {children}
         </Box>
       </Container>
-      <Footer links={["Конфиденциальность", "Условия", "Настройки"]} />
+      <Footer
+        links={[
+          { id: "uhndk3uk", name: "Конфиденциальность", route: "/terms" },
+          { id: "kjn348cn", name: "Условия", route: "/conditions" },
+          { id: "dhbbk5", name: "Настройки", route: "/settings" },
+        ]}
+      />
     </ErrorBoundary>
   );
 };
