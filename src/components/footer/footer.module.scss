@@ -44,13 +44,13 @@
 }
 
 
-@media (min-width: 533px) and (max-width: 767.98px) {
+@media screen and (min-width: 533px) and (max-width: 767.98px) {
   .FooterList {
     margin: var(--offset-small) var(--offset-extra-large);
   }
 }
 
-@media (max-width: 532.98px) {
+@media screen and (max-width: 532.98px) {
   .FooterWrapper {
     border-top: none;
   }

@@ -56,7 +56,7 @@
   color: #541594;
 }
 
-@media (max-width: 641.98px) {
+@media screen and (max-width: 641.98px) {
   .DropdownButton {
     background: url('../../assets/icons/menu.svg') center no-repeat;
   }

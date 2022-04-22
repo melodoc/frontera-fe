@@ -120,7 +120,7 @@
   line-height: var(--line-height-medium);
 }
 
-@media (min-width: 900px) and (max-width: 1279.98px) {
+@media screen and (min-width: 900px) and (max-width: 1279.98px) {
   .CardContainer {
     margin-right: var(--offset-medium);
   }
@@ -139,7 +139,7 @@
   }
 }
 
-@media (min-width: 533px) and (max-width: 899.98px) {
+@media screen and (min-width: 533px) and (max-width: 899.98px) {
   .CardContainer {
     margin-right: var(--offset-small);
   }
@@ -161,7 +161,7 @@
   }
 }
 
-@media (max-width: 532.98px) {
+@media screen and (max-width: 532.98px) {
   .Index {
     margin-right: var(--offset-small);
   }

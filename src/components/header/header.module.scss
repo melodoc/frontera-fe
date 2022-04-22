@@ -18,7 +18,7 @@
   list-style: none;
 }
 
-@media (min-width: 549px) and (max-width: 767.98px) {
+@media screen and (min-width: 549px) and (max-width: 767.98px) {
   .HeaderNav {
     width: stretch;
   }
@@ -28,7 +28,7 @@
   }
 }
 
-@media (max-width: 548.98px) {
+@media screen and (max-width: 548.98px) {
   .HeaderNav {
     display: contents;
     vertical-align: middle;
