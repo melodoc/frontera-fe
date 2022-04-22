@@ -16,7 +16,7 @@ export class ProfileButton extends React.Component<
   ProfileButtonProps,
   ProfileButtonState
 > {
-  constructor(props) {
+  constructor (props) {
     super(props);
     this.state = { isOpened: false };
     this.toggleState = this.toggleState.bind(this);
@@ -38,6 +38,7 @@ export class ProfileButton extends React.Component<
       dropdownMenu = (
         <ul className={style.DropdownMenu}>
           <li className={style.DropdownItem}>
+            {/* TODO: Fix links */}
             <a href="" className={style.DropdownLink}>
               {i18next.t("js.navigation.viewHistory")}
             </a>
