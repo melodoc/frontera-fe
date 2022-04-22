@@ -32,7 +32,10 @@ export class CourseCards extends React.Component<
 
   static renderCatalogLink(card: any) {
     return (
-      <a className={style.CatalogLink} href="">
+      <a
+        className={style.CatalogLink}
+        href={`${URLs.coursePage.url}/${card.id}`}
+      >
         {this.renderHeader(card)}
       </a>
     );
