@@ -32,8 +32,8 @@ jobs:
     - name: Build
       run: npm run build
 
-    - name: Run
-      run: |
-        chmod +x ./deployment/deploy_application.sh
-        cd deployment
-        ./deploy_application.sh
+    - name: Lint
+      run: npm run lint
+
+    - name: Test
+      run: npm run test
