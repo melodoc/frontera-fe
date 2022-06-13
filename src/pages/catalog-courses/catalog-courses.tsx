@@ -29,6 +29,7 @@ export const CatalogCourses = () => {
     if (!isLoading) {
       dispatch(getSuggestions());
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [courseList]);
 
   return (

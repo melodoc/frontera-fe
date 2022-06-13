@@ -16,7 +16,7 @@ export class ProfileButton extends React.Component<
   ProfileButtonProps,
   ProfileButtonState
 > {
-  constructor (props) {
+  constructor(props) {
     super(props);
     this.state = { isOpened: false };
     this.toggleState = this.toggleState.bind(this);

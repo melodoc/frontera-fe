@@ -17,6 +17,7 @@ export const DetailCourse = ({ courseId }) => {
   }));
   useEffect(() => {
     dispatch(getDetailCourse(courseId));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   if (data == null || !data) {
     return <Loader />;
