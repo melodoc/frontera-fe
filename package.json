@@ -43,7 +43,7 @@
   },
   "scripts": {
     "heroku-postbuild": "npm install",
-    "start": "node server.js",
+    "start": "react-scripts start",
     "start-ci": "serve -s build -l 3000",
     "build": "react-scripts build",
     "test": "jest --config jest.config.js -w=1",
