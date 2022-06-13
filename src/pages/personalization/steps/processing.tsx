@@ -11,6 +11,7 @@ export const Processing = () => {
     setTimeout(() => {
       history.push(URLs.catalogCourses.url);
     }, 2000);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return <Loader />;

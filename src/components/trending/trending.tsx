@@ -14,6 +14,7 @@ export const Trending = () => {
 
   useEffect(() => {
     dispatch(getCourses());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const { isLoading } = useSelector((state: any) => ({

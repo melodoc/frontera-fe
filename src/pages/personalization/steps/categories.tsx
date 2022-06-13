@@ -23,6 +23,7 @@ export const ChooseCategories = ({ moveNextStep }) => {
 
   useEffect(() => {
     dispatch(getThemes());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const { isLoading } = useSelector((state: any) => ({
