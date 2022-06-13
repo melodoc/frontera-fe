@@ -1,12 +1,24 @@
 import PropTypes from "prop-types";
-
-import style from "./title-with-subtitle.module.scss";
+import { Typography, Box } from "@mui/material";
 
 export const TitleWithSubtitle = ({ title, descriptions }) => {
   return (
     <>
-      <h1 className={style.AnthemItem}>{title}</h1>
-      <p className={style.LoginHeading}>{descriptions}</p>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          mb: 6,
+        }}
+      >
+        <Typography variant="h4" component="h1">
+          {title}
+        </Typography>
+        <Typography variant="h6" component="h6">
+          {descriptions}
+        </Typography>
+      </Box>
     </>
   );
 };

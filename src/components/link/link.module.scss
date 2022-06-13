@@ -58,7 +58,7 @@
   transition: all 0.2s ease-in-out;
 }
 
-@media (min-width: 768px) and (max-width: 1279.98px) {
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
   .Link {
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size);
@@ -68,13 +68,13 @@
   }
 }
 
-@media (min-width: 533px) and (max-width: 767.98px) {
+@media screen and (min-width: 533px) and (max-width: 767.98px) {
   .Link {
     padding: var(--offset-small) var(--offset-small);
   }
 }
 
-@media (max-width: 532.98px) {
+@media screen and (max-width: 532.98px) {
   .Link {
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-small);

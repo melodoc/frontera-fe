@@ -5,10 +5,12 @@ import { CourseHeader } from "../page-header";
 import { URLs } from "../../__data__/urls";
 import style from "./preview.module.scss";
 
+// TODO: Fix hardcode
 export const Preview = () => {
   const history = useHistory();
+
   const handleClick = () => {
-    history.push(`${URLs.coursepage.url}/1`);
+    history.push(`${URLs.coursePage.url}/1`);
   };
   return (
     <section className={style.Preview}>

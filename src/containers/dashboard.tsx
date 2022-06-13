@@ -3,7 +3,7 @@ import { Switch, Route, Redirect } from "react-router-dom";
 
 import { URLs } from "../__data__/urls";
 import { Auth } from "../pages/auth/auth";
-import { Personalizations } from "../pages/personalization/personalizations";
+import { Personalization } from "../pages/personalization/personalization";
 import { DetailCourse } from "../pages/detail-course/detail-course";
 import { HomePage } from "./homepage";
 import { CatalogCourses } from "../pages/catalog-courses/catalog-courses";
@@ -17,8 +17,8 @@ export const Dashboard = () => {
       <Route path={URLs.auth.url}>
         <Auth />
       </Route>
-      <Route path={URLs.personalizations.url}>
-        <Personalizations />
+      <Route path={URLs.personalization.url}>
+        <Personalization />
       </Route>
       <Route path={URLs.catalogCourses.url}>
         <CatalogCourses />
@@ -26,9 +26,10 @@ export const Dashboard = () => {
       <Route path={URLs.home.url}>
         <HomePage />
       </Route>
-      <Route path={`${URLs.coursepage.url}/:id`}>
+      <Route path={`${URLs.coursePage.url}/:id`}>
         {(props) => <DetailCourse courseId={props.match?.params.id} />}
       </Route>
+      {/* TODO: Add notFound screen */}
       <Route path="*">
         <h1>{i18next.t("js.navigation.notFound")}</h1>
       </Route>

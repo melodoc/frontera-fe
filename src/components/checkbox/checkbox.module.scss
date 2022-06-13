@@ -10,7 +10,7 @@
   color: var(--link-hovered);
 }
 
-@media (max-width: 532.98px) {
+@media screen and (max-width: 532.98px) {
   .Checkbox {
     margin-right: var(--offset-small);
   }
