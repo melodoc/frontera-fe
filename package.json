@@ -48,7 +48,7 @@
     "typescript": "^4.6.3"
   },
   "scripts": {
-    "heroku-postbuild": "npm install",
+    "heroku-postbuild": "npm install && npm run build && node server.js",
     "start": "react-scripts start",
     "start-ci": "serve -s build -l 3000",
     "build": "react-scripts build",
