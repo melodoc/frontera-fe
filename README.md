@@ -33,16 +33,16 @@ The Frontera application will boot op on http://localhost:3000.
 
 ## Build application
 
-foo@bar:~$ npm run build
+``` shell
+npm run build
+```
 
 This will create a dist folder with compiled and minimised components.
 
 ## Contribute
 
-The board with future plans
+Check the [trello board](https://trello.com/b/0jTn9HiJ/frontera) with future plans.
 
-https://trello.com/b/0jTn9HiJ/frontera
+> You need to install the [Trello Card Numbers](https://chrome.google.com/webstore/detail/trello-card-numbers/kadpkdielickimifpinkknemjdipghaf) plugin to see tasks' numbers.
 
-You need to install the [Trello Card Numbers](https://chrome.google.com/webstore/detail/trello-card-numbers/kadpkdielickimifpinkknemjdipghaf) plugin to see task numbers
-
-Open pull requests to **develop** branch, please
+Open pull requests to **develop** branch, please.
