@@ -13,9 +13,9 @@ Frontera app helps in learning Frontend development
 
 You need NodeJS installed on your computer to run this application. The requirements are:
 
-node@v16.15.0
-npm@8.5.5
-reactjs@17.0.0
++ node@v16.15.0
++ npm@8.5.5
++ reactjs@17.0.0
 
 ## How to install
 
