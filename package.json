@@ -49,7 +49,6 @@
     "typescript": "^4.6.3"
   },
   "scripts": {
-    "heroku-prebuild": "rm package-lock.json",
     "heroku-postbuild": "npm run build",
     "start": "react-scripts start",
     "start-ci": "serve -s build -l 3000",
