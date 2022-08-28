@@ -13,7 +13,7 @@ const themeOptions = {
     },
   },
   typography: {
-    fontFamily: `'Montserrat', 'Century Gothic', 'Arial', sans-serif`,
+    fontFamily: `'Roboto', 'Arial', sans-serif`,
     fontSize: 14,
     fontWeightLight: 300,
     fontWeightRegular: 400,
