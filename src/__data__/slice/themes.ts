@@ -2,12 +2,14 @@
 // TODO: Fix later
 import { createSlice } from "@reduxjs/toolkit";
 
+import { CourseTheme } from "../../interfaces/interfaces";
+
 type TrendingState = {
-  themes: string[];
+  themes: Array<CourseTheme>;
   loading: boolean;
 };
 const initialState: TrendingState = {
-  themes: [""],
+  themes: [],
   loading: false,
 };
 

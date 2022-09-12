@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { useTranslation } from 'react-i18next';
 
 import { Header } from '../../components/header/header';
@@ -8,17 +8,15 @@ import { PageHeader } from '../../components/page-header';
 import { Loader } from '../../components/loader/loader';
 import { CourseCards } from '../../components/course-cards/course-cards';
 import { getSuggestions } from '../../__data__/action/suggestions';
+import { useAppSelector } from '../../__data__/store/hooks';
 import style from './catalog-courses.module.scss';
 
 export const CatalogCourses = () => {
   const { t } = useTranslation();
   const dispatch = useDispatch();
 
-  const { isLoading } = useSelector((state: any) => ({
+  const { isLoading, courseList } = useAppSelector((state) => ({
     isLoading: state.suggestions.loading,
-  }));
-
-  const { courseList } = useSelector((state: any) => ({
     courseList: state.suggestions.courseList,
   }));
 

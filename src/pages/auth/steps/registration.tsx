@@ -1,13 +1,13 @@
-import { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { useHistory } from "react-router-dom";
-import { useTranslation } from "react-i18next";
-import { Container, Box, TextField } from "@mui/material";
-
+import { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { useHistory } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import { Container, Box, TextField } from '@mui/material';
 import { UIButton } from "components/ui-button/ui-button";
 
-import { URLs } from "../../../__data__/urls";
-import { getAccountData } from "../../../__data__/action/registration";
+import { URLs } from '../../../__data__/urls';
+import { getAccountData } from '../../../__data__/action/registration';
+import { useAppSelector } from '../../../__data__/store/hooks';
 
 import style from "./auth.module.scss";
 
@@ -15,10 +15,12 @@ export const Registration = ({ moveNextStep }) => {
   const { t } = useTranslation();
 
   const dispatch = useDispatch();
-  const [login, setLogin] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const token = useSelector((state: any) => state.registration.token);
+  const [login, setLogin] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const { token } = useAppSelector((state) => ({
+    token: state.registration.token,
+  }));
 
   const handleSetLogin = (event) => {
     setLogin(event.target.value);
@@ -58,14 +60,14 @@ export const Registration = ({ moveNextStep }) => {
         component="form"
         onSubmit={handleSubmit}
         sx={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
         }}
       >
         <TextField
           onChange={handleSetLogin}
-          label={t("auth.login.form.username.label")}
+          label={t('auth.login.form.username.label')}
           id="username"
           name="username"
           variant="outlined"
@@ -78,7 +80,7 @@ export const Registration = ({ moveNextStep }) => {
         />
         <TextField
           onChange={handleSetEmail}
-          label={t("auth.login.form.email.label")}
+          label={t('auth.login.form.email.label')}
           id="userEmail"
           name="email"
           variant="outlined"
@@ -90,7 +92,7 @@ export const Registration = ({ moveNextStep }) => {
         />
         <TextField
           onChange={handleChangePassword}
-          label={t("auth.login.form.password.label")}
+          label={t('auth.login.form.password.label')}
           id="password"
           name="password"
           variant="outlined"
@@ -100,7 +102,7 @@ export const Registration = ({ moveNextStep }) => {
         />
         <TextField
           onChange={handleRepeatPassword}
-          label={t("auth.login.form.repeat.password.label")}
+          label={t('auth.login.form.repeat.password.label')}
           id="repeatPassword"
           name="repeatPassword"
           variant="outlined"
