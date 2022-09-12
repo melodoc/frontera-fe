@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
 
 import { AuthPage } from './components/auth-page/auth-page';
@@ -6,7 +7,6 @@ import { Login } from './steps/login';
 import { Registration } from './steps/registration';
 import { AuthSteps } from './constants/steps';
 import { Head } from '../../components/head/head';
-import { useSelector } from 'react-redux';
 
 const steps = {
   [AuthSteps.LOGIN_STEP]: {

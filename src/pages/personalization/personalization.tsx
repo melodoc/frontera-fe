@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
 
 import { PersonalizationPage } from './components/personalization-page/personalization-page';
@@ -7,7 +8,6 @@ import { ChooseCategories } from './steps/categories';
 import { Processing } from './steps/processing';
 import { PersonalizationSteps } from './constants/steps';
 import { Head } from '../../components/head/head';
-import { useSelector } from 'react-redux';
 
 const steps = {
   [PersonalizationSteps.LANG_STEP]: {

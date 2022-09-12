@@ -8,7 +8,7 @@ import { UIButton } from "components/ui-button/ui-button";
 
 import { URLs } from "../../../__data__/urls";
 import { getAccountData } from "../../../__data__/action/registration";
-import { reset } from "../../../__data__/slice/registration";
+
 import style from "./auth.module.scss";
 
 export const Registration = ({ moveNextStep }) => {
@@ -19,47 +19,26 @@ export const Registration = ({ moveNextStep }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const token = useSelector((state: any) => state.registration.token);
-  const errors = !!useSelector((state: any) => state.registration.errors);
 
   const handleSetLogin = (event) => {
     setLogin(event.target.value);
-
-    if (errors) {
-      dispatch(reset());
-    }
   };
 
   const handleSetEmail = (event) => {
     setEmail(event.target.value);
-
-    if (errors) {
-      dispatch(reset());
-    }
   };
 
   const handleChangePassword = (event) => {
     setPassword(event.target.value);
-
-    if (errors) {
-      dispatch(reset());
-    }
   };
 
   const handleRepeatPassword = (event) => {
     setPassword(event.target.value);
-
-    if (errors) {
-      dispatch(reset());
-    }
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
     dispatch(getAccountData(login, email, password));
-
-    if (errors) {
-      dispatch(reset());
-    }
   };
 
   const history = useHistory();
@@ -84,7 +63,6 @@ export const Registration = ({ moveNextStep }) => {
           alignItems: "center",
         }}
       >
-        {errors && <span>{t("auth.signUp.form.error")}</span>}
         <TextField
           onChange={handleSetLogin}
           label={t("auth.login.form.username.label")}

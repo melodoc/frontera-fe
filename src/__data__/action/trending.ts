@@ -1,7 +1,8 @@
 /* eslint-disable @typescript-eslint/no-shadow */
 import { trendingErr, trendingRes } from "api/trending/trending";
+import { handleError } from "services/handle-error";
 
-import { success, error, init } from "../slice/trending";
+import { success, init } from "../slice/trending";
 
 export const getCourses = () => async (dispatch) => {
   dispatch(init());
@@ -22,9 +23,8 @@ export const getCourses = () => async (dispatch) => {
     try {
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
       const result = await response.json();
-      dispatch(error(trendingErr.errors));
     } catch (error) {
-      console.error(error);
+      handleError(error)
     }
   }
 };

@@ -25,10 +25,6 @@ export const Trending = () => {
     themes: state.trending.themes,
   }));
 
-  const { errors } = useSelector((state: any) => ({
-    errors: state.trending.errors,
-  }));
-
   return (
     <div className={style.Wrapper}>
       <PageHeader label={t("home.trends.title")} />
@@ -36,11 +32,6 @@ export const Trending = () => {
         <Loader />
       ) : (
         themes && <CourseCards showNumber cards={themes} />
-      )}
-      {errors && (
-        <span>
-          {errors.find((error) => error.field === "trending")?.text ?? ""}
-        </span>
       )}
     </div>
   );

@@ -28,9 +28,6 @@ export const ChooseCategories = ({ moveNextStep }) => {
   const { themes } = useSelector((state: any) => ({
     themes: state.themes.themes,
   }));
-  const { errors } = useSelector((state: any) => ({
-    errors: state.themes.errors,
-  }));
 
   return (
     <Box
@@ -58,11 +55,6 @@ export const ChooseCategories = ({ moveNextStep }) => {
             })}
           </FormGroup>
         )
-      )}
-      {errors && (
-        <span>
-          {errors.find((error) => error.field === "themes")?.text ?? ""}
-        </span>
       )}
       <UIButton onClick={() => {}} size="large">
         {t("personalization.lang.button")}

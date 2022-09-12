@@ -14,7 +14,7 @@ import { UIButton } from "components/ui-button/ui-button";
 
 import { URLs } from "../../../__data__/urls";
 import { getLogin } from "../../../__data__/action/login";
-import { reset } from "../../../__data__/slice/login";
+
 import style from "./auth.module.scss";
 
 export const Login = ({ moveNextStep }) => {
@@ -24,31 +24,18 @@ export const Login = ({ moveNextStep }) => {
   const [login, setLogin] = useState("");
   const [password, setPassword] = useState("");
   const token = useSelector((state: any) => state.login.token);
-  const errors = !!useSelector((state: any) => state.login.errors);
 
   const handleSetLogin = (event) => {
     setLogin(event.target.value);
-
-    if (errors) {
-      dispatch(reset());
-    }
   };
 
   const handleSetPassword = (event) => {
     setPassword(event.target.value);
-
-    if (errors) {
-      dispatch(reset());
-    }
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
     dispatch(getLogin(login, password));
-
-    if (errors) {
-      dispatch(reset());
-    }
   };
 
   const history = useHistory();
@@ -73,7 +60,6 @@ export const Login = ({ moveNextStep }) => {
           alignItems: "center",
         }}
       >
-        {errors && <span>{t("auth.login.form.error")}</span>}
         <TextField
           onChange={handleSetLogin}
           label={t("auth.login.form.username.label")}

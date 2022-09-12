@@ -2,7 +2,8 @@ import axios from "axios";
 
 import { courseListRes } from "api/suggestions/suggestions";
 
-import { init, success, error } from "../slice/suggestions";
+import { init, success } from "../slice/suggestions";
+import { handleError } from "../../services/handle-error";
 
 export const getSuggestions = () => async (dispatch) => {
   dispatch(init());
@@ -19,6 +20,6 @@ export const getSuggestions = () => async (dispatch) => {
   if (response.data) {
     dispatch(success(courseListRes.courseList));
   } else {
-    dispatch(error("Ошибка!"));
+    handleError("Ошибка!");
   }
 };

@@ -1,6 +1,7 @@
 import axios from "axios";
 
-import { init, success, error } from "../slice/registration";
+import { handleError } from "../../services/handle-error";
+import { init, success } from "../slice/registration";
 
 export const getAccountData = (login, email, password) => async (dispatch) => {
   dispatch(init());
@@ -18,6 +19,6 @@ export const getAccountData = (login, email, password) => async (dispatch) => {
   if (response.data && response.status === 200) {
     dispatch(success(response.data.json));
   } else {
-    dispatch(error("Ошибка!"));
+    handleError("Ошибка!");
   }
 };

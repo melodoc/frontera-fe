@@ -1,15 +1,17 @@
-import { themesErr, themesRes } from "api/themes/themes";
+import { themesErr, themesRes } from 'api/themes/themes';
+import { handleError } from 'services/handle-error';
 
-import { success, error, init } from "../slice/themes";
+import { success, init } from '../slice/themes';
 
 export const getThemes = () => async (dispatch) => {
   dispatch(init());
-  const baseApiUrl = "https://httpbin.org/get";
+  const baseApiUrl = 'https://httpbin.org/get';
+  
 
   const response = await fetch(`${baseApiUrl}`, {
-    method: "GET",
+    method: 'GET',
     headers: {
-      "Content-Type": "application/json;charset=utf-8",
+      'Content-Type': 'application/json;charset=utf-8',
     },
   });
 
@@ -21,10 +23,9 @@ export const getThemes = () => async (dispatch) => {
     try {
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
       const result = await response.json();
-      dispatch(error(themesErr.errors));
       // eslint-disable-next-line @typescript-eslint/no-shadow
     } catch (error) {
-      console.error(error);
+      handleError(error);
     }
   }
 };

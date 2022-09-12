@@ -22,10 +22,6 @@ export const CatalogCourses = () => {
     courseList: state.suggestions.courseList,
   }));
 
-  const { errors } = useSelector((state: any) => ({
-    errors: state.suggestions.errors,
-  }));
-
   useEffect(() => {
     if (!isLoading) {
       dispatch(getSuggestions());
@@ -44,12 +40,6 @@ export const CatalogCourses = () => {
             <Loader />
           ) : (
             courseList && <CourseCards showNumber={false} cards={courseList} />
-          )}
-          {errors && (
-            <span>
-              {errors.find((error) => error.field === 'suggestions')?.text ??
-                ''}
-            </span>
           )}
         </section>
       </main>
