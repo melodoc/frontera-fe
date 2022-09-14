@@ -20,6 +20,7 @@ module.exports = {
       project: './tsconfig.json',
   },
   rules: {
+      "@typescript-eslint/no-unused-vars": ["warn"],
       'react/react-in-jsx-scope': 'off',
       'eol-last': ['error', 'always'],
       'no-multiple-empty-lines': ['error', { max: 2, maxEOF: 0 }],
@@ -40,7 +41,6 @@ module.exports = {
       'no-param-reassign': 'warn',
       'jsx-a11y/no-autofocus': 'off',
       'no-restricted-globals': 'off',
-      '@typescript-eslint/no-unused-vars': 'warn',
       'no-prototype-builtins': 'warn',
       '@typescript-eslint/no-explicit-any': ['error', { ignoreRestArgs: true }],
       'react/jsx-props-no-spreading': 'off',

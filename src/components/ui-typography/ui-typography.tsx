@@ -64,6 +64,7 @@ export const UITypography: React.FC<UITypographyProps> = ({
           : style.typography__color_primary
       )
       .build();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [typographyStyle?.uppercase]);
 
   return createElement(
