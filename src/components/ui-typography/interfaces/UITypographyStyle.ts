@@ -5,7 +5,7 @@ export interface UITypographyStyle {
   //   marginBottom?: boolean;
   //   borderBottom?: boolean;
   //   textTransform?: "uppercase" | "none" | "capitalize";
-  //   color?: "secondary" | "primary";
+  color?: "secondary" | "primary";
   uppercase?: boolean;
   fontWeight?: "normal" | "bold" | "bolder";
 }

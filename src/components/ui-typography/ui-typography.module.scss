@@ -11,4 +11,10 @@
  &__uppercase {
   text-transform: uppercase;
  }
+ &__color_secondary {
+    color: var(--black);
+ }
+ &__color_primary {
+    color: var(--purple-primary);
+ }
 }

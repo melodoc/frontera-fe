@@ -32,6 +32,7 @@ export const Header = ({ isLoggedIn }: HeaderProps) => {
           typographyStyle={{
             fontWeight: "bold",
             uppercase: true,
+            color: "secondary",
           }}
         >
           Курсы
@@ -41,6 +42,7 @@ export const Header = ({ isLoggedIn }: HeaderProps) => {
           typographyStyle={{
             fontWeight: "bold",
             uppercase: true,
+            color: "secondary",
           }}
         >
           en
