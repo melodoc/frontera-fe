@@ -1,10 +1,10 @@
 import classnames from "classnames";
 import { useMemo, createElement } from "react";
 
-import { IUITypography } from "./interfaces";
+import { UITypographyProps } from "./interfaces";
 import style from "./ui-typography.module.scss";
 
-export const UITypography: React.FC<IUITypography> = ({
+export const UITypography: React.FC<UITypographyProps> = ({
   variant,
   children,
   href,

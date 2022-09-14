@@ -6,11 +6,11 @@ import { UIButton } from "../ui-button/ui-button";
 import logo from "../../assets/icons/logo.svg";
 import style from "./header.module.scss";
 
-interface IHeaderProps {
+interface HeaderProps {
   isLoggedIn?: boolean;
 }
 
-export const Header = ({ isLoggedIn }: IHeaderProps) => {
+export const Header = ({ isLoggedIn }: HeaderProps) => {
   return (
     <header className={style.header}>
       <nav className={style.header__nav}>

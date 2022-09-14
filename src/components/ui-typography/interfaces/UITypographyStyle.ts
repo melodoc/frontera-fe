@@ -1,4 +1,4 @@
-export interface IUITypographyStyle {
+export interface UITypographyStyle {
   // TODO: Доработать компонент кнопки
   //   display?: "initial" | "block" | "inline";
   //   textAlign?: "inherit" | "left" | "right" | "center";
