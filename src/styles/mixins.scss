@@ -1,0 +1,13 @@
+@mixin baseFont {
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+@mixin primaryButton {
+    color: var(--purple-primary);
+    background-color: var(--white);
+    box-shadow: 0px 2px 2px var(--black-transparent);
+    transition: all 0.2s ease-in-out;
+}
