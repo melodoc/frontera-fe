@@ -1,9 +1,9 @@
-export interface ISpaConfig {
+export interface SpaConfig {
   IMG_URL: string;
 }
 
 declare global {
   interface Window {
-    SPA_CONFIG: ISpaConfig;
+    SPA_CONFIG: SpaConfig;
   }
 }

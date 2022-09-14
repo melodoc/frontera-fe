@@ -1,5 +1,5 @@
 /* eslint-disable react/no-access-state-in-setstate */
-import React from "react";
+import React from 'react';
 import i18next from "i18next";
 
 import style from "./profile-button.module.scss";

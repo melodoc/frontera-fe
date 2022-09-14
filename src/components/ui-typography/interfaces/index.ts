@@ -1,2 +1,2 @@
-export * from "./IUITypographyStyle";
-export * from "./IUITypography";
+export * from "./UITypographyStyle";
+export * from "./UITypographyProps";

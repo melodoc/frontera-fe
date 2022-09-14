@@ -1,12 +1,12 @@
 import { TypographyVariantTypes } from "../types";
-import { IUITypographyStyle } from "./IUITypographyStyle";
+import { UITypographyStyle } from "./UITypographyStyle";
 
-export interface IUITypography {
+export interface UITypographyProps {
   variant: TypographyVariantTypes;
   children?: any;
   href?: string;
   title?: string;
-  typographyStyle?: IUITypographyStyle;
+  typographyStyle?: UITypographyStyle;
   htmlFor?: string;
   onClick?: (event: React.MouseEvent<HTMLElement>) => void;
   onBlur?: (event: React.FocusEvent<HTMLElement>) => void;
