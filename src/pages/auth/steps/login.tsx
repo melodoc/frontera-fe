@@ -15,6 +15,7 @@ import { UIButton } from "components/ui-button/ui-button";
 import { URLs } from '../../../__data__/urls';
 import { getLogin } from '../../../__data__/action/login';
 import { useAppSelector } from '../../../__data__/store/hooks';
+import { User } from 'interfaces/interfaces';
 
 import style from "./auth.module.scss";
 
@@ -39,7 +40,7 @@ export const Login = ({ moveNextStep }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    dispatch(getLogin(login, password));
+    dispatch(getLogin({login, password} as User));
   };
 
   const history = useHistory();

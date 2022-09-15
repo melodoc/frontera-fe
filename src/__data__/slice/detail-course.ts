@@ -1,40 +1,20 @@
 /* eslint-disable no-param-reassign */
 // TODO: Fix later
-import { createSlice } from "@reduxjs/toolkit";
-
-type Video = {
-  label: string;
-  imageSrc: string;
-  id: number;
-  videoSrc: string;
-};
-
-type Info = {
-  authors: string[];
-  language: string;
-  lastUpdate: string;
-  duration: string;
-};
-
-type Data = {
-  title: string;
-  id: number;
-  description: string;
-  info: Info;
-  videoList: Array<Video>;
-};
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { Data } from "../../interfaces/interfaces";
 
 type DetailCourseState = {
   data: Data;
   loading: boolean;
 };
+
 const initialState: DetailCourseState = {
   data: {
+    id: "0",
     title: "",
-    id: 0,
     description: "",
     info: {
-      authors: [""],
+      authors: [],
       language: "",
       lastUpdate: "",
       duration: "",
@@ -48,7 +28,7 @@ const slice = createSlice({
   name: "detailCourse",
   initialState,
   reducers: {
-    success(state, action) {
+    success(state, action: PayloadAction<Data>) {
       state.data = action.payload;
       state.loading = false;
     },

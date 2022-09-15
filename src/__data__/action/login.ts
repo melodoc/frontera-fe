@@ -1,24 +1,24 @@
-import axios from "axios";
+import { createAsyncThunk } from '@reduxjs/toolkit';
 
-import { handleError } from "../../services/handle-error";
-import { init, success } from "../slice/login";
+import { User } from 'interfaces/interfaces';
+import { store } from '__data__/store';
 
-export const getLogin = (login, password) => async (dispatch) => {
-  dispatch(init());
+import { handleError } from '../../services/handle-error';
+import { init, success } from '../slice/login';
 
-  const baseApiUrl = "https://httpbin.org/post";
-
-  const response = await axios(`${baseApiUrl}`, {
-    method: "POST",
-    data: { login, password },
-    headers: {
-      "Content-Type": "application/json;charset=utf-8",
-    },
-  });
-
-  if (response.data && response.status === 200) {
-    dispatch(success(response.data.json));
-  } else {
-    handleError('Error!')
+export const getLogin = createAsyncThunk<void, User>(
+  'data/getLogin',
+  async ({ login, password }: User) => {
+    store.dispatch(init());
+    try {
+    //   const { data } = await api.post<string>(APIRoute.Login, {
+    //     login,
+    //     password,
+    //   });
+    //   store.dispatch(success(data));
+      store.dispatch(success(''));
+    } catch (error) {
+      handleError(error);
+    }
   }
-};
+);

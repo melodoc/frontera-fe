@@ -1,24 +1,26 @@
-import axios from "axios";
+import { createAsyncThunk } from '@reduxjs/toolkit';
 
-import { handleError } from "../../services/handle-error";
-import { init, success } from "../slice/registration";
+import { APIRoute } from 'const';
+import { User } from 'interfaces/interfaces';
+import { api, store } from '__data__/store';
 
-export const getAccountData = (login, email, password) => async (dispatch) => {
-  dispatch(init());
+import { handleError } from '../../services/handle-error';
+import { init, success } from '../slice/registration';
 
-  const baseApiUrl = "https://httpbin.org/post";
-
-  const response = await axios(`${baseApiUrl}`, {
-    method: "POST",
-    data: { login, email, password },
-    headers: {
-      "Content-Type": "application/json;charset=utf-8",
-    },
-  });
-
-  if (response.data && response.status === 200) {
-    dispatch(success(response.data.json));
-  } else {
-    handleError("Ошибка!");
+export const getAccountData = createAsyncThunk<void, User>(
+  'data/account',
+  async ({ login, password, email }: User) => {
+    store.dispatch(init());
+    try {
+      // const { data } = await api.post<string>(APIRoute.Registration, {
+      //   login,
+      //   password,
+      //   email,
+      // });
+      // store.dispatch(success(data))
+      store.dispatch(success(''))
+    } catch (error) {
+      handleError(error);
+    }
   }
-};
+);

@@ -1,4 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
+import { createAPI } from 'services/api';
 
 import reducer from '../reducers';
 
@@ -8,6 +9,8 @@ const middlewareOptions: any = {
   serializableCheck: false,
 };
 
+export const api = createAPI();
+
 export const store = configureStore({
   reducer,
   devTools: {
@@ -16,6 +19,9 @@ export const store = configureStore({
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
       ...middlewareOptions,
+      thunk: {
+        extraArgument: api,
+      },
     }),
 });
 

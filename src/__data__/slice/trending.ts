@@ -1,23 +1,24 @@
 /* eslint-disable no-param-reassign */
 // TODO: Fix later
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-import { Card } from "../../interfaces/interfaces";
+import { Card } from '../../interfaces/interfaces';
 
 type TrendingState = {
   themes: Array<Card>;
   loading: boolean;
 };
+
 const initialState: TrendingState = {
   themes: [],
   loading: false,
 };
 
 const slice = createSlice({
-  name: "trending",
+  name: 'trending',
   initialState,
   reducers: {
-    success(state, action) {
+    success(state, action: PayloadAction<Array<Card>>) {
       state.themes = action.payload;
       state.loading = false;
     },

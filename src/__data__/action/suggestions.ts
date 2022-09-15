@@ -1,25 +1,18 @@
-import axios from "axios";
+import { createAsyncThunk } from '@reduxjs/toolkit';
 
-import { courseListRes } from "api/suggestions/suggestions";
+import { courseListRes } from 'api/suggestions/suggestions';
 
-import { init, success } from "../slice/suggestions";
-import { handleError } from "../../services/handle-error";
+import { init, success } from '../slice/suggestions';
+import { handleError } from '../../services/handle-error';
+import { store } from '../store';
 
-export const getSuggestions = () => async (dispatch) => {
-  dispatch(init());
-
-  const baseApiUrl = "https://httpbin.org/get";
-
-  const response = await axios(`${baseApiUrl}`, {
-    method: "GET",
-    headers: {
-      "Content-Type": "application/json;charset=utf-8",
-    },
-  });
-
-  if (response.data) {
-    dispatch(success(courseListRes.courseList));
-  } else {
-    handleError("Ошибка!");
+export const getSuggestions = createAsyncThunk('data/suggestions', async () => {
+  store.dispatch(init());
+  try {
+    // const { data } = await api.get<Array<Course>>(APIRoute.Suggestions);
+    // store.dispatch(success(data))
+    store.dispatch(success(courseListRes.courseList));
+  } catch (error) {
+    handleError(error);
   }
-};
+});

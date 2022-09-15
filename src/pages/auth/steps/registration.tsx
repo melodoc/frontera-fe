@@ -8,6 +8,7 @@ import { UIButton } from "components/ui-button/ui-button";
 import { URLs } from '../../../__data__/urls';
 import { getAccountData } from '../../../__data__/action/registration';
 import { useAppSelector } from '../../../__data__/store/hooks';
+import { User } from 'interfaces/interfaces';
 
 import style from "./auth.module.scss";
 
@@ -40,7 +41,7 @@ export const Registration = ({ moveNextStep }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    dispatch(getAccountData(login, email, password));
+    dispatch(getAccountData({login, email, password} as User));
   };
 
   const history = useHistory();

@@ -1,26 +1,24 @@
-import axios from 'axios';
-
 import { detailCourseRes } from 'api/detail-course/detail-course';
 
 import { init, success } from '../slice/detail-course';
 import { handleError } from '../../services/handle-error';
+import { createAsyncThunk } from '@reduxjs/toolkit';
+import { store } from '../../__data__/store';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-export const getDetailCourse = (id) => async (dispatch) => {
-  dispatch(init());
-
-  const baseApiUrl = 'https://httpbin.org/get';
-
-  const response = await axios(`${baseApiUrl}`, {
-    method: 'GET',
-    headers: {
-      'Content-Type': 'application/json;charset=utf-8',
-    },
-  });
-
-  if (response.data) {
-    dispatch(success(detailCourseRes.data));
-  } else {
-    handleError('Error!');
+export const getDetailCourse = createAsyncThunk(
+  'data/getDetailCourse',
+  async (_id: string) => {
+    store.dispatch(init())
+    try {
+      // const { data } = await api.get<Data>(
+      //   `${APIRoute.Courses}/${id}`
+      // );
+      // store.dispatch(success((data)));
+      // Remove this later
+      store.dispatch(success(detailCourseRes));
+    } catch (error) {
+      handleError(error);
+    }
   }
-};
+);

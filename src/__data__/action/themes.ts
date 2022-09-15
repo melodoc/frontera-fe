@@ -1,31 +1,18 @@
-import { themesErr, themesRes } from 'api/themes/themes';
+import { createAsyncThunk } from '@reduxjs/toolkit';
+
+import { themesRes } from 'api/themes/themes';
 import { handleError } from 'services/handle-error';
+import { store } from '__data__/store';
 
 import { success, init } from '../slice/themes';
 
-export const getThemes = () => async (dispatch) => {
-  dispatch(init());
-  const baseApiUrl = 'https://httpbin.org/get';
-  
-
-  const response = await fetch(`${baseApiUrl}`, {
-    method: 'GET',
-    headers: {
-      'Content-Type': 'application/json;charset=utf-8',
-    },
-  });
-
-  if (response.ok) {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const result = await response.json();
-    dispatch(success(themesRes.themes));
-  } else {
-    try {
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      const result = await response.json();
-      // eslint-disable-next-line @typescript-eslint/no-shadow
-    } catch (error) {
-      handleError(error);
-    }
+export const getThemes = createAsyncThunk('data/suggestions', async () => {
+  store.dispatch(init());
+  try {
+    // const { data } = await api.get<Array<CourseTheme>>(APIRoute.Themes);
+    // store.dispatch(success(data))
+    store.dispatch(success(themesRes.themes));
+  } catch (error) {
+    handleError(error);
   }
-};
+});
