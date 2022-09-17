@@ -8,23 +8,26 @@ import style from "./header.module.scss";
 
 interface HeaderProps {
   isLoggedIn?: boolean;
+  showSearch?: boolean;
 }
 
-export const Header = ({ isLoggedIn }: HeaderProps) => {
+export const Header = ({ isLoggedIn, showSearch }: HeaderProps) => {
   return (
     <header className={style.header}>
       <nav className={style.header__nav}>
         <a className={style.header__link} href={URLs.home.url}>
           <img className={style.header__link_img} src={logo} alt="Frontera" />
         </a>
-        <form>
-          <UIIconInput
-            label="Поиск"
-            type="text"
-            buttonType="submit"
-            icon="search"
-          />
-        </form>
+        {showSearch && (
+          <form>
+            <UIIconInput
+              label="Поиск"
+              type="text"
+              buttonType="submit"
+              icon="search"
+            />
+          </form>
+        )}
       </nav>
       <div className={style.header__account}>
         <UITypography

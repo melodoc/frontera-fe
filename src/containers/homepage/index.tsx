@@ -5,7 +5,7 @@ import { Trending } from "../../components/trending/trending";
 export const HomePage = () => {
   return (
     <>
-      <Header />
+      <Header showSearch />
       <Preview />
       <Trending />
     </>
