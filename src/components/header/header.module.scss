@@ -11,19 +11,18 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 27px;
     place-content: center;
-    max-width: 608px;
+    max-width: 508px;
   }
   
   &__link {
     display: flex;
     align-items: center;
-    align-self: baseline;
+    align-self: center;
     padding: 0;
-    padding-bottom: 4px;
 
     &_img {
       max-width: 220px;
-      height: 32px;
+      height: 17px;
     }
   }
 

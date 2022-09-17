@@ -25,7 +25,7 @@ export const DetailCourse = ({ courseId }) => {
 
   return (
     <>
-      <Header />
+      <Header showSearch />
       <main className={style.Container}>
         <PageHeader label={data.title} />
         <CourseInfo info={data.info} description={data.description} />

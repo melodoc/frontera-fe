@@ -9,7 +9,7 @@ import { TitleWithSubtitle } from "../../../../components/title-with-subtitle/ti
 export const PersonalizationPage = ({ children, title, descriptions }) => {
   return (
     <ErrorBoundary>
-      <Header />
+      <Header showSearch />
       <Container component="main" maxWidth="lg">
         <Box
           sx={{

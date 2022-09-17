@@ -34,7 +34,7 @@ export const CatalogCourses = () => {
 
   return (
     <>
-      <Header />
+      <Header showSearch />
       <main className={style.Container}>
         <PageHeader label={t("catalog.courses.title")} />
         <section>
