@@ -2,11 +2,14 @@ import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { Container, Box, TextField, Button } from "@mui/material";
+import { Container, Box, TextField } from "@mui/material";
+
+import { UIButton } from "components/ui-button/ui-button";
 
 import { URLs } from "../../../__data__/urls";
 import { getAccountData } from "../../../__data__/action/registration";
 import { reset } from "../../../__data__/slice/registration";
+import style from "./auth.module.scss";
 
 export const Registration = ({ moveNextStep }) => {
   const { t } = useTranslation();
@@ -127,28 +130,14 @@ export const Registration = ({ moveNextStep }) => {
           fullWidth
           sx={{ mb: 3 }}
         />
-        <Button
-          onClick={handleSubmit}
-          type="submit"
-          color="primary"
-          fullWidth
-          variant="contained"
-          size="large"
-          sx={{ mb: 3 }}
-        >
-          {t("auth.singUp.button")}
-        </Button>
-        <Button
-          onClick={handleClick}
-          type="submit"
-          color="primary"
-          fullWidth
-          variant="contained"
-          size="large"
-          sx={{ mb: 3 }}
-        >
-          {t("auth.cancel.button")}
-        </Button>
+        <div className={style.button__container}>
+          <UIButton onClick={handleSubmit} size="large" wide>
+            {t("auth.singUp.button")}
+          </UIButton>
+          <UIButton onClick={handleClick} size="large" wide>
+            {t("auth.cancel.button")}
+          </UIButton>
+        </div>
       </Box>
     </Container>
   );

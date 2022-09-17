@@ -1,14 +1,9 @@
 import { useTranslation } from "react-i18next";
-import {
-  Box,
-  FormGroup,
-  Button,
-  FormControlLabel,
-  Checkbox,
-} from "@mui/material";
+import { Box, FormGroup, FormControlLabel, Checkbox } from "@mui/material";
 import { useSelector } from "react-redux";
 
 import { Loader } from "components/loader/loader";
+import { UIButton } from "components/ui-button/ui-button";
 
 export const ChooseLanguage = ({ moveNextStep }) => {
   const { t } = useTranslation();
@@ -50,15 +45,9 @@ export const ChooseLanguage = ({ moveNextStep }) => {
               label={t("personalization.lang.russian")}
             />
           </FormGroup>
-          <Button
-            type="submit"
-            color="primary"
-            variant="contained"
-            size="large"
-            sx={{ mb: 3 }}
-          >
+          <UIButton onClick={() => {}} size="large">
             {t("personalization.lang.button")}
-          </Button>
+          </UIButton>
         </>
       )}
     </Box>

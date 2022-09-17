@@ -1,3 +1,4 @@
+import classnames from "classnames";
 import { useMemo, createElement } from "react";
 
 import { ClassBuilder } from "../../utils/class-builder";
@@ -36,32 +37,24 @@ export const UITypography: React.FC<UITypographyProps> = ({
   }, [variant]);
 
   const classBuilder: ClassBuilder = new ClassBuilder();
+  const fontClasses = classnames(style.button, {
+    [style.typography__uppercase]: typographyStyle?.uppercase,
+    [style.typography__weight_normal]: typographyStyle?.fontWeight === "normal",
+    [style.typography__weight_bold]: typographyStyle?.fontWeight === "bold",
+    [style.typography__weight_bolder]: typographyStyle?.fontWeight === "bolder",
+  });
 
   const classes = useMemo(() => {
     return classBuilder
       .append(style.typography)
-      .append(
-        typographyStyle?.uppercase ? style.typography__uppercase : undefined
-      )
-      .append(
-        typographyStyle?.fontWeight === "normal"
-          ? style.typography__weight_normal
-          : undefined
-      )
-      .append(
-        typographyStyle?.fontWeight === "bold"
-          ? style.typography__weight_bold
-          : undefined
-      )
-      .append(
-        typographyStyle?.fontWeight === "bolder"
-          ? style.typography__weight_bolder
-          : undefined
-      )
+      .append(fontClasses)
       .append(
         typographyStyle?.color === "secondary"
           ? style.typography__color_secondary
           : style.typography__color_primary
+      )
+      .append(
+        typographyStyle?.marginBottom ? style.typography__margin : undefined
       )
       .build();
     // eslint-disable-next-line react-hooks/exhaustive-deps

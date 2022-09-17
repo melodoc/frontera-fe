@@ -1,5 +1,7 @@
 import PropTypes from "prop-types";
-import { Typography, Box } from "@mui/material";
+import { Box } from "@mui/material";
+
+import { UITypography } from "components/ui-typography/ui-typography";
 
 export const TitleWithSubtitle = ({ title, descriptions }) => {
   return (
@@ -12,12 +14,28 @@ export const TitleWithSubtitle = ({ title, descriptions }) => {
           mb: 6,
         }}
       >
-        <Typography variant="h4" component="h1">
+        <UITypography
+          variant="h1"
+          typographyStyle={{
+            fontWeight: "normal",
+            uppercase: true,
+            color: "secondary",
+            marginBottom: true,
+          }}
+        >
           {title}
-        </Typography>
-        <Typography variant="h6" component="h6">
+        </UITypography>
+        <UITypography
+          variant="caption"
+          typographyStyle={{
+            fontWeight: "normal",
+            uppercase: true,
+            color: "secondary",
+            marginBottom: true,
+          }}
+        >
           {descriptions}
-        </Typography>
+        </UITypography>
       </Box>
     </>
   );

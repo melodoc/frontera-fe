@@ -2,7 +2,7 @@ export interface UITypographyStyle {
   // TODO: Доработать компонент кнопки
   //   display?: "initial" | "block" | "inline";
   //   textAlign?: "inherit" | "left" | "right" | "center";
-  //   marginBottom?: boolean;
+  marginBottom?: boolean;
   //   borderBottom?: boolean;
   //   textTransform?: "uppercase" | "none" | "capitalize";
   color?: "secondary" | "primary";

@@ -1,4 +1,7 @@
 .typography {
+   margin: 0;
+   padding: 0;
+
  &__weight_normal {
   font-weight: 400;
  } 
@@ -12,9 +15,12 @@
   text-transform: uppercase;
  }
  &__color_secondary {
-    color: var(--black);
+    color: var(--text-main);
  }
  &__color_primary {
     color: var(--purple-primary);
+ }
+ &__margin {
+   margin-bottom: var(--offset-medium);
  }
 }

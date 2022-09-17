@@ -8,12 +8,14 @@ import {
   FormControlLabel,
   Checkbox,
   TextField,
-  Button,
 } from "@mui/material";
+
+import { UIButton } from "components/ui-button/ui-button";
 
 import { URLs } from "../../../__data__/urls";
 import { getLogin } from "../../../__data__/action/login";
 import { reset } from "../../../__data__/slice/login";
+import style from "./auth.module.scss";
 
 export const Login = ({ moveNextStep }) => {
   const { t } = useTranslation();
@@ -100,28 +102,14 @@ export const Login = ({ moveNextStep }) => {
           label={t("auth.login.remember")}
           sx={{ alignSelf: "start", mb: 3 }}
         />
-        <Button
-          onClick={handleSubmit}
-          type="submit"
-          color="primary"
-          fullWidth
-          variant="contained"
-          size="large"
-          sx={{ mb: 3 }}
-        >
-          {t("auth.login.button")}
-        </Button>
-        <Button
-          onClick={handleClick}
-          type="submit"
-          color="primary"
-          fullWidth
-          variant="contained"
-          size="large"
-          sx={{ mb: 3 }}
-        >
-          {t("auth.login.registration")}
-        </Button>
+        <div className={style.button__container}>
+          <UIButton onClick={handleSubmit} size="large" wide>
+            {t("auth.login.button")}
+          </UIButton>
+          <UIButton onClick={handleClick} size="large" wide>
+            {t("auth.login.registration")}
+          </UIButton>
+        </div>
       </Box>
     </Container>
   );
