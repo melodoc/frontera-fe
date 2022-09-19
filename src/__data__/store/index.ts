@@ -1,7 +1,8 @@
-import { configureStore } from '@reduxjs/toolkit';
-import { createAPI } from 'services/api';
+import { configureStore } from "@reduxjs/toolkit";
 
-import reducer from '../reducers';
+import { createAPI } from "services/api";
+
+import reducer from "../reducers";
 
 const middlewareOptions: any = {
   thunk: true,
@@ -14,7 +15,7 @@ export const api = createAPI();
 export const store = configureStore({
   reducer,
   devTools: {
-    name: 'Frontera',
+    name: "Frontera",
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({

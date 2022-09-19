@@ -1,11 +1,11 @@
 export enum APIRoute {
-  Courses = '/courses',
-  Registration = '/registration',
-  Suggestions = '/suggestions',
-  Themes = '/themes',
-  Trends = '/trends',
-  Login = '/login',
-  Logout = '/logout',
+  Courses = "/courses",
+  Registration = "/registration",
+  Suggestions = "/suggestions",
+  Themes = "/themes",
+  Trends = "/trends",
+  Login = "/login",
+  Logout = "/logout",
 }
 
 export enum HttpCode {

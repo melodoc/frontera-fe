@@ -1,15 +1,15 @@
-import { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
 
-import { Head } from '../../components/head/head';
-import { Header } from '../../components/header/header';
-import { PageHeader } from '../../components/page-header';
-import { CourseInfo } from '../../components/course-info/course-info';
-import { CourseCards } from '../../components/course-cards/course-cards';
-import { getDetailCourse } from '../../__data__/action/detail-course';
-import { Loader } from '../../components/loader/loader';
-import { useAppSelector } from '../../__data__/store/hooks';
-import style from './detail-course.module.scss';
+import { Head } from "../../components/head/head";
+import { Header } from "../../components/header/header";
+import { PageHeader } from "../../components/page-header";
+import { CourseInfo } from "../../components/course-info/course-info";
+import { CourseCards } from "../../components/course-cards/course-cards";
+import { getDetailCourse } from "../../__data__/action/detail-course";
+import { Loader } from "../../components/loader/loader";
+import { useAppSelector } from "../../__data__/store/hooks";
+import style from "./detail-course.module.scss";
 
 export const DetailCourse = ({ courseId }) => {
   const dispatch = useDispatch();
@@ -28,7 +28,7 @@ export const DetailCourse = ({ courseId }) => {
 
   return (
     <>
-      <Head title='Details' isLoading={isLoading} />
+      <Head title="Details" isLoading={isLoading} />
       <Header showSearch />
       <main className={style.Container}>
         <PageHeader label={data.title} />

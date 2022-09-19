@@ -1,7 +1,7 @@
-import { useState } from 'react';
-import { useDispatch } from 'react-redux';
-import { useHistory } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { useHistory } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import {
   Container,
   Box,
@@ -11,20 +11,19 @@ import {
 } from "@mui/material";
 
 import { UIButton } from "components/ui-button/ui-button";
+import { User } from "interfaces/interfaces";
 
-import { URLs } from '../../../__data__/urls';
-import { getLogin } from '../../../__data__/action/login';
-import { useAppSelector } from '../../../__data__/store/hooks';
-import { User } from 'interfaces/interfaces';
-
+import { URLs } from "../../../__data__/urls";
+import { getLogin } from "../../../__data__/action/login";
+import { useAppSelector } from "../../../__data__/store/hooks";
 import style from "./auth.module.scss";
 
 export const Login = ({ moveNextStep }) => {
   const { t } = useTranslation();
 
   const dispatch = useDispatch();
-  const [login, setLogin] = useState('');
-  const [password, setPassword] = useState('');
+  const [login, setLogin] = useState("");
+  const [password, setPassword] = useState("");
 
   const { token } = useAppSelector((state) => ({
     token: state.login.token,
@@ -40,7 +39,7 @@ export const Login = ({ moveNextStep }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    dispatch(getLogin({login, password} as User));
+    dispatch(getLogin({ login, password } as User));
   };
 
   const history = useHistory();
@@ -60,14 +59,14 @@ export const Login = ({ moveNextStep }) => {
         component="form"
         onSubmit={handleSubmit}
         sx={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
         }}
       >
         <TextField
           onChange={handleSetLogin}
-          label={t('auth.login.form.username.label')}
+          label={t("auth.login.form.username.label")}
           id="username"
           name="username"
           variant="outlined"
@@ -80,7 +79,7 @@ export const Login = ({ moveNextStep }) => {
         />
         <TextField
           onChange={handleSetPassword}
-          label={t('auth.login.form.password.label')}
+          label={t("auth.login.form.password.label")}
           id="password"
           name="password"
           variant="outlined"
@@ -90,8 +89,8 @@ export const Login = ({ moveNextStep }) => {
         />
         <FormControlLabel
           control={<Checkbox value="remember" color="primary" />}
-          label={t('auth.login.remember')}
-          sx={{ alignSelf: 'start', mb: 3 }}
+          label={t("auth.login.remember")}
+          sx={{ alignSelf: "start", mb: 3 }}
         />
         <div className={style.button__container}>
           <UIButton onClick={handleSubmit} size="large" wide>

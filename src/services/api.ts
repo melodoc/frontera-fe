@@ -1,8 +1,8 @@
-import axios, { AxiosInstance, AxiosRequestConfig } from 'axios';
+import axios, { AxiosInstance, AxiosRequestConfig } from "axios";
 
-import { getToken } from './token';
+import { getToken } from "./token";
 
-const BACKEND_URL = 'https://httpbin.org/';
+const BACKEND_URL = "https://httpbin.org/";
 const REQUEST_TIMEOUT = 5000;
 
 export const createAPI = (): AxiosInstance => {
@@ -13,10 +13,10 @@ export const createAPI = (): AxiosInstance => {
 
   api.interceptors.request.use((config: AxiosRequestConfig) => {
     const token = getToken();
-    const headers = config.headers;
+    const { headers } = config;
 
     if (headers) {
-        headers['x-token'] = token;
+      headers["x-token"] = token;
     }
 
     return config;

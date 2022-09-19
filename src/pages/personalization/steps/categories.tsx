@@ -5,9 +5,9 @@ import { Box, FormGroup, FormControlLabel, Checkbox } from "@mui/material";
 
 import { UIButton } from "components/ui-button/ui-button";
 
-import { getThemes } from '../../../__data__/action/themes';
-import { Loader } from '../../../components/loader/loader';
-import { useAppSelector } from '../../../__data__/store/hooks';
+import { getThemes } from "../../../__data__/action/themes";
+import { Loader } from "../../../components/loader/loader";
+import { useAppSelector } from "../../../__data__/store/hooks";
 
 export const ChooseCategories = ({ moveNextStep }) => {
   const { t } = useTranslation();
@@ -33,9 +33,9 @@ export const ChooseCategories = ({ moveNextStep }) => {
       component="form"
       onSubmit={handleSubmit}
       sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'flex-start',
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "flex-start",
       }}
     >
       {isLoading ? (

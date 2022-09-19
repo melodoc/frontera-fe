@@ -1,6 +1,7 @@
 /* eslint-disable no-param-reassign */
 // TODO: Fix later
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+
 import { Data } from "../../interfaces/interfaces";
 
 type DetailCourseState = {
@@ -34,7 +35,7 @@ const slice = createSlice({
     },
     init(state) {
       state.loading = true;
-    }
+    },
   },
 });
 

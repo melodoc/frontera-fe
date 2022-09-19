@@ -4,7 +4,7 @@ import { Box, FormGroup, FormControlLabel, Checkbox } from "@mui/material";
 import { Loader } from "components/loader/loader";
 import { UIButton } from "components/ui-button/ui-button";
 
-import { useAppSelector } from '../../../__data__/store/hooks';
+import { useAppSelector } from "../../../__data__/store/hooks";
 
 export const ChooseLanguage = ({ moveNextStep }) => {
   const { t } = useTranslation();
@@ -23,9 +23,9 @@ export const ChooseLanguage = ({ moveNextStep }) => {
       component="form"
       onSubmit={handleSubmit}
       sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'flex-start',
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "flex-start",
       }}
     >
       {isLoading ? (
@@ -35,15 +35,15 @@ export const ChooseLanguage = ({ moveNextStep }) => {
           <FormGroup sx={{ mb: 3 }}>
             <FormControlLabel
               control={<Checkbox defaultChecked />}
-              label={t('personalization.lang.english')}
+              label={t("personalization.lang.english")}
             />
             <FormControlLabel
               control={<Checkbox />}
-              label={t('personalization.lang.espanol')}
+              label={t("personalization.lang.espanol")}
             />
             <FormControlLabel
               control={<Checkbox />}
-              label={t('personalization.lang.russian')}
+              label={t("personalization.lang.russian")}
             />
           </FormGroup>
           <UIButton onClick={() => {}} size="large">

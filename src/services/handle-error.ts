@@ -1,5 +1,5 @@
-import request from 'axios';
-import { toast } from 'react-toastify';
+import request from "axios";
+import { toast } from "react-toastify";
 
 enum HttpCode {
   BadRequest = 400,
@@ -28,7 +28,7 @@ export const handleError = (error: ErrorType): void => {
         toast.info(response.data.error);
         break;
       default:
-        toast.info('Unknown error!');
+        toast.info("Unknown error!");
     }
   }
 };

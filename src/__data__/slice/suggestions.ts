@@ -1,7 +1,7 @@
 /* eslint-disable no-param-reassign */
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-import { Course } from 'interfaces/interfaces';
+import { Course } from "interfaces/interfaces";
 
 type SuggestionsState = {
   courseList: Array<Course>;
@@ -12,15 +12,15 @@ const initialState: SuggestionsState = {
   courseList: [
     {
       id: "0",
-      label: '',
-      imageSrc: '',
+      label: "",
+      imageSrc: "",
     },
   ],
   loading: false,
 };
 
 const slice = createSlice({
-  name: 'suggestions',
+  name: "suggestions",
   initialState,
   reducers: {
     success(state, action: PayloadAction<Array<Course>>) {

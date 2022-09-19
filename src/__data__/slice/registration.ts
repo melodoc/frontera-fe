@@ -1,6 +1,6 @@
 /* eslint-disable no-param-reassign */
 // TODO: Fix later
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 type RegistrationState = {
   token: string;
@@ -8,12 +8,12 @@ type RegistrationState = {
 };
 
 const initialState: RegistrationState = {
-  token: '',
+  token: "",
   loading: false,
 };
 
 const slice = createSlice({
-  name: 'registration',
+  name: "registration",
   initialState,
   reducers: {
     success(state, action: PayloadAction<string>) {
