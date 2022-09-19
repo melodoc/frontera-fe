@@ -4,7 +4,7 @@ import { themesRes } from "api/themes/themes";
 import { handleError } from "services/handle-error";
 import { store } from "__data__/store";
 
-import { success, init } from "../slice/themes";
+import { success, init, reset } from "../slice/themes";
 
 export const getThemes = createAsyncThunk("data/suggestions", async () => {
   store.dispatch(init());
@@ -14,5 +14,6 @@ export const getThemes = createAsyncThunk("data/suggestions", async () => {
     store.dispatch(success(themesRes.themes));
   } catch (error) {
     handleError(error);
+    store.dispatch(reset());
   }
 });

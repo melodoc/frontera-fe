@@ -5,7 +5,7 @@ import { trendingRes } from "api/trending/trending";
 import { handleError } from "services/handle-error";
 import { store } from "__data__/store";
 
-import { success, init } from "../slice/trending";
+import { success, init, reset } from "../slice/trending";
 
 export const getCourses = createAsyncThunk("data/suggestions", async () => {
   store.dispatch(init());
@@ -15,5 +15,6 @@ export const getCourses = createAsyncThunk("data/suggestions", async () => {
     store.dispatch(success(trendingRes.themes));
   } catch (error) {
     handleError(error);
+    store.dispatch(reset());
   }
 });

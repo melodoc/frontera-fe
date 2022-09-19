@@ -23,9 +23,12 @@ const slice = createSlice({
     init(state) {
       state.loading = true;
     },
+    reset(state) {
+      state.loading = false;
+    },
   },
 });
 
-export const { init, success } = slice.actions;
+export const { init, success, reset } = slice.actions;
 
 export const { reducer } = slice;

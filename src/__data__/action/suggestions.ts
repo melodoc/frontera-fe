@@ -2,7 +2,7 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 
 import { courseListRes } from "api/suggestions/suggestions";
 
-import { init, success } from "../slice/suggestions";
+import { init, success, reset } from "../slice/suggestions";
 import { handleError } from "../../services/handle-error";
 import { store } from "../store";
 
@@ -14,5 +14,6 @@ export const getSuggestions = createAsyncThunk("data/suggestions", async () => {
     store.dispatch(success(courseListRes.courseList));
   } catch (error) {
     handleError(error);
+    store.dispatch(reset());
   }
 });
