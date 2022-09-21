@@ -1,10 +1,10 @@
 export enum APIRoute {
   Courses = "/courses",
-  Registration = "/registration",
+  Registration = "/post",
   Suggestions = "/suggestions",
   Themes = "/themes",
   Trends = "/trends",
-  Login = "/login",
+  Login = "/post",
   Logout = "/logout",
 }
 

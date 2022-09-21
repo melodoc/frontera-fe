@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -46,9 +46,11 @@ export const Registration = ({ moveNextStep }) => {
 
   const history = useHistory();
 
-  if (token) {
-    history.push(URLs.personalization.url);
-  }
+  useEffect(() => {
+    if (token) {
+      history.push(URLs.personalization.url);
+    }
+  }, [token, history]);
 
   const handleClick = (event) => {
     event.preventDefault();
