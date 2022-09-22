@@ -1,33 +1,34 @@
 /* eslint-disable no-param-reassign */
 // TODO: Fix later
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-const initialState: any = {
+type RegistrationState = {
+  token: string;
+  loading: boolean;
+};
+
+const initialState: RegistrationState = {
+  token: "",
   loading: false,
-  errors: null,
 };
 
 const slice = createSlice({
   name: "registration",
   initialState,
   reducers: {
-    success(state, action) {
+    success(state, action: PayloadAction<string>) {
       state.token = action.payload;
       state.loading = false;
     },
     init(state) {
       state.loading = true;
     },
-    error(state, action) {
-      state.errors = action.payload;
-      state.loading = false;
-    },
     reset(state) {
-      state.errors = false;
+      state.loading = false;
     },
   },
 });
 
-export const { init, success, error, reset } = slice.actions;
+export const { init, success, reset } = slice.actions;
 
 export const { reducer } = slice;

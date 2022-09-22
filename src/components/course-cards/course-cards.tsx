@@ -6,9 +6,10 @@ import React from "react";
 import { URLs } from "../../__data__/urls";
 import { SmartImage } from "./smart-image";
 import style from "./course-cards.module.scss";
+import { Card } from "../../interfaces/interfaces";
 
 interface CourseCardsProps {
-  readonly cards: Array<{ label: string; imageSrc: string }>;
+  readonly cards: Array<Card>;
   readonly showNumber?: boolean;
 }
 interface CourseCardsState {

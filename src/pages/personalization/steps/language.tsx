@@ -1,14 +1,15 @@
 import { useTranslation } from "react-i18next";
 import { Box, FormGroup, FormControlLabel, Checkbox } from "@mui/material";
-import { useSelector } from "react-redux";
 
 import { Loader } from "components/loader/loader";
 import { UIButton } from "components/ui-button/ui-button";
 
+import { useAppSelector } from "../../../__data__/store/hooks";
+
 export const ChooseLanguage = ({ moveNextStep }) => {
   const { t } = useTranslation();
 
-  const { isLoading } = useSelector((state: any) => ({
+  const { isLoading } = useAppSelector((state) => ({
     isLoading: state.themes.loading,
   }));
 

@@ -1,14 +1,15 @@
-import { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Container, Box, TextField } from "@mui/material";
 
 import { UIButton } from "components/ui-button/ui-button";
+import { User } from "interfaces/interfaces";
 
 import { URLs } from "../../../__data__/urls";
 import { getAccountData } from "../../../__data__/action/registration";
-import { reset } from "../../../__data__/slice/registration";
+import { useAppSelector } from "../../../__data__/store/hooks";
 import style from "./auth.module.scss";
 
 export const Registration = ({ moveNextStep }) => {
@@ -18,55 +19,38 @@ export const Registration = ({ moveNextStep }) => {
   const [login, setLogin] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const token = useSelector((state: any) => state.registration.token);
-  const errors = !!useSelector((state: any) => state.registration.errors);
+  const { token } = useAppSelector((state) => ({
+    token: state.registration.token,
+  }));
 
   const handleSetLogin = (event) => {
     setLogin(event.target.value);
-
-    if (errors) {
-      dispatch(reset());
-    }
   };
 
   const handleSetEmail = (event) => {
     setEmail(event.target.value);
-
-    if (errors) {
-      dispatch(reset());
-    }
   };
 
   const handleChangePassword = (event) => {
     setPassword(event.target.value);
-
-    if (errors) {
-      dispatch(reset());
-    }
   };
 
   const handleRepeatPassword = (event) => {
     setPassword(event.target.value);
-
-    if (errors) {
-      dispatch(reset());
-    }
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    dispatch(getAccountData(login, email, password));
-
-    if (errors) {
-      dispatch(reset());
-    }
+    dispatch(getAccountData({ login, email, password } as User));
   };
 
   const history = useHistory();
 
-  if (token) {
-    history.push(URLs.personalization.url);
-  }
+  useEffect(() => {
+    if (token) {
+      history.push(URLs.personalization.url);
+    }
+  }, [token, history]);
 
   const handleClick = (event) => {
     event.preventDefault();
@@ -84,7 +68,6 @@ export const Registration = ({ moveNextStep }) => {
           alignItems: "center",
         }}
       >
-        {errors && <span>{t("auth.signUp.form.error")}</span>}
         <TextField
           onChange={handleSetLogin}
           label={t("auth.login.form.username.label")}

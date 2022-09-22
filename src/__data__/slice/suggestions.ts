@@ -1,48 +1,41 @@
 /* eslint-disable no-param-reassign */
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-type Course = {
-  label: string;
-  id: number;
-  imageSrc: string;
-};
+import { Course } from "interfaces/interfaces";
 
 type SuggestionsState = {
   courseList: Array<Course>;
   loading: boolean;
-  errors: string[];
 };
 
 const initialState: SuggestionsState = {
   courseList: [
     {
+      id: "0",
       label: "",
-      id: 0,
       imageSrc: "",
     },
   ],
   loading: false,
-  errors: [""],
 };
 
 const slice = createSlice({
   name: "suggestions",
   initialState,
   reducers: {
-    success(state, action) {
+    success(state, action: PayloadAction<Array<Course>>) {
       state.courseList = action.payload;
       state.loading = false;
     },
     init(state) {
       state.loading = true;
     },
-    error(state, action) {
-      state.errors = action.payload;
+    reset(state) {
       state.loading = false;
     },
   },
 });
 
-export const { success, init, error } = slice.actions;
+export const { success, init, reset } = slice.actions;
 
 export const { reducer } = slice;

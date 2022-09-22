@@ -5,6 +5,8 @@ import { AuthPage } from "./components/auth-page/auth-page";
 import { Login } from "./steps/login";
 import { Registration } from "./steps/registration";
 import { AuthSteps } from "./constants/steps";
+import { Head } from "../../components/head/head";
+import { useAppSelector } from "../../__data__/store/hooks";
 
 const steps = {
   [AuthSteps.LOGIN_STEP]: {
@@ -31,12 +33,19 @@ export const Auth = () => {
     setStep(steps[currentStep].next);
   };
 
+  const { isLoading } = useAppSelector((state) => ({
+    isLoading: state.login.loading,
+  }));
+
   return (
-    <AuthPage
-      title={t(steps[currentStep].title)}
-      descriptions={t(steps[currentStep].descriptions)}
-    >
-      <Stage moveNextStep={moveNextStep} />
-    </AuthPage>
+    <>
+      <Head title="Login" isLoading={isLoading} />
+      <AuthPage
+        title={t(steps[currentStep].title)}
+        descriptions={t(steps[currentStep].descriptions)}
+      >
+        <Stage moveNextStep={moveNextStep} />
+      </AuthPage>
+    </>
   );
 };

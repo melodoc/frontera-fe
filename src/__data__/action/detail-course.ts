@@ -1,25 +1,28 @@
-import axios from "axios";
+import { createAsyncThunk } from "@reduxjs/toolkit";
 
 import { detailCourseRes } from "api/detail-course/detail-course";
 
-import { init, success, error } from "../slice/detail-course";
+import { init, success, reset } from "../slice/detail-course";
+import { handleError } from "../../services/handle-error";
+import { store } from "../store";
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-export const getDetailCourse = (id) => async (dispatch) => {
-  dispatch(init());
-
-  const baseApiUrl = "https://httpbin.org/get";
-
-  const response = await axios(`${baseApiUrl}`, {
-    method: "GET",
-    headers: {
-      "Content-Type": "application/json;charset=utf-8",
-    },
-  });
-
-  if (response.data) {
-    dispatch(success(detailCourseRes.data));
-  } else {
-    dispatch(error("Ошибка!"));
+/* eslint-disable */
+export const getDetailCourse = createAsyncThunk(
+  "data/getDetailCourse",
+  async (id: string) => {
+    store.dispatch(init());
+    try {
+      // const { data } = await api.get<Data>(
+      //   `${APIRoute.Courses}/${id}`
+      // );
+      // store.dispatch(success((data)));
+      // Remove this later
+      store.dispatch(success(detailCourseRes));
+    } catch (error) {
+      handleError(error);
+      store.dispatch(reset());
+    }
   }
-};
+);
+/* eslint-disable */

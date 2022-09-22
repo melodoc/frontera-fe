@@ -6,23 +6,23 @@ export const courseListRes = {
   },
   courseList: [
     {
+      id: "1",
       label: "React",
-      id: 1,
       imageSrc: `${imgURL}/remote-assets/images/suggestions/sg-course-1.jpg`,
     },
     {
+      id: "2",
       label: "CI/CD",
-      id: 2,
       imageSrc: `${imgURL}/remote-assets/images/suggestions/sg-course-2.jpg`,
     },
     {
+      id: "3",
       label: "Изучаем JS",
-      id: 3,
       imageSrc: `${imgURL}/remote-assets/images/suggestions/sg-course-3.jpg`,
     },
     {
+      id: "4",
       label: "git",
-      id: 4,
       imageSrc: `${imgURL}/remote-assets/images/suggestions/sg-course-4.jpg`,
     },
   ],
