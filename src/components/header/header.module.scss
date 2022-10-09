@@ -1,71 +1,63 @@
-.HeaderWrapper {
-  border-bottom: 1px solid var(--gray-light);
-}
-
-.Header {
-  display: flex;
-  justify-content: space-between;
-  margin: var(--offset) var(--offset-large);
-}
-
-.HeaderNav {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  margin-right: var(--offset);
+  margin: 24px 100px;
 
-  list-style: none;
-}
+  &__nav {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 27px;
+    place-content: center;
+    max-width: 508px;
+  }
+  
+  &__link {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    padding: 0;
 
+    &_img {
+      max-width: 220px;
+      height: 17px;
+    }
+  }
 
-.NavLogo {
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
-  padding: 0;
-
-  // width: 182px;
-  // height: auto;
-}
-
-.Logo {
-  width: 135px;
-  height: 32px;
+  &__account {
+    display: flex;
+    align-items: center;
+    width: 313px;
+    justify-content: space-between
+  }
 }
 
 // TODO: Fix svg size control
 
 @media screen and (min-width: 925px) and (max-width: 1026px) {
-  .NavLogo {
+  .header__link {
     // width: 135px;
     // height: 32px;
   }
 }
 
 @media screen and (max-width: 924.98px) {
-  .NavLogo {
+  .header__link {
     display: none;
   }
 }
 
 @media screen and (min-width: 549px) and (max-width: 767.98px) {
-  .HeaderNav {
+  .header__nav {
     width: stretch;
-  }
-
-  .HeaderWrapper {
-    border-bottom: none;
   }
 }
 
 @media screen and (max-width: 548.98px) {
-  .HeaderNav {
+  .header__nav {
     display: contents;
     vertical-align: middle;
-  }
-
-  .HeaderWrapper {
-    border-bottom: none;
   }
 }

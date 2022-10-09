@@ -4,7 +4,7 @@ import { createTheme } from "@mui/material/styles";
 const themeOptions = {
   palette: {
     primary: {
-      main: "#541594",
+      main: "#2D2B5C",
       light: purple[50],
     },
     secondary: {
@@ -13,7 +13,7 @@ const themeOptions = {
     },
   },
   typography: {
-    fontFamily: `'Montserrat', 'Century Gothic', 'Arial', sans-serif`,
+    fontFamily: `'Roboto', 'Arial', sans-serif`,
     fontSize: 14,
     fontWeightLight: 300,
     fontWeightRegular: 400,

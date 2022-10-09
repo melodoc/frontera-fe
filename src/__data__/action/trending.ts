@@ -1,30 +1,20 @@
 /* eslint-disable @typescript-eslint/no-shadow */
-import { trendingErr, trendingRes } from "api/trending/trending";
+import { createAsyncThunk } from "@reduxjs/toolkit";
 
-import { success, error, init } from "../slice/trending";
+import { trendingRes } from "api/trending/trending";
+import { handleError } from "services/handle-error";
+import { store } from "__data__/store";
 
-export const getCourses = () => async (dispatch) => {
-  dispatch(init());
-  const baseApiUrl = "https://httpbin.org/get";
+import { success, init, reset } from "../slice/trending";
 
-  const response = await fetch(`${baseApiUrl}`, {
-    method: "GET",
-    headers: {
-      "Content-Type": "application/json;charset=utf-8",
-    },
-  });
-
-  if (response.ok) {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const result = await response.json();
-    dispatch(success(trendingRes.themes));
-  } else {
-    try {
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      const result = await response.json();
-      dispatch(error(trendingErr.errors));
-    } catch (error) {
-      console.error(error);
-    }
+export const getCourses = createAsyncThunk("data/suggestions", async () => {
+  store.dispatch(init());
+  try {
+    // const { data } = await api.get<Array<Card>>(APIRoute.Trends);
+    // store.dispatch(success(data))
+    store.dispatch(success(trendingRes.themes));
+  } catch (error) {
+    handleError(error);
+    store.dispatch(reset());
   }
-};
+});

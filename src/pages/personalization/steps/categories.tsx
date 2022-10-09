@@ -1,16 +1,13 @@
 import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { useTranslation } from "react-i18next";
-import {
-  Box,
-  FormGroup,
-  Button,
-  FormControlLabel,
-  Checkbox,
-} from "@mui/material";
+import { Box, FormGroup, FormControlLabel, Checkbox } from "@mui/material";
+
+import { UIButton } from "components/ui-button/ui-button";
 
 import { getThemes } from "../../../__data__/action/themes";
 import { Loader } from "../../../components/loader/loader";
+import { useAppSelector } from "../../../__data__/store/hooks";
 
 export const ChooseCategories = ({ moveNextStep }) => {
   const { t } = useTranslation();
@@ -26,14 +23,9 @@ export const ChooseCategories = ({ moveNextStep }) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const { isLoading } = useSelector((state: any) => ({
+  const { isLoading, themes } = useAppSelector((state) => ({
     isLoading: state.themes.loading,
-  }));
-  const { themes } = useSelector((state: any) => ({
     themes: state.themes.themes,
-  }));
-  const { errors } = useSelector((state: any) => ({
-    errors: state.themes.errors,
   }));
 
   return (
@@ -63,20 +55,9 @@ export const ChooseCategories = ({ moveNextStep }) => {
           </FormGroup>
         )
       )}
-      {errors && (
-        <span>
-          {errors.find((error) => error.field === "themes")?.text ?? ""}
-        </span>
-      )}
-      <Button
-        type="submit"
-        color="primary"
-        variant="contained"
-        size="large"
-        sx={{ mb: 3 }}
-      >
+      <UIButton onClick={() => {}} size="large">
         {t("personalization.lang.button")}
-      </Button>
+      </UIButton>
     </Box>
   );
 };

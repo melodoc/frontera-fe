@@ -1,41 +1,75 @@
-import { Link as ConnectedLink } from "react-router-dom";
-import i18next from "i18next";
-import { Link, SvgIcon } from "@mui/material";
-
 import { URLs } from "__data__/urls";
+import { UITypography } from "components/ui-typography/ui-typography";
 
-import { Link as UILink } from "../link/link";
-import { AccountBar } from "../account-bar/account-bar";
+import { UIIconInput } from "../ui-icon-input/ui-icon-input";
+import { UIButton } from "../ui-button/ui-button";
+import logo from "../../assets/icons/logo.svg";
 import style from "./header.module.scss";
 
-function HomeIcon(props) {
-  return (
-    <SvgIcon {...props}>
-      <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
-    </SvgIcon>
-  );
+interface HeaderProps {
+  isLoggedIn?: boolean;
+  showSearch?: boolean;
 }
 
-export const Header = () => {
+export const Header = ({ isLoggedIn, showSearch }: HeaderProps) => {
   return (
-    <div className={style.HeaderWrapper}>
-      <header className={style.Header}>
-        <nav className={style.HeaderNav}>
-          <a className={style.NavLogo} href={URLs.home.url}>
-            {HomeIcon}
-          </a>
-          <Link component="a" variant="body2" href={URLs.home.url}>
-            {HomeIcon}
-          </Link>
-          <UILink to={URLs.home.url} as={ConnectedLink}>
-            {i18next.t("js.navigation.home")}
-          </UILink>
-          <UILink to={URLs.catalogCourses.url} as={ConnectedLink}>
-            {i18next.t("js.navigation.suggestion")}
-          </UILink>
-        </nav>
-        <AccountBar />
-      </header>
-    </div>
+    <header className={style.header}>
+      <nav className={style.header__nav}>
+        <a className={style.header__link} href={URLs.home.url}>
+          <img className={style.header__link_img} src={logo} alt="Frontera" />
+        </a>
+        {showSearch && (
+          <form>
+            <UIIconInput
+              label="Поиск"
+              type="text"
+              buttonType="submit"
+              icon="search"
+            />
+          </form>
+        )}
+      </nav>
+      <div className={style.header__account}>
+        <UITypography
+          variant="caption"
+          typographyStyle={{
+            fontWeight: "bold",
+            uppercase: true,
+            color: "secondary",
+          }}
+        >
+          Курсы
+        </UITypography>
+        <UITypography
+          variant="caption"
+          typographyStyle={{
+            fontWeight: "bold",
+            uppercase: true,
+            color: "secondary",
+          }}
+        >
+          en
+        </UITypography>
+        {isLoggedIn ? (
+          <>
+            <UIButton onClick={() => {}} theme="secondary" size="small">
+              Мои курсы
+            </UIButton>
+            <UIButton onClick={() => {}} theme="secondary" size="small">
+              Выйти
+            </UIButton>
+          </>
+        ) : (
+          <>
+            <UIButton onClick={() => {}} theme="secondary" size="small">
+              Войти
+            </UIButton>
+            <UIButton onClick={() => {}} theme="secondary" size="small">
+              Регистрация
+            </UIButton>
+          </>
+        )}
+      </div>
+    </header>
   );
 };

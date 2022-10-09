@@ -3,20 +3,24 @@
 :root {
   /* color pallete */
   --black-transparent: rgba(0, 1, 1, 0.2);
+  --black: #000000;
   --gray-light: #b3b6b6;
   --gray: #757575;
   --white: #ffffff;
+  --gray-1: #F8F8F8;
 
-  --purple-primary: #541594;
+  --purple-primary: #2D2B5C;
   --purple-dark: #2b1f33;
   --blue-magenta: rgba(60,17,134,0.3);
+  --text-main: #2D2B5C;
+
   
   --link: #8d6fdd;
   --link-hovered: #a199c7;
 
   /* font sizes */
 
-  --font: 'Montserrat', 'Century Gothic', 'Arial', sans-serif;
+  --font: 'Roboto', 'Arial', sans-serif;
   --font-size: 16px;
   --font-size-small: 14px;
   --font-size-medium: 24px;
@@ -31,9 +35,9 @@
   --font-weight-bold: 500;
 
   /* offsets */
+  --offset: 24px;
   --offset-small: 8px;
   --offset-medium: 16px;
-  --offset: 24px;
   --offset-large: 32px;
   --offset-extra-large: 48px;
   --offset-superior-large: 72px;
@@ -49,8 +53,8 @@ html {
 
   color: var(--purple-primary);
 
-  font-size: var(--font-size);
   font-family: var(--font);
+  font-size: var(--font-size);
   
   min-width: 480px;
   min-height: 100%;
@@ -78,4 +82,8 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.MuiOutlinedInput-root{
+  border-radius: 0px !important;
 }
