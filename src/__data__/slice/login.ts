@@ -1,6 +1,6 @@
 /* eslint-disable no-param-reassign */
 // TODO: Fix later
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 type LoginState = {
   token: string;
@@ -8,12 +8,12 @@ type LoginState = {
 };
 
 const initialState: LoginState = {
-  token: "",
-  loading: false,
+  token: '',
+  loading: false
 };
 
 const slice = createSlice({
-  name: "login",
+  name: 'login',
   initialState,
   reducers: {
     success(state, action: PayloadAction<string>) {
@@ -25,8 +25,8 @@ const slice = createSlice({
     },
     reset(state) {
       state.loading = false;
-    },
-  },
+    }
+  }
 });
 
 export const { init, success, reset } = slice.actions;

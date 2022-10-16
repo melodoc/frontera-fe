@@ -22,14 +22,7 @@ export const whiteLogo = (
       />
     </g>
     <defs>
-      <linearGradient
-        id="paint0_linear"
-        x1="20.1525"
-        x2="20.1525"
-        y1="9.12292"
-        y2="43"
-        gradientUnits="userSpaceOnUse"
-      >
+      <linearGradient id="paint0_linear" x1="20.1525" x2="20.1525" y1="9.12292" y2="43" gradientUnits="userSpaceOnUse">
         <stop stopColor="#FB6D3A" stopOpacity=".85" />
         <stop offset="1" stopColor="#FB6D3A" stopOpacity=".11" />
       </linearGradient>
@@ -61,14 +54,7 @@ export const purpleLogo = (
       />
     </g>
     <defs>
-      <linearGradient
-        id="paint0_linear"
-        x1="20.1525"
-        x2="20.1525"
-        y1="9.12292"
-        y2="43"
-        gradientUnits="userSpaceOnUse"
-      >
+      <linearGradient id="paint0_linear" x1="20.1525" x2="20.1525" y1="9.12292" y2="43" gradientUnits="userSpaceOnUse">
         <stop stopColor="#FB6D3A" stopOpacity=".85" />
         <stop offset="1" stopColor="#FB6D3A" stopOpacity=".11" />
       </linearGradient>

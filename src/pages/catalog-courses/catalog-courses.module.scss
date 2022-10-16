@@ -1,7 +1,9 @@
+@import '../../styles/variables.scss';
+
 .Container {
   width: 1200px;
   margin: 0 auto;
-  padding: var(--offset-small) 0;
+  padding: $offset-small 0;
 }
 
 @media screen and (min-width: 900px) and (max-width: 1279.98px) {

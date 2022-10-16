@@ -1,0 +1,30 @@
+@import '../../../styles/variables.scss';
+
+$icon-user-size: 18px;
+
+.input__button {
+  border: none;
+  background-color: transparent;
+  font: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: $white;
+  padding: 0;
+  position: relative;
+
+  &_user {
+    padding-left: calc($icon-user-size + 9px);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: url('../../../assets/icons/user.svg') no-repeat;
+      z-index: 2;
+      width: $icon-user-size;
+      height: $icon-user-size;
+    }
+  }
+}

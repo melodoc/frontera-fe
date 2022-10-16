@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .Wrapper {
   width: 30px;
   height: 30px;
@@ -40,24 +42,24 @@
   z-index: 1;
 
   width: 107px;
-  padding: var(--offset-medium) var(--offset-small);
-  
-  background-color: var(--white);
-  border: 0.5px solid var(--gray-light);
+  padding: $offset-medium $offset-small;
+
+  background-color: $white;
+  border: 0.5px solid $gray-light;
   border-radius: 0 0 4px 4px;
 }
 
 .DropdownLink {
   display: block;
   align-items: center;
-  
-  font-size: var(--font-size);
-  line-height: var(--line-height);
-  color: var(--purple-primary);
+
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $purple-primary;
 }
 
 @media screen and (max-width: 641.98px) {
   .DropdownButton {
     background: url('../../assets/icons/menu.svg') center no-repeat;
   }
-} 
+}

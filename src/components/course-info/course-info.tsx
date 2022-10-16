@@ -1,4 +1,4 @@
-import style from "./course-info.module.scss";
+import style from './course-info.module.scss';
 
 export const CourseInfo = ({ info, description }) => {
   return (

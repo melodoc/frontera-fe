@@ -1,17 +1,17 @@
 export const URLs = {
   auth: {
-    url: "/auth",
+    url: '/auth'
   },
   personalization: {
-    url: "/personalization",
+    url: '/personalization'
   },
   catalogCourses: {
-    url: "/catalog-courses",
+    url: '/catalog-courses'
   },
   home: {
-    url: "/home",
+    url: '/home'
   },
   coursePage: {
-    url: "/course-page",
-  },
+    url: '/course-page'
+  }
 };

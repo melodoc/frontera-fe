@@ -1,43 +1,43 @@
 export const themesRes = {
   status: {
-    code: 0,
+    code: 0
   },
   themes: [
     {
-      name: "HTML",
-      checked: true,
+      name: 'HTML',
+      checked: true
     },
     {
-      name: "CSS",
-      checked: false,
+      name: 'CSS',
+      checked: false
     },
     {
-      name: "JavaScript",
-      checked: false,
+      name: 'JavaScript',
+      checked: false
     },
     {
-      name: "git",
-      checked: true,
+      name: 'git',
+      checked: true
     },
     {
-      name: "webpack",
-      checked: false,
+      name: 'webpack',
+      checked: false
     },
     {
-      name: "TypeScript",
-      checked: false,
-    },
-  ],
+      name: 'TypeScript',
+      checked: false
+    }
+  ]
 };
 
 export const themesErr = {
   status: {
-    code: 2,
+    code: 2
   },
   errors: [
     {
-      field: "suggestions",
-      text: "Failed to set values",
-    },
-  ],
+      field: 'suggestions',
+      text: 'Failed to set values'
+    }
+  ]
 };

@@ -1,75 +1,92 @@
-import { URLs } from "__data__/urls";
-import { UITypography } from "components/ui-typography/ui-typography";
+import { URLs } from '__data__/urls';
+import { UIIconButton } from 'shared/components/ui-icon-button/ui-icon-button';
+import { UITypography } from 'shared/components/ui-typography/ui-typography';
 
-import { UIIconInput } from "../ui-icon-input/ui-icon-input";
-import { UIButton } from "../ui-button/ui-button";
-import logo from "../../assets/icons/logo.svg";
-import style from "./header.module.scss";
+import logo from '../../assets/icons/logo.svg';
+import style from './header.module.scss';
 
 interface HeaderProps {
   isLoggedIn?: boolean;
   showSearch?: boolean;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const Header = ({ isLoggedIn, showSearch }: HeaderProps) => {
   return (
-    <header className={style.header}>
-      <nav className={style.header__nav}>
-        <a className={style.header__link} href={URLs.home.url}>
-          <img className={style.header__link_img} src={logo} alt="Frontera" />
-        </a>
-        {showSearch && (
-          <form>
-            <UIIconInput
-              label="Поиск"
-              type="text"
-              buttonType="submit"
-              icon="search"
-            />
-          </form>
-        )}
-      </nav>
-      <div className={style.header__account}>
-        <UITypography
-          variant="caption"
-          typographyStyle={{
-            fontWeight: "bold",
-            uppercase: true,
-            color: "secondary",
-          }}
-        >
-          Курсы
-        </UITypography>
-        <UITypography
-          variant="caption"
-          typographyStyle={{
-            fontWeight: "bold",
-            uppercase: true,
-            color: "secondary",
-          }}
-        >
-          en
-        </UITypography>
-        {isLoggedIn ? (
-          <>
-            <UIButton onClick={() => {}} theme="secondary" size="small">
-              Мои курсы
-            </UIButton>
-            <UIButton onClick={() => {}} theme="secondary" size="small">
-              Выйти
-            </UIButton>
-          </>
-        ) : (
-          <>
-            <UIButton onClick={() => {}} theme="secondary" size="small">
-              Войти
-            </UIButton>
-            <UIButton onClick={() => {}} theme="secondary" size="small">
-              Регистрация
-            </UIButton>
-          </>
-        )}
-      </div>
-    </header>
+    <div className={style.container}>
+      <header className={style.header}>
+        <nav className={style.header__nav}>
+          <a className={style.header__link} href={URLs.home.url}>
+            <img className={style.header__link_img} src={logo} alt="Frontera" />
+          </a>
+          <a className={style.header__link} href={URLs.home.url}>
+            <UITypography
+              variant="span"
+              iconStyle={{
+                icon: 'storage'
+              }}
+              typographyStyle={{
+                fontWeight: 'bold',
+                color: 'secondary'
+              }}
+            >
+              Все курсы
+            </UITypography>
+          </a>
+          <a className={style.header__link} href={URLs.home.url}>
+            <UITypography
+              variant="span"
+              typographyStyle={{
+                fontWeight: 'bold',
+                color: 'secondary'
+              }}
+            >
+              Вебинары
+            </UITypography>
+          </a>
+          <a className={style.header__link} href={URLs.home.url}>
+            <UITypography
+              variant="span"
+              typographyStyle={{
+                fontWeight: 'bold',
+                color: 'secondary'
+              }}
+            >
+              Скрининг хард-скиллов
+            </UITypography>
+          </a>
+        </nav>
+        <div className={style.header__account}>
+          <UITypography
+            variant="span"
+            iconStyle={{
+              icon: 'chevronDown'
+            }}
+            typographyStyle={{
+              fontWeight: 'bold',
+              uppercase: true,
+              color: 'secondary'
+            }}
+          >
+            en
+          </UITypography>
+          <UITypography
+            variant="span"
+            typographyStyle={{
+              fontWeight: 'bold',
+              uppercase: true,
+              color: 'secondary'
+            }}
+          >
+            8 800 000-00-00
+          </UITypography>
+          {isLoggedIn ? (
+            <UIIconButton onClick={() => {}} icon="user" label="Выйти" buttonType="button" />
+          ) : (
+            <UIIconButton onClick={() => {}} icon="user" label="Войти" buttonType="button" />
+          )}
+        </div>
+      </header>
+    </div>
   );
 };

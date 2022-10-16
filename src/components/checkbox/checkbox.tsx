@@ -1,8 +1,8 @@
 /* eslint-disable react/destructuring-assignment */
-import { useState } from "react";
-import PropTypes from "prop-types";
+import { useState } from 'react';
+import PropTypes from 'prop-types';
 
-import style from "./checkbox.module.scss";
+import style from './checkbox.module.scss';
 
 // TODO: Fix eslint issues
 
@@ -30,9 +30,9 @@ export const Checkbox = (props) => {
 
 Checkbox.propTypes = {
   isChecked: PropTypes.bool,
-  label: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired
 };
 
 Checkbox.defaultProps = {
-  isChecked: false,
+  isChecked: false
 };

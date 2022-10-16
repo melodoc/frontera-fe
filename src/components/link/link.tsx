@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import style from "./link.module.scss";
+import style from './link.module.scss';
 
 type LinkProps = {
   to: string;
@@ -28,5 +28,5 @@ export const LinkReset: LinkType = ({ to, children, as: LinkComponent }) => (
 );
 
 Link.defaultProps = {
-  as: "a",
+  as: 'a'
 };

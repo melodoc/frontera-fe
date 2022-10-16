@@ -14,6 +14,6 @@ export class ClassBuilder {
   }
 
   public build(): string {
-    return this.classes.join(" ").trim();
+    return this.classes.join(' ').trim();
   }
 }
