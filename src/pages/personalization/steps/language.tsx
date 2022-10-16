@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import { Box, FormGroup, FormControlLabel, Checkbox } from "@mui/material";
 
 import { Loader } from "components/loader/loader";
-import { UIButton } from "components/ui-button/ui-button";
+import { UIButton } from "shared/components/ui-button/ui-button";
 
 import { useAppSelector } from "../../../__data__/store/hooks";
 

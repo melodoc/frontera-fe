@@ -1,7 +1,8 @@
 import classnames from "classnames";
 import { useMemo, createElement } from "react";
 
-import { ClassBuilder } from "../../utils/class-builder";
+import { ClassBuilder } from "utils/class-builder";
+
 import { UITypographyProps } from "./interfaces";
 import style from "./ui-typography.module.scss";
 
@@ -12,6 +13,7 @@ export const UITypography: React.FC<UITypographyProps> = ({
   title,
   typographyStyle,
   htmlFor,
+  iconStyle,
   onClick,
   onBlur,
   onFocus,
@@ -25,9 +27,11 @@ export const UITypography: React.FC<UITypographyProps> = ({
       case "h3":
       case "h4":
       case "h5":
-      case "label":
+      case "a":
+      case "span":
         return variant;
       case "body1":
+      case "label":
       case "body2":
       case "subtitle1":
       case "caption":
@@ -42,6 +46,8 @@ export const UITypography: React.FC<UITypographyProps> = ({
     [style.typography__weight_normal]: typographyStyle?.fontWeight === "normal",
     [style.typography__weight_bold]: typographyStyle?.fontWeight === "bold",
     [style.typography__weight_bolder]: typographyStyle?.fontWeight === "bolder",
+    [style.typography__icon_storage]: iconStyle?.icon === "storage",
+    [style.typography__icon_chevron_down]: iconStyle?.icon === "chevronDown",
   });
 
   const classes = useMemo(() => {

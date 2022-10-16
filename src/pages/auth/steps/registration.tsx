@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Container, Box, TextField } from "@mui/material";
 
-import { UIButton } from "components/ui-button/ui-button";
+import { UIButton } from "shared/components/ui-button/ui-button";
 import { User } from "interfaces/interfaces";
 
 import { URLs } from "../../../__data__/urls";

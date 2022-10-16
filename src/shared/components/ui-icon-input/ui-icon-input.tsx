@@ -1,7 +1,9 @@
 import { HTMLInputTypeAttribute } from "react";
 import classnames from "classnames";
 
-import { ButtonType, IconType } from "./types";
+import { IconType } from "shared/types/icon-type";
+import { ButtonType } from "shared/types/button-type";
+
 import style from "./ui-icon-input.module.scss";
 
 interface UIIconInputProps {

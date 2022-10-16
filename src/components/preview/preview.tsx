@@ -1,7 +1,7 @@
 import { useHistory, Link as ConnectedLink } from "react-router-dom";
 import i18next from "i18next";
 
-import { UIButton } from "../ui-button/ui-button";
+import { UIButton } from "../../shared/components/ui-button/ui-button";
 import { CourseHeader } from "../page-header";
 import { URLs } from "../../__data__/urls";
 import { Link as UILink } from "../link/link";

@@ -23,13 +23,7 @@ export const AuthPage = ({ children, title, descriptions }) => {
           {children}
         </Box>
       </Container>
-      <Footer
-        links={[
-          { id: "uhndk3uk", name: "Конфиденциальность", route: "/terms" },
-          { id: "kjn348cn", name: "Условия", route: "/conditions" },
-          { id: "dhbbk5", name: "Настройки", route: "/settings" },
-        ]}
-      />
+      <Footer />
     </ErrorBoundary>
   );
 };

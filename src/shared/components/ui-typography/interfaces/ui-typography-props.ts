@@ -1,5 +1,6 @@
 import { TypographyVariantTypes } from "../types";
-import { UITypographyStyle } from "./UITypographyStyle";
+import { UIIconStyle } from "./ui-icon-style";
+import { UITypographyStyle } from "./ui-typography-style";
 
 export interface UITypographyProps {
   variant: TypographyVariantTypes;
@@ -8,6 +9,7 @@ export interface UITypographyProps {
   title?: string;
   typographyStyle?: UITypographyStyle;
   htmlFor?: string;
+  iconStyle?: UIIconStyle;
   onClick?: (event: React.MouseEvent<HTMLElement>) => void;
   onBlur?: (event: React.FocusEvent<HTMLElement>) => void;
   onFocus?: (event: React.FocusEvent<HTMLElement>) => void;

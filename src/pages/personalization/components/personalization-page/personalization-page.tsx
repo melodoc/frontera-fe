@@ -23,13 +23,7 @@ export const PersonalizationPage = ({ children, title, descriptions }) => {
           {children}
         </Box>
       </Container>
-      <Footer
-        links={[
-          { id: "kjhbj4bh", name: "Конфиденциальность", route: "/terms" },
-          { id: "kjn42nk", name: "Условия", route: "/conditions" },
-          { id: "o6bh3jh", name: "Настройки", route: "/settings" },
-        ]}
-      />
+      <Footer />
     </ErrorBoundary>
   );
 };

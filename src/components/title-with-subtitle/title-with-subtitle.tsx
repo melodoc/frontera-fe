@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { Box } from "@mui/material";
 
-import { UITypography } from "components/ui-typography/ui-typography";
+import { UITypography } from "shared/components/ui-typography/ui-typography";
 
 export const TitleWithSubtitle = ({ title, descriptions }) => {
   return (
