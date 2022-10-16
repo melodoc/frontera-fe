@@ -1,13 +1,13 @@
-import { useEffect } from "react";
-import { useDispatch } from "react-redux";
-import { useTranslation } from "react-i18next";
-import { Box, FormGroup, FormControlLabel, Checkbox } from "@mui/material";
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { useTranslation } from 'react-i18next';
+import { Box, FormGroup, FormControlLabel, Checkbox } from '@mui/material';
 
-import { UIButton } from "shared/components/ui-button/ui-button";
+import { UIButton } from 'shared/components/ui-button/ui-button';
 
-import { getThemes } from "../../../__data__/action/themes";
-import { Loader } from "../../../components/loader/loader";
-import { useAppSelector } from "../../../__data__/store/hooks";
+import { getThemes } from '../../../__data__/action/themes';
+import { Loader } from '../../../components/loader/loader';
+import { useAppSelector } from '../../../__data__/store/hooks';
 
 export const ChooseCategories = ({ moveNextStep }) => {
   const { t } = useTranslation();
@@ -25,7 +25,7 @@ export const ChooseCategories = ({ moveNextStep }) => {
 
   const { isLoading, themes } = useAppSelector((state) => ({
     isLoading: state.themes.loading,
-    themes: state.themes.themes,
+    themes: state.themes.themes
   }));
 
   return (
@@ -33,9 +33,9 @@ export const ChooseCategories = ({ moveNextStep }) => {
       component="form"
       onSubmit={handleSubmit}
       sx={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "flex-start",
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'flex-start'
       }}
     >
       {isLoading ? (
@@ -45,18 +45,13 @@ export const ChooseCategories = ({ moveNextStep }) => {
           <FormGroup sx={{ mb: 3 }}>
             {themes.map((theme, index) => {
               const defaultCheckedProp = index === 0;
-              return (
-                <FormControlLabel
-                  control={<Checkbox defaultChecked={defaultCheckedProp} />}
-                  label={theme.name}
-                />
-              );
+              return <FormControlLabel control={<Checkbox defaultChecked={defaultCheckedProp} />} label={theme.name} />;
             })}
           </FormGroup>
         )
       )}
       <UIButton onClick={() => {}} size="large">
-        {t("personalization.lang.button")}
+        {t('personalization.lang.button')}
       </UIButton>
     </Box>
   );

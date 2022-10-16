@@ -1,6 +1,6 @@
-import { TypographyVariantTypes } from "../types";
-import { UIIconStyle } from "./ui-icon-style";
-import { UITypographyStyle } from "./ui-typography-style";
+import { TypographyVariantTypes } from '../types';
+import { UIIconStyle } from './ui-icon-style';
+import { UITypographyStyle } from './ui-typography-style';
 
 export interface UITypographyProps {
   variant: TypographyVariantTypes;

@@ -1,13 +1,13 @@
-import { configureStore } from "@reduxjs/toolkit";
+import { configureStore } from '@reduxjs/toolkit';
 
-import { createAPI } from "services/api";
+import { createAPI } from 'services/api';
 
-import reducer from "../reducers";
+import reducer from '../reducers';
 
 const middlewareOptions: any = {
   thunk: true,
   immutableCheck: false,
-  serializableCheck: false,
+  serializableCheck: false
 };
 
 export const api = createAPI();
@@ -15,15 +15,15 @@ export const api = createAPI();
 export const store = configureStore({
   reducer,
   devTools: {
-    name: "Frontera",
+    name: 'Frontera'
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
       ...middlewareOptions,
       thunk: {
-        extraArgument: api,
-      },
-    }),
+        extraArgument: api
+      }
+    })
 });
 
 export type RootState = ReturnType<typeof store.getState>;

@@ -1,26 +1,26 @@
-import PropTypes from "prop-types";
-import { Box } from "@mui/material";
+import PropTypes from 'prop-types';
+import { Box } from '@mui/material';
 
-import { UITypography } from "shared/components/ui-typography/ui-typography";
+import { UITypography } from 'shared/components/ui-typography/ui-typography';
 
 export const TitleWithSubtitle = ({ title, descriptions }) => {
   return (
     <>
       <Box
         sx={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          mb: 6,
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          mb: 6
         }}
       >
         <UITypography
           variant="h1"
           typographyStyle={{
-            fontWeight: "normal",
+            fontWeight: 'normal',
             uppercase: true,
-            color: "secondary",
-            marginBottom: true,
+            color: 'secondary',
+            marginBottom: true
           }}
         >
           {title}
@@ -28,10 +28,10 @@ export const TitleWithSubtitle = ({ title, descriptions }) => {
         <UITypography
           variant="caption"
           typographyStyle={{
-            fontWeight: "normal",
+            fontWeight: 'normal',
             uppercase: true,
-            color: "secondary",
-            marginBottom: true,
+            color: 'secondary',
+            marginBottom: true
           }}
         >
           {descriptions}
@@ -43,5 +43,5 @@ export const TitleWithSubtitle = ({ title, descriptions }) => {
 
 TitleWithSubtitle.propTypes = {
   title: PropTypes.string.isRequired,
-  descriptions: PropTypes.string.isRequired,
+  descriptions: PropTypes.string.isRequired
 };

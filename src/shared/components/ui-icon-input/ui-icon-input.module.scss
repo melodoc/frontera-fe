@@ -1,5 +1,5 @@
-@import "../../../styles/mixins.scss";
-@import "../../../styles/variables.scss";
+@import '../../../styles/mixins.scss';
+@import '../../../styles/variables.scss';
 
 .input {
   display: flex;
@@ -16,7 +16,7 @@
   &__label {
     flex-basis: 94%;
   }
-  
+
   &__button {
     position: relative;
 
@@ -41,16 +41,16 @@
     width: 16px;
     height: 16px;
 
-    content: "";
+    content: '';
     background-size: cover;
   }
 
   &__button_search:before {
-    background-image: url("../../assets/icons/search.svg");
+    background-image: url('../../assets/icons/search.svg');
   }
 
   &__button_heart:before {
-    background-image: url("../../assets/icons/heart.svg");
+    background-image: url('../../assets/icons/heart.svg');
   }
 
   &__input {
@@ -74,7 +74,6 @@
 
     text-transform: uppercase;
   }
-
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279.98px) {

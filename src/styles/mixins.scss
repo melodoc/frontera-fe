@@ -1,29 +1,29 @@
-@import "./variables.scss";
+@import './variables.scss';
 
 @mixin base-font {
-    font-family: $font-family;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 @mixin primary-button {
-    color: $purple-primary;
-    background-color: $white;
-    box-shadow: 0px 2px 2px $black-transparent;
-    transition: all 0.2s ease-in-out;
+  color: $purple-primary;
+  background-color: $white;
+  box-shadow: 0px 2px 2px $black-transparent;
+  transition: all 0.2s ease-in-out;
 }
 
 @mixin container-primary {
-    display: flex;
-    justify-content: center;
-    background-color: $purple-primary;
+  display: flex;
+  justify-content: center;
+  background-color: $purple-primary;
 }
 
 @mixin container-child {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1183px;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1183px;
+  width: 100%;
 }

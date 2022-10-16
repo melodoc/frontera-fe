@@ -1,9 +1,9 @@
-import { URLs } from "__data__/urls";
-import { UIIconButton } from "shared/components/ui-icon-button/ui-icon-button";
-import { UITypography } from "shared/components/ui-typography/ui-typography";
+import { URLs } from '__data__/urls';
+import { UIIconButton } from 'shared/components/ui-icon-button/ui-icon-button';
+import { UITypography } from 'shared/components/ui-typography/ui-typography';
 
-import logo from "../../assets/icons/logo.svg";
-import style from "./header.module.scss";
+import logo from '../../assets/icons/logo.svg';
+import style from './header.module.scss';
 
 interface HeaderProps {
   isLoggedIn?: boolean;
@@ -23,11 +23,11 @@ export const Header = ({ isLoggedIn, showSearch }: HeaderProps) => {
             <UITypography
               variant="span"
               iconStyle={{
-                icon: "storage",
+                icon: 'storage'
               }}
               typographyStyle={{
-                fontWeight: "bold",
-                color: "secondary",
+                fontWeight: 'bold',
+                color: 'secondary'
               }}
             >
               Все курсы
@@ -37,8 +37,8 @@ export const Header = ({ isLoggedIn, showSearch }: HeaderProps) => {
             <UITypography
               variant="span"
               typographyStyle={{
-                fontWeight: "bold",
-                color: "secondary",
+                fontWeight: 'bold',
+                color: 'secondary'
               }}
             >
               Вебинары
@@ -48,8 +48,8 @@ export const Header = ({ isLoggedIn, showSearch }: HeaderProps) => {
             <UITypography
               variant="span"
               typographyStyle={{
-                fontWeight: "bold",
-                color: "secondary",
+                fontWeight: 'bold',
+                color: 'secondary'
               }}
             >
               Скрининг хард-скиллов
@@ -60,12 +60,12 @@ export const Header = ({ isLoggedIn, showSearch }: HeaderProps) => {
           <UITypography
             variant="span"
             iconStyle={{
-              icon: "chevronDown",
+              icon: 'chevronDown'
             }}
             typographyStyle={{
-              fontWeight: "bold",
+              fontWeight: 'bold',
               uppercase: true,
-              color: "secondary",
+              color: 'secondary'
             }}
           >
             en
@@ -73,27 +73,17 @@ export const Header = ({ isLoggedIn, showSearch }: HeaderProps) => {
           <UITypography
             variant="span"
             typographyStyle={{
-              fontWeight: "bold",
+              fontWeight: 'bold',
               uppercase: true,
-              color: "secondary",
+              color: 'secondary'
             }}
           >
             8 800 000-00-00
           </UITypography>
           {isLoggedIn ? (
-            <UIIconButton
-              onClick={() => {}}
-              icon="user"
-              label="Выйти"
-              buttonType="button"
-            />
+            <UIIconButton onClick={() => {}} icon="user" label="Выйти" buttonType="button" />
           ) : (
-            <UIIconButton
-              onClick={() => {}}
-              icon="user"
-              label="Войти"
-              buttonType="button"
-            />
+            <UIIconButton onClick={() => {}} icon="user" label="Войти" buttonType="button" />
           )}
         </div>
       </header>

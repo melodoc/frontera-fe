@@ -1,12 +1,12 @@
-import { StrictMode } from "react";
-import { I18nextProvider } from "react-i18next";
-import { ThemeProvider } from "@mui/material/styles";
-import ReactDOM from "react-dom";
+import { StrictMode } from 'react';
+import { I18nextProvider } from 'react-i18next';
+import { ThemeProvider } from '@mui/material/styles';
+import ReactDOM from 'react-dom';
 
-import { theme } from "common/theme";
+import { theme } from 'common/theme';
 
-import { i18n } from "./common/i18n";
-import { App } from "./app";
+import { i18n } from './common/i18n';
+import { App } from './app';
 
 ReactDOM.render(
   <StrictMode>
@@ -16,5 +16,5 @@ ReactDOM.render(
       </ThemeProvider>
     </I18nextProvider>
   </StrictMode>,
-  document.getElementById("root")
+  document.getElementById('root')
 );

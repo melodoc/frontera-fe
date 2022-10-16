@@ -1,1 +1,1 @@
-export * from "./typography-variant-types";
+export * from './typography-variant-types';

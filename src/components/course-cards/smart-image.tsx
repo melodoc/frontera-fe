@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-import style from "./smart-image.module.scss";
+import style from './smart-image.module.scss';
 
 export const SmartImage = ({ path }) => {
-  const defaultImageUrl = "assets/images/code.jpg";
+  const defaultImageUrl = 'assets/images/code.jpg';
 
   const [imgSrc, setImgSrc] = useState(path);
 

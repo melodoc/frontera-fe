@@ -1,15 +1,15 @@
-@import "../../styles/variables.scss";
+@import '../../styles/variables.scss';
 
 .PageHeader {
   margin: 0;
   padding: $offset 0;
-  
+
   font-weight: $font-weight-bold;
   font-size: $font-size-medium;
   line-height: $line-height-medium;
-  
+
   text-align: left;
-  
+
   color: $purple-primary;
 }
 
@@ -21,7 +21,7 @@
   font-weight: $font-weight-bold;
   font-size: $font-size-large;
   line-height: $line-height-large;
-  
+
   color: $white;
 }
 
@@ -31,7 +31,7 @@
     font-size: $font-size-medium;
     line-height: $line-height-medium;
   }
-  
+
   .CourseHeader {
     font-weight: $font-weight-bold;
     font-size: $font-size-medium;

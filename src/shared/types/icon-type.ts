@@ -1,1 +1,1 @@
-export type IconType = "search" | "heart" | "storage" | "chevronDown" | "user";
+export type IconType = 'search' | 'heart' | 'storage' | 'chevronDown' | 'user';

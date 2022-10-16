@@ -1,4 +1,4 @@
-@import "../../styles/variables.scss";
+@import '../../styles/variables.scss';
 
 .Container {
   width: 1200px;
@@ -8,18 +8,18 @@
 
 @media screen and (min-width: 900px) and (max-width: 1279.98px) {
   .Container {
-   width: 776px;
+    width: 776px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 899.98px) {
   .Container {
     width: 648px;
-   }
+  }
 }
 
 @media screen and (max-width: 767.98px) {
   .Container {
     width: 320px;
-   }
+  }
 }

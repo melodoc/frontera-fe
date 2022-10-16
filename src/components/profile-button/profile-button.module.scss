@@ -1,4 +1,4 @@
-@import "../../styles/variables.scss";
+@import '../../styles/variables.scss';
 
 .Wrapper {
   width: 30px;
@@ -43,7 +43,7 @@
 
   width: 107px;
   padding: $offset-medium $offset-small;
-  
+
   background-color: $white;
   border: 0.5px solid $gray-light;
   border-radius: 0 0 4px 4px;
@@ -52,7 +52,7 @@
 .DropdownLink {
   display: block;
   align-items: center;
-  
+
   font-size: $font-size;
   line-height: $line-height;
   color: $purple-primary;
@@ -62,4 +62,4 @@
   .DropdownButton {
     background: url('../../assets/icons/menu.svg') center no-repeat;
   }
-} 
+}
