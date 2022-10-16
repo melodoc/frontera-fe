@@ -1,8 +1,8 @@
 /* eslint-disable no-param-reassign */
 // TODO: Fix later
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-import { Data } from "../../interfaces/interfaces";
+import { Data } from '../../interfaces/interfaces';
 
 type DetailCourseState = {
   data: Data;
@@ -11,22 +11,22 @@ type DetailCourseState = {
 
 const initialState: DetailCourseState = {
   data: {
-    id: "0",
-    title: "",
-    description: "",
+    id: '0',
+    title: '',
+    description: '',
     info: {
       authors: [],
-      language: "",
-      lastUpdate: "",
-      duration: "",
+      language: '',
+      lastUpdate: '',
+      duration: ''
     },
-    videoList: [],
+    videoList: []
   },
-  loading: false,
+  loading: false
 };
 
 const slice = createSlice({
-  name: "detailCourse",
+  name: 'detailCourse',
   initialState,
   reducers: {
     success(state, action: PayloadAction<Data>) {
@@ -38,8 +38,8 @@ const slice = createSlice({
     },
     reset(state) {
       state.loading = false;
-    },
-  },
+    }
+  }
 });
 
 export const { success, init, reset } = slice.actions;

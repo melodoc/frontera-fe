@@ -1,12 +1,12 @@
 /* eslint-disable react/sort-comp */
 /* eslint-disable max-classes-per-file */
 /* eslint-disable react/destructuring-assignment */
-import React from "react";
+import React from 'react';
 
-import { URLs } from "../../__data__/urls";
-import { SmartImage } from "./smart-image";
-import style from "./course-cards.module.scss";
-import { Card } from "../../interfaces/interfaces";
+import { URLs } from '../../__data__/urls';
+import { SmartImage } from './smart-image';
+import style from './course-cards.module.scss';
+import { Card } from '../../interfaces/interfaces';
 
 interface CourseCardsProps {
   readonly cards: Array<Card>;
@@ -18,24 +18,18 @@ interface CourseCardsState {
 
 // TODO: Fix classes issues
 
-export class CourseCards extends React.Component<
-  CourseCardsProps,
-  CourseCardsState
-> {
+export class CourseCards extends React.Component<CourseCardsProps, CourseCardsState> {
   constructor(props) {
     super(props);
     this.state = {
       // eslint-disable-next-line react/no-unused-state
-      imgSrc: "",
+      imgSrc: ''
     };
   }
 
   static renderCatalogLink(card: any) {
     return (
-      <a
-        className={style.CatalogLink}
-        href={`${URLs.coursePage.url}/${card.id}`}
-      >
+      <a className={style.CatalogLink} href={`${URLs.coursePage.url}/${card.id}`}>
         {this.renderHeader(card)}
       </a>
     );
@@ -63,9 +57,7 @@ export class CourseCards extends React.Component<
       <ul className={style.CatalogList}>
         {this.props.cards.map((card, i) => (
           <li className={style.CardContainer} key={card.label + i}>
-            {this.props.showNumber && (
-              <span className={style.Index}>{i + 1}</span>
-            )}
+            {this.props.showNumber && <span className={style.Index}>{i + 1}</span>}
             {CourseCards.renderItemCard(card)}
           </li>
         ))}

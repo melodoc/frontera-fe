@@ -1,6 +1,6 @@
-import { t } from "i18next";
-import { useEffect, useState } from "react";
-import { Helmet } from "react-helmet-async";
+import { t } from 'i18next';
+import { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 
 /* eslint-disable */
 interface IHeadProps {
@@ -14,7 +14,7 @@ export const Head = ({ title, isLoading }: IHeadProps): JSX.Element => {
 
   useEffect(() => {
     if (isLoading) {
-      setTitleState(`${t("Loading...")}`);
+      setTitleState(`${t('Loading...')}`);
     }
   }, [t]);
 

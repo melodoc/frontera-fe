@@ -1,5 +1,7 @@
+@import '../../styles/variables.scss';
+
 .CheckboxLabel {
-  color: var(--link);
+  color: $link;
   margin-left: 8px;
 
   cursor: pointer;
@@ -7,16 +9,16 @@
 
 .CheckboxLabel:hover,
 .CheckboxLabel:focus {
-  color: var(--link-hovered);
+  color: $link-hovered;
 }
 
 @media screen and (max-width: 532.98px) {
   .Checkbox {
-    margin-right: var(--offset-small);
+    margin-right: $offset-small;
   }
 
   .CheckboxLabel {
-    font-size: var(--font-size-small);
-    line-height: var(--line-height-small);
+    font-size: $font-size-small;
+    line-height: $line-height-small;
   }
 }

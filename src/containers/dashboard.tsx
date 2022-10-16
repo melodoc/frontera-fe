@@ -1,12 +1,12 @@
-import i18next from "i18next";
-import { Switch, Route, Redirect } from "react-router-dom";
+import i18next from 'i18next';
+import { Switch, Route, Redirect } from 'react-router-dom';
 
-import { URLs } from "../__data__/urls";
-import { Auth } from "../pages/auth/auth";
-import { Personalization } from "../pages/personalization/personalization";
-import { DetailCourse } from "../pages/detail-course/detail-course";
-import { HomePage } from "./homepage";
-import { CatalogCourses } from "../pages/catalog-courses/catalog-courses";
+import { URLs } from '../__data__/urls';
+import { Auth } from '../pages/auth/auth';
+import { Personalization } from '../pages/personalization/personalization';
+import { DetailCourse } from '../pages/detail-course/detail-course';
+import { HomePage } from './homepage';
+import { CatalogCourses } from '../pages/catalog-courses/catalog-courses';
 
 export const Dashboard = () => {
   return (
@@ -26,12 +26,10 @@ export const Dashboard = () => {
       <Route path={URLs.home.url}>
         <HomePage />
       </Route>
-      <Route path={`${URLs.coursePage.url}/:id`}>
-        {(props) => <DetailCourse courseId={props.match?.params.id} />}
-      </Route>
+      <Route path={`${URLs.coursePage.url}/:id`}>{(props) => <DetailCourse courseId={props.match?.params.id} />}</Route>
       {/* TODO: Add notFound screen */}
       <Route path="*">
-        <h1>{i18next.t("js.navigation.notFound")}</h1>
+        <h1>{i18next.t('js.navigation.notFound')}</h1>
       </Route>
     </Switch>
   );

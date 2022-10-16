@@ -1,10 +1,7 @@
-/* eslint-disable react/default-props-match-prop-types */
-/* eslint-disable react/forbid-prop-types */
-import React from "react";
-import PropTypes from "prop-types";
-import { Typography, Link } from "@mui/material";
+import { UITypography } from 'shared/components/ui-typography/ui-typography';
 
-import style from "./footer.module.scss";
+import logo from '../../assets/icons/logo.svg';
+import style from './footer.module.scss';
 
 interface FooterLinks {
   id: string;
@@ -12,53 +9,55 @@ interface FooterLinks {
   route: string;
 }
 
-interface FooterProps {
-  readonly links: Array<FooterLinks>;
-}
+const links: FooterLinks[] = [
+  { id: '8cadb93', name: 'О нас', route: '/about' },
+  { id: 'b893546', name: 'Курсы', route: '/courses' },
+  { id: 'f4c18a24', name: 'Цены', route: '/prices' },
+  { id: '4dffba48', name: 'Команда', route: '/team' },
+  { id: 'cf5cbc76', name: 'FAQ', route: '/faq' },
+  { id: '68525eaw', name: 'Написать нам', route: '/message' },
+  { id: '4bc9332w', name: 'Вакансии', route: '/jobs' },
+  { id: 'ab4133d7', name: 'Контакты', route: '/contacts' },
+  { id: 'dc2e6ec6', name: 'Twitter', route: '/twitter' },
+  { id: 'e7eb5eab', name: 'Telegram', route: '/telegram' },
+  { id: '3e1492cf', name: 'Instagram', route: '/instagram' },
+  { id: 'ff3df6ef', name: 'Лицензии', route: '/licenses' }
+];
 
-function Copyright(props: any) {
+export const Footer = () => {
   return (
-    <Typography
-      variant="body2"
-      color="text.secondary"
-      align="center"
-      sx={{
-        display: "flex",
-        justifyContent: "flex-start",
-        alignItems: "center",
-        flexWrap: "wrap",
-        mr: 6,
-      }}
-      {...props}
-    >
-      <Link color="inherit" href="/home" />
-      {new Date().getFullYear()}
-    </Typography>
-  );
-}
-export const Footer: React.FC<FooterProps> = ({ links }) => {
-  const linksTemplate = links.map((link) => (
-    <li className={style.FooterItem} key={link.id}>
-      <a className={style.FooterLink} href={link.route}>
-        {link.name}
-      </a>
-    </li>
-  ));
-
-  return (
-    <>
-      <footer className={style.FooterWrapper}>
-        <ul className={style.FooterList}>{linksTemplate}</ul>
-        <Copyright />
+    <div className={style.container}>
+      <footer className={style.footer}>
+        <div className={style.footer__info}>
+          <img className={style.footer__info_logo} src={logo} alt="Frontera" />
+          <UITypography
+            variant="label"
+            typographyStyle={{
+              fontWeight: 'bold',
+              color: 'secondary'
+            }}
+          >
+            Frontera. Сделано ❤️ melodoc {new Date().getFullYear()}
+          </UITypography>
+        </div>
+        <ul className={style.footer__list}>
+          {links.map((link) => (
+            <li key={link.id}>
+              <a className={style.footer__link} href={link.route}>
+                <UITypography
+                  variant="span"
+                  typographyStyle={{
+                    fontWeight: 'normal',
+                    color: 'secondary'
+                  }}
+                >
+                  {link.name}
+                </UITypography>
+              </a>
+            </li>
+          ))}
+        </ul>
       </footer>
-    </>
+    </div>
   );
-};
-
-Footer.propTypes = {
-  links: PropTypes.array.isRequired,
-};
-
-Footer.defaultProps = {
-  links: [{ id: "rlijn3", name: "Конфиденциальность", route: "/terms" }],
 };

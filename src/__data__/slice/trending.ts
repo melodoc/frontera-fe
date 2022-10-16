@@ -1,8 +1,8 @@
 /* eslint-disable no-param-reassign */
 // TODO: Fix later
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-import { Card } from "../../interfaces/interfaces";
+import { Card } from '../../interfaces/interfaces';
 
 type TrendingState = {
   themes: Array<Card>;
@@ -11,11 +11,11 @@ type TrendingState = {
 
 const initialState: TrendingState = {
   themes: [],
-  loading: false,
+  loading: false
 };
 
 const slice = createSlice({
-  name: "trending",
+  name: 'trending',
   initialState,
   reducers: {
     success(state, action: PayloadAction<Array<Card>>) {
@@ -27,8 +27,8 @@ const slice = createSlice({
     },
     reset(state) {
       state.loading = false;
-    },
-  },
+    }
+  }
 });
 
 export const { success, init, reset } = slice.actions;

@@ -1,0 +1,62 @@
+@import '../../../styles/variables.scss';
+
+$icon-storage-size: 20px;
+$icon-chevron-down-size: 10px;
+
+.typography {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  position: relative;
+
+  &__weight_normal {
+    font-weight: 400;
+  }
+  &__weight_bold {
+    font-weight: 500;
+  }
+  &__weight_bolder {
+    font-weight: 700;
+  }
+  &__uppercase {
+    text-transform: uppercase;
+  }
+  &__color_secondary {
+    color: $white;
+  }
+  &__color_primary {
+    color: $purple-primary;
+  }
+  &__margin {
+    margin-bottom: $offset-medium;
+  }
+  &__icon_storage {
+    padding-left: calc($icon-storage-size + 5px);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 4px;
+      left: 0;
+      background: url('../../../assets/icons/storage.svg') no-repeat;
+      z-index: 2;
+      width: $icon-storage-size;
+      height: 17px;
+    }
+  }
+
+  &__icon_chevron_down {
+    padding-right: calc($icon-chevron-down-size + 5px);
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 9px;
+      right: 0;
+      background: url('../../../assets/icons/down.svg') no-repeat;
+      z-index: 2;
+      width: $icon-chevron-down-size;
+      height: 7px;
+    }
+  }
+}

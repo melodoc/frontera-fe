@@ -1,0 +1,40 @@
+@import './assets/font.css';
+@import './styles/variables.scss';
+
+html {
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  color: $purple-primary;
+
+  font-family: $font-family;
+  font-size: $font-size;
+
+  min-width: 480px;
+  min-height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  background-color: $white;
+
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight-bold;
+  color: $purple-primary;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .Preview {
   position: relative;
   min-height: 630px;
@@ -10,7 +12,7 @@
   left: 0px;
   bottom: 0px;
   max-width: 300px;
-  padding: var(--offset-extra-large);
+  padding: $offset-extra-large;
 }
 
 .PreviewButtons {

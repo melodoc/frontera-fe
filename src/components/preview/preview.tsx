@@ -1,11 +1,11 @@
-import { useHistory, Link as ConnectedLink } from "react-router-dom";
-import i18next from "i18next";
+import { useHistory, Link as ConnectedLink } from 'react-router-dom';
+import i18next from 'i18next';
 
-import { UIButton } from "../ui-button/ui-button";
-import { CourseHeader } from "../page-header";
-import { URLs } from "../../__data__/urls";
-import { Link as UILink } from "../link/link";
-import style from "./preview.module.scss";
+import { UIButton } from '../../shared/components/ui-button/ui-button';
+import { CourseHeader } from '../page-header';
+import { URLs } from '../../__data__/urls';
+import { Link as UILink } from '../link/link';
+import style from './preview.module.scss';
 
 // TODO: Fix hardcode
 export const Preview = () => {
@@ -25,7 +25,7 @@ export const Preview = () => {
         </div>
       </div>
       <UILink to={URLs.catalogCourses.url} as={ConnectedLink}>
-        {i18next.t("js.navigation.suggestion")}
+        {i18next.t('js.navigation.suggestion')}
       </UILink>
     </section>
   );

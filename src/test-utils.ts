@@ -1,5 +1,5 @@
-import { act } from "react-dom/test-utils";
-import _ from "lodash";
+import { act } from 'react-dom/test-utils';
+import _ from 'lodash';
 
 export const multipleRequest = (mock, responses) =>
   act(async () => {

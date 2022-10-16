@@ -1,8 +1,8 @@
 /* eslint-disable react/no-access-state-in-setstate */
-import React from "react";
-import i18next from "i18next";
+import React from 'react';
+import i18next from 'i18next';
 
-import style from "./profile-button.module.scss";
+import style from './profile-button.module.scss';
 
 interface ProfileButtonProps {
   // eslint-disable-next-line react/no-unused-prop-types
@@ -12,10 +12,7 @@ interface ProfileButtonState {
   isOpened: boolean;
 }
 
-export class ProfileButton extends React.Component<
-  ProfileButtonProps,
-  ProfileButtonState
-> {
+export class ProfileButton extends React.Component<ProfileButtonProps, ProfileButtonState> {
   constructor(props) {
     super(props);
     this.state = { isOpened: false };
@@ -40,22 +37,22 @@ export class ProfileButton extends React.Component<
           <li className={style.DropdownItem}>
             {/* TODO: Fix links */}
             <a href="" className={style.DropdownLink}>
-              {i18next.t("js.navigation.viewHistory")}
+              {i18next.t('js.navigation.viewHistory')}
             </a>
           </li>
           <li className={style.DropdownItem}>
             <a href="" className={style.DropdownLink}>
-              {i18next.t("js.navigation.settings")}
+              {i18next.t('js.navigation.settings')}
             </a>
           </li>
           <li className={style.DropdownItem}>
             <a href="" className={style.DropdownLink}>
-              {i18next.t("js.navigation.help")}
+              {i18next.t('js.navigation.help')}
             </a>
           </li>
           <li className={style.DropdownItem}>
             <a href="" className={style.DropdownLink}>
-              {i18next.t("js.navigation.out")}
+              {i18next.t('js.navigation.out')}
             </a>
           </li>
         </ul>
@@ -65,11 +62,7 @@ export class ProfileButton extends React.Component<
     return (
       <div className={style.Wrapper}>
         <div className={style.Dropdown}>
-          <button
-            onClick={this.toggleState}
-            className={style.DropdownButton}
-            type="button"
-          />
+          <button onClick={this.toggleState} className={style.DropdownButton} type="button" />
           {dropdownMenu}
         </div>
       </div>
