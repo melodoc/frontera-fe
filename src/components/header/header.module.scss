@@ -1,15 +1,11 @@
+@import "../../styles/mixins.scss";
+
 .container {
-  display: flex;
-  justify-content: center;
+  @include container-primary;
   min-height: 110px;
-  background-color: var(--purple-primary);
 
   .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1183px;
-    width: 100%;
+    @include container-child;
 
     &__nav {
       display: flex;
