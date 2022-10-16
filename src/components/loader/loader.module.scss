@@ -1,5 +1,7 @@
+@import "../../styles/variables.scss";
+
 .Spinner {
-  margin: var(--offset-extra-large) auto var(--offset-extra-large);
+  margin: $offset-extra-large auto $offset-extra-large;
   width: 72px;
   text-align: center;
 }
@@ -7,7 +9,7 @@
 .Spinner > div {
   width: 16px;
   height: 16px;
-  background-color: var(--purple-primary);
+  background-color: $purple-primary;
 
   border-radius: 80%;
   display: inline-block;

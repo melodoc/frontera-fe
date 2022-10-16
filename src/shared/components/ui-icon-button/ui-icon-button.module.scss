@@ -1,3 +1,5 @@
+@import "../../../styles/variables.scss";
+
 $icon-user-size: 18px;
 
 .input__button {
@@ -7,7 +9,7 @@ $icon-user-size: 18px;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
-  color: var(--white);
+  color: $white;
   padding: 0;
   position: relative;
 

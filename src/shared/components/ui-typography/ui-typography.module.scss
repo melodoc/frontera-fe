@@ -1,3 +1,5 @@
+@import "../../../styles/variables.scss";
+
 $icon-storage-size: 20px;
 $icon-chevron-down-size: 10px;
 
@@ -20,13 +22,13 @@ $icon-chevron-down-size: 10px;
     text-transform: uppercase;
   }
   &__color_secondary {
-    color: var(--text-main);
+    color: $white;
   }
   &__color_primary {
-    color: var(--purple-primary);
+    color: $purple-primary;
   }
   &__margin {
-    margin-bottom: var(--offset-medium);
+    margin-bottom: $offset-medium;
   }
   &__icon_storage {
    padding-left: calc($icon-storage-size + 5px);

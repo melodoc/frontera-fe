@@ -1,4 +1,5 @@
 @import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
 
 .container {
   @include container-primary;
@@ -33,13 +34,13 @@
     }
 
     &__link {
-      padding: var(--offset-small) var(--offset-small);
+      padding: $offset-small $offset-small;
 
-      font-weight: var(--font-weight-bold);
-      font-size: var(--font-size-small);
-      line-height: var(--line-height-small);
+      font-weight: $font-weight-bold;
+      font-size: $font-size-small;
+      line-height: $line-height-small;
 
-      color: var(--gray);
+      color: $gray;
     }
 
     &__link:hover,

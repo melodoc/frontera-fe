@@ -1,40 +1,42 @@
+@import "../../styles/variables.scss";
+
 .CourseInfo {
   display: flex;
   justify-content:space-between;
-  margin-right: var(--offset-superior-large);
+  margin-right: $offset-superior-large;
 }
 
 .CourseRow {
-  margin: var(--offset-small) 0;
-  font-size: var(--font-size);
-  line-height: var(--line-height);
+  margin: $offset-small 0;
+  font-size: $font-size;
+  line-height: $line-height;
   box-sizing: content-box;
 }
 
 .CourseRow td {
-  padding-top: var(--offset-small);
+  padding-top: $offset-small;
   vertical-align: top;
 }
 
 .CourseTerm {
   width: 140px;
-  padding-right: var(--offset-medium);
+  padding-right: $offset-medium;
 }
 
 .CourseCell {
   width: 330px;
-  font-weight: var(--font-weight-bold);
+  font-weight: $font-weight-bold;
 }
 
 .CourseTable {
-  margin-bottom: var(--offset-large);
+  margin-bottom: $offset-large;
 }
 
 .CourseDescription {
   width: 650px;
   margin: 0;
-  margin-bottom: var(--offset-large);
+  margin-bottom: $offset-large;
   
-  font-size: var(--font-size);
-  line-height: var(--line-height);
+  font-size: $font-size;
+  line-height: $line-height;
 }

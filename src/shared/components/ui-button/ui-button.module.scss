@@ -1,4 +1,5 @@
 @import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
 
 .button {
   display: flex;
@@ -10,8 +11,8 @@
   height: 56px;
 
   font: inherit;
-  color: var(--white);
-  background-color: var(--purple-primary);
+  color: $white;
+  background-color: $purple-primary;
   border: none;
   text-transform: uppercase;
 
@@ -26,16 +27,16 @@
   }
 
   &:focus {
-    outline: 1px solid var(--blue-magenta);
+    outline: 1px solid $blue-magenta;
   }
 
   &__secondary {
     width: max-content;
     height: 32px;
 
-    color: var(--purple-primary);
-    background-color: var(--white);
-    border: 0.5px solid var(--purple-primary);
+    color: $purple-primary;
+    background-color: $white;
+    border: 0.5px solid $purple-primary;
   }
 
   &__size_large {

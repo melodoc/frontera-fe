@@ -1,8 +1,9 @@
 @import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
 
 .container {
   @include container-primary;
-  min-height: 110px;
+  min-height: $header-height;
 
   .header {
     @include container-child;

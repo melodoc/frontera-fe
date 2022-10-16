@@ -1,38 +1,40 @@
+@import "../../styles/variables.scss";
+
 .PageHeader {
   margin: 0;
-  padding: var(--offset) 0;
+  padding: $offset 0;
   
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-medium);
-  line-height: var(--line-height-medium);
+  font-weight: $font-weight-bold;
+  font-size: $font-size-medium;
+  line-height: $line-height-medium;
   
   text-align: left;
   
-  color: var(--purple-primary);
+  color: $purple-primary;
 }
 
 .CourseHeader {
   display: flex;
   align-items: center;
 
-  margin-bottom: var(--offset);
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-large);
-  line-height: var(--line-height-large);
+  margin-bottom: $offset;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-large;
+  line-height: $line-height-large;
   
-  color: var(--white);
+  color: $white;
 }
 
 @media screen and (max-width: 1279.98px) {
   .PageHeader {
-    font-weight: var(--font-weight-bold);
-    font-size: var(--font-size-medium);
-    line-height: var(--line-height-medium);
+    font-weight: $font-weight-bold;
+    font-size: $font-size-medium;
+    line-height: $line-height-medium;
   }
   
   .CourseHeader {
-    font-weight: var(--font-weight-bold);
-    font-size: var(--font-size-medium);
-    line-height: var(--line-height-medium);
+    font-weight: $font-weight-bold;
+    font-size: $font-size-medium;
+    line-height: $line-height-medium;
   }
 }

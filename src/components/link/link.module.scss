@@ -1,11 +1,13 @@
+@import "../../styles/variables.scss";
+
 .Link {
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size);
-  line-height: var(--line-height);
+  font-weight: $font-weight-bold;
+  font-size: $font-size;
+  line-height: $line-height;
 
-  color: var(--purple-primary);
+  color: $purple-primary;
 
-  padding: var(--offset-small) var(--offset-medium);
+  padding: $offset-small $offset-medium;
 }
 
 .Link:hover,
@@ -16,7 +18,7 @@
 }
 
 .Link:visited {
-  color: var(--gray);
+  color: $gray;
 }
 
 .LinkReset {
@@ -41,18 +43,18 @@
   height: 56px;
 
   font: inherit;
-  color: var(--white);
-  line-height: var(--line-height-large);
+  color: $white;
+  line-height: $line-height-large;
 
-  background-color: var(--purple-primary);
+  background-color: $purple-primary;
   border: none;
   border-radius: 8px;
 }
 
 .Button:hover {
-  color: var(--purple-primary);
+  color: $purple-primary;
 
-  background-color: var(--white);
+  background-color: $white;
   box-shadow: 0px 4px 4px var(--Link-hovered);
 
   transition: all 0.2s ease-in-out;
@@ -60,36 +62,36 @@
 
 @media screen and (min-width: 768px) and (max-width: 1279.98px) {
   .Link {
-    font-weight: var(--font-weight-bold);
-    font-size: var(--font-size);
-    line-height: var(--line-height);
+    font-weight: $font-weight-bold;
+    font-size: $font-size;
+    line-height: $line-height;
 
-    color: var(--purple-primary);
+    color: $purple-primary;
   }
 }
 
 @media screen and (min-width: 533px) and (max-width: 767.98px) {
   .Link {
-    padding: var(--offset-small) var(--offset-small);
+    padding: $offset-small $offset-small;
   }
 }
 
 @media screen and (max-width: 532.98px) {
   .Link {
-    font-weight: var(--font-weight-bold);
-    font-size: var(--font-size-small);
+    font-weight: $font-weight-bold;
+    font-size: $font-size-small;
   }
 
   .LinkReset {
-    font-size: var(--font-size-small);
-    line-height: var(--line-height-small);
+    font-size: $font-size-small;
+    line-height: $line-height-small;
   }
 
   .Button {
     width: 104px;
     height: 48px;
 
-    font-size: var(--font-size-small);
-    line-height: var(--line-height-small);
+    font-size: $font-size-small;
+    line-height: $line-height-small;
   }
 }

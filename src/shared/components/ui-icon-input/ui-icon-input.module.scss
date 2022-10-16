@@ -1,4 +1,5 @@
 @import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
 
 .input {
   display: flex;
@@ -10,7 +11,7 @@
   box-sizing: border-box;
   width: 340px;
   margin: 0 auto;
-  background-color: var(--gray-1);
+  background-color: $gray-1;
 
   &__label {
     flex-basis: 94%;
@@ -60,7 +61,7 @@
 
     border: transparent;
     outline: none;
-    color: var(--purple-primary);
+    color: $purple-primary;
 
     background: transparent;
     transition: 0.4s cubic-bezier(0, 0.8, 0, 1);
