@@ -19,7 +19,7 @@ export const TitleWithSubtitle = ({ title, descriptions }) => {
           typographyStyle={{
             fontWeight: 'normal',
             uppercase: true,
-            color: 'secondary',
+            color: 'primary',
             marginBottom: true
           }}
         >
@@ -30,7 +30,7 @@ export const TitleWithSubtitle = ({ title, descriptions }) => {
           typographyStyle={{
             fontWeight: 'normal',
             uppercase: true,
-            color: 'secondary',
+            color: 'primary',
             marginBottom: true
           }}
         >
