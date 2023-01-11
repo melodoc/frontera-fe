@@ -65,7 +65,8 @@ export const Registration = ({ moveNextStep }) => {
         sx={{
           display: 'flex',
           flexDirection: 'column',
-          alignItems: 'center'
+          alignItems: 'center',
+          marginBottom: 8
         }}
       >
         <TextField

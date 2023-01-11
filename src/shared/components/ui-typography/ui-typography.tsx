@@ -47,7 +47,8 @@ export const UITypography: React.FC<UITypographyProps> = ({
     [style.typography__weight_bold]: typographyStyle?.fontWeight === 'bold',
     [style.typography__weight_bolder]: typographyStyle?.fontWeight === 'bolder',
     [style.typography__icon_storage]: iconStyle?.icon === 'storage',
-    [style.typography__icon_chevron_down]: iconStyle?.icon === 'chevronDown'
+    [style.typography__icon_chevron_down]: iconStyle?.icon === 'chevronDown',
+    [style.typography__icon_user]: iconStyle?.icon === 'user'
   });
 
   const classes = useMemo(() => {

@@ -17,8 +17,8 @@ const steps = {
   },
   [AuthSteps.REGISTRATION_STEP]: {
     component: Registration,
-    title: 'auth.signUp.title',
-    descriptions: 'auth.signUp.descriptions',
+    title: 'auth.login.title',
+    descriptions: 'auth.login.descriptions',
     next: AuthSteps.LOGIN_STEP
   }
 };

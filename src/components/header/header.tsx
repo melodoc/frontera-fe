@@ -1,3 +1,6 @@
+import i18next from 'i18next';
+import { Link } from 'react-router-dom';
+
 import { URLs } from '__data__/urls';
 import { UIIconButton } from 'shared/components/ui-icon-button/ui-icon-button';
 import { UITypography } from 'shared/components/ui-typography/ui-typography';
@@ -45,15 +48,17 @@ export const Header = ({ isLoggedIn, showSearch }: HeaderProps) => {
             </UITypography>
           </a>
           <a className={style.header__link} href={URLs.home.url}>
-            <UITypography
-              variant="span"
-              typographyStyle={{
-                fontWeight: 'bold',
-                color: 'secondary'
-              }}
-            >
-              Скрининг хард-скиллов
-            </UITypography>
+            <Link to={URLs.catalogCourses.url}>
+              <UITypography
+                variant="span"
+                typographyStyle={{
+                  fontWeight: 'bold',
+                  color: 'secondary'
+                }}
+              >
+                {i18next.t('js.navigation.suggestion')}
+              </UITypography>
+            </Link>
           </a>
         </nav>
         <div className={style.header__account}>
@@ -80,8 +85,20 @@ export const Header = ({ isLoggedIn, showSearch }: HeaderProps) => {
           >
             8 800 000-00-00
           </UITypography>
-          {isLoggedIn ? (
-            <UIIconButton onClick={() => {}} icon="user" label="Выйти" buttonType="button" />
+          {!isLoggedIn ? (
+            <Link to={URLs.auth.url}>
+              <UITypography
+                variant="label"
+                iconStyle={{ icon: 'user' }}
+                typographyStyle={{
+                  fontWeight: 'bold',
+                  color: 'secondary'
+                }}
+                title="Выйти"
+              >
+                Выйти
+              </UITypography>
+            </Link>
           ) : (
             <UIIconButton onClick={() => {}} icon="user" label="Войти" buttonType="button" />
           )}

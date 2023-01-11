@@ -36,9 +36,7 @@
   "auth.signUp.form.error": "Пользователь уже существует",
 
   "auth.login.title": "Изучайте курсы в одном месте",
-  "auth.login.descriptions": "С возвращением! Пожалуйста, введите ваши учетные данные.",
-  "auth.signUp.title": "Изучайте курсы в одном месте",
-  "auth.signUp.descriptions": "Здравствуйте! Давайте создадим вашу учетную запись.",
+  "auth.login.descriptions": "Войдите в систему  или зарегистрируйтесь, если у вас ещё нет аккаунта",
   "auth.recover.password.title": "Эх.",
   "auth.recover.password.descriptions": "Забыли пароль, да?",
   "auth.reset.password.title": "Хорошо",

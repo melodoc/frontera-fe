@@ -1,10 +1,8 @@
-import { useHistory, Link as ConnectedLink } from 'react-router-dom';
-import i18next from 'i18next';
+import { useHistory } from 'react-router-dom';
 
 import { UIButton } from '../../shared/components/ui-button/ui-button';
 import { CourseHeader } from '../page-header';
 import { URLs } from '../../__data__/urls';
-import { Link as UILink } from '../link/link';
 import style from './preview.module.scss';
 
 // TODO: Fix hardcode
@@ -24,9 +22,6 @@ export const Preview = () => {
           </UIButton>
         </div>
       </div>
-      <UILink to={URLs.catalogCourses.url} as={ConnectedLink}>
-        {i18next.t('js.navigation.suggestion')}
-      </UILink>
     </section>
   );
 };

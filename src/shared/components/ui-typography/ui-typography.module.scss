@@ -2,6 +2,7 @@
 
 $icon-storage-size: 20px;
 $icon-chevron-down-size: 10px;
+$icon-user-size: 18px;
 
 .typography {
   margin: 0;
@@ -30,6 +31,7 @@ $icon-chevron-down-size: 10px;
   &__margin {
     margin-bottom: $offset-medium;
   }
+
   &__icon_storage {
     padding-left: calc($icon-storage-size + 5px);
 
@@ -44,7 +46,6 @@ $icon-chevron-down-size: 10px;
       height: 17px;
     }
   }
-
   &__icon_chevron_down {
     padding-right: calc($icon-chevron-down-size + 5px);
 
@@ -59,4 +60,22 @@ $icon-chevron-down-size: 10px;
       height: 7px;
     }
   }
+  &__icon_user {
+    padding-left: calc($icon-storage-size + 5px);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 4px;
+      left: 0;
+      background: url('../../../assets/icons/user.svg') no-repeat;
+      z-index: 2;
+      width: $icon-user-size;
+      height: $icon-user-size;
+    }
+  }
+}
+
+h1.typography {
+  font-size: 24px;
 }
