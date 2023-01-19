@@ -1,33 +1,41 @@
+import { getUid } from 'utils/getUid';
+
+const themesData = [
+  {
+    name: 'HTML',
+    checked: true
+  },
+  {
+    name: 'CSS',
+    checked: false
+  },
+  {
+    name: 'JavaScript',
+    checked: false
+  },
+  {
+    name: 'git',
+    checked: true
+  },
+  {
+    name: 'webpack',
+    checked: false
+  },
+  {
+    name: 'TypeScript',
+    checked: false
+  }
+];
+
+const themes = themesData.map((item) => {
+  return { ...item, id: getUid() };
+});
+
 export const themesRes = {
   status: {
     code: 0
   },
-  themes: [
-    {
-      name: 'HTML',
-      checked: true
-    },
-    {
-      name: 'CSS',
-      checked: false
-    },
-    {
-      name: 'JavaScript',
-      checked: false
-    },
-    {
-      name: 'git',
-      checked: true
-    },
-    {
-      name: 'webpack',
-      checked: false
-    },
-    {
-      name: 'TypeScript',
-      checked: false
-    }
-  ]
+  themes
 };
 
 export const themesErr = {

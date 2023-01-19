@@ -45,7 +45,13 @@ export const ChooseCategories = ({ moveNextStep }) => {
           <FormGroup sx={{ mb: 3 }}>
             {themes.map((theme, index) => {
               const defaultCheckedProp = index === 0;
-              return <FormControlLabel control={<Checkbox defaultChecked={defaultCheckedProp} />} label={theme.name} />;
+              return (
+                <FormControlLabel
+                  key={theme.id}
+                  control={<Checkbox defaultChecked={defaultCheckedProp} />}
+                  label={theme.name}
+                />
+              );
             })}
           </FormGroup>
         )

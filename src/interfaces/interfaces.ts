@@ -5,6 +5,7 @@ export interface Card {
 }
 
 export interface CourseTheme {
+  id: string;
   name: string;
   checked: boolean;
 }
