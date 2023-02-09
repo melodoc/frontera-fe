@@ -24,9 +24,9 @@ export const Dashboard = () => {
       <ProtectedRoute path={URLs.catalogCourses.url}>
         <CatalogCourses />
       </ProtectedRoute>
-      <Route path={URLs.home.url}>
+      <ProtectedRoute path={URLs.home.url}>
         <HomePage />
-      </Route>
+      </ProtectedRoute>
       <ProtectedRoute path={`${URLs.coursePage.url}/:id`}>
         {(props) => <DetailCourse courseId={props.match?.params.id} />}
       </ProtectedRoute>
