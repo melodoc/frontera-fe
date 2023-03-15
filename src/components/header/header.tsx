@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import { URLs } from '__data__/urls';
 import { UIIconButton } from 'shared/components/ui-icon-button/ui-icon-button';
 import { UITypography } from 'shared/components/ui-typography/ui-typography';
+import { Logo } from 'components/logo/logo';
 
-import logo from '../../assets/icons/logo.svg';
 import style from './header.module.scss';
 
 interface HeaderProps {
@@ -19,10 +19,10 @@ export const Header = ({ isLoggedIn, showSearch }: HeaderProps) => {
     <div className={style.container}>
       <header className={style.header}>
         <nav className={style.header__nav}>
-          <a className={style.header__link} href={URLs.home.url}>
-            <img className={style.header__link_img} src={logo} alt="Frontera" />
-          </a>
-          <a className={style.header__link} href={URLs.home.url}>
+          <Link className={style.header__link} to={URLs.home.url}>
+            <Logo />
+          </Link>
+          <Link className={style.header__link} to={URLs.catalogCourses.url}>
             <UITypography
               variant="span"
               iconStyle={{
@@ -35,8 +35,8 @@ export const Header = ({ isLoggedIn, showSearch }: HeaderProps) => {
             >
               Все курсы
             </UITypography>
-          </a>
-          <a className={style.header__link} href={URLs.home.url}>
+          </Link>
+          <Link className={style.header__link} to={URLs.home.url}>
             <UITypography
               variant="span"
               typographyStyle={{
@@ -46,20 +46,18 @@ export const Header = ({ isLoggedIn, showSearch }: HeaderProps) => {
             >
               Вебинары
             </UITypography>
-          </a>
-          <a className={style.header__link} href={URLs.home.url}>
-            <Link to={URLs.catalogCourses.url}>
-              <UITypography
-                variant="span"
-                typographyStyle={{
-                  fontWeight: 'bold',
-                  color: 'secondary'
-                }}
-              >
-                {i18next.t('js.navigation.suggestion')}
-              </UITypography>
-            </Link>
-          </a>
+          </Link>
+          <Link className={style.header__link} to={URLs.personalization.url}>
+            <UITypography
+              variant="span"
+              typographyStyle={{
+                fontWeight: 'bold',
+                color: 'secondary'
+              }}
+            >
+              {i18next.t('js.navigation.suggestion')}
+            </UITypography>
+          </Link>
         </nav>
         <div className={style.header__account}>
           <UITypography
