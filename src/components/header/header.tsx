@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import { URLs } from '__data__/urls';
 import { UIIconButton } from 'shared/components/ui-icon-button/ui-icon-button';
 import { UITypography } from 'shared/components/ui-typography/ui-typography';
+import { Logo } from 'components/logo/logo';
 
-import logo from '../../assets/icons/logo.svg';
 import style from './header.module.scss';
 
 interface HeaderProps {
@@ -20,7 +20,7 @@ export const Header = ({ isLoggedIn, showSearch }: HeaderProps) => {
       <header className={style.header}>
         <nav className={style.header__nav}>
           <Link className={style.header__link} to={URLs.home.url}>
-            <img className={style.header__link_img} src={logo} alt="Frontera" />
+            <Logo />
           </Link>
           <Link className={style.header__link} to={URLs.catalogCourses.url}>
             <UITypography

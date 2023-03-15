@@ -1,6 +1,6 @@
 import { UITypography } from 'shared/components/ui-typography/ui-typography';
+import { Logo } from 'components/logo/logo';
 
-import logo from '../../assets/icons/logo.svg';
 import style from './footer.module.scss';
 
 interface FooterLinks {
@@ -29,7 +29,7 @@ export const Footer = () => {
     <div className={style.container}>
       <footer className={style.footer}>
         <div className={style.footer__info}>
-          <img className={style.footer__info_logo} src={logo} alt="Frontera" />
+          <Logo />
           <UITypography
             variant="label"
             typographyStyle={{
