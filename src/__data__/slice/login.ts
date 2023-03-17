@@ -2,15 +2,19 @@
 // TODO: Fix later
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
+import { saveToken } from 'services/token';
+
 type LoginState = {
-  token: string;
+  token?: string;
   loading: boolean;
 };
 
 const initialState: LoginState = {
-  token: '',
+  token: undefined,
   loading: false
 };
+
+// TODO: rename reset to meaningful
 
 const slice = createSlice({
   name: 'login',
@@ -19,12 +23,14 @@ const slice = createSlice({
     success(state, action: PayloadAction<string>) {
       state.token = action.payload;
       state.loading = false;
+      saveToken(action.payload);
     },
     init(state) {
       state.loading = true;
     },
     reset(state) {
       state.loading = false;
+      state.token = undefined;
     }
   }
 });

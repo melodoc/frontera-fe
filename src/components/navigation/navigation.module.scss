@@ -1,0 +1,15 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-gap: 40px;
+  place-content: center;
+  max-width: 610px;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    padding: 0;
+  }
+}

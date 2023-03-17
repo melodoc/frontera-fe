@@ -1,7 +1,7 @@
 import classnames from 'classnames';
 import { useMemo, createElement } from 'react';
 
-import { ClassBuilder } from 'utils/class-builder';
+import { ClassBuilder } from 'services/class-builder';
 
 import { UITypographyProps } from './interfaces';
 import style from './ui-typography.module.scss';

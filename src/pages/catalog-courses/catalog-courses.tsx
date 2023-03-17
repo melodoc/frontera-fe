@@ -30,7 +30,7 @@ export const CatalogCourses = () => {
   return (
     <>
       <Head title="Catalog of courses" isLoading={isLoading} />
-      <Header showSearch />
+      <Header />
       <main className={style.Container}>
         <PageHeader label={t('catalog.courses.title')} />
         <section>

@@ -1,4 +1,4 @@
-import { getUid } from 'utils/getUid';
+import { getUid } from 'services/get-uid';
 
 const themesData = [
   {

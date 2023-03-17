@@ -8,7 +8,7 @@ import { UIButton } from 'shared/components/ui-button/ui-button';
 import { User } from 'interfaces/interfaces';
 
 import { URLs } from '../../../__data__/urls';
-import { getLogin } from '../../../__data__/action/login';
+import { getLogin } from '../../../__data__/action/login/login';
 import { useAppSelector } from '../../../__data__/store/hooks';
 import style from './auth.module.scss';
 

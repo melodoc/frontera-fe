@@ -1,64 +1,36 @@
-import i18next from 'i18next';
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 
-import { URLs } from '__data__/urls';
+import { useAuthManager } from 'hooks/use-auth-manager';
+import { getToken } from 'services/token';
 import { UIIconButton } from 'shared/components/ui-icon-button/ui-icon-button';
 import { UITypography } from 'shared/components/ui-typography/ui-typography';
-import { Logo } from 'components/logo/logo';
+import { URLs } from '__data__/urls';
+import { reset } from '__data__/slice/login';
 
+import { Navigation } from '../navigation/navigation';
 import style from './header.module.scss';
 
-interface HeaderProps {
-  isLoggedIn?: boolean;
-  showSearch?: boolean;
-}
+export const Header = () => {
+  const history = useHistory();
+  const dispatch = useDispatch();
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-export const Header = ({ isLoggedIn, showSearch }: HeaderProps) => {
+  const { logout } = useAuthManager();
+  const isLoggedIn = getToken();
+
+  const onLogOutClick = () => {
+    logout();
+    dispatch(reset());
+  };
+
+  const onLogInClick = () => {
+    history.push(URLs.auth.url);
+  };
+
   return (
     <div className={style.container}>
       <header className={style.header}>
-        <nav className={style.header__nav}>
-          <Link className={style.header__link} to={URLs.home.url}>
-            <Logo />
-          </Link>
-          <Link className={style.header__link} to={URLs.catalogCourses.url}>
-            <UITypography
-              variant="span"
-              iconStyle={{
-                icon: 'storage'
-              }}
-              typographyStyle={{
-                fontWeight: 'bold',
-                color: 'secondary'
-              }}
-            >
-              Все курсы
-            </UITypography>
-          </Link>
-          <Link className={style.header__link} to={URLs.home.url}>
-            <UITypography
-              variant="span"
-              typographyStyle={{
-                fontWeight: 'bold',
-                color: 'secondary'
-              }}
-            >
-              Вебинары
-            </UITypography>
-          </Link>
-          <Link className={style.header__link} to={URLs.personalization.url}>
-            <UITypography
-              variant="span"
-              typographyStyle={{
-                fontWeight: 'bold',
-                color: 'secondary'
-              }}
-            >
-              {i18next.t('js.navigation.suggestion')}
-            </UITypography>
-          </Link>
-        </nav>
+        <Navigation />
         <div className={style.header__account}>
           <UITypography
             variant="span"
@@ -83,22 +55,10 @@ export const Header = ({ isLoggedIn, showSearch }: HeaderProps) => {
           >
             8 800 000-00-00
           </UITypography>
-          {!isLoggedIn ? (
-            <Link to={URLs.auth.url}>
-              <UITypography
-                variant="label"
-                iconStyle={{ icon: 'user' }}
-                typographyStyle={{
-                  fontWeight: 'bold',
-                  color: 'secondary'
-                }}
-                title="Выйти"
-              >
-                Выйти
-              </UITypography>
-            </Link>
+          {isLoggedIn ? (
+            <UIIconButton onClick={onLogOutClick} icon="user" label="Выйти" buttonType="button" />
           ) : (
-            <UIIconButton onClick={() => {}} icon="user" label="Войти" buttonType="button" />
+            <UIIconButton onClick={onLogInClick} icon="user" label="Войти" buttonType="button" />
           )}
         </div>
       </header>

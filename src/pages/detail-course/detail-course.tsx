@@ -29,7 +29,7 @@ export const DetailCourse = ({ courseId }) => {
   return (
     <>
       <Head title="Details" isLoading={isLoading} />
-      <Header showSearch />
+      <Header />
       <main className={style.Container}>
         <PageHeader label={data.title} />
         <CourseInfo info={data.info} description={data.description} />

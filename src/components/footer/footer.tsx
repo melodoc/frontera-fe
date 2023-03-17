@@ -43,7 +43,7 @@ export const Footer = () => {
         <ul className={style.footer__list}>
           {links.map((link) => (
             <li key={link.id}>
-              <a className={style.footer__link} href={link.route}>
+              <a className={style.footer__link} href={link.route} onClick={(evt) => evt.preventDefault()}>
                 <UITypography
                   variant="span"
                   typographyStyle={{
