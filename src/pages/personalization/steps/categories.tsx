@@ -56,7 +56,7 @@ export const ChooseCategories = ({ moveNextStep }) => {
           </FormGroup>
         )
       )}
-      <UIButton onClick={() => {}} size="large">
+      <UIButton onClick={() => {}} size="small">
         {t('personalization.lang.button')}
       </UIButton>
     </Box>
