@@ -13,5 +13,8 @@ export const URLs = {
   },
   coursePage: {
     url: '/course-page'
+  },
+  root: {
+    url: '/'
   }
 };

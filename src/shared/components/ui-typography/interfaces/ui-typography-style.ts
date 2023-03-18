@@ -1,5 +1,5 @@
 export interface UITypographyStyle {
-  // TODO: Доработать компонент кнопки
+  // TODO: Modify the button component
   //   display?: "initial" | "block" | "inline";
   //   textAlign?: "inherit" | "left" | "right" | "center";
   marginBottom?: boolean;

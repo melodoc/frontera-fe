@@ -7,7 +7,7 @@ export const HomePage = () => {
   return (
     <>
       <Head title="Main" />
-      <Header showSearch />
+      <Header />
       <Preview />
       <Trending />
     </>

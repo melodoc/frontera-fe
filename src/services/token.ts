@@ -2,6 +2,8 @@ const AUTH_TOKEN_KEY_NAME = 'frontera-token';
 
 export type Token = string;
 
+// TODO: Convert to a React Hook
+
 export const getToken = (): Token => {
   const token = localStorage.getItem(AUTH_TOKEN_KEY_NAME);
   return token ?? '';
