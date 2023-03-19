@@ -1,5 +1,5 @@
 import i18next from 'i18next';
-import { Switch, Route, Redirect, useLocation } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import { useEffect } from 'react';
 
 import { useAuthManager } from 'hooks/use-auth-manager';
@@ -14,18 +14,14 @@ import { CatalogCourses } from '../pages/catalog-courses/catalog-courses';
 
 export const Dashboard = () => {
   const { checkValidity } = useAuthManager();
-  const location = useLocation();
 
   useEffect(() => {
-    checkValidity(location?.pathname);
+    checkValidity();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
     <Switch>
-      <Route exact path={URLs.root.url}>
-        <Redirect to={URLs.auth.url} />
-      </Route>
       <Route path={URLs.auth.url}>
         <Auth />
       </Route>
