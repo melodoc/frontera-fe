@@ -14,7 +14,7 @@ export const useAuthManager = () => {
   const checkValidity = (onSuccessHandle?: () => void, onErrorHandler?: () => void) => {
     const token = getToken();
     if (token) {
-      // history.push(URLs.home.url);
+      history.push(URLs.home.url);
       onSuccessHandle && onSuccessHandle();
       // TODO: Replace when authorization mechanism is added
       // dispatch(checkValidity(token));
