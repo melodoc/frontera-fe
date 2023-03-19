@@ -39,6 +39,14 @@ npm run build
 
 This will create a dist folder with compiled and minimised components.
 
+## Environment
+
+Production:
+https://frontera-fe.vercel.app
+
+Development:
+https://frontera-fe-git-develop-melodoc.vercel.app
+
 ## Contribute
 
 Check the [trello board](https://trello.com/b/0jTn9HiJ/frontera) with future plans.
