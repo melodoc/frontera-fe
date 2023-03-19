@@ -24,6 +24,7 @@ const slice = createSlice({
       state.token = action.payload;
       state.loading = false;
       saveToken(action.payload);
+      console.info('token successfully saved:', action.payload);
     },
     init(state) {
       state.loading = true;
