@@ -29,7 +29,7 @@
     "react-scripts": "^5.0.0",
     "react-toastify": "^9.0.8",
     "typesafe-actions": "^5.1.0",
-    "typescript-plugin-css-modules": "^3.4.0",
+    "typescript-plugin-css-modules": "^4.2.3",
     "use-query-params": "^1.2.3",
     "web-vitals": "^2.1.4"
   },
