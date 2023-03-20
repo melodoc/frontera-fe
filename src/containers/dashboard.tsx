@@ -1,5 +1,5 @@
 import i18next from 'i18next';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 
 import { useAuthManager } from 'hooks/use-auth-manager';
@@ -13,28 +13,34 @@ import { HomePage } from './homepage';
 import { CatalogCourses } from '../pages/catalog-courses/catalog-courses';
 
 export const Dashboard = () => {
-  const { checkValidity } = useAuthManager();
+  const { checkValidity, isTokenValid } = useAuthManager();
+  const location = useLocation();
+
+  const renderRedirect = (url: string, tokenValidity: boolean) => {
+    return tokenValidity ? <Redirect to={url} /> : <Auth />;
+  };
 
   useEffect(() => {
     checkValidity();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [location?.pathname]);
 
   return (
     <Switch>
-      <Route path={URLs.auth.url}>
-        <Auth />
+      <Route exact path={URLs.root.url}>
+        {renderRedirect(URLs.home.url, isTokenValid)}
       </Route>
-      <ProtectedRoute path={URLs.personalization.url}>
+      <Route path={URLs.auth.url}>{renderRedirect(URLs.home.url, isTokenValid)}</Route>
+      <ProtectedRoute path={URLs.personalization.url} isTokenValid={isTokenValid}>
         <Personalization />
       </ProtectedRoute>
-      <ProtectedRoute path={URLs.catalogCourses.url}>
+      <ProtectedRoute path={URLs.catalogCourses.url} isTokenValid={isTokenValid}>
         <CatalogCourses />
       </ProtectedRoute>
-      <ProtectedRoute path={URLs.home.url}>
+      <ProtectedRoute path={URLs.home.url} isTokenValid={isTokenValid}>
         <HomePage />
       </ProtectedRoute>
-      <ProtectedRoute path={`${URLs.coursePage.url}/:id`}>
+      <ProtectedRoute path={`${URLs.coursePage.url}/:id`} isTokenValid={isTokenValid}>
         {(props) => <DetailCourse courseId={props.match?.params.id} />}
       </ProtectedRoute>
       {/* TODO: Add notFound screen */}

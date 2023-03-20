@@ -1,18 +1,20 @@
 import { FC } from 'react';
 import { Route, Redirect, RouteProps } from 'react-router-dom';
 
-import { getToken } from 'services/token';
 import { URLs } from '__data__/urls';
 
-export const ProtectedRoute: FC<RouteProps> = ({ children, path, ...rest }) => {
-  // TODO: Replace when authorization mechanism is added
-  const token = getToken();
-  if (!token) {
+interface IProtectedRoute extends RouteProps {
+  isTokenValid: boolean;
+}
+
+export const ProtectedRoute: FC<IProtectedRoute> = ({ children, path, ...props }) => {
+  console.info(props);
+  if (!props?.isTokenValid) {
     return (
-      <Route {...rest}>
+      <Route {...props}>
         <Redirect to={URLs.auth.url} />
       </Route>
     );
   }
-  return <Route {...rest}>{children}</Route>;
+  return <Route {...props}>{children}</Route>;
 };

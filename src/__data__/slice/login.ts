@@ -2,7 +2,7 @@
 // TODO: Fix later
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-import { saveToken } from 'services/token';
+import { dropToken, saveToken } from 'services/token';
 
 type LoginState = {
   token?: string;
@@ -32,6 +32,7 @@ const slice = createSlice({
     reset(state) {
       state.loading = false;
       state.token = undefined;
+      dropToken();
     }
   }
 });

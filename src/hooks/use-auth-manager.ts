@@ -1,42 +1,36 @@
-import { useHistory, useLocation } from 'react-router-dom';
+import { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 
-import { dropToken, getToken } from 'services/token';
+import { getToken } from 'services/token';
 import { URLs } from '__data__/urls';
-
-import { useRouterHelper } from './use-router-helper';
 
 export const useAuthManager = () => {
   const history = useHistory();
-  const location = useLocation();
-  const { isRootPath } = useRouterHelper();
+  const token = getToken();
+  const [isTokenValid, setIsTokenValid] = useState(!!token);
 
   const logout = () => {
+    setIsTokenValid(false);
     history.push(URLs.auth.url);
-    dropToken();
-  };
-
-  const getSafePathname = () => {
-    const currentPathname = location?.pathname ?? URLs.home.url;
-    return isRootPath(currentPathname) ? URLs.home.url : currentPathname;
   };
 
   const checkValidity = (onSuccessHandle?: () => void, onErrorHandler?: () => void) => {
-    const token = getToken();
     if (!token) {
       logout();
       onErrorHandler && onErrorHandler();
     } else {
-      history.push(getSafePathname());
-      onSuccessHandle && onSuccessHandle();
+      setIsTokenValid(true);
       // TODO: Replace when authorization mechanism is added
       // dispatch(checkValidity(token));
       // TODO: Add request
       // setUserInformation();
+      onSuccessHandle && onSuccessHandle();
     }
   };
 
   return {
     logout,
-    checkValidity
+    checkValidity,
+    isTokenValid
   };
 };
