@@ -19,8 +19,8 @@ export const Header = () => {
   const isLoggedIn = getToken();
 
   const onLogOutClick = () => {
-    logout();
     dispatch(reset());
+    logout();
   };
 
   const onLogInClick = () => {
