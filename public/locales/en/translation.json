@@ -1,0 +1,48 @@
+{
+  "js.navigation.home": "Home",
+  "js.navigation.trending": "Trending",
+  "js.navigation.suggestion": "Suggestion",
+  "js.navigation.viewHistory": "History",
+  "js.navigation.settings": "Settings",
+  "js.navigation.help": "Help",
+  "js.navigation.out": "Out",
+  "js.navigation.notFound": "Not found",
+
+  "personalization.common.log.out": "Log out",
+  "personalization.lang.title": "Choose the language for studying",
+  "personalization.lang.descriptions": "Use this option to filter out a language you don't know",
+  "personalization.lang.button": "Next",
+  "personalization.categories.title": "Choose themes interesting for you",
+  "personalization.categories.descriptions": "Use this option to get a relevant data",
+  "personalization.processing.title": "Preparing for personalization for you...",
+  "personalization.processing.descriptions": "It takes a several seconds",
+  "personalization.lang.english": "English",
+  "personalization.lang.espanol": "Español",
+  "personalization.lang.russian": "Русский",
+
+  "auth.login.button": "Login",
+  "auth.recover.button": "Recover",
+  "auth.singUp.button": "Sign up",
+  "auth.setup.button": "Setup",
+  "auth.cancel.button": "Cancel",
+  "auth.login.registration": "Registration",
+  "auth.login.forgot": "Forgot the passwords?",
+  "auth.login.remember": "Remember me",
+  "auth.login.form.username.label": "User name",
+  "auth.login.form.email.label": "User email",
+  "auth.login.form.password.label": "Password",
+  "auth.login.form.repeat.password.label": "Repeate the password",
+  "auth.login.form.error": "Login or password incorrect",
+  "auth.signUp.form.error": "User already exist",
+
+  "auth.login.title": "Do a training course in a spot",
+  "auth.login.descriptions": "Sign in or sign up if you don't have an account",
+  "auth.recover.password.title": "Oops...",
+  "auth.recover.password.descriptions": "Forgot the password?",
+  "auth.reset.password.title": "Well done",
+  "auth.reset.password.descriptions": "Let's setup your new password...",
+
+  "catalog.courses.title": "Based on your choose",
+
+  "home.trends.title": "Trending"
+}
