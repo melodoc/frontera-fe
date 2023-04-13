@@ -115,10 +115,10 @@ export const Registration = ({ moveNextStep }) => {
           sx={{ mb: 3 }}
         />
         <div className={style.button__container}>
-          <UIButton onClick={handleSubmit} size="large" wide>
+          <UIButton onClick={handleSubmit} size="small" wide>
             {t('auth.singUp.button')}
           </UIButton>
-          <UIButton onClick={handleClick} size="large" wide>
+          <UIButton onClick={handleClick} size="small" wide>
             {t('auth.cancel.button')}
           </UIButton>
         </div>

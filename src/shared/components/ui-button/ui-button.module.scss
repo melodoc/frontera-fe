@@ -37,9 +37,27 @@
     background-color: $white;
     border: 0.5px solid $purple-primary;
   }
+  &__tertiary {
+    padding: 0px 69px;
 
+    color: $black;
+    background-color: $green-tertiary;
+
+    @media screen and (min-width: 900px) and (max-width: 1279.98px) {
+      padding: 0px 45px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 899.98px) {
+      padding: 0px 45px;
+    }
+
+    @media screen and (max-width: 767.98px) {
+      width: 100%;
+      padding: 0px 24px;
+    }
+  }
   &__size_large {
-    font-weight: 500;
+    font-weight: 700;
   }
 
   &__size_small {
@@ -49,5 +67,17 @@
 
   &__width_wide {
     width: 100%;
+  }
+
+  @media screen and (min-width: 900px) and (max-width: 1279.98px) {
+    height: 40px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 899.98px) {
+    height: 40px;
+  }
+
+  @media screen and (max-width: 767.98px) {
+    height: 44px;
   }
 }

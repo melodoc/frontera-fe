@@ -37,7 +37,7 @@ export const ChooseLanguage = ({ moveNextStep }) => {
             <FormControlLabel control={<Checkbox />} label={t('personalization.lang.espanol')} />
             <FormControlLabel control={<Checkbox />} label={t('personalization.lang.russian')} />
           </FormGroup>
-          <UIButton onClick={() => {}} size="large">
+          <UIButton onClick={() => {}} size="small">
             {t('personalization.lang.button')}
           </UIButton>
         </>

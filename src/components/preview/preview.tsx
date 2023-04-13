@@ -17,7 +17,7 @@ export const Preview = () => {
       <div className={style.PreviewInfo}>
         <CourseHeader label="Изучаем JS" />
         <div className={style.PreviewButtons}>
-          <UIButton onClick={handleClick} size="large">
+          <UIButton onClick={handleClick} size="small">
             Подробнее
           </UIButton>
         </div>

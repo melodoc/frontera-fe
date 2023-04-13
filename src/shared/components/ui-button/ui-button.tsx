@@ -15,6 +15,7 @@ interface UIButtonProps {
 export const UIButton: React.FC<UIButtonProps> = ({ children, onClick, theme, size, wide }) => {
   const classes = classnames(style.button, {
     [style.button__secondary]: theme === 'secondary',
+    [style.button__tertiary]: theme === 'tertiary',
     [style.button__size_large]: size === 'large',
     [style.button__size_small]: size === 'small',
     [style.button__width_wide]: wide
