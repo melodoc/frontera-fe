@@ -8,7 +8,6 @@ interface IProtectedRoute extends RouteProps {
 }
 
 export const ProtectedRoute: FC<IProtectedRoute> = ({ children, path, ...props }) => {
-  console.info(props);
   if (!props?.isTokenValid) {
     return (
       <Route {...props}>

@@ -2,6 +2,7 @@ import { useHistory } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 
 import { useAuthManager } from 'hooks/use-auth-manager';
+import { useTransformPhoneNumber } from 'hooks/use-transform-phone-number';
 import { getToken } from 'services/token';
 import { UIIconButton } from 'shared/components/ui-icon-button/ui-icon-button';
 import { UITypography } from 'shared/components/ui-typography/ui-typography';
@@ -18,6 +19,7 @@ export const Header = () => {
 
   const { logout } = useAuthManager();
   const isLoggedIn = getToken();
+  const phoneNumber = useTransformPhoneNumber('8 834 567-89-99');
 
   const onLogOutClick = () => {
     dispatch(reset());
@@ -42,7 +44,7 @@ export const Header = () => {
               color: 'secondary'
             }}
           >
-            8 800 000-00-00
+            {phoneNumber}
           </UITypography>
           {isLoggedIn ? (
             <UIIconButton onClick={onLogOutClick} icon="user" label="Выйти" buttonType="button" />
