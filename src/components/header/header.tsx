@@ -7,6 +7,7 @@ import { UIIconButton } from 'shared/components/ui-icon-button/ui-icon-button';
 import { UITypography } from 'shared/components/ui-typography/ui-typography';
 import { URLs } from '__data__/urls';
 import { reset } from '__data__/slice/login';
+import { LanguageSwitcher } from 'components/language-switcher/language-switcher';
 
 import { Navigation } from '../navigation/navigation';
 import style from './header.module.scss';
@@ -32,19 +33,7 @@ export const Header = () => {
       <header className={style.header}>
         <Navigation />
         <div className={style.header__account}>
-          <UITypography
-            variant="span"
-            iconStyle={{
-              icon: 'chevronDown'
-            }}
-            typographyStyle={{
-              fontWeight: 'bold',
-              uppercase: true,
-              color: 'secondary'
-            }}
-          >
-            en
-          </UITypography>
+          <LanguageSwitcher />
           <UITypography
             variant="span"
             typographyStyle={{

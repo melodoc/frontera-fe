@@ -1,0 +1,47 @@
+@import '../../../styles/variables.scss';
+
+.menu {
+  &__button {
+    position: relative;
+    border-style: none;
+    border: none;
+    background: none;
+    color: $white;
+    font-size: $font-size-small;
+    line-height: $line-height;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+
+    margin: 0;
+    padding: 0;
+    padding-right: 15px;
+  }
+
+  &__button:after {
+    position: absolute;
+    content: '';
+    background: url('../../../assets/icons/down.svg') no-repeat;
+    right: 0;
+    width: 10px;
+    height: 7px;
+    top: 9px;
+  }
+
+  &__dropdown_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    &_item {
+      position: relative;
+      border: none;
+      background: none;
+      color: $white;
+    }
+
+    &_item:hover {
+      background: $white;
+      color: $purple-primary;
+    }
+  }
+}
